@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\Opgave 3.1 Andreas\\Opgave 3.1\\Opgave 3.1.csproj": {}
+    "C:\\Users\\Bruger\\source\\repos\\Opgave 3.1\\Opgave 3.1\\Opgave 3.1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\Opgave 3.1 Andreas\\Opgave 3.1\\Opgave 3.1.csproj": {
+    "C:\\Users\\Bruger\\source\\repos\\Opgave 3.1\\Opgave 3.1\\Opgave 3.1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\Opgave 3.1 Andreas\\Opgave 3.1\\Opgave 3.1.csproj",
+        "projectUniqueName": "C:\\Users\\Bruger\\source\\repos\\Opgave 3.1\\Opgave 3.1\\Opgave 3.1.csproj",
         "projectName": "Opgave 3.1",
-        "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\Opgave 3.1 Andreas\\Opgave 3.1\\Opgave 3.1.csproj",
+        "projectPath": "C:\\Users\\Bruger\\source\\repos\\Opgave 3.1\\Opgave 3.1\\Opgave 3.1.csproj",
         "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\Opgave 3.1 Andreas\\Opgave 3.1\\obj\\",
+        "outputPath": "C:\\Users\\Bruger\\source\\repos\\Opgave 3.1\\Opgave 3.1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
