@@ -62,6 +62,7 @@ namespace Opgave_3._1
                     Console.Write("\nSubstrengen er " + substring);
                 }
                 Console.ReadKey();
+                Console.ReadKey();
 
                 
 
