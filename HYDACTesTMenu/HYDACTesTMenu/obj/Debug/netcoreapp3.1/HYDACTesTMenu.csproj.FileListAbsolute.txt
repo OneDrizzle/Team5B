@@ -1,0 +1,13 @@
+C:\Users\Bruger\source\repos\HYDACTesTMenu\HYDACTesTMenu\bin\Debug\netcoreapp3.1\HYDACTesTMenu.exe
+C:\Users\Bruger\source\repos\HYDACTesTMenu\HYDACTesTMenu\bin\Debug\netcoreapp3.1\HYDACTesTMenu.deps.json
+C:\Users\Bruger\source\repos\HYDACTesTMenu\HYDACTesTMenu\bin\Debug\netcoreapp3.1\HYDACTesTMenu.runtimeconfig.json
+C:\Users\Bruger\source\repos\HYDACTesTMenu\HYDACTesTMenu\bin\Debug\netcoreapp3.1\HYDACTesTMenu.runtimeconfig.dev.json
+C:\Users\Bruger\source\repos\HYDACTesTMenu\HYDACTesTMenu\bin\Debug\netcoreapp3.1\HYDACTesTMenu.dll
+C:\Users\Bruger\source\repos\HYDACTesTMenu\HYDACTesTMenu\bin\Debug\netcoreapp3.1\HYDACTesTMenu.pdb
+C:\Users\Bruger\source\repos\HYDACTesTMenu\HYDACTesTMenu\obj\Debug\netcoreapp3.1\HYDACTesTMenu.csprojAssemblyReference.cache
+C:\Users\Bruger\source\repos\HYDACTesTMenu\HYDACTesTMenu\obj\Debug\netcoreapp3.1\HYDACTesTMenu.AssemblyInfoInputs.cache
+C:\Users\Bruger\source\repos\HYDACTesTMenu\HYDACTesTMenu\obj\Debug\netcoreapp3.1\HYDACTesTMenu.AssemblyInfo.cs
+C:\Users\Bruger\source\repos\HYDACTesTMenu\HYDACTesTMenu\obj\Debug\netcoreapp3.1\HYDACTesTMenu.csproj.CoreCompileInputs.cache
+C:\Users\Bruger\source\repos\HYDACTesTMenu\HYDACTesTMenu\obj\Debug\netcoreapp3.1\HYDACTesTMenu.dll
+C:\Users\Bruger\source\repos\HYDACTesTMenu\HYDACTesTMenu\obj\Debug\netcoreapp3.1\HYDACTesTMenu.pdb
+C:\Users\Bruger\source\repos\HYDACTesTMenu\HYDACTesTMenu\obj\Debug\netcoreapp3.1\HYDACTesTMenu.genruntimeconfig.cache
