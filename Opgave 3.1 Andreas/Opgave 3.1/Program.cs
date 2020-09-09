@@ -62,9 +62,9 @@ namespace Opgave_3._1
                     Console.Write("\nSubstrengen er " + substring);
                 }
                 Console.ReadKey();
+                Console.ReadKey();
                 Console.WriteLine("hvorfor er Github ikke nemt?")
                 Console.Write("det ved jeg da ik.");
-
                 
 
 
