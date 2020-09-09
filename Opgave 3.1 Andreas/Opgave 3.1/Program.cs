@@ -63,6 +63,7 @@ namespace Opgave_3._1
                 }
                 Console.ReadKey();
                 Console.ReadKey();
+                Console.WriteLine("testestet");
 
                 
 
