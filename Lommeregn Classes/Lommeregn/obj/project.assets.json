@@ -8,33 +8,27 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\lopo\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Lasse H Hansen\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lopo\\source\\repos\\Lommeregn\\Lommeregn\\Lommeregn.csproj",
+      "projectUniqueName": "C:\\Users\\Lasse H Hansen\\Documents\\GitHub\\Team5B\\Lommeregn Classes\\Lommeregn\\Lommeregn.csproj",
       "projectName": "Lommeregn",
-      "projectPath": "C:\\Users\\lopo\\source\\repos\\Lommeregn\\Lommeregn\\Lommeregn.csproj",
-      "packagesPath": "C:\\Users\\lopo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lopo\\source\\repos\\Lommeregn\\Lommeregn\\obj\\",
+      "projectPath": "C:\\Users\\Lasse H Hansen\\Documents\\GitHub\\Team5B\\Lommeregn Classes\\Lommeregn\\Lommeregn.csproj",
+      "packagesPath": "C:\\Users\\Lasse H Hansen\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lasse H Hansen\\Documents\\GitHub\\Team5B\\Lommeregn Classes\\Lommeregn\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\lopo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Lasse H Hansen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://github.com/DSharpPlus/DSharpPlus": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
@@ -64,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

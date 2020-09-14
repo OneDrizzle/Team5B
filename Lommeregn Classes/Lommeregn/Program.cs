@@ -6,6 +6,7 @@ namespace Lommeregn
     {
         static void Main(string[] args)
         {
+            //goddag
             Calculater Calc = new Calculater();
             Console.WriteLine(Calc.Add(1, 2));
             Console.WriteLine(Calc.Subtract(5, 7));
