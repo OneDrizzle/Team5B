@@ -1,0 +1,13 @@
+C:\Users\lopo\source\repos\Lommeregn\Lommeregn\obj\Debug\netcoreapp3.1\Lommeregn.csprojAssemblyReference.cache
+C:\Users\lopo\source\repos\Lommeregn\Lommeregn\obj\Debug\netcoreapp3.1\Lommeregn.AssemblyInfoInputs.cache
+C:\Users\lopo\source\repos\Lommeregn\Lommeregn\obj\Debug\netcoreapp3.1\Lommeregn.AssemblyInfo.cs
+C:\Users\lopo\source\repos\Lommeregn\Lommeregn\obj\Debug\netcoreapp3.1\Lommeregn.csproj.CoreCompileInputs.cache
+C:\Users\lopo\source\repos\Lommeregn\Lommeregn\bin\Debug\netcoreapp3.1\Lommeregn.exe
+C:\Users\lopo\source\repos\Lommeregn\Lommeregn\bin\Debug\netcoreapp3.1\Lommeregn.deps.json
+C:\Users\lopo\source\repos\Lommeregn\Lommeregn\bin\Debug\netcoreapp3.1\Lommeregn.runtimeconfig.json
+C:\Users\lopo\source\repos\Lommeregn\Lommeregn\bin\Debug\netcoreapp3.1\Lommeregn.runtimeconfig.dev.json
+C:\Users\lopo\source\repos\Lommeregn\Lommeregn\bin\Debug\netcoreapp3.1\Lommeregn.dll
+C:\Users\lopo\source\repos\Lommeregn\Lommeregn\bin\Debug\netcoreapp3.1\Lommeregn.pdb
+C:\Users\lopo\source\repos\Lommeregn\Lommeregn\obj\Debug\netcoreapp3.1\Lommeregn.dll
+C:\Users\lopo\source\repos\Lommeregn\Lommeregn\obj\Debug\netcoreapp3.1\Lommeregn.pdb
+C:\Users\lopo\source\repos\Lommeregn\Lommeregn\obj\Debug\netcoreapp3.1\Lommeregn.genruntimeconfig.cache
