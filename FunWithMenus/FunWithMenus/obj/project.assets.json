@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\HYDACTesTMenu\\HYDACTesTMenu\\HYDACTesTMenu.csproj",
-      "projectName": "HYDACTesTMenu",
-      "projectPath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\HYDACTesTMenu\\HYDACTesTMenu\\HYDACTesTMenu.csproj",
+      "projectUniqueName": "C:\\Users\\brian\\Dropbox\\Datamatiker\\Csharp saved files\\FunWithMenus\\FunWithMenus\\FunWithMenus.csproj",
+      "projectName": "FunWithMenus",
+      "projectPath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\Csharp saved files\\FunWithMenus\\FunWithMenus\\FunWithMenus.csproj",
       "packagesPath": "C:\\Users\\brian\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\HYDACTesTMenu\\HYDACTesTMenu\\obj\\",
+      "outputPath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\Csharp saved files\\FunWithMenus\\FunWithMenus\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\brian\\AppData\\Roaming\\NuGet\\NuGet.Config",
