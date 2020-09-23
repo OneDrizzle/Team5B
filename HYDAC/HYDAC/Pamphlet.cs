@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HYDAC
 {
-    class MRBP
+    class Pamphlet
     {
     }
 }
