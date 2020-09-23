@@ -9,8 +9,7 @@ namespace HYDAC
         private string _name;
 
         public MeetingRoom(string _name)
-        {
-           
+        {           
         }
     }
 }

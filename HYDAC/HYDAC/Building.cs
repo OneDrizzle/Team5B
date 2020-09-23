@@ -1,10 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace HYDAC
+﻿namespace HYDAC
 {
     class Building
     {
+        private string name;
+        private MeetingRoom[] meetingRooms;
+        private Pamphlet[] pamphlets;
+
+        public Building(string name)
+        { 
+        }
+
+
+
+
     }
 }
