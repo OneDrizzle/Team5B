@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HYDAC
 {
-    class Guest
+    public class Guest
     {
         private string _name;
         private string _phone;

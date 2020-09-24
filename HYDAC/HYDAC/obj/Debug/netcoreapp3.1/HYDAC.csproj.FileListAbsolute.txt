@@ -1,0 +1,4 @@
+C:\Users\Nick\Documents\GitHub\Team5B\HYDAC\HYDAC\obj\Debug\netcoreapp3.1\HYDAC.csprojAssemblyReference.cache
+C:\Users\Nick\Documents\GitHub\Team5B\HYDAC\HYDAC\obj\Debug\netcoreapp3.1\HYDAC.AssemblyInfoInputs.cache
+C:\Users\Nick\Documents\GitHub\Team5B\HYDAC\HYDAC\obj\Debug\netcoreapp3.1\HYDAC.AssemblyInfo.cs
+C:\Users\Nick\Documents\GitHub\Team5B\HYDAC\HYDAC\obj\Debug\netcoreapp3.1\HYDAC.csproj.CoreCompileInputs.cache
