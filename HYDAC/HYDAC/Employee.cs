@@ -4,7 +4,17 @@ using System.Text;
 
 namespace HYDAC
 {
-    class Employee
+    public class Employee
     {
+        private string name;
+        private string mood;
+        private string[] velkommen;
+
+        Employee()
+        {
+
+        }
+
     }
+
 }
