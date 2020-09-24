@@ -14,6 +14,10 @@ namespace HYDAC
         {
 
         }
+        public void AddGuest()
+        {
+
+        }
 
     }
 
