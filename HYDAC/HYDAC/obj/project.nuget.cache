@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "Td7AyUgDoVEN9PLIFTH8+WngjDYwZN+ip6VRlODsfsdUTL2577c213DVqocTH6wNeT35abjcFuQuNGVy5ChZzg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Nick\\Documents\\GitHub\\Team5B\\HYDAC\\HYDAC\\HYDAC.csproj",
+=======
+  "dgSpecHash": "baveAVXDjhQDEaANeR7vv4yidXHicz0EYAJDDt1/ReGDhKXLJUCD5Px5xoPz8xJfpJNELFMCml/XvtGXvtR8wQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Lasse H Hansen\\Documents\\GitHub\\Team5B\\HYDAC\\HYDAC\\HYDAC.csproj",
+>>>>>>> Stashed changes
   "expectedPackageFiles": [],
   "logs": []
 }

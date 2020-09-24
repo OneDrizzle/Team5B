@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< Updated upstream
     "C:\\Users\\Nick\\Documents\\GitHub\\Team5B\\HYDAC\\HYDAC\\HYDAC.csproj": {}
   },
   "projects": {
@@ -15,6 +16,22 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nick\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "C:\\Users\\Lasse H Hansen\\Documents\\GitHub\\Team5B\\HYDAC\\HYDAC\\HYDAC.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Lasse H Hansen\\Documents\\GitHub\\Team5B\\HYDAC\\HYDAC\\HYDAC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Lasse H Hansen\\Documents\\GitHub\\Team5B\\HYDAC\\HYDAC\\HYDAC.csproj",
+        "projectName": "HYDAC",
+        "projectPath": "C:\\Users\\Lasse H Hansen\\Documents\\GitHub\\Team5B\\HYDAC\\HYDAC\\HYDAC.csproj",
+        "packagesPath": "C:\\Users\\Lasse H Hansen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lasse H Hansen\\Documents\\GitHub\\Team5B\\HYDAC\\HYDAC\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Lasse H Hansen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> Stashed changes
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HYDAC
 {
-    class MeetingRoom
+    public class MeetingRoom
     {
         private string _name;
 

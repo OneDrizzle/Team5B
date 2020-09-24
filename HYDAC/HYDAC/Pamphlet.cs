@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HYDAC
 {
-    class Pamphlet
+    public class Pamphlet
     {
         private string name;
         public Pamphlet(string name)

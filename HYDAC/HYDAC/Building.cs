@@ -1,6 +1,6 @@
 ﻿namespace HYDAC
 {
-    class Building
+    public class Building
     {
         private string name;
         private MeetingRoom[] meetingRooms;
