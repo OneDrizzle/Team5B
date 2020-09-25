@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace HYDAC
+﻿namespace HYDAC
 {
     public class Controller
     {
@@ -14,17 +10,17 @@ namespace HYDAC
 
         public bool SelectEmployee(string name)
         {
-            
+
             for (int i = 0; i < employees.Length; i++)
-            { 
+            {
                 string temp = employees[i].GetName();
 
-            if (name == temp) 
+                if (name == temp)
                 {
                     return true;
                 }
             }
-            
+
             return false;
         }
 
@@ -40,9 +36,9 @@ namespace HYDAC
         {
             return null;
 
-             // ikke implementeret: "sms bliver sendt til employee"
+            // ikke implementeret: "sms bliver sendt til employee"
         }
 
     }
 }
-}
+

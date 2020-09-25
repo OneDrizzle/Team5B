@@ -1,14 +1,15 @@
 {
   "version": 2,
-<<<<<<< Updated upstream
-  "dgSpecHash": "Td7AyUgDoVEN9PLIFTH8+WngjDYwZN+ip6VRlODsfsdUTL2577c213DVqocTH6wNeT35abjcFuQuNGVy5ChZzg==",
+  "dgSpecHash": "1beV1MLMTtD9Jwu2A20dwe6ld+SX7bGIwPGKU5ZMHCbZosov4A8Q9XioxUTY/q2e688sGIBCbZGcAbTnh8qP+Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nick\\Documents\\GitHub\\Team5B\\HYDAC\\HYDAC\\HYDAC.csproj",
-=======
-  "dgSpecHash": "baveAVXDjhQDEaANeR7vv4yidXHicz0EYAJDDt1/ReGDhKXLJUCD5Px5xoPz8xJfpJNELFMCml/XvtGXvtR8wQ==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\Lasse H Hansen\\Documents\\GitHub\\Team5B\\HYDAC\\HYDAC\\HYDAC.csproj",
->>>>>>> Stashed changes
+  "projectFilePath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\HYDAC\\HYDAC\\HYDAC.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\HYDAC\\HYDAC\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

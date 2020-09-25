@@ -7,7 +7,8 @@
         private Pamphlet[] pamphlets;
 
         public Building(string name)
-        { 
+        {
+            this.name = name;
         }
 
 

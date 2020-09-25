@@ -8,7 +8,8 @@ namespace HYDAC
     {
         private string name;
         public Pamphlet(string name)
-        { 
+        {
+            this.name = name;
         }
     }
 }
