@@ -1,10 +1,13 @@
-﻿namespace HYDAC
+﻿using System.Security.Cryptography.X509Certificates;
+using System.Xml.Linq;
+
+namespace HYDAC
 {
     public class Employee
     {
         private string _name;
         private Mood _mood;
-        private Guest[] _guests;
+        private Guest[] _guest;
 
         public enum Mood
         {
@@ -37,9 +40,20 @@
 
 
         }
-        public void RemoveGuest()
+        public void RemoveGuest(string name)
         {
             //tjeck navn på den givne gæst, og fjern gæsten fra array.
+
+            for (int i = 0; i < _guest.Length; i++)
+            {
+                if(_guest == _name)
+                {
+                    //found name 
+                }
+            }
+
+
+
         }
         public void SetMood(Mood mood)
         {
