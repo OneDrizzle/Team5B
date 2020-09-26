@@ -7,7 +7,7 @@ namespace HYDAC
     {
         private string _name;
         private Mood _mood;
-        private Guest[] _guest;
+        private Guest[] _guests;
 
         public enum Mood
         {
@@ -44,9 +44,11 @@ namespace HYDAC
         {
             //tjeck navn på den givne gæst, og fjern gæsten fra array.
 
-            for (int i = 0; i < _guest.Length; i++)
+            for (int i = 0; i < _guests.Length; i++)
             {
-                if(_guest == _name)
+                string temp = _guests[i].();
+
+                if (temp == _name)
                 {
                     //found name 
                 }
