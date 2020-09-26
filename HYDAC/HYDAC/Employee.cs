@@ -16,7 +16,7 @@
 
         public Employee(string name)
         {
-
+            this._name = name;
         }
         public void AddGuest(Guest guest)
         {
