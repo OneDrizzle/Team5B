@@ -46,11 +46,11 @@ namespace HYDAC
 
             for (int i = 0; i < _guests.Length; i++)
             {
-                string temp = _guests[i].();
+                string temp = _guests[i].ToString();
 
-                if (temp == _name)
+                if (temp.Contains(name) == true)
                 {
-                    //found name 
+                    _guests
                 }
             }
 

@@ -34,7 +34,7 @@
 
         public bool SelectMeetingRoom(string name)
         {
-            return null;
+            return true;
 
             // ikke implementeret: "sms bliver sendt til employee"
         }
