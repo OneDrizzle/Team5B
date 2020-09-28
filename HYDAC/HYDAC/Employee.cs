@@ -1,5 +1,7 @@
 ﻿using System.Security.Cryptography.X509Certificates;
 using System.Xml.Linq;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace HYDAC
 {
@@ -50,7 +52,7 @@ namespace HYDAC
 
                 if (temp.Contains(name) == true)
                 {
-                    _guests
+                    _guests = _guests.Where(e => e != _guests[i]).ToArray();
                 }
             }
 
