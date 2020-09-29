@@ -26,6 +26,7 @@ namespace HYDAC
         {
             this._name = name;
         }
+
         public void AddGuest(Guest guest)
         {
             // hent data fra controller i form af et array 

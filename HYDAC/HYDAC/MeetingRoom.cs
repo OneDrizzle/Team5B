@@ -3,10 +3,14 @@
     public class MeetingRoom
     {
         private string _name;
+        private Pamphlet _pamphlet;
+    
 
-        public MeetingRoom(string _name)
+
+        public MeetingRoom(string name, Pamphlet pamphlet)
         {
-            this._name = _name;
+            this._name = name;
+            this._pamphlet = pamphlet;
         }
 
         public string Name
@@ -16,6 +20,8 @@
                 return _name;
             }
         }
+
+     
 
 
 
