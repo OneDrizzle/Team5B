@@ -74,19 +74,19 @@ namespace HYDAC
         }
 
 
-        public int EmployeeCount()
+        static public int EmployeeCount()
         {
             StreamReader reader = new StreamReader("Data_Employee.txt");
             string line = "";
-            int moodvalue;
+            string moodvalue;
             int count = 0;
             while (reader.EndOfStream == false)
             {
-                
-                line = reader.ReadLine();
-                moodvalue = int.Parse(line.Substring(line.LastIndexOf(",")));
 
-                if (moodvalue != 0)
+                line = reader.ReadLine();
+                moodvalue = line.Substring(line.LastIndexOf(",") + 1);
+
+                if (moodvalue != "0")
                 {
                     count++;
                 }
@@ -96,7 +96,7 @@ namespace HYDAC
             return count;
         }
 
-        public int GuestCount()
+        static public int GuestCount()
         {
             StreamReader reader = new StreamReader("Data_Guest.txt");
             string line = "";
@@ -106,7 +106,7 @@ namespace HYDAC
             {
 
                 line = reader.ReadLine();
-                present = line.Substring(line.LastIndexOf(","));
+                present = line.Substring(line.LastIndexOf(",") + 1);
 
                 if (present == "true")
                 {
@@ -118,9 +118,9 @@ namespace HYDAC
             return count;
         }
 
-        public int TotalCount()
+        static public int TotalCount()
         {
-            return EmployeeCount()+GuestCount();
+            return EmployeeCount() + GuestCount();
         }
 
     }
