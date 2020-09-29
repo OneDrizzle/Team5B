@@ -10,6 +10,9 @@ namespace HYDAC
         private string _phone;
         private string _mail;
         private bool _present;
+        private string _goToMeetingRoom;
+
+
         public string Name
         {
             get 
@@ -17,6 +20,7 @@ namespace HYDAC
                 return _name;
             }
         }
+
         public Guest(string name, string phone, string mail)
         {
             _name = name;
@@ -27,5 +31,18 @@ namespace HYDAC
         {
             _present = present;
         }
+
+        public string GoToMeetingRoom
+        {
+            get
+            {
+                return _goToMeetingRoom;
+            }    
+            set
+            {
+                _goToMeetingRoom = value;
+            }
+        }
     }
 }
+

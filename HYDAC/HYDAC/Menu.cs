@@ -66,8 +66,6 @@ namespace HYDAC
 
             Console.WriteLine("\n(Tryk menupunkt eller 0 for at afslutte)");
 
-
-
         }
     }
 }

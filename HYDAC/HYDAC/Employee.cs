@@ -13,11 +13,14 @@ namespace HYDAC
 
         public enum Mood
         {
-            Moodless,
-            Sad,
-            Neutral,
-            Happy
+            Moodless = 0,
+            Happy = 1,
+            Neutral = 2,
+            Sad = 3
         };
+
+        public Mood Humør { get; set; }
+
 
         public Employee(string name)
         {
@@ -59,10 +62,7 @@ namespace HYDAC
 
 
         }
-        public void SetMood(Mood mood)
-        {
-            _mood = mood;
-        }
+
         public string GetName()
         {
             return _name;
@@ -70,3 +70,6 @@ namespace HYDAC
     }
 
 }
+
+
+
