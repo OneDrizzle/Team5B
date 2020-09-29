@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\brian\\Dropbox\\Datamatiker\\Csharp saved files\\FunWithMenus\\FunWithMenus\\FunWithMenus.csproj": {}
+    "C:\\Users\\Bruger\\Dropbox\\Datamatiker\\GitHub\\Team5B\\FunWithMenus\\FunWithMenus\\FunWithMenus.csproj": {}
   },
   "projects": {
-    "C:\\Users\\brian\\Dropbox\\Datamatiker\\Csharp saved files\\FunWithMenus\\FunWithMenus\\FunWithMenus.csproj": {
+    "C:\\Users\\Bruger\\Dropbox\\Datamatiker\\GitHub\\Team5B\\FunWithMenus\\FunWithMenus\\FunWithMenus.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\brian\\Dropbox\\Datamatiker\\Csharp saved files\\FunWithMenus\\FunWithMenus\\FunWithMenus.csproj",
+        "projectUniqueName": "C:\\Users\\Bruger\\Dropbox\\Datamatiker\\GitHub\\Team5B\\FunWithMenus\\FunWithMenus\\FunWithMenus.csproj",
         "projectName": "FunWithMenus",
-        "projectPath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\Csharp saved files\\FunWithMenus\\FunWithMenus\\FunWithMenus.csproj",
-        "packagesPath": "C:\\Users\\brian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\Csharp saved files\\FunWithMenus\\FunWithMenus\\obj\\",
+        "projectPath": "C:\\Users\\Bruger\\Dropbox\\Datamatiker\\GitHub\\Team5B\\FunWithMenus\\FunWithMenus\\FunWithMenus.csproj",
+        "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bruger\\Dropbox\\Datamatiker\\GitHub\\Team5B\\FunWithMenus\\FunWithMenus\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\brian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
