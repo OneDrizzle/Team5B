@@ -26,6 +26,7 @@ namespace HYDAC
             _name = name;
             _phone = phone;
             _mail = mail;
+            _present = false;
         }
         public void SetPresence(bool present)
         {

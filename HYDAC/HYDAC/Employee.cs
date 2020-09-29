@@ -7,9 +7,10 @@ namespace HYDAC
 {
     public class Employee
     {
-        private string _name;
-        private Mood _mood;
-        private Guest[] _guests;
+        private string name;
+        private Mood mood;
+        private Guest[] guests;
+        private int antalGæster;
 
         public enum Mood
         {
@@ -17,14 +18,60 @@ namespace HYDAC
             Happy = 1,
             Neutral = 2,
             Sad = 3
-        };
+        }
 
         public Mood Humør { get; set; }
+
+        public string GetName()
+        {
+            return this.name;
+        }
+
+        public int AntalGæster
+        {
+            get
+            {
+                return antalGæster;
+            }
+        }
 
 
         public Employee(string name)
         {
-            this._name = name;
+            guests = new Guest[10];
+            this.name = name;
+            antalGæster = 0;
+        }
+
+        public Guest[] Guests
+        {
+            get
+            {
+                return guests;
+            }
+            set
+            {
+                guests = value;
+            }
+
+        }
+
+        public void RemoveGuest(string name)
+        {
+            //tjeck navn på den givne gæst, og fjern gæsten fra array.
+
+            for (int i = 0; i < guests.Length; i++)
+            {
+                string temp = guests[i].ToString();
+
+                if (temp.Contains(name) == true)
+                {
+                    guests = guests.Where(e => e != guests[i]).ToArray();
+                }
+            }
+
+
+            antalGæster--;
         }
 
         public void AddGuest(Guest guest)
@@ -32,7 +79,7 @@ namespace HYDAC
             // hent data fra controller i form af et array 
             // insert data into guest array 
             // find ud af hvordan i indsætter mood i array, i den rigtige rakke føgle 
-            _guests[_guests.Length + 1] = guest;
+            //_guests[_guests.Length + 1] = guest;
 
 
             // finde ud af hvordan vi tjekker antal i huset (matematric " array.lenght / 4!" )
@@ -41,35 +88,12 @@ namespace HYDAC
 
             // En måde og tjekke hvor mange pladser brugt. Length. Index´etc
 
-
-
-
-
-        }
-        public void RemoveGuest(string name)
-        {
-            //tjeck navn på den givne gæst, og fjern gæsten fra array.
-
-            for (int i = 0; i < _guests.Length; i++)
-            {
-                string temp = _guests[i].ToString();
-
-                if (temp.Contains(name) == true)
-                {
-                    _guests = _guests.Where(e => e != _guests[i]).ToArray();
-                }
-            }
-
-
-
+            antalGæster++;
         }
 
-        public string GetName()
-        {
-            return _name;
-        }
+
+
     }
-
 }
 
 

@@ -2,22 +2,30 @@
 {
     public class MeetingRoom
     {
-        private string _name;
-        private Pamphlet _pamphlet;
+        private string name;
+        private Pamphlet pamphlet;
     
 
 
         public MeetingRoom(string name, Pamphlet pamphlet)
         {
-            this._name = name;
-            this._pamphlet = pamphlet;
+            this.name = name;
+            this.pamphlet = pamphlet;
         }
 
         public string Name
         {
             get
             {
-                return _name;
+                return name;
+            }
+        }
+
+        public Pamphlet Pamplet
+        {
+            get
+            {
+                return pamphlet;
             }
         }
 

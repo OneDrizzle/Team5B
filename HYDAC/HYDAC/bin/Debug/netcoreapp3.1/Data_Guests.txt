@@ -1,0 +1,7 @@
+﻿Jens,Bob,12345678,bob@mail.com,1A,false
+Jens,Anders,11223344,Anders@mail.com,2A,false
+Jens,Per,11122233,Perb@mail.com,6A,false
+Egon,Jens,12122323,Jens@mail.com,1B,true
+
+
+_EmployeeName,_name,_phone,_mail,meetingRoom,_present
