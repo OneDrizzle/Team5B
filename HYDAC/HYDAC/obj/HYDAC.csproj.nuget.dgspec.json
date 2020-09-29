@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bruger\\Dropbox\\Datamatiker\\GitHub\\Team5B\\HYDAC\\HYDAC\\HYDAC.csproj": {}
+    "C:\\Users\\Danie\\Documents\\GitHub\\Team5B\\HYDAC\\HYDAC\\HYDAC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bruger\\Dropbox\\Datamatiker\\GitHub\\Team5B\\HYDAC\\HYDAC\\HYDAC.csproj": {
+    "C:\\Users\\Danie\\Documents\\GitHub\\Team5B\\HYDAC\\HYDAC\\HYDAC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bruger\\Dropbox\\Datamatiker\\GitHub\\Team5B\\HYDAC\\HYDAC\\HYDAC.csproj",
+        "projectUniqueName": "C:\\Users\\Danie\\Documents\\GitHub\\Team5B\\HYDAC\\HYDAC\\HYDAC.csproj",
         "projectName": "HYDAC",
-        "projectPath": "C:\\Users\\Bruger\\Dropbox\\Datamatiker\\GitHub\\Team5B\\HYDAC\\HYDAC\\HYDAC.csproj",
-        "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bruger\\Dropbox\\Datamatiker\\GitHub\\Team5B\\HYDAC\\HYDAC\\obj\\",
+        "projectPath": "C:\\Users\\Danie\\Documents\\GitHub\\Team5B\\HYDAC\\HYDAC\\HYDAC.csproj",
+        "packagesPath": "C:\\Users\\Danie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Danie\\Documents\\GitHub\\Team5B\\HYDAC\\HYDAC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -52,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.IO;
+using System.ComponentModel.DataAnnotations;
+using System.Data.Common;
 
 namespace HYDAC
 {
@@ -69,5 +72,56 @@ namespace HYDAC
 
 
         }
+
+
+        public int EmployeeCount()
+        {
+            StreamReader reader = new StreamReader("Data_Employee.txt");
+            string line = "";
+            int moodvalue;
+            int count = 0;
+            while (reader.EndOfStream == false)
+            {
+                
+                line = reader.ReadLine();
+                moodvalue = int.Parse(line.Substring(line.LastIndexOf(",")));
+
+                if (moodvalue != 0)
+                {
+                    count++;
+                }
+            }
+            reader.Close();
+
+            return count;
+        }
+
+        public int GuestCount()
+        {
+            StreamReader reader = new StreamReader("Data_Guest.txt");
+            string line = "";
+            string present;
+            int count = 0;
+            while (reader.EndOfStream == false)
+            {
+
+                line = reader.ReadLine();
+                present = line.Substring(line.LastIndexOf(","));
+
+                if (present == "true")
+                {
+                    count++;
+                }
+            }
+            reader.Close();
+
+            return count;
+        }
+
+        public int TotalCount()
+        {
+            return EmployeeCount()+GuestCount();
+        }
+
     }
 }

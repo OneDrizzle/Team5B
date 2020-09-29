@@ -1,0 +1,12 @@
+﻿Jens,3
+Kaj,1
+Jørgen,2
+Hans,0
+Birthe,0
+Johan,1
+Johanne,3
+Søren,3
+Egon,3
+Ip,3
+
+_name,_mood
