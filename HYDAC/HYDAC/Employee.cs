@@ -76,47 +76,12 @@ namespace HYDAC
             antalGæster--;
 
             //Fjerne gæsten fra txt filen
-            string line = "";
-            string templine = "";
-            int count = 0;
-            StreamReader reader = new StreamReader("Data_Guests.txt");
-            while (reader.EndOfStream == false)
-            {
-                line = reader.ReadLine();
-                count++;
-            }
-            reader.Close();
-
-            string[] arr = new string[count];
-            reader = new StreamReader("Data_Guests.txt");
-            for (int i = 0; i < count; i++)
-            {
-                line = reader.ReadLine();
-                templine = line.Substring(line.IndexOf(",") + 1);
-                templine = templine.Remove(templine.IndexOf(","));
-                if (templine != name)
-                {
-                    arr[i] = line;
-                }
-
-
-            }
-            reader.Close();
-            StreamWriter writer = new StreamWriter("Data_Guests.txt");
-            for (int i = 0; i < count; i++)
-            {
-                
-                if (!String.IsNullOrEmpty(arr[i]))
-                {
-                    writer.WriteLine(arr[i]);
-                }
-            }
-            writer.Close();
+            Data.RemoveGuestFromTXT(name);
 
 
         }
 
-        public void AddGuest(Guest guest)
+        public void AddGuest(Guest guest, Employee employee)
         {
             // hent data fra controller i form af et array 
             // insert data into guest array 
@@ -131,6 +96,8 @@ namespace HYDAC
             // En måde og tjekke hvor mange pladser brugt. Length. Index´etc
 
             antalGæster++;
+
+            Data.AddGuestToTXT(guest, employee);
         }
 
 

@@ -21,6 +21,30 @@ namespace HYDAC
             }
         }
 
+        public string Phone
+        {
+            get
+            {
+                return _phone;
+            }
+        }
+
+        public string Mail
+        {
+            get
+            {
+                return _mail;
+            }
+        }
+
+        public bool Present
+        {
+            get
+            {
+                return _present;
+            }
+        }
+
         public Guest(string name, string phone, string mail)
         {
             _name = name;
