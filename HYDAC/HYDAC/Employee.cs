@@ -40,7 +40,7 @@ namespace HYDAC
 
         public Employee(string name)
         {
-            guests = new Guest[10];
+            guests = new Guest[20];
             this.name = name;
             antalGæster = 0;
         }
@@ -60,20 +60,20 @@ namespace HYDAC
 
         public void RemoveGuest(string name)
         {
-            //tjeck navn på den givne gæst, og fjern gæsten fra array.
-
+            // her kigger vi efter et navn i de gælde objecter og sletter object vis navnet blev fundet i en af dem.
             for (int i = 0; i < guests.Length; i++)
             {
-                string temp = guests[i].ToString();
-
-                if (temp.Contains(name) == true)
+                if (guests[i].Name == name)
                 {
                     guests = guests.Where(e => e != guests[i]).ToArray();
+
+                    antalGæster--;
+                    Array.Resize<Guest>(ref guests, 20);
+                    break;
                 }
             }
 
 
-            antalGæster--;
 
             //Fjerne gæsten fra txt filen
             Data.RemoveGuestFromTXT(name);
@@ -83,6 +83,8 @@ namespace HYDAC
 
         public void AddGuest(Guest guest, Employee employee)
         {
+            guests[antalGæster] = guest;
+
             // hent data fra controller i form af et array 
             // insert data into guest array 
             // find ud af hvordan i indsætter mood i array, i den rigtige rakke føgle 
