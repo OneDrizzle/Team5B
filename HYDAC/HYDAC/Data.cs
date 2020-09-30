@@ -7,7 +7,21 @@ namespace HYDAC
 {
     public class Data
     {
-                
+
+
+        static public int NrOfEmployess()
+        {
+            int lineCount = 0;
+            StreamReader reader = new StreamReader("Data_Employees.txt");
+            while (reader.EndOfStream == false)
+            {
+                reader.ReadLine();
+                lineCount++;
+            }
+            return lineCount;
+        }
+
+
         static public int EmployeeCount() //Tæller antal emplyess til stede
         {
             StreamReader reader = new StreamReader("Data_Employee.txt");
