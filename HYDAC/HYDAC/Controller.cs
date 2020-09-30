@@ -91,7 +91,13 @@ namespace HYDAC
             RegisterGuest(name: guestName, phone: guestTLF, mail: guestMail);
 
             Console.WriteLine("Vælg mødelokale");
-            string meetingRroom = meetingRooms[0].Name;
+            Console.Write("LilleStue tast : 1");
+            Console.Write("StillingKantine tast : 2");
+            Console.Write("StillingStueetage tast : 3");
+            int LokaleValg = int.Parse(Console.ReadLine());
+            LokaleValg = LokaleValg - 1;
+            
+            string meetingRroom = meetingRooms[LokaleValg].Name;
             SelectMeetingRoom(meetingRroom);
         }
 
