@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using HYDACTesTMenu;
+using System;
 
 namespace HYDAC
 {
@@ -11,7 +12,8 @@ namespace HYDAC
     {
         private string _name;
         private Mood _mood;
-        private Guest[] _guests = new Guest[10];
+        private Guest[] _guests = new Guest[20];
+        private int _antalGæst = 0;
 
         public enum Mood
         {
@@ -26,9 +28,10 @@ namespace HYDAC
             this._name = name;
         }
 
-        public void AddGuest(string name, string phone, string mail)
+        public void AddGuest(Guest guest)
         {
-            _guests[(_guests.Length - (_guests.Length - 1))] = new Guest(name, phone, mail);
+            _guests[_antalGæst] = guest;
+            _antalGæst++;
             // hent data fra controller i form af et array 
             // insert data into guest array 
             // find ud af hvordan i indsætter mood i array, i den rigtige rakke føgle 
@@ -58,6 +61,8 @@ namespace HYDAC
                 if (_guests[i].Name == name)
                 {
                     _guests = _guests.Where(e => e != _guests[i]).ToArray();
+                    _antalGæst--;
+                    Array.Resize<Guest>(ref _guests, 20);
                     break;
                 }
             }
