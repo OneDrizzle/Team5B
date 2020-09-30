@@ -85,43 +85,58 @@ namespace HYDAC
             SelectEmployee(employeeName);
 
             Console.WriteLine("Registrer gæst med navn, tlf, og mail");
+            Console.Write("Navn: ");
             string guestName = Console.ReadLine();
+            Console.Write("TLF: ");
             string guestTLF = Console.ReadLine();
+            Console.Write("Email: ");
             string guestMail = Console.ReadLine();
             RegisterGuest(name: guestName, phone: guestTLF, mail: guestMail);
 
             Console.WriteLine("Vælg mødelokale");
-            string meetingRroom = meetingRooms[0].Name;
+            Console.Write("LilleStue tast : 1");
+            Console.Write("StillingKantine tast : 2");
+            Console.Write("StillingStueetage tast : 3");
+            int LokaleValg = int.Parse(Console.ReadLine());
+            LokaleValg = LokaleValg - 1;
+
+            string meetingRroom = meetingRooms[LokaleValg].Name;
             SelectMeetingRoom(meetingRroom);
         }
 
-        public void ReceiveGuest(string name)
+
+        public Guest SelectGuest(string employeeName)
         {
             int j = 0;
-            int counter = 0;
-            //gæst til stede sættes til true
-            Console.WriteLine("Indtast dit navn");
-
-
             for (int i = 0; i < employees.Length; i++)  //tjekker employees igennem
             {
-                if(employees[i].AntalGæster > 0)
+                if (employees[i].AntalGæster > 0)        //Tjekker om employee har mere end 0 gæster
                 {
-                    while (employees[i].Guests[j] != null)
+                    while (employees[i].Guests[j] != null)  //Kører så længe der er gæster i gæste
                     {
-                        if (name == employees[i].Guests[j].Name)
+                        if (employeeName == employees[i].Guests[j].Name)    //Hvis gæstens indtastede navn passer med et navn i emplyee gæste array
                         {
-                            selectedGuest = employees[i].Guests[j];
-                            
+                           selectedGuest = employees[i].Guests[j];     //gæsten sættes til at være selected guest
+
                         }
                         j++;
                     }
                     j = 0;
                 }
-
             }
+            return selectedGuest;
+        }
+
+
+        public void ReceiveGuest(string name)
+        {
+            //int j = 0;
+            //int counter = 0;
+            Console.WriteLine("Indtast dit navn");
+
+            SelectGuest(name);
             
-            selectedGuest.SetPresence(true);
+            selectedGuest.SetPresence(true);            //gæst til stede sættes til true
             Console.WriteLine("gå til: " + selectedGuest.GoToMeetingRoom);
 
             for(int i=0; i<meetingRooms.Length;i++)
@@ -137,8 +152,22 @@ namespace HYDAC
             //ikke implementeret - Besked sendes til medarbejder om ankomst 
         }
 
-        public void CheckOutGuest()
+        public void CheckOutGuest(string employeeName, string guestName)
         {
+            //Console.WriteLine("vælg employee");
+            //string employeeName = Console.ReadLine();   //Selecter employee
+            SelectEmployee(employeeName);   
+
+            //Console.WriteLine("vælg gæst du vil tjekke ud");
+            //string guestName = Console.ReadLine();
+            selectedGuest = SelectGuest(employeeName);
+            selectedGuest.SetPresence(false);            //gæst til stede sættes til false
+            selectedEmployee.RemoveGuest(guestName);
+
+
+
+
+
 
         }
 

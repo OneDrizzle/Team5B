@@ -1,4 +1,5 @@
-﻿using HYDACTesTMenu;
+﻿using HYDAC;
+using HYDACTesTMenu;
 using System;
 
 namespace HydacMenu
@@ -7,7 +8,18 @@ namespace HydacMenu
     {
         static void Main(string[] args)
         {
-            
+
+            Employee emp = new Employee("John");
+            emp.AddGuest("John", "00000", "mail");
+
+            Console.ReadLine();
+
+
+
+
+
+
+            /*
             Guest[] _guests = new Guest[10];
             int counter = 0; // holder styr på hvor mange gæster der er oprettet
 
