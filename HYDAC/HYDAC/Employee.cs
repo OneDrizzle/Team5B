@@ -60,7 +60,7 @@ namespace HYDAC
 
         public void RemoveGuest(string name)
         {
-            // her kigger vi efter et navn i de gælde objecter og sletter object vis navnet blev fundet i en af dem.
+            // her kigger vi efter et navn i gæste objecter og sletter object vis navnet blev fundet i en af dem.
             for (int i = 0; i < guests.Length; i++)
             {
                 if (guests[i].Name == name)
@@ -73,30 +73,13 @@ namespace HYDAC
                 }
             }
 
-
-
             //Fjerne gæsten fra txt filen
             Data.RemoveGuestFromTXT(name);
-
-
         }
 
         public void AddGuest(Guest guest, Employee employee)
         {
             guests[antalGæster] = guest;
-
-            // hent data fra controller i form af et array 
-            // insert data into guest array 
-            // find ud af hvordan i indsætter mood i array, i den rigtige rakke føgle 
-            //_guests[_guests.Length + 1] = guest;
-
-
-            // finde ud af hvordan vi tjekker antal i huset (matematric " array.lenght / 4!" )
-
-
-
-            // En måde og tjekke hvor mange pladser brugt. Length. Index´etc
-
             antalGæster++;
 
             Data.AddGuestToTXT(guest, employee);
