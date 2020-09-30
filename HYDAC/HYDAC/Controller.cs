@@ -85,8 +85,11 @@ namespace HYDAC
             SelectEmployee(employeeName);
 
             Console.WriteLine("Registrer gæst med navn, tlf, og mail");
+            Console.Write("Navn: ");
             string guestName = Console.ReadLine();
+            Console.Write("TLF: ");
             string guestTLF = Console.ReadLine();
+            Console.Write("Email: ");
             string guestMail = Console.ReadLine();
             RegisterGuest(name: guestName, phone: guestTLF, mail: guestMail);
 
@@ -99,19 +102,18 @@ namespace HYDAC
         {
             int j = 0;
             int counter = 0;
-            //gæst til stede sættes til true
             Console.WriteLine("Indtast dit navn");
 
 
             for (int i = 0; i < employees.Length; i++)  //tjekker employees igennem
             {
-                if(employees[i].AntalGæster > 0)
+                if(employees[i].AntalGæster > 0)        //Tjekker om employee har mere end 0 gæster
                 {
-                    while (employees[i].Guests[j] != null)
+                    while (employees[i].Guests[j] != null)  //Kører så længe der er gæster i gæste
                     {
-                        if (name == employees[i].Guests[j].Name)
+                        if (name == employees[i].Guests[j].Name)    //Hvis gæstens indtastede navn passer med et navn i emplyee gæste array
                         {
-                            selectedGuest = employees[i].Guests[j];
+                            selectedGuest = employees[i].Guests[j];     //gæsten sættes til at være selected guest
                             
                         }
                         j++;
@@ -121,7 +123,7 @@ namespace HYDAC
 
             }
             
-            selectedGuest.SetPresence(true);
+            selectedGuest.SetPresence(true);            //gæst til stede sættes til true
             Console.WriteLine("gå til: " + selectedGuest.GoToMeetingRoom);
 
             for(int i=0; i<meetingRooms.Length;i++)
@@ -139,6 +141,10 @@ namespace HYDAC
 
         public void CheckOutGuest()
         {
+
+
+
+
 
         }
 
