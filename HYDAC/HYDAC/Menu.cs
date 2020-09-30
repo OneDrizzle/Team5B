@@ -72,7 +72,7 @@ namespace HYDAC
         }
 
 
-        static public int EmployeeCount()
+        static public int EmployeeCount() //Tæller antal emplyess til stede
         {
             StreamReader reader = new StreamReader("Data_Employee.txt");
             string line = "";
@@ -94,7 +94,7 @@ namespace HYDAC
             return count;
         }
 
-        static public int GuestCount()
+        static public int GuestCount() //Tæller antal gæster til stede
         {
             StreamReader reader = new StreamReader("Data_Guest.txt");
             string line = "";
@@ -116,7 +116,7 @@ namespace HYDAC
             return count;
         }
 
-        static public int TotalCount()
+        static public int TotalCount() //Antal personer i alt
         {
             return EmployeeCount() + GuestCount();
         }

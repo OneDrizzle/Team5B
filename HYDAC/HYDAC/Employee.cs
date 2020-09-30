@@ -2,6 +2,8 @@
 using System.Xml.Linq;
 using System.Collections.Generic;
 using System.Linq;
+using System.IO;
+using System;
 
 namespace HYDAC
 {
@@ -72,6 +74,46 @@ namespace HYDAC
 
 
             antalGæster--;
+
+            //Fjerne gæsten fra txt filen
+            string line = "";
+            string templine = "";
+            int count = 0;
+            StreamReader reader = new StreamReader("Data_Guests.txt");
+            while (reader.EndOfStream == false)
+            {
+                line = reader.ReadLine();
+                count++;
+            }
+            reader.Close();
+
+            string[] arr = new string[count];
+            reader = new StreamReader("Data_Guests.txt");
+            for (int i = 0; i < count; i++)
+            {
+                line = reader.ReadLine();
+                templine = line.Substring(line.IndexOf(",") + 1);
+                templine = templine.Remove(templine.IndexOf(","));
+                if (templine != name)
+                {
+                    arr[i] = line;
+                }
+
+
+            }
+            reader.Close();
+            StreamWriter writer = new StreamWriter("Data_Guests.txt");
+            for (int i = 0; i < count; i++)
+            {
+                
+                if (!String.IsNullOrEmpty(arr[i]))
+                {
+                    writer.WriteLine(arr[i]);
+                }
+            }
+            writer.Close();
+
+
         }
 
         public void AddGuest(Guest guest)
