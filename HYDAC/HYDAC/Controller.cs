@@ -5,7 +5,7 @@ namespace HYDAC
 {
     public class Controller
     {
-        private Employee[] employees = new Employee[100];
+        private Employee[] employees;
         private Employee selectedEmployee;
         private Guest selectedGuest;
         private MeetingRoom[] meetingRooms = { new MeetingRoom("LilleStue", new Pamphlet("sikkerhedsfolder til Lillestue")),
@@ -13,13 +13,35 @@ namespace HYDAC
                                                new MeetingRoom("StillingStueetage", new Pamphlet("Sikkerhedsfolder til Stueetage")) }; //*****indtast meetingrooms,sikkerhedsfolder*****
         private MeetingRoom selectedMeetingroom;
 
+        public Employee[] Employees
+        {
+            get
+            {
+                return employees;
+            }
+            set
+            {
+                employees = value;
+            }
+
+        }
+
+        public Controller()
+        {
+            int tal = 10;
+            employees = new Employee[tal];
+            employees[0] = new Employee("Hans");
+            employees[1] = new Employee("Per");
+            employees[2] = new Employee("Jens",1);
+            
+        }
 
         public bool SelectEmployee(string name)         //Metode til at finde Selected Employee
         {
 
             for (int i = 0; i < employees.Length; i++)  //tjekker employees igennem
             {
-                string temp = employees[i].GetName();   //navn på employee lægges ind i temp string
+                string temp = employees[i].Name;   //navn på employee lægges ind i temp string
 
                 if (name == temp)                       //Tjekker om name er samme som temp name
                 {
@@ -105,39 +127,33 @@ namespace HYDAC
         }
 
 
-        public Guest SelectGuest(string employeeName)
+        public void SelectGuest(string guestName)
         {
-            int j = 0;
             for (int i = 0; i < employees.Length; i++)  //tjekker employees igennem
             {
                 if (employees[i].AntalGæster > 0)        //Tjekker om employee har mere end 0 gæster
                 {
-                    while (employees[i].Guests[j] != null)  //Kører så længe der er gæster i gæste
+                    for(int j = 0; j < selectedEmployee.AntalGæster; j++)  //Kører så længe der er gæster i gæste
                     {
-                        if (employeeName == employees[i].Guests[j].Name)    //Hvis gæstens indtastede navn passer med et navn i emplyee gæste array
+                        if (guestName == employees[i].Guests[j].Name)    //Hvis gæstens indtastede navn passer med et navn i emplyee gæste array
                         {
-                           selectedGuest = employees[i].Guests[j];     //gæsten sættes til at være selected guest
+                            selectedGuest = employees[i].Guests[j];     //gæsten sættes til at være selected guest
 
-                        }
-                        j++;
+                        }  
                     }
-                    j = 0;
                 }
             }
-            return selectedGuest;
         }
 
 
-        public void ReceiveGuest(string name)
+        public void ReceiveGuest(string guestName)
         {
             //int j = 0;
             //int counter = 0;
             Console.WriteLine("Indtast dit navn");
 
-            SelectGuest(name);
-            
+            SelectGuest(guestName);
             selectedGuest.SetPresence(true);            //gæst til stede sættes til true
-            Console.WriteLine("gå til: " + selectedGuest.GoToMeetingRoom);
 
             for(int i=0; i<meetingRooms.Length;i++)
             {
@@ -148,26 +164,22 @@ namespace HYDAC
             }
 
             Console.WriteLine("læs følgende: " + selectedMeetingroom.Pamplet); //Læs brochure
+            Console.WriteLine("gå til: " + selectedGuest.GoToMeetingRoom);
 
             //ikke implementeret - Besked sendes til medarbejder om ankomst 
         }
 
-        public void CheckOutGuest(string employeeName, string guestName)
+        public void CheckOutGuest(string employeeName)
         {
             //Console.WriteLine("vælg employee");
             //string employeeName = Console.ReadLine();   //Selecter employee
             SelectEmployee(employeeName);   
 
             //Console.WriteLine("vælg gæst du vil tjekke ud");
-            //string guestName = Console.ReadLine();
-            selectedGuest = SelectGuest(employeeName);
-            selectedGuest.SetPresence(false);            //gæst til stede sættes til false
-            selectedEmployee.RemoveGuest(guestName);
-
-
-
-
-
+            string guestName = Console.ReadLine(); //**************************************************************FLAGGED*****
+            SelectGuest(guestName);
+            //selectedGuest.SetPresence(false);            //gæst til stede sættes til false
+            selectedEmployee.RemoveGuest(selectedGuest.Name);
 
         }
 

@@ -7,12 +7,22 @@ namespace HYDAC
     {
         static void Main(string[] args)
         {
-            int p = 2;
-            int[] test = new int[p];
+            Controller ct = new Controller();
+            Menu mainMenu = new Menu("hovedmenu");
+            string name = "Hans";
+            int mood = 1;
+            mainMenu.DashBoard(ct);
+            
+            ct.EmployeeArrival(name, mood);
 
-            p++;
+            //Console.WriteLine(ct.Employees[0].Name);
+            //Console.WriteLine(ct.Employees[0].Humør);
 
-            Console.Write(test.Length);
+            //Console.WriteLine(ct.Employees[1].Name);
+            //Console.WriteLine(ct.Employees[1].Humør);
+
+            //Console.WriteLine(ct.Employees[2].Name);
+            //Console.WriteLine(ct.Employees[2].Humør);
 
         }
     }

@@ -24,9 +24,12 @@ namespace HYDAC
 
         public Mood Humør { get; set; }
 
-        public string GetName()
+        public string Name
         {
-            return this.name;
+            get
+            {
+                return name;
+            }
         }
 
         public int AntalGæster
@@ -42,6 +45,13 @@ namespace HYDAC
         {
             guests = new Guest[20];
             this.name = name;
+            antalGæster = 0;
+        }
+        public Employee(string name, int mood) //evt med Guest guest ?
+        {
+            guests = new Guest[20];
+            this.name = name;
+            this.Humør = (Mood)mood;
             antalGæster = 0;
         }
 

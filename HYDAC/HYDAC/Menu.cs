@@ -56,7 +56,7 @@ namespace HYDAC
 
         public void Show()
         {
-
+            
             Console.Clear();
             Console.WriteLine(title + "\n");
 
@@ -68,6 +68,21 @@ namespace HYDAC
             }
 
             Console.WriteLine("\n(Tryk menupunkt eller 0 for at afslutte)");
+
+        }
+
+        public void DashBoard(Controller ct)
+        {
+            for (int i = 0; i < 3; i++) //*************husk ændre 3 til emp.length
+            {
+
+                if (ct.Employees[i].Humør != Employee.Mood.Moodless)
+                {
+                    Console.Write(ct.Employees[i].Name + " "); // :-)  :-|   :-( 
+                    Console.Write(ct.Employees[i].Humør);
+                }
+            }
+            
 
         }
 

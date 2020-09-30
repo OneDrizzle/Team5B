@@ -7,8 +7,7 @@ namespace HYDAC
 {
     public class Data
     {
-
-
+                
         static public int EmployeeCount() //Tæller antal emplyess til stede
         {
             StreamReader reader = new StreamReader("Data_Employee.txt");
@@ -103,7 +102,7 @@ namespace HYDAC
         {
             string GuestInfo = "";
 
-            GuestInfo += employee.GetName();
+            GuestInfo += employee.Name;
             GuestInfo += "," + guest.Name;
             GuestInfo += "," + guest.Phone;
             GuestInfo += "," + guest.Mail;
