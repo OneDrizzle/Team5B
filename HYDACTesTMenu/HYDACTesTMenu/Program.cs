@@ -8,11 +8,29 @@ namespace HydacMenu
     {
         static void Main(string[] args)
         {
+            
 
-            Employee emp = new Employee("John");
-            emp.AddGuest("John", "00000", "mail");
+            Employee emp = new Employee("hans");
+
+            Employee selectedEmployee;
+            Guest selectedGuest;
+
+            selectedGuest = new Guest("john", "111111", "mail");
+            emp.AddGuest(selectedGuest);
+            selectedGuest = new  Guest("john2", "222222", "mail");
+            emp.AddGuest(selectedGuest);
+
+            emp.RemoveGuest("john");
+
+            selectedGuest = new Guest("brian", "333333", "mail");
+            emp.AddGuest(selectedGuest);
+            selectedGuest = new Guest("mikkel", "444444", "mail");
+            emp.AddGuest(selectedGuest);
+
 
             Console.ReadLine();
+
+
 
 
 

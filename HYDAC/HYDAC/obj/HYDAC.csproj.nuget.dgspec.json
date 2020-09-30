@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Datamatiker\\Team5B\\HYDAC\\HYDAC\\HYDAC.csproj": {}
+    "C:\\Users\\mgc75\\Documents\\GitHub\\Team5B\\HYDAC\\HYDAC\\HYDAC.csproj": {}
   },
   "projects": {
-    "D:\\Datamatiker\\Team5B\\HYDAC\\HYDAC\\HYDAC.csproj": {
+    "C:\\Users\\mgc75\\Documents\\GitHub\\Team5B\\HYDAC\\HYDAC\\HYDAC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Datamatiker\\Team5B\\HYDAC\\HYDAC\\HYDAC.csproj",
+        "projectUniqueName": "C:\\Users\\mgc75\\Documents\\GitHub\\Team5B\\HYDAC\\HYDAC\\HYDAC.csproj",
         "projectName": "HYDAC",
-        "projectPath": "D:\\Datamatiker\\Team5B\\HYDAC\\HYDAC\\HYDAC.csproj",
-        "packagesPath": "C:\\Users\\msche\\.nuget\\packages\\",
-        "outputPath": "D:\\Datamatiker\\Team5B\\HYDAC\\HYDAC\\obj\\",
+        "projectPath": "C:\\Users\\mgc75\\Documents\\GitHub\\Team5B\\HYDAC\\HYDAC\\HYDAC.csproj",
+        "packagesPath": "C:\\Users\\mgc75\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mgc75\\Documents\\GitHub\\Team5B\\HYDAC\\HYDAC\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\mgc75\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
