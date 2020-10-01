@@ -58,10 +58,10 @@ namespace HYDAC
             {
                 Array.Resize<Guest>(ref guests, (antalArrayGæster + 1));
                 guests[i] = new Guest(
-                    Data.GuestNameList(name, i), 
-                    Data.GuestTLFList(name, i) , 
-                    Data.GuestMailList(name, i), 
-                    Data.GuestPresentList(name, i), 
+                    Data.GuestNameList(name, i),
+                    Data.GuestTLFList(name, i),
+                    Data.GuestMailList(name, i),
+                    Data.GuestPresentList(name, i),
                     Data.GuestRoomList(name, i));
                 antalArrayGæster++;
             }

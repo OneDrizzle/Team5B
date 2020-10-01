@@ -31,7 +31,7 @@ namespace HYDAC
             for (int i = 0; i < employeeCount; i++)
             {
                 line = reader.ReadLine();
-                line = line.Substring(line.Length - 1, 1);
+                line = line.Remove(line.LastIndexOf(","));
                 arr[i] = line;
             }
             reader.Close();
@@ -47,13 +47,28 @@ namespace HYDAC
             StreamReader reader = new StreamReader("Data_Employees.txt");
             for (int i = 0; i < employeeCount; i++)
             {
+
                 line = reader.ReadLine();
-                line = line.Substring(line.LastIndexOf(",") + 1);
+                line = line.Substring(line.Length - 1, 1);
                 arr[i] = int.Parse(line);
             }
             reader.Close();
 
             return arr[plads];
+        }
+
+
+        static public int NrOfGuests()
+        {
+            int lineCount = 0;
+            StreamReader reader = new StreamReader("Data_Guests.txt");
+            while (reader.EndOfStream == false)
+            {
+                reader.ReadLine();
+                lineCount++;
+            }
+            reader.Close();
+            return lineCount;
         }
 
         static public int GuestPerSpecificEmployee(string employeeName)
@@ -63,7 +78,7 @@ namespace HYDAC
             StreamReader reader = new StreamReader("Data_Guests.txt");
             while (reader.EndOfStream == false)
             {
-                reader.ReadLine();
+                line = reader.ReadLine();
                 if (employeeName == line.Remove(line.IndexOf(",")))
                 {
                     lineCount++;
@@ -74,21 +89,24 @@ namespace HYDAC
             return lineCount;
         }
 
-        static public string GuestNameList(string employeeName ,int plads)
+        static public string GuestNameList(string employeeName, int plads)
         {
             int guestCount = GuestPerSpecificEmployee(employeeName);
             string line = "";
             string[] arr = new string[guestCount];
+            int arrPlace = 0;
             StreamReader reader = new StreamReader("Data_Guests.txt");
-            for (int i = 0; i < guestCount; i++)
+            for (int i = 0; i < NrOfGuests(); i++)
             {
-                
-                    line = reader.ReadLine();
+
+                line = reader.ReadLine();
+
                 if (employeeName == line.Remove(line.IndexOf(",")))
                 {
                     line = line.Substring(line.IndexOf(",") + 1);
                     line = line.Remove(line.IndexOf(","));
-                    arr[i] = line;
+                    arr[arrPlace] = line;
+                    arrPlace++;
                 }
             }
             reader.Close();
@@ -101,16 +119,19 @@ namespace HYDAC
             int guestCount = GuestPerSpecificEmployee(employeeName);
             string line = "";
             string[] arr = new string[guestCount];
+            int arrPlace = 0;
             StreamReader reader = new StreamReader("Data_Guests.txt");
-            for (int i = 0; i < guestCount; i++)
+            for (int i = 0; i < NrOfGuests(); i++)
             {
+                line = reader.ReadLine();
+
                 if (employeeName == line.Remove(line.IndexOf(",")))
                 {
-                    line = reader.ReadLine();
                     line = line.Substring(line.IndexOf(",") + 1);
                     line = line.Substring(line.IndexOf(",") + 1);
                     line = line.Remove(line.IndexOf(","));
-                    arr[i] = line;
+                    arr[arrPlace] = line;
+                    arrPlace++;
                 }
             }
             reader.Close();
@@ -123,17 +144,20 @@ namespace HYDAC
             int guestCount = GuestPerSpecificEmployee(employeeName);
             string line = "";
             string[] arr = new string[guestCount];
+            int arrPlace = 0;
             StreamReader reader = new StreamReader("Data_Guests.txt");
-            for (int i = 0; i < guestCount; i++)
+            for (int i = 0; i < NrOfGuests(); i++)
             {
+                line = reader.ReadLine();
+
                 if (employeeName == line.Remove(line.IndexOf(",")))
                 {
-                    line = reader.ReadLine();
                     line = line.Substring(line.IndexOf(",") + 1);
                     line = line.Substring(line.IndexOf(",") + 1);
                     line = line.Substring(line.IndexOf(",") + 1);
                     line = line.Remove(line.IndexOf(","));
-                    arr[i] = line;
+                    arr[arrPlace] = line;
+                    arrPlace++;
                 }
             }
             reader.Close();
@@ -146,18 +170,21 @@ namespace HYDAC
             int guestCount = GuestPerSpecificEmployee(employeeName);
             string line = "";
             string[] arr = new string[guestCount];
+            int arrPlace = 0;
             StreamReader reader = new StreamReader("Data_Guests.txt");
-            for (int i = 0; i < guestCount; i++)
+            for (int i = 0; i < NrOfGuests(); i++)
             {
+                line = reader.ReadLine();
+
                 if (employeeName == line.Remove(line.IndexOf(",")))
                 {
-                    line = reader.ReadLine();
                     line = line.Substring(line.IndexOf(",") + 1);
                     line = line.Substring(line.IndexOf(",") + 1);
                     line = line.Substring(line.IndexOf(",") + 1);
                     line = line.Substring(line.IndexOf(",") + 1);
                     line = line.Remove(line.IndexOf(","));
-                    arr[i] = line;
+                    arr[arrPlace] = line;
+                    arrPlace++;
                 }
             }
             reader.Close();
@@ -170,19 +197,21 @@ namespace HYDAC
             int guestCount = GuestPerSpecificEmployee(employeeName);
             string line = "";
             string[] arr = new string[guestCount];
+            int arrPlace = 0;
             StreamReader reader = new StreamReader("Data_Guests.txt");
-            for (int i = 0; i < guestCount; i++)
+            for (int i = 0; i < NrOfGuests(); i++)
             {
+                line = reader.ReadLine();
+
                 if (employeeName == line.Remove(line.IndexOf(",")))
                 {
-                    line = reader.ReadLine();
                     line = line.Substring(line.IndexOf(",") + 1);
                     line = line.Substring(line.IndexOf(",") + 1);
                     line = line.Substring(line.IndexOf(",") + 1);
                     line = line.Substring(line.IndexOf(",") + 1);
                     line = line.Substring(line.IndexOf(",") + 1);
-                    line = line.Remove(line.IndexOf(","));
-                    arr[i] = line;
+                    arr[arrPlace] = line;
+                    arrPlace++;
                 }
             }
             reader.Close();
@@ -194,7 +223,7 @@ namespace HYDAC
 
         static public int EmployeeCount() //Tæller antal employess til stede
         {
-            StreamReader reader = new StreamReader("Data_Employee.txt");
+            StreamReader reader = new StreamReader("Data_Employees.txt");
             string line = "";
             string moodvalue;
             int count = 0;
@@ -226,7 +255,7 @@ namespace HYDAC
                 line = reader.ReadLine();
                 present = line.Substring(line.LastIndexOf(",") + 1);
 
-                if (present == "true")
+                if (present == "True")
                 {
                     count++;
                 }
@@ -291,28 +320,23 @@ namespace HYDAC
             GuestInfo += "," + guest.Name;
             GuestInfo += "," + guest.Phone;
             GuestInfo += "," + guest.Mail;
+            GuestInfo += "," + guest.GoToMeetingRoom;
             GuestInfo += "," + guest.Present;
 
-            StreamWriter writer = new StreamWriter("Data_Guests.txt");
+            StreamWriter writer = new StreamWriter("Data_Guests.txt", true);
             writer.WriteLine();
+            writer.Write(GuestInfo);
             writer.Close();
         }
 
         static public void EmployeeSetMood(string name, int mood)
         {
-            int lineCount = 0;
+            int lineCount = NrOfEmployess();
             string line = "";
             string newLine = "";
-            StreamReader reader = new StreamReader("Data_Employees.txt", true);
-            while (reader.EndOfStream == false)
-            {
-                lineCount++;
-                
-
-            }
-            reader.Close();
             string[] linjer = new string[lineCount];
-            reader = new StreamReader("Data_Employees.txt", true);
+            StreamReader reader = new StreamReader("Data_Employees.txt", true);
+
             for (int i = 0; i < lineCount; i++)
             {
                 line = reader.ReadLine();
@@ -324,7 +348,7 @@ namespace HYDAC
                 }
                 else
                 {
-                    linjer[i] = reader.ReadLine();
+                    linjer[i] = line;
                 }
             }
             reader.Close();
@@ -335,7 +359,7 @@ namespace HYDAC
                 writer.WriteLine(linjer[i]);
             }
             writer.Close();
-            
+
         }
 
     }
