@@ -109,7 +109,7 @@ namespace HYDAC
             Data.RemoveGuestFromTXT(name);
         }
 
-        public void AddGuest(Guest guest, Employee employee)
+        public void AddGuest(Guest guest)
         {
             Array.Resize<Guest>(ref guests, (antalArrayGæster + 1));
             guests[antalArrayGæster] = guest;
