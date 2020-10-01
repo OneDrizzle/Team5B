@@ -28,7 +28,7 @@ namespace HYDAC
 
         public Controller()
         {
-            int tal = Data.EmployeeCount(); //Skal være max antal emplyees og ikke kun indmødte
+            int tal = Data.NrOfEmployess(); //Skal være max antal emplyees og ikke kun indmødte
             employees = new Employee[tal];
             string[] arrEmployee = new string[tal];
 
