@@ -18,6 +18,7 @@ namespace HYDAC
                 reader.ReadLine();
                 lineCount++;
             }
+            reader.Close();
             return lineCount;
         }
 
@@ -68,6 +69,8 @@ namespace HYDAC
                     lineCount++;
                 }
             }
+            reader.Close();
+
             return lineCount;
         }
 
@@ -267,6 +270,7 @@ namespace HYDAC
 
             }
             reader.Close();
+
             StreamWriter writer = new StreamWriter("Data_Guests.txt");
             for (int i = 0; i < count; i++)
             {
@@ -330,7 +334,7 @@ namespace HYDAC
             {
                 writer.WriteLine(linjer[i]);
             }
-
+            writer.Close();
             
         }
 
