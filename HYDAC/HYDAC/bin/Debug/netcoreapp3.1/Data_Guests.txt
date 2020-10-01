@@ -1,4 +1,3 @@
 Jens,Bob,12345678,bob@mail.com,1A,true
-Jens,Anders,11223344,Anders@mail.com,2A,false
-Jens,Per,11122233,Perb@mail.com,6A,false
-Kaj,Janne,85736253,janne@mail.dk,,False
+Kaj,Janne,85736253,janne@mail.dk,Lillestue,False
+Jens,B1,56416,mail@mail,LilleStue,False

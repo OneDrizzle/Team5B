@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\msche\\.nuget\\packages\\": {}
+    "C:\\Users\\Danie\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\msche\\Documents\\GitHub\\Team5B\\HYDAC\\HYDAC\\HYDAC.csproj",
+      "projectUniqueName": "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\HYDAC\\HYDAC\\HYDAC.csproj",
       "projectName": "HYDAC",
-      "projectPath": "C:\\Users\\msche\\Documents\\GitHub\\Team5B\\HYDAC\\HYDAC\\HYDAC.csproj",
-      "packagesPath": "C:\\Users\\msche\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\msche\\Documents\\GitHub\\Team5B\\HYDAC\\HYDAC\\obj\\",
+      "projectPath": "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\HYDAC\\HYDAC\\HYDAC.csproj",
+      "packagesPath": "C:\\Users\\Danie\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\HYDAC\\HYDAC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\msche\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -58,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

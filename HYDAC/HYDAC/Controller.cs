@@ -126,6 +126,7 @@ namespace HYDAC
 
             string meetingRroom = meetingRooms[LokaleValg].Name;
             SelectMeetingRoom(meetingRroom);
+            Data.AddGuestToTXT(selectedGuest, selectedEmployee);
         }
 
 
@@ -133,9 +134,9 @@ namespace HYDAC
         {
             for (int i = 0; i < employees.Length; i++)  //tjekker employees igennem
             {
-                if (employees[i].AntalGæster > 0)        //Tjekker om employee har mere end 0 gæster
+                if (employees[i].AntalArrayGæster - 1 > 0)        //Tjekker om employee har mere end 0 gæster
                 {
-                    for(int j = 0; j < selectedEmployee.AntalGæster; j++)  //Kører så længe der er gæster i gæste
+                    for(int j = 0; j < selectedEmployee.AntalArrayGæster - 1; j++)  //Kører så længe der er gæster i gæste
                     {
                         if (guestName == employees[i].Guests[j].Name)    //Hvis gæstens indtastede navn passer med et navn i emplyee gæste array
                         {

@@ -41,6 +41,14 @@ namespace HYDAC
             }
         }
 
+        public int AntalArrayGæster
+        {
+            get
+            {
+                return antalArrayGæster;
+            }
+        }
+
 
         public Employee(string name)
         {
@@ -91,22 +99,23 @@ namespace HYDAC
                     guests = guests.Where(e => e != guests[i]).ToArray();
 
                     antalArrayGæster--;
+                    antalGæster--;
                     //Array.Resize<Guest>(ref guests, (antalGæster + 1));
                     break;
                 }
             }
 
-            //Fjerne gæsten fra txt filen
+            //Fjerner gæsten fra txt filen
             Data.RemoveGuestFromTXT(name);
         }
 
         public void AddGuest(Guest guest, Employee employee)
         {
             Array.Resize<Guest>(ref guests, (antalArrayGæster + 1));
-            guests[antalGæster] = guest;
+            guests[antalArrayGæster] = guest;
+            antalArrayGæster++;
             antalGæster++;
-
-            Data.AddGuestToTXT(guest, employee);
+            
         }
 
 
