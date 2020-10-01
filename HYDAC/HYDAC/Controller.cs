@@ -59,7 +59,7 @@ namespace HYDAC
         public void RegisterGuest(string name, string phone, string mail)   //Metode til oprettelse af guest
         {
             selectedGuest = new Guest(name, phone, mail);   //Opretter/instantiere guest og tilføjer de tilhørende data             
-            selectedEmployee.AddGuest(selectedGuest, selectedEmployee);       //Selected guest bliver added til selected employee's gæste array
+            selectedEmployee.AddGuest(selectedGuest);       //Selected guest bliver added til selected employee's gæste array
 
         }
 
