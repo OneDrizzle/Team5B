@@ -43,7 +43,7 @@ namespace HYDAC
 
         public Employee(string name)
         {
-            guests = new Guest[20];
+            guests = new Guest[1];
             this.name = name;
             antalGæster = 0;
         }
@@ -88,7 +88,7 @@ namespace HYDAC
                     guests = guests.Where(e => e != guests[i]).ToArray();
 
                     antalGæster--;
-                    Array.Resize<Guest>(ref guests, 20);
+                    //Array.Resize<Guest>(ref guests, (antalGæster + 1));
                     break;
                 }
             }
@@ -99,6 +99,7 @@ namespace HYDAC
 
         public void AddGuest(Guest guest, Employee employee)
         {
+            Array.Resize<Guest>(ref guests, (antalGæster + 1));
             guests[antalGæster] = guest;
             antalGæster++;
 
