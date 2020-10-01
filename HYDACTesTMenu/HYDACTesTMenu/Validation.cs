@@ -53,7 +53,7 @@ namespace Valdation
 
 
 /*
- * InputValdationClass validate = new InputValdationClass();
+ * validation validate = new InputValdationClass();
  * if (validate.MenuInputValdation(Console.ReadLine(), 6))
  *      {      
  *          switch (validate.ReturnValue())
