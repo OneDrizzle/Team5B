@@ -13,6 +13,7 @@ namespace HYDAC
         private Mood mood;
         private Guest[] guests;
         private int antalGæster;
+        private int antalArrayGæster = 0;
 
         public enum Mood
         {
@@ -49,18 +50,20 @@ namespace HYDAC
         }
         public Employee(string name, int mood) //evt med Guest guest ?
         {
-            guests = new Guest[20];
+            guests = new Guest[1];
             this.name = name;
             this.Humør = (Mood)mood;
             antalGæster = Data.GuestPerSpecificEmployee(name);
             for (int i = 0; i < antalGæster; i++)
             {
+                Array.Resize<Guest>(ref guests, (antalArrayGæster + 1));
                 guests[i] = new Guest(
                     Data.GuestNameList(name, i), 
                     Data.GuestTLFList(name, i) , 
                     Data.GuestMailList(name, i), 
                     Data.GuestPresentList(name, i), 
                     Data.GuestRoomList(name, i));
+                antalArrayGæster++;
             }
         }
 
@@ -87,7 +90,7 @@ namespace HYDAC
                 {
                     guests = guests.Where(e => e != guests[i]).ToArray();
 
-                    antalGæster--;
+                    antalArrayGæster--;
                     //Array.Resize<Guest>(ref guests, (antalGæster + 1));
                     break;
                 }
@@ -99,7 +102,7 @@ namespace HYDAC
 
         public void AddGuest(Guest guest, Employee employee)
         {
-            Array.Resize<Guest>(ref guests, (antalGæster + 1));
+            Array.Resize<Guest>(ref guests, (antalArrayGæster + 1));
             guests[antalGæster] = guest;
             antalGæster++;
 
