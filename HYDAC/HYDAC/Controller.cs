@@ -136,14 +136,13 @@ namespace HYDAC
         {
             for (int i = 0; i < employees.Length; i++)  //tjekker employees igennem
             {
-                if (employees[i].AntalArrayGæster > 0)        //Tjekker om employee har mere end 0 gæster
+                if (Data.GuestPerSpecificEmployee(employees[i].Name) > 0)        //Tjekker om employee har mere end 0 gæster
                 {
-                    for(int j = 0; j < selectedEmployee.AntalArrayGæster; j++)  //Kører så længe der er gæster i gæste
+                    for(int j = 0; j < Data.GuestPerSpecificEmployee(employees[i].Name); j++)  //Kører så længe der er gæster i gæste
                     {
                         if (guestName == employees[i].Guests[j].Name)    //Hvis gæstens indtastede navn passer med et navn i emplyee gæste array
                         {
                             selectedGuest = employees[i].Guests[j];     //gæsten sættes til at være selected guest
-
                         }  
                     }
                 }
@@ -167,6 +166,7 @@ namespace HYDAC
             Console.WriteLine("Læs følgende: " + selectedMeetingroom.Pamphlet.Name); //Læs brochure
             Console.WriteLine("Vent på at en medarbejder henter dig");
 
+            Data.GuestSetMood(guestName);
             //ikke implementeret - Besked sendes til medarbejder om ankomst 
         }
 

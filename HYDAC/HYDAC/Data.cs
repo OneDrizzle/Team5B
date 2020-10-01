@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+
 using System.Text;
 using System.IO;
 
@@ -255,7 +256,7 @@ namespace HYDAC
                 line = reader.ReadLine();
                 present = line.Substring(line.LastIndexOf(",") + 1);
 
-                if (present == "True")
+                if (present.ToLower() == "true")
                 {
                     count++;
                 }
@@ -298,7 +299,7 @@ namespace HYDAC
 
                 if (!String.IsNullOrEmpty(arr[i]))
                 {
-                    if (count - i > 2)
+                    if (i != arr.Length-1)
                     {
                         writer.WriteLine(arr[i]);
                     }
@@ -323,7 +324,10 @@ namespace HYDAC
             GuestInfo += "," + guest.Present;
 
             StreamWriter writer = new StreamWriter("Data_Guests.txt", true);
-            writer.WriteLine();
+            if (new FileInfo("Data_Guests.txt").Length != 0)
+            {
+                writer.WriteLine();
+            }
             writer.Write(GuestInfo);
             writer.Close();
         }
@@ -334,16 +338,18 @@ namespace HYDAC
             string line = "";
             string newLine = "";
             string[] linjer = new string[lineCount];
+            bool check = false;
             StreamReader reader = new StreamReader("Data_Employees.txt", true);
 
             for (int i = 0; i < lineCount; i++)
             {
                 line = reader.ReadLine();
                 newLine = line.Remove(line.IndexOf(","));
-                if (newLine == name)
+                if (newLine == name && check == false)
                 {
                     newLine += "," + mood;
                     linjer[i] = newLine;
+                    check = true;
                 }
                 else
                 {
@@ -359,6 +365,42 @@ namespace HYDAC
             }
             writer.Close();
 
+        }
+
+        static public void GuestSetMood(string name)
+        {
+            int lineCount = NrOfGuests();
+            string line = "";
+            string newLine = "";
+            string[] linjer = new string[lineCount];
+            bool check = false;
+            StreamReader reader = new StreamReader("Data_Guests.txt");
+
+            for(int i = 0 ; i < lineCount ; i++ )
+            {
+                line = reader.ReadLine();
+                newLine = line.Substring(line.IndexOf(",")+1);
+                newLine = newLine.Remove(newLine.IndexOf(","));
+                if (newLine == name && check == false)
+                {
+                    newLine = line.Remove(line.LastIndexOf(","));
+                    newLine += "," + "true";
+                    linjer[i] = newLine;
+                    check = true;
+                }
+                else
+                {
+                    linjer[i] = line;
+                }
+            }
+            reader.Close();
+
+            StreamWriter writer = new StreamWriter("Data_Guests.txt");
+            for (int i = 0; i < lineCount; i++)
+            {
+                writer.WriteLine(linjer[i]);
+            }
+            writer.Close();
         }
 
     }

@@ -114,7 +114,8 @@ namespace HYDAC
             Array.Resize<Guest>(ref guests, (antalArrayGæster + 1));
             guests[antalArrayGæster] = guest;
             antalArrayGæster++;
-            antalGæster++;            
+            antalGæster++;
+            
         }
 
 
