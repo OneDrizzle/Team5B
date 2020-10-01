@@ -18,11 +18,181 @@ namespace HYDAC
                 reader.ReadLine();
                 lineCount++;
             }
+            reader.Close();
             return lineCount;
         }
 
+        static public string EmployeeNameList(int plads)
+        {
+            int employeeCount = NrOfEmployess();
+            string line = "";
+            string[] arr = new string[employeeCount];
+            StreamReader reader = new StreamReader("Data_Employees.txt");
+            for (int i = 0; i < employeeCount; i++)
+            {
+                line = reader.ReadLine();
+                line = line.Substring(line.Length - 1, 1);
+                arr[i] = line;
+            }
+            reader.Close();
 
-        static public int EmployeeCount() //Tæller antal emplyess til stede
+            return arr[plads];
+        }
+
+        static public int EmployeeMoodList(int plads)
+        {
+            int employeeCount = NrOfEmployess();
+            string line = "";
+            int[] arr = new int[employeeCount];
+            StreamReader reader = new StreamReader("Data_Employees.txt");
+            for (int i = 0; i < employeeCount; i++)
+            {
+                line = reader.ReadLine();
+                line = line.Substring(line.LastIndexOf(",") + 1);
+                arr[i] = int.Parse(line);
+            }
+            reader.Close();
+
+            return arr[plads];
+        }
+
+        static public int GuestPerSpecificEmployee(string employeeName)
+        {
+            int lineCount = 0;
+            string line = "";
+            StreamReader reader = new StreamReader("Data_Guests.txt");
+            while (reader.EndOfStream == false)
+            {
+                reader.ReadLine();
+                if (employeeName == line.Remove(line.IndexOf(",")))
+                {
+                    lineCount++;
+                }
+            }
+            reader.Close();
+
+            return lineCount;
+        }
+
+        static public string GuestNameList(string employeeName ,int plads)
+        {
+            int guestCount = GuestPerSpecificEmployee(employeeName);
+            string line = "";
+            string[] arr = new string[guestCount];
+            StreamReader reader = new StreamReader("Data_Guests.txt");
+            for (int i = 0; i < guestCount; i++)
+            {
+                
+                    line = reader.ReadLine();
+                if (employeeName == line.Remove(line.IndexOf(",")))
+                {
+                    line = line.Substring(line.IndexOf(",") + 1);
+                    line = line.Remove(line.IndexOf(","));
+                    arr[i] = line;
+                }
+            }
+            reader.Close();
+
+            return arr[plads];
+        }
+
+        static public string GuestTLFList(string employeeName, int plads)
+        {
+            int guestCount = GuestPerSpecificEmployee(employeeName);
+            string line = "";
+            string[] arr = new string[guestCount];
+            StreamReader reader = new StreamReader("Data_Guests.txt");
+            for (int i = 0; i < guestCount; i++)
+            {
+                if (employeeName == line.Remove(line.IndexOf(",")))
+                {
+                    line = reader.ReadLine();
+                    line = line.Substring(line.IndexOf(",") + 1);
+                    line = line.Substring(line.IndexOf(",") + 1);
+                    line = line.Remove(line.IndexOf(","));
+                    arr[i] = line;
+                }
+            }
+            reader.Close();
+
+            return arr[plads];
+        }
+
+        static public string GuestMailList(string employeeName, int plads)
+        {
+            int guestCount = GuestPerSpecificEmployee(employeeName);
+            string line = "";
+            string[] arr = new string[guestCount];
+            StreamReader reader = new StreamReader("Data_Guests.txt");
+            for (int i = 0; i < guestCount; i++)
+            {
+                if (employeeName == line.Remove(line.IndexOf(",")))
+                {
+                    line = reader.ReadLine();
+                    line = line.Substring(line.IndexOf(",") + 1);
+                    line = line.Substring(line.IndexOf(",") + 1);
+                    line = line.Substring(line.IndexOf(",") + 1);
+                    line = line.Remove(line.IndexOf(","));
+                    arr[i] = line;
+                }
+            }
+            reader.Close();
+
+            return arr[plads];
+        }
+
+        static public string GuestRoomList(string employeeName, int plads)
+        {
+            int guestCount = GuestPerSpecificEmployee(employeeName);
+            string line = "";
+            string[] arr = new string[guestCount];
+            StreamReader reader = new StreamReader("Data_Guests.txt");
+            for (int i = 0; i < guestCount; i++)
+            {
+                if (employeeName == line.Remove(line.IndexOf(",")))
+                {
+                    line = reader.ReadLine();
+                    line = line.Substring(line.IndexOf(",") + 1);
+                    line = line.Substring(line.IndexOf(",") + 1);
+                    line = line.Substring(line.IndexOf(",") + 1);
+                    line = line.Substring(line.IndexOf(",") + 1);
+                    line = line.Remove(line.IndexOf(","));
+                    arr[i] = line;
+                }
+            }
+            reader.Close();
+
+            return arr[plads];
+        }
+
+        static public string GuestPresentList(string employeeName, int plads)
+        {
+            int guestCount = GuestPerSpecificEmployee(employeeName);
+            string line = "";
+            string[] arr = new string[guestCount];
+            StreamReader reader = new StreamReader("Data_Guests.txt");
+            for (int i = 0; i < guestCount; i++)
+            {
+                if (employeeName == line.Remove(line.IndexOf(",")))
+                {
+                    line = reader.ReadLine();
+                    line = line.Substring(line.IndexOf(",") + 1);
+                    line = line.Substring(line.IndexOf(",") + 1);
+                    line = line.Substring(line.IndexOf(",") + 1);
+                    line = line.Substring(line.IndexOf(",") + 1);
+                    line = line.Substring(line.IndexOf(",") + 1);
+                    line = line.Remove(line.IndexOf(","));
+                    arr[i] = line;
+                }
+            }
+            reader.Close();
+
+            return arr[plads];
+        }
+
+
+
+        static public int EmployeeCount() //Tæller antal employess til stede
         {
             StreamReader reader = new StreamReader("Data_Employee.txt");
             string line = "";
@@ -46,7 +216,7 @@ namespace HYDAC
 
         static public int GuestCount() //Tæller antal gæster til stede
         {
-            StreamReader reader = new StreamReader("Data_Guest.txt");
+            StreamReader reader = new StreamReader("Data_Guests.txt");
             string line = "";
             string present;
             int count = 0;
@@ -100,6 +270,7 @@ namespace HYDAC
 
             }
             reader.Close();
+
             StreamWriter writer = new StreamWriter("Data_Guests.txt");
             for (int i = 0; i < count; i++)
             {
@@ -163,7 +334,7 @@ namespace HYDAC
             {
                 writer.WriteLine(linjer[i]);
             }
-
+            writer.Close();
             
         }
 
