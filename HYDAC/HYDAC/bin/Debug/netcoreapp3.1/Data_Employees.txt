@@ -1,6 +1,6 @@
-﻿Jens,3
-Kaj,1
-Jørgen,2
+Jens,1
+Kaj,3
+Jørgen,0
 Hans,0
 Birthe,0
 Johan,1

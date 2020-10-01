@@ -1,3 +1,4 @@
 Jens,Bob,12345678,bob@mail.com,1A,true
 Kaj,Janne,85736253,janne@mail.dk,Lillestue,False
 Jens,B1,56416,mail@mail,LilleStue,False
+Jens,d,a,s,StillingKantine,False

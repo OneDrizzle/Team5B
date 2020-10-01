@@ -275,17 +275,9 @@ namespace HYDAC
         {
             string line = "";
             string templine = "";
-            int count = 0;
-            StreamReader reader = new StreamReader("Data_Guests.txt");
-            while (reader.EndOfStream == false)
-            {
-                line = reader.ReadLine();
-                count++;
-            }
-            reader.Close();
-
+            int count = NrOfGuests();           
             string[] arr = new string[count];
-            reader = new StreamReader("Data_Guests.txt");
+            StreamReader reader = new StreamReader("Data_Guests.txt");
             for (int i = 0; i < count; i++)
             {
                 line = reader.ReadLine();
@@ -306,7 +298,14 @@ namespace HYDAC
 
                 if (!String.IsNullOrEmpty(arr[i]))
                 {
-                    writer.WriteLine(arr[i]);
+                    if (count - i > 2)
+                    {
+                        writer.WriteLine(arr[i]);
+                    }
+                    else 
+                    {
+                        writer.Write(arr[i]);
+                    }
                 }
             }
             writer.Close();

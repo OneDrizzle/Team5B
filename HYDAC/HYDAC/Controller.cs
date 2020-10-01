@@ -88,6 +88,7 @@ namespace HYDAC
             if (checkEmployee)
             {
                 selectedEmployee.Humør = (Employee.Mood)mood;
+                Data.EmployeeSetMood(name, mood);
             }
 
         }
@@ -99,6 +100,7 @@ namespace HYDAC
             if (checkEmployee)
             {
                 selectedEmployee.Humør = Employee.Mood.Moodless;
+                Data.EmployeeSetMood(name, 0);
             }
 
         }
@@ -134,9 +136,9 @@ namespace HYDAC
         {
             for (int i = 0; i < employees.Length; i++)  //tjekker employees igennem
             {
-                if (employees[i].AntalArrayGæster - 1 > 0)        //Tjekker om employee har mere end 0 gæster
+                if (employees[i].AntalArrayGæster > 0)        //Tjekker om employee har mere end 0 gæster
                 {
-                    for(int j = 0; j < selectedEmployee.AntalArrayGæster - 1; j++)  //Kører så længe der er gæster i gæste
+                    for(int j = 0; j < selectedEmployee.AntalArrayGæster; j++)  //Kører så længe der er gæster i gæste
                     {
                         if (guestName == employees[i].Guests[j].Name)    //Hvis gæstens indtastede navn passer med et navn i emplyee gæste array
                         {
