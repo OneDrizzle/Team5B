@@ -11,9 +11,12 @@ namespace HYDAC
             Menu mainMenu = new Menu("hovedmenu");
             string name = "Hans";
             int mood = 1;
-            mainMenu.DashBoard(ct);
             
             ct.EmployeeArrival(name, mood);
+            ct.EmployeeDeparture(name);
+
+            mainMenu.DashBoard(ct);
+
 
             //Console.WriteLine(ct.Employees[0].Name);
             //Console.WriteLine(ct.Employees[0].Humør);

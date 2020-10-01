@@ -21,7 +21,7 @@
             }
         }
 
-        public Pamphlet Pamplet
+        public Pamphlet Pamphlet
         {
             get
             {
