@@ -67,27 +67,49 @@ namespace HYDAC
                 Console.WriteLine(mellemrum + menuItems[i].Title);
             }
 
-            Console.WriteLine("\n(Tryk menupunkt eller 0 for at afslutte)");
+            Console.WriteLine("\n(Indtast menupunkt)");
 
         }
 
         public void DashBoard(Controller ct)
         {
-            for (int i = 0; i < 3; i++) //*************husk ændre 3 til emp.length
-            {
+            Console.Clear();
+            int antalMennesker = Data.TotalCount();
 
-                if (ct.Employees[i].Humør != Employee.Mood.Moodless)
-                {
-                    Console.Write(ct.Employees[i].Name + " "); // :-)  :-|   :-( 
-                    Console.Write(ct.Employees[i].Humør);
+            Console.WriteLine("Tilstedeværende personer i HYDAC: " + Data.TotalCount() + "\n");
+
+            Console.WriteLine("Liste over medarbejdere mødt ind:");
+
+            for (int i = 0; i < ct.Employees.Length; i++) //*************husk ændre 3 til emp.length
+            {
+                // bliver ikke vist ->>   0 = moodless
+                if (ct.Employees[i].Humør != Employee.Mood.Moodless)    // 1 =      if humør == happy -> print( smiley )
+                {                                                       // 2 = neutral
+                                                                        // 3 = Sad
+                    Console.Write("\t {0,-30} ", ct.Employees[i].Name);          // :-)  :-|   :-(
+
+                    switch ((int)ct.Employees[i].Humør)
+                    {
+                        case 1:
+                            Console.WriteLine(":-)");
+                            break;
+
+                        case 2:
+                            Console.WriteLine(":-|");
+                            break;
+
+                        case 3:
+                            Console.WriteLine(":-(");
+                            break;
+                    }
                 }
+
             }
-            
 
         }
 
 
-        
+
 
     }
 }

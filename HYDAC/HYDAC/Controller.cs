@@ -28,7 +28,7 @@ namespace HYDAC
 
         public Controller()
         {
-            int tal = Data.EmployeeCount();
+            int tal = Data.EmployeeCount(); //Skal være max antal emplyees og ikke kun indmødte
             employees = new Employee[tal];
             string[] arrEmployee = new string[tal];
 
@@ -105,7 +105,7 @@ namespace HYDAC
 
         public void InviteGuest()
         {
-            Console.WriteLine("vælg employee");
+            Console.Write("Indtast dit navn: ");
             string employeeName = Console.ReadLine();
             SelectEmployee(employeeName);
 
@@ -118,10 +118,9 @@ namespace HYDAC
             string guestMail = Console.ReadLine();
             RegisterGuest(name: guestName, phone: guestTLF, mail: guestMail);
 
-            Console.WriteLine("Vælg mødelokale");
-            Console.Write("LilleStue tast : 1");
-            Console.Write("StillingKantine tast : 2");
-            Console.Write("StillingStueetage tast : 3");
+            Console.WriteLine("\nVælg mødelokale");
+            Console.Write("1. LilleStue\t2. StillingKantine\t3. StillingStueetage");
+            Console.WriteLine("\n(Indtast menupunkt)");
             int LokaleValg = int.Parse(Console.ReadLine());
             LokaleValg = LokaleValg - 1;
 
@@ -151,10 +150,6 @@ namespace HYDAC
 
         public void ReceiveGuest(string guestName)
         {
-            //int j = 0;
-            //int counter = 0;
-            Console.WriteLine("Indtast dit navn");
-
             SelectGuest(guestName);
             selectedGuest.SetPresence(true);            //gæst til stede sættes til true
 
@@ -166,19 +161,17 @@ namespace HYDAC
                 }
             }
 
-            Console.WriteLine("læs følgende: " + selectedMeetingroom.Pamplet); //Læs brochure
-            Console.WriteLine("gå til: " + selectedGuest.GoToMeetingRoom);
+            Console.WriteLine("Læs følgende: " + selectedMeetingroom.Pamphlet.Name); //Læs brochure
+            Console.WriteLine("Vent på at en medarbejder henter dig");
 
             //ikke implementeret - Besked sendes til medarbejder om ankomst 
         }
 
         public void CheckOutGuest(string employeeName)
         {
-            //Console.WriteLine("vælg employee");
-            //string employeeName = Console.ReadLine();   //Selecter employee
             SelectEmployee(employeeName);   
 
-            //Console.WriteLine("vælg gæst du vil tjekke ud");
+            Console.WriteLine("Indtast navn på gæst der skal tjekkes ud:");
             string guestName = Console.ReadLine(); //**************************************************************FLAGGED*****
             SelectGuest(guestName);
             //selectedGuest.SetPresence(false);            //gæst til stede sættes til false
