@@ -52,6 +52,23 @@ namespace HYDAC
             _mail = mail;
             _present = false;
         }
+
+        public Guest(string name, string phone, string mail, string present, string room)
+        {
+            _name = name;
+            _phone = phone;
+            _mail = mail;
+            _goToMeetingRoom = room;
+            if (present == "true")
+            {
+                _present = true;
+            }
+            else 
+            {
+                _present = false;
+            }
+        }
+
         public void SetPresence(bool present)
         {
             _present = present;

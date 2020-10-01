@@ -52,8 +52,18 @@ namespace HYDAC
             guests = new Guest[20];
             this.name = name;
             this.Humør = (Mood)mood;
-            antalGæster = 0;
+            antalGæster = Data.GuestPerSpecificEmployee(name);
+            for (int i = 0; i < antalGæster; i++)
+            {
+                guests[i] = new Guest(
+                    Data.GuestNameList(name, i), 
+                    Data.GuestTLFList(name, i) , 
+                    Data.GuestMailList(name, i), 
+                    Data.GuestPresentList(name, i), 
+                    Data.GuestRoomList(name, i));
+            }
         }
+
 
         public Guest[] Guests
         {

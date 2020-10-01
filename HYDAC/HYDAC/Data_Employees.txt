@@ -8,5 +8,3 @@ Johanne,3
 Søren,3
 Egon,3
 Ip,3
-
-_name,_mood

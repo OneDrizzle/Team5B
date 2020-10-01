@@ -28,11 +28,14 @@ namespace HYDAC
 
         public Controller()
         {
-            int tal = 10;
+            int tal = Data.EmployeeCount();
             employees = new Employee[tal];
-            employees[0] = new Employee("Hans");
-            employees[1] = new Employee("Per");
-            employees[2] = new Employee("Jens",1);
+            string[] arrEmployee = new string[tal];
+
+            for (int i = 0; i < tal; i++)
+            {
+                employees[i] = new Employee( Data.EmployeeNameList(i), Data.EmployeeMoodList(i)); 
+            }
             
         }
 
