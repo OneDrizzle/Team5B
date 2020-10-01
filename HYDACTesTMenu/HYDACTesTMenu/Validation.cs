@@ -67,6 +67,6 @@ namespace Valdation
  *      }
  *      else
  *      {
- *      Console.WriteLine(validate.ReturnValue());
+ *      Console.WriteLine(validate.ReturnMessage());
  *      }
 */
