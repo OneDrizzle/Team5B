@@ -74,7 +74,6 @@ namespace HYDAC
         public void DashBoard(Controller ct)
         {
             Console.Clear();
-            int antalMennesker = Data.TotalCount();
 
             Console.WriteLine("Tilstedeværende personer i HYDAC: " + Data.TotalCount() + "\n");
 
@@ -105,7 +104,8 @@ namespace HYDAC
                 }
 
             }
-
+            Console.WriteLine("\n\nTryk på en tast for at komme til Hovedmenu");
+            Console.ReadKey();
         }
 
 

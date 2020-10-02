@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Security.Cryptography.X509Certificates;
 
 namespace HYDAC
 {
@@ -25,15 +24,12 @@ namespace HYDAC
             while (true)
             {
 
+                mainMenu.DashBoard(ct);
                 mainMenu.Show();
                 int valg = mainMenu.SelectMenuItem();
 
                 if (valg == 1)  //Medarbejder stuffs here
                 {
-                    mainMenu.DashBoard(ct);
-                    Console.WriteLine("\n(Tryk på en tast for at fortsætte...)");
-                    Console.ReadLine();
-
                     subMenu.Show();
                     int valg2 = subMenu.SelectMenuItem();
 
