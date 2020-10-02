@@ -1,3 +1,0 @@
-Egon,Andreas,12345678,a@mail.dk,StillingStueetage,true
-Ip,bv,123,mail,LilleStue,true
-Hans,dasdsa,dasd,asd,LilleStue,False

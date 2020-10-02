@@ -7,6 +7,7 @@ namespace HYDAC
     {
         static void Main(string[] args)
         {
+            Console.Title = "Team 5B HYDAC";
             Controller ct = new Controller();
             Menu mainMenu = new Menu("HYDAC hovedmenu");
 
@@ -38,7 +39,7 @@ namespace HYDAC
                     if (valg2 == 1) //Tjek ind
                     {
                         Console.Clear();
-                        Console.WriteLine("Velkommen medarbejder, indtast dit navn:");
+                        Console.Write("Velkommen medarbejder, indtast dit navn: ");
                         string name = Console.ReadLine();
                         Console.WriteLine("\nHvilket humør har du i dag?");
                         Console.Write("\n (1) :-)\n (2) :-|\n (3) :-(\n\nVælg Humør: ");
