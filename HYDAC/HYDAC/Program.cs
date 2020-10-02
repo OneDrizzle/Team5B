@@ -25,65 +25,59 @@ namespace HYDAC
             while (true)
             {
 
+                mainMenu.DashBoard(ct);
                 mainMenu.Show();
                 int valg = mainMenu.SelectMenuItem();
 
                 if (valg == 1)  //Medarbejder stuffs here
                 {
-                    mainMenu.DashBoard(ct);
-                    Console.WriteLine("\n(Tryk på noget for at fortsætte)");
-                    Console.ReadLine();
-
+                  
                     subMenu.Show();
                     int valg2 = subMenu.SelectMenuItem();
 
                     if (valg2 == 1) //Tjek ind
                     {
                         Console.Clear();
-                        Console.WriteLine("Indtast navn:");
+                        Console.WriteLine("Velkommen medarbejder, indtast dit navn:");
                         string name = Console.ReadLine();
-                        Console.WriteLine("Vælg Humør:\n1. :-)\t\t2. :-|\t\t3. :-(");
+                        Console.WriteLine("\nHvilket humør har du i dag?");
+                        Console.Write("\n (1) :-)\n (2) :-|\n (3) :-(\n\nVælg Humør: ");
                         int mood = int.Parse(Console.ReadLine());
 
                         ct.EmployeeArrival(name, mood);
-                        Console.WriteLine("Du er blevet tjekket ind!");
-                        Console.ReadLine();
-
+                        Console.WriteLine("\nDu er nu blevet tjekket ind\n\n(tryk på en tast for at vende tilbage til oversigten)");
+                        Console.ReadKey();
                     }
 
-
-                    if (valg2 == 2) //Tjek ud
+                    else if (valg2 == 2) //Tjek ud
                     {
-                        Console.WriteLine("Indtast navn:");
+                        Console.Clear();
+                        Console.Write("Indtast navn for at tjekke ud: ");
                         string name = Console.ReadLine();
                         ct.EmployeeDeparture(name);
-                        Console.WriteLine("Du er blevet tjekket ud!");
-                        Console.ReadLine();
+                        Console.WriteLine("\n\nDu er nu blevet tjekket ud\n\n(tryk på en tast for at vende tilbage til oversigten)");
+                        Console.ReadKey();
                     }
 
-
-                    if (valg2 == 3) //Inviter gæst
+                    else if (valg2 == 3) //Inviter gæst
                     {
                         Console.Clear();
                         ct.InviteGuest();
-                        Console.WriteLine("Gæst inviteret!");
-                        Console.ReadLine();
-
+                        Console.WriteLine("\nGæst oprettet i systemet\n\n(tryk på en tast for at vende tilbage til oversigten)");
+                        Console.ReadKey();
                     }
 
-
-                    if (valg2 == 4) //Tjek gæst ud
+                    else if (valg2 == 4) //Tjek gæst ud
                     {
                         Console.Clear();
-                        Console.WriteLine("Tjek gæst ud");
-                        Console.Write("\nIndtast dit navn: ");
+                        Console.Write("Indtast navn på medarbejder: ");
                         string employeeName = Console.ReadLine();
                         ct.CheckOutGuest(employeeName);
-                        Console.Write("Gæsten er nu blevet tjekket ud!");
-                        Console.ReadLine();
+                        Console.Write("\nGæsten er nu blevet tjekket ud\n\n(tryk på en tast for at vende tilbage til oversigten)");
+                        Console.ReadKey();
                     }
 
-                    if (valg == 5) //Gå tilbage
+                    else if (valg == 5) //Gå tilbage
                     {
                         continue;
                     }
@@ -92,19 +86,18 @@ namespace HYDAC
                 }
 
 
-                if (valg == 2)  //Gæste stuff here
+                else if (valg == 2)  //Gæste stuff here
                 {
                     Console.Clear();
-                    Console.WriteLine("Velkommen til HYDAC, indtast venligst dit navn!");
+                    Console.WriteLine("Velkommen til HYDAC, indtast venligst dit navn:");
                     string guest = Console.ReadLine();
                     ct.ReceiveGuest(guest);
-                    Console.ReadLine();
+                    Console.Write("\n\n(tryk på en tast for at vende tilbage til oversigten)");
+                    Console.ReadKey();
                 }
 
-                if (valg == 3)  //Afslutter
-                {
-                    Console.WriteLine("Afslutter");
-                    Console.ReadLine();
+                else if (valg == 3)  //Afslutter
+                {  
                     break;          //Braker ud af menuen og aslutter programmet
                 }
 

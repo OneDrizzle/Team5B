@@ -1,8 +1,8 @@
-﻿Jens,3
-Kaj,1
+Jens,3
+Kaj,2
 Jørgen,2
-Hans,0
-Birthe,0
+Hans,3
+Birthe,2
 Johan,1
 Johanne,3
 Søren,3
