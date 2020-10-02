@@ -155,15 +155,15 @@ namespace HYDAC
             SelectGuest(guestName);
             selectedGuest.SetPresence(true);            //gæst til stede sættes til true
 
-            for(int i=0; i<meetingRooms.Length;i++)
+            for (int i = 0; i < meetingRooms.Length; i++)
             {
-                if(selectedGuest.GoToMeetingRoom == meetingRooms[i].Name)
+                if (selectedGuest.GoToMeetingRoom == meetingRooms[i].Name)
                 {
                     selectedMeetingroom = meetingRooms[i];
                 }
             }
 
-            Console.WriteLine("Læs følgende: " + selectedMeetingroom.Pamphlet.Name); //Læs brochure
+            Console.WriteLine($"Læs følgende: {selectedMeetingroom.Pamphlet.Name}"); //Læs brochure
             Console.WriteLine("Vent på at en medarbejder henter dig");
 
             Data.GuestSetMood(guestName);

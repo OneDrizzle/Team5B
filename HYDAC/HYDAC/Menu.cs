@@ -86,7 +86,7 @@ namespace HYDAC
                 if (ct.Employees[i].Humør != Employee.Mood.Moodless)    // 1 =      if humør == happy -> print( smiley )
                 {                                                       // 2 = neutral
                                                                         // 3 = Sad
-                    Console.Write("\t {0,-30} ", ct.Employees[i].Name);          // :-)  :-|   :-(
+                    Console.Write("\t {0,-15} ", ct.Employees[i].Name);          // :-)  :-|   :-(
 
                     switch ((int)ct.Employees[i].Humør)
                     {
