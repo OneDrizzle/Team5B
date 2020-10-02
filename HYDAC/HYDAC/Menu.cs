@@ -40,11 +40,11 @@ namespace HYDAC
 
                 if (isNumber)
                 {
-                    Console.WriteLine("punkt findes ikke i menuen, prøv igen");
+                    Console.WriteLine("Punkt findes ikke i menuen, prøv igen");
                 }
                 else
                 {
-                    Console.WriteLine("input skal være et heltal i menuen, prøv igen");
+                    Console.WriteLine("Input skal være et heltal i menuen, prøv igen");
                 }
 
 
