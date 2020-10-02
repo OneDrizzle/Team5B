@@ -81,3 +81,14 @@ C:\Users\Administrator\Documents\GitHub\Team5B\HYDAC\HYDAC\obj\Debug\netcoreapp3
 C:\Users\Administrator\Documents\GitHub\Team5B\HYDAC\HYDAC\obj\Debug\netcoreapp3.1\HYDAC.dll
 C:\Users\Administrator\Documents\GitHub\Team5B\HYDAC\HYDAC\obj\Debug\netcoreapp3.1\HYDAC.pdb
 C:\Users\Administrator\Documents\GitHub\Team5B\HYDAC\HYDAC\obj\Debug\netcoreapp3.1\HYDAC.genruntimeconfig.cache
+C:\Users\Bruger\Documents\GitHub\Team-5B\HYDAC\HYDAC\bin\Debug\netcoreapp3.1\Data_Employees.txt
+C:\Users\Bruger\Documents\GitHub\Team-5B\HYDAC\HYDAC\bin\Debug\netcoreapp3.1\Data_Guests.txt
+C:\Users\Bruger\Documents\GitHub\Team-5B\HYDAC\HYDAC\bin\Debug\netcoreapp3.1\HYDAC.exe
+C:\Users\Bruger\Documents\GitHub\Team-5B\HYDAC\HYDAC\bin\Debug\netcoreapp3.1\HYDAC.deps.json
+C:\Users\Bruger\Documents\GitHub\Team-5B\HYDAC\HYDAC\bin\Debug\netcoreapp3.1\HYDAC.runtimeconfig.json
+C:\Users\Bruger\Documents\GitHub\Team-5B\HYDAC\HYDAC\bin\Debug\netcoreapp3.1\HYDAC.runtimeconfig.dev.json
+C:\Users\Bruger\Documents\GitHub\Team-5B\HYDAC\HYDAC\bin\Debug\netcoreapp3.1\HYDAC.dll
+C:\Users\Bruger\Documents\GitHub\Team-5B\HYDAC\HYDAC\bin\Debug\netcoreapp3.1\HYDAC.pdb
+C:\Users\Bruger\Documents\GitHub\Team-5B\HYDAC\HYDAC\obj\Debug\netcoreapp3.1\HYDAC.dll
+C:\Users\Bruger\Documents\GitHub\Team-5B\HYDAC\HYDAC\obj\Debug\netcoreapp3.1\HYDAC.pdb
+C:\Users\Bruger\Documents\GitHub\Team-5B\HYDAC\HYDAC\obj\Debug\netcoreapp3.1\HYDAC.genruntimeconfig.cache

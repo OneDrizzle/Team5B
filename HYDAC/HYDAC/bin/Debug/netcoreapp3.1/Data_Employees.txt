@@ -1,4 +1,4 @@
-﻿Jens,3
+Jens,3
 Kaj,1
 Jørgen,2
 Hans,0
@@ -8,3 +8,4 @@ Johanne,3
 Søren,3
 Egon,3
 Ip,3
+Andreas,1

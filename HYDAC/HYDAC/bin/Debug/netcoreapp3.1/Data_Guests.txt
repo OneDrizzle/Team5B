@@ -1,6 +1,3 @@
-Jens,Bob,12345678,bob@mail.com,1A,false
-Jens,Anders,11223344,Anders@mail.com,LilleStue,true
-Jens,Bob,12345678,bob@mail.com,1A,True
-Jens,Anders,11223344,Anders@mail.com,LilleStue,false
-Jens,Bob,12345678,bob@mail.com,1A,false
-Jens,Anders,11223344,Anders@mail.com,LilleStue,false
+Andreas,Brian,88888888,Brian@mail.dk,StillingKantine,true
+Andreas,Mikkel,12345678,mikkel@mail.com,StillingKantine,False
+Andreas,Kaj,88888888,mailmail.dk,StillingStueetage,False
