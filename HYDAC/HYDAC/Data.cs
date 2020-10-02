@@ -293,7 +293,7 @@ namespace HYDAC
             }
             reader.Close();
 
-            StreamWriter writer = new StreamWriter("Data_Guests.txt");
+            StreamWriter writer = new StreamWriter("Data_Guests.txt",false);
             for (int i = 0; i < count; i++)
             {
 
@@ -361,7 +361,14 @@ namespace HYDAC
             StreamWriter writer = new StreamWriter("Data_Employees.txt");
             for (int i = 0; i < lineCount; i++)
             {
-                writer.WriteLine(linjer[i]);
+                if (i != lineCount - 1)
+                {
+                    writer.WriteLine(linjer[i]);
+                }
+                else
+                {
+                    writer.Write(linjer[i]);
+                }
             }
             writer.Close();
 
@@ -398,9 +405,18 @@ namespace HYDAC
             StreamWriter writer = new StreamWriter("Data_Guests.txt");
             for (int i = 0; i < lineCount; i++)
             {
-                writer.WriteLine(linjer[i]);
+                if (i != lineCount - 1)
+                {
+                    writer.WriteLine(linjer[i]);
+                }
+                else 
+                {
+                    writer.Write(linjer[i]);
+                }
             }
             writer.Close();
+
+
         }
 
     }

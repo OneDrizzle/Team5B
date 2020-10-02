@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\HYDAC\\HYDAC\\HYDAC.csproj",
+      "projectUniqueName": "C:\\Users\\Danie\\Documents\\GitHub\\Team5B\\HYDAC\\HYDAC\\HYDAC.csproj",
       "projectName": "HYDAC",
-      "projectPath": "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\HYDAC\\HYDAC\\HYDAC.csproj",
+      "projectPath": "C:\\Users\\Danie\\Documents\\GitHub\\Team5B\\HYDAC\\HYDAC\\HYDAC.csproj",
       "packagesPath": "C:\\Users\\Danie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\HYDAC\\HYDAC\\obj\\",
+      "outputPath": "C:\\Users\\Danie\\Documents\\GitHub\\Team5B\\HYDAC\\HYDAC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Danie\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,6 +1,5 @@
-Jens,Bob,12345678,bob@mail.com,1A,false
+Jens,Anders,11223344,Anders@mail.com,LilleStue,false
 Jens,Anders,11223344,Anders@mail.com,LilleStue,true
-Jens,Bob,12345678,bob@mail.com,1A,True
-Jens,Anders,11223344,Anders@mail.com,LilleStue,false
-Jens,Bob,12345678,bob@mail.com,1A,false
-Jens,Anders,11223344,Anders@mail.com,LilleStue,false
+Jens,Anders,11223344,Anders@mail.com,StillingStueetage,True
+Egon,Jeppe,34343,afa@fa,LilleStue,False
+Søren,Pladder,4243,faf,StillingKantine,true
