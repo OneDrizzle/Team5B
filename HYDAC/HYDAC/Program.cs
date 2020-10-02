@@ -90,7 +90,7 @@ namespace HYDAC
                 else if (valg == 2)  //Gæste stuff here
                 {
                     Console.Clear();
-                    Console.WriteLine("Velkommen til HYDAC, indtast venligst dit navn:");
+                    Console.Write("Velkommen til HYDAC, indtast venligst dit navn: ");
                     string guest = Console.ReadLine();
                     ct.ReceiveGuest(guest);
                     Console.Write("\n\n(tryk på en tast for at vende tilbage til oversigten)");
