@@ -374,7 +374,7 @@ namespace HYDAC
 
         }
 
-        static public void GuestSetMood(string name) // Ændrer en Gæsts humør
+        static public void GuestSetPresence(string name) // Ændrer en Gæsts humør
         {
             int lineCount = NrOfGuests();
             string line = "";
