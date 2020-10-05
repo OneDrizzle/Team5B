@@ -1,0 +1,6 @@
+Jens,Bob,12345678,bob@mail.com,StillingKantine,false
+Søren,Anders,11223344,Anders@mail.com,LilleStue,false
+Jens,Jeppe,12345678,Jeppe@mail.com,StillingKantine,True
+Kaj,Andrea,11223344,Andres@mail.com,LilleStue,true
+Egon,Kjeld,12345678,Kjeld@mail.com,LilleStue,true
+Egon,Benny,11223344,Benny@mail.com,StillingStueetage,True

@@ -1,5 +1,10 @@
-Jens,3
-Kaj,2
+﻿Jens,3
+Kaj,1
 Jørgen,2
-Hans,3
-Andreas,0
+Hans,0
+Birthe,0
+Johan,1
+Johanne,1
+Søren,1
+Egon,3
+Ip,3
