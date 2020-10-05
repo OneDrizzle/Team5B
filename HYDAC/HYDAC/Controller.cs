@@ -166,7 +166,7 @@ namespace HYDAC
             Console.Write("\nLæs " + selectedMeetingroom.Pamphlet.Name);
             Console.Write(", mens du venter på at en medarbejder kommer og henter dig");
 
-            Data.GuestSetMood(guestName);
+            Data.GuestSetPresence(guestName);
             //ikke implementeret - Besked sendes til medarbejder om ankomst 
         }
 
