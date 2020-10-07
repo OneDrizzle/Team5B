@@ -1,0 +1,13 @@
+C:\Users\Bruger\source\repos\Morgengry\Morgengry\bin\Debug\netcoreapp3.1\Morgengry.exe
+C:\Users\Bruger\source\repos\Morgengry\Morgengry\bin\Debug\netcoreapp3.1\Morgengry.deps.json
+C:\Users\Bruger\source\repos\Morgengry\Morgengry\bin\Debug\netcoreapp3.1\Morgengry.runtimeconfig.json
+C:\Users\Bruger\source\repos\Morgengry\Morgengry\bin\Debug\netcoreapp3.1\Morgengry.runtimeconfig.dev.json
+C:\Users\Bruger\source\repos\Morgengry\Morgengry\bin\Debug\netcoreapp3.1\Morgengry.dll
+C:\Users\Bruger\source\repos\Morgengry\Morgengry\bin\Debug\netcoreapp3.1\Morgengry.pdb
+C:\Users\Bruger\source\repos\Morgengry\Morgengry\obj\Debug\netcoreapp3.1\Morgengry.csprojAssemblyReference.cache
+C:\Users\Bruger\source\repos\Morgengry\Morgengry\obj\Debug\netcoreapp3.1\Morgengry.AssemblyInfoInputs.cache
+C:\Users\Bruger\source\repos\Morgengry\Morgengry\obj\Debug\netcoreapp3.1\Morgengry.AssemblyInfo.cs
+C:\Users\Bruger\source\repos\Morgengry\Morgengry\obj\Debug\netcoreapp3.1\Morgengry.csproj.CoreCompileInputs.cache
+C:\Users\Bruger\source\repos\Morgengry\Morgengry\obj\Debug\netcoreapp3.1\Morgengry.dll
+C:\Users\Bruger\source\repos\Morgengry\Morgengry\obj\Debug\netcoreapp3.1\Morgengry.pdb
+C:\Users\Bruger\source\repos\Morgengry\Morgengry\obj\Debug\netcoreapp3.1\Morgengry.genruntimeconfig.cache
