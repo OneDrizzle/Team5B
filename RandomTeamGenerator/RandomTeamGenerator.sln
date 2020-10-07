@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomTeamGenerator", "RandomTeamGen\RandomTeamGenerator.csproj", "{63465762-E0DB-4168-B5E2-329794A71D80}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63465762-E0DB-4168-B5E2-329794A71D80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63465762-E0DB-4168-B5E2-329794A71D80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63465762-E0DB-4168-B5E2-329794A71D80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63465762-E0DB-4168-B5E2-329794A71D80}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {331859AF-3BB7-433B-AC75-49C53CE28DD4}
+	EndGlobalSection
+EndGlobal

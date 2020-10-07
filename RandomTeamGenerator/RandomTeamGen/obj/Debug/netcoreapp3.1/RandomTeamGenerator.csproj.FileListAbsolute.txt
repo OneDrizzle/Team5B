@@ -1,0 +1,13 @@
+C:\Users\brian\Dropbox\Datamatiker\Csharp saved files\RandomTeamGen\RandomTeamGen\bin\Debug\netcoreapp3.1\RandomTeamGenerator.exe
+C:\Users\brian\Dropbox\Datamatiker\Csharp saved files\RandomTeamGen\RandomTeamGen\bin\Debug\netcoreapp3.1\RandomTeamGenerator.deps.json
+C:\Users\brian\Dropbox\Datamatiker\Csharp saved files\RandomTeamGen\RandomTeamGen\bin\Debug\netcoreapp3.1\RandomTeamGenerator.runtimeconfig.json
+C:\Users\brian\Dropbox\Datamatiker\Csharp saved files\RandomTeamGen\RandomTeamGen\bin\Debug\netcoreapp3.1\RandomTeamGenerator.runtimeconfig.dev.json
+C:\Users\brian\Dropbox\Datamatiker\Csharp saved files\RandomTeamGen\RandomTeamGen\bin\Debug\netcoreapp3.1\RandomTeamGenerator.dll
+C:\Users\brian\Dropbox\Datamatiker\Csharp saved files\RandomTeamGen\RandomTeamGen\bin\Debug\netcoreapp3.1\RandomTeamGenerator.pdb
+C:\Users\brian\Dropbox\Datamatiker\Csharp saved files\RandomTeamGen\RandomTeamGen\obj\Debug\netcoreapp3.1\RandomTeamGenerator.csprojAssemblyReference.cache
+C:\Users\brian\Dropbox\Datamatiker\Csharp saved files\RandomTeamGen\RandomTeamGen\obj\Debug\netcoreapp3.1\RandomTeamGenerator.AssemblyInfoInputs.cache
+C:\Users\brian\Dropbox\Datamatiker\Csharp saved files\RandomTeamGen\RandomTeamGen\obj\Debug\netcoreapp3.1\RandomTeamGenerator.AssemblyInfo.cs
+C:\Users\brian\Dropbox\Datamatiker\Csharp saved files\RandomTeamGen\RandomTeamGen\obj\Debug\netcoreapp3.1\RandomTeamGenerator.csproj.CoreCompileInputs.cache
+C:\Users\brian\Dropbox\Datamatiker\Csharp saved files\RandomTeamGen\RandomTeamGen\obj\Debug\netcoreapp3.1\RandomTeamGenerator.dll
+C:\Users\brian\Dropbox\Datamatiker\Csharp saved files\RandomTeamGen\RandomTeamGen\obj\Debug\netcoreapp3.1\RandomTeamGenerator.pdb
+C:\Users\brian\Dropbox\Datamatiker\Csharp saved files\RandomTeamGen\RandomTeamGen\obj\Debug\netcoreapp3.1\RandomTeamGenerator.genruntimeconfig.cache
