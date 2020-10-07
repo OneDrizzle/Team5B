@@ -20,7 +20,7 @@ namespace HYDAC
                 return employees;
             }
             set
-            {
+            {   
                 employees = value;
             }
 
@@ -107,11 +107,11 @@ namespace HYDAC
 
         public void InviteGuest()
         {
-            Console.Write("Indtast dit navn: ");
+            Console.Write("Indtast medarbejders navn: ");
             string employeeName = Console.ReadLine();
             SelectEmployee(employeeName);
 
-            Console.WriteLine("Registrer gæst med navn, tlf, og mail");
+            Console.WriteLine("\nRegistrer gæst med navn, tlf, og mail:");
             Console.Write("Navn: ");
             string guestName = Console.ReadLine();
             Console.Write("TLF: ");
@@ -120,9 +120,9 @@ namespace HYDAC
             string guestMail = Console.ReadLine();
             RegisterGuest(name: guestName, phone: guestTLF, mail: guestMail);
 
-            Console.WriteLine("\nVælg mødelokale");
-            Console.Write("1. LilleStue\t2. StillingKantine\t3. StillingStueetage");
-            Console.WriteLine("\n(Indtast menupunkt)");
+            Console.WriteLine("\n\nListe over mødelokaler:\n");
+            Console.WriteLine(" (1) LilleStue\n (2) StillingKantine\n (3) StillingStueetage");
+            Console.Write("\nVælg mødelokale: ");
             int LokaleValg = int.Parse(Console.ReadLine());
             LokaleValg = LokaleValg - 1;
 
@@ -155,18 +155,18 @@ namespace HYDAC
             SelectGuest(guestName);
             selectedGuest.SetPresence(true);            //gæst til stede sættes til true
 
-            for (int i = 0; i < meetingRooms.Length; i++)
+            for(int i=0; i<meetingRooms.Length;i++)
             {
-                if (selectedGuest.GoToMeetingRoom == meetingRooms[i].Name)
+                if(selectedGuest.GoToMeetingRoom == meetingRooms[i].Name)
                 {
                     selectedMeetingroom = meetingRooms[i];
                 }
             }
+            //Læs brochure
+            Console.Write("\nLæs " + selectedMeetingroom.Pamphlet.Name);
+            Console.Write(", mens du venter på at en medarbejder kommer og henter dig");
 
-            Console.WriteLine($"Læs følgende: {selectedMeetingroom.Pamphlet.Name}"); //Læs brochure
-            Console.WriteLine("Vent på at en medarbejder henter dig");
-
-            Data.GuestSetMood(guestName);
+            Data.GuestSetPresence(guestName);
             //ikke implementeret - Besked sendes til medarbejder om ankomst 
         }
 
@@ -174,7 +174,7 @@ namespace HYDAC
         {
             SelectEmployee(employeeName);   
 
-            Console.WriteLine("Indtast navn på gæst der skal tjekkes ud:");
+            Console.Write("Indtast navn på gæst der skal tjekkes ud: ");
             string guestName = Console.ReadLine(); //**************************************************************FLAGGED*****
             SelectGuest(guestName);
             //selectedGuest.SetPresence(false);            //gæst til stede sættes til false

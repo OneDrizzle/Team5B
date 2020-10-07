@@ -40,11 +40,11 @@ namespace HYDAC
 
                 if (isNumber)
                 {
-                    Console.WriteLine("Punkt findes ikke i menuen, prøv igen");
+                    Console.WriteLine("punkt findes ikke i menuen, prøv igen");
                 }
                 else
                 {
-                    Console.WriteLine("Input skal være et heltal i menuen, prøv igen");
+                    Console.WriteLine("input skal være et heltal i menuen, prøv igen");
                 }
 
 
@@ -74,9 +74,7 @@ namespace HYDAC
         public void DashBoard(Controller ct)
         {
             Console.Clear();
-
             Console.WriteLine("Tilstedeværende personer i HYDAC: " + Data.TotalCount() + "\n");
-
             Console.WriteLine("Liste over medarbejdere mødt ind:");
 
             for (int i = 0; i < ct.Employees.Length; i++) //*************husk ændre 3 til emp.length
@@ -94,18 +92,19 @@ namespace HYDAC
                             break;
 
                         case 2:
-                            Console.WriteLine(":-|");
+                            Console.WriteLine(" :-|");
                             break;
 
                         case 3:
-                            Console.WriteLine(":-(");
+                            Console.WriteLine("  :-(");
                             break;
                     }
                 }
 
             }
-            Console.WriteLine("\n\nTryk på en tast for at komme til Hovedmenu");
+            Console.WriteLine("\n(Tryk på en tast for at komme til Hovedmenuen)");
             Console.ReadKey();
+
         }
 
 

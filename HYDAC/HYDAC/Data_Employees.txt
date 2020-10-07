@@ -4,7 +4,7 @@ Jørgen,2
 Hans,0
 Birthe,0
 Johan,1
-Johanne,3
-Søren,3
+Johanne,1
+Søren,1
 Egon,3
 Ip,3
