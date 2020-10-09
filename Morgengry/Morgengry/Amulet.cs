@@ -31,21 +31,5 @@
             return $"ItemId: {ItemId}, Quality: {Quality}, Design: {Design}";
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }

@@ -3,8 +3,6 @@ using Morgengry;
 
 namespace MorgenGryTest
 {
-
-
     [TestClass]
     public class UnitTest1
     {
@@ -55,4 +53,6 @@ namespace MorgenGryTest
             Assert.AreEqual("ItemId: 13, Quality: low, Design: Capricorn", a3.ToString());
         }
     }
+
+
 }

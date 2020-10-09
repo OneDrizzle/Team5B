@@ -11,3 +11,16 @@ C:\Users\Bruger\source\repos\Morgengry\Morgengry\obj\Debug\netcoreapp3.1\Morgeng
 C:\Users\Bruger\source\repos\Morgengry\Morgengry\obj\Debug\netcoreapp3.1\Morgengry.dll
 C:\Users\Bruger\source\repos\Morgengry\Morgengry\obj\Debug\netcoreapp3.1\Morgengry.pdb
 C:\Users\Bruger\source\repos\Morgengry\Morgengry\obj\Debug\netcoreapp3.1\Morgengry.genruntimeconfig.cache
+D:\Fucking GitHub\Team5B\Morgengry\Morgengry\bin\Debug\netcoreapp3.1\Morgengry.exe
+D:\Fucking GitHub\Team5B\Morgengry\Morgengry\bin\Debug\netcoreapp3.1\Morgengry.deps.json
+D:\Fucking GitHub\Team5B\Morgengry\Morgengry\bin\Debug\netcoreapp3.1\Morgengry.runtimeconfig.json
+D:\Fucking GitHub\Team5B\Morgengry\Morgengry\bin\Debug\netcoreapp3.1\Morgengry.runtimeconfig.dev.json
+D:\Fucking GitHub\Team5B\Morgengry\Morgengry\bin\Debug\netcoreapp3.1\Morgengry.dll
+D:\Fucking GitHub\Team5B\Morgengry\Morgengry\bin\Debug\netcoreapp3.1\Morgengry.pdb
+D:\Fucking GitHub\Team5B\Morgengry\Morgengry\obj\Debug\netcoreapp3.1\Morgengry.csprojAssemblyReference.cache
+D:\Fucking GitHub\Team5B\Morgengry\Morgengry\obj\Debug\netcoreapp3.1\Morgengry.AssemblyInfoInputs.cache
+D:\Fucking GitHub\Team5B\Morgengry\Morgengry\obj\Debug\netcoreapp3.1\Morgengry.AssemblyInfo.cs
+D:\Fucking GitHub\Team5B\Morgengry\Morgengry\obj\Debug\netcoreapp3.1\Morgengry.csproj.CoreCompileInputs.cache
+D:\Fucking GitHub\Team5B\Morgengry\Morgengry\obj\Debug\netcoreapp3.1\Morgengry.dll
+D:\Fucking GitHub\Team5B\Morgengry\Morgengry\obj\Debug\netcoreapp3.1\Morgengry.pdb
+D:\Fucking GitHub\Team5B\Morgengry\Morgengry\obj\Debug\netcoreapp3.1\Morgengry.genruntimeconfig.cache

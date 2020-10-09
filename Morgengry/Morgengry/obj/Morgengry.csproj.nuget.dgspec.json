@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bruger\\source\\repos\\Morgengry\\Morgengry\\Morgengry.csproj": {}
+    "D:\\Fucking GitHub\\Team5B\\Morgengry\\Morgengry\\Morgengry.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bruger\\source\\repos\\Morgengry\\Morgengry\\Morgengry.csproj": {
+    "D:\\Fucking GitHub\\Team5B\\Morgengry\\Morgengry\\Morgengry.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bruger\\source\\repos\\Morgengry\\Morgengry\\Morgengry.csproj",
+        "projectUniqueName": "D:\\Fucking GitHub\\Team5B\\Morgengry\\Morgengry\\Morgengry.csproj",
         "projectName": "Morgengry",
-        "projectPath": "C:\\Users\\Bruger\\source\\repos\\Morgengry\\Morgengry\\Morgengry.csproj",
-        "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bruger\\source\\repos\\Morgengry\\Morgengry\\obj\\",
+        "projectPath": "D:\\Fucking GitHub\\Team5B\\Morgengry\\Morgengry\\Morgengry.csproj",
+        "packagesPath": "C:\\Users\\lopo\\.nuget\\packages\\",
+        "outputPath": "D:\\Fucking GitHub\\Team5B\\Morgengry\\Morgengry\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lopo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -26,7 +26,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://github.com/DSharpPlus/DSharpPlus": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
