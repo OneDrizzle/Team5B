@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Morgengry
 {
-    class Utility
+    public class Utility
     {
         public static double GetValueOfBook(Book book)
         {
