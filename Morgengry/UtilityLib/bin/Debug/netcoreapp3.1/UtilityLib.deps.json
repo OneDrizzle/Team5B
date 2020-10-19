@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "UtilityLib/1.0.0": {
+        "dependencies": {
+          "Morgengry": "1.0.0"
+        },
+        "runtime": {
+          "UtilityLib.dll": {}
+        }
+      },
+      "Morgengry/1.0.0": {
+        "runtime": {
+          "Morgengry.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "UtilityLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Morgengry/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

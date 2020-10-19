@@ -1,5 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Morgengry;
+using UtilityLib;
+
 
 namespace MorgenGryTest
 {
@@ -9,6 +11,7 @@ namespace MorgenGryTest
     {
         Book b1, b2, b3;
         Amulet a1, a2, a3;
+        Course c1, c2;
 
         [TestInitialize]
         public void Init()
@@ -22,6 +25,10 @@ namespace MorgenGryTest
             a1 = new Amulet("11");
             a2 = new Amulet("12", Level.high);
             a3 = new Amulet("13", Level.low, "Capricorn");
+
+            c1 = new Course("Eufori med røg");
+            c2 = new Course("Nuru Massage using Chia Oil", 157);
+
         }
 
         [TestMethod]
@@ -61,6 +68,20 @@ namespace MorgenGryTest
             // Assert
             Assert.AreEqual(12.5, Utility.GetValueOfAmulet(a3));
         }
+
+        [TestMethod]
+        public void TestGetValueForCourse1()
+        {
+            // Assert
+            Assert.AreEqual(0.0, Utility.GetValueOfCourse(c1));
+        }
+        [TestMethod]
+        public void TestGetValueForCourse2()
+        {
+            // Assert
+            Assert.AreEqual(2625.0, Utility.GetValueOfCourse(c2));
+        }
+
     }
 
 

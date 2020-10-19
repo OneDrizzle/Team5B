@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Morgengry;
+using System;
 
-namespace Morgengry
+
+namespace UtilityLib
 {
-    public class Utility
+    public static class Utility
     {
         public static double GetValueOfBook(Book book)
         {
@@ -22,6 +22,10 @@ namespace Morgengry
                     return 27.5;
             }
             return 0;
+        }
+        public static double GetValueOfCourse(Course course)
+        {
+            return Math.Ceiling(((double)course.DurationInMinutes / 60)) * 875;
         }
     }
 }

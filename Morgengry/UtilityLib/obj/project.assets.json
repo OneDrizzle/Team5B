@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "Morgengry/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Morgengry.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Morgengry.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Morgengry/1.0.0": {
+      "type": "project",
+      "path": "../Morgengry/Morgengry.csproj",
+      "msbuildProject": "../Morgengry/Morgengry.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "Morgengry >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Danie\\.nuget\\packages\\": {}
@@ -13,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\Morgengry\\Morgengry\\Morgengry.csproj",
-      "projectName": "Morgengry",
-      "projectPath": "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\Morgengry\\Morgengry\\Morgengry.csproj",
+      "projectUniqueName": "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\Morgengry\\UtilityLib\\UtilityLib.csproj",
+      "projectName": "UtilityLib",
+      "projectPath": "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\Morgengry\\UtilityLib\\UtilityLib.csproj",
       "packagesPath": "C:\\Users\\Danie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\Morgengry\\Morgengry\\obj\\",
+      "outputPath": "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\Morgengry\\UtilityLib\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -32,7 +51,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\Morgengry\\Morgengry\\Morgengry.csproj": {
+              "projectPath": "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\Morgengry\\Morgengry\\Morgengry.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

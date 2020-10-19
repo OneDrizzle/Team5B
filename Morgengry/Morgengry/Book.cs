@@ -4,11 +4,8 @@ using System.Text;
 
 namespace Morgengry
 {
-    public class Book
+    public class Book : Merchandise
     {
-        public string ItemId
-        { get; set; }
-
         public string Title
         { get; set; }
 
@@ -22,7 +19,7 @@ namespace Morgengry
             this.Title = Title;
             this.Price = Price;
         }
-        public Book(string itemId, String Title)
+        public Book(string itemId, string Title)
         : this(itemId, Title, 0)
         { }
         public Book(string itemId)

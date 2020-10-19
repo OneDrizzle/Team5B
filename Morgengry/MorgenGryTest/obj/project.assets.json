@@ -1644,6 +1644,19 @@
         "runtime": {
           "bin/placeholder/Morgengry.dll": {}
         }
+      },
+      "UtilityLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Morgengry": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/UtilityLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UtilityLib.dll": {}
+        }
       }
     }
   },
@@ -5720,6 +5733,11 @@
       "type": "project",
       "path": "../Morgengry/Morgengry.csproj",
       "msbuildProject": "../Morgengry/Morgengry.csproj"
+    },
+    "UtilityLib/1.0.0": {
+      "type": "project",
+      "path": "../UtilityLib/UtilityLib.csproj",
+      "msbuildProject": "../UtilityLib/UtilityLib.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5728,43 +5746,41 @@
       "MSTest.TestFramework >= 2.1.0",
       "Microsoft.NET.Test.Sdk >= 16.5.0",
       "Morgengry >= 1.0.0",
+      "UtilityLib >= 1.0.0",
       "coverlet.collector >= 1.2.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lopo\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Danie\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Fucking GitHub\\Team5B\\Morgengry\\MorgenGryTest\\MorgenGryTest.csproj",
+      "projectUniqueName": "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\Morgengry\\MorgenGryTest\\MorgenGryTest.csproj",
       "projectName": "MorgenGryTest",
-      "projectPath": "D:\\Fucking GitHub\\Team5B\\Morgengry\\MorgenGryTest\\MorgenGryTest.csproj",
-      "packagesPath": "C:\\Users\\lopo\\.nuget\\packages\\",
-      "outputPath": "D:\\Fucking GitHub\\Team5B\\Morgengry\\MorgenGryTest\\obj\\",
+      "projectPath": "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\Morgengry\\MorgenGryTest\\MorgenGryTest.csproj",
+      "packagesPath": "C:\\Users\\Danie\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\Morgengry\\MorgenGryTest\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\lopo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://github.com/DSharpPlus/DSharpPlus": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Fucking GitHub\\Team5B\\Morgengry\\Morgengry\\Morgengry.csproj": {
-              "projectPath": "D:\\Fucking GitHub\\Team5B\\Morgengry\\Morgengry\\Morgengry.csproj"
+            "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\Morgengry\\Morgengry\\Morgengry.csproj": {
+              "projectPath": "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\Morgengry\\Morgengry\\Morgengry.csproj"
+            },
+            "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\Morgengry\\UtilityLib\\UtilityLib.csproj": {
+              "projectPath": "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\Morgengry\\UtilityLib\\UtilityLib.csproj"
             }
           }
         }
