@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using UtilityLib;
+//using UtilityLib;
 
 namespace Morgengry
 {
@@ -38,7 +38,7 @@ namespace Morgengry
             double value = 0;
             foreach (var item in amulets)
             {
-                value += Utility.GetValueOfAmulet(item);
+                value += Utility.GetValueOfMerchandise(item);
             }
             return value;
         }

@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Morgengry;
-using UtilityLib;
+//using UtilityLib;
 
 
 namespace MorgenGryTest
@@ -35,38 +35,38 @@ namespace MorgenGryTest
         public void TestGetValueForBook1()
         {
             // Assert
-            Assert.AreEqual(0.0, Utility.GetValueOfBook(b1));
+            Assert.AreEqual(0.0, Utility.GetValueOfMerchandise(b1));
         }
         [TestMethod]
         public void TestGetValueForBook2()
         {
             // Assert
-            Assert.AreEqual(0.0, Utility.GetValueOfBook(b2));
+            Assert.AreEqual(0.0, Utility.GetValueOfMerchandise(b2));
         }
         [TestMethod]
         public void TestGetValueForBook3()
         {
             // Assert
-            Assert.AreEqual(123.55, Utility.GetValueOfBook(b3));
+            Assert.AreEqual(123.55, Utility.GetValueOfMerchandise(b3));
         }
 
         [TestMethod]
         public void TestGetValueForAmulet1()
         {
             // Assert
-            Assert.AreEqual(20.0, Utility.GetValueOfAmulet(a1));
+            Assert.AreEqual(20.0, Utility.GetValueOfMerchandise(a1));
         }
         [TestMethod]
         public void TestGetValueForAmulet2()
         {
             // Assert
-            Assert.AreEqual(27.5, Utility.GetValueOfAmulet(a2));
+            Assert.AreEqual(27.5, Utility.GetValueOfMerchandise(a2));
         }
         [TestMethod]
         public void TestGetValueForAmulet3()
         {
             // Assert
-            Assert.AreEqual(12.5, Utility.GetValueOfAmulet(a3));
+            Assert.AreEqual(12.5, Utility.GetValueOfMerchandise(a3));
         }
 
         [TestMethod]

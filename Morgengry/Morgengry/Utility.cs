@@ -2,7 +2,7 @@
 using System;
 
 
-namespace UtilityLib
+namespace Morgengry
 {
     public static class Utility
     {
@@ -50,8 +50,9 @@ namespace UtilityLib
                     return MediumQualityValue;
                 case Level.high:
                     return HighQualityValue;
+                default:
+                    return 0;
             }
-            return 0;
         }
         public static double GetValueOfCourse(Course course)
         {
