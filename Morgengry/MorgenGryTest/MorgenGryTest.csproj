@@ -15,7 +15,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Morgengry\Morgengry.csproj" />
-    <ProjectReference Include="..\UtilityLib\UtilityLib.csproj" />
   </ItemGroup>
 
 </Project>

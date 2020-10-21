@@ -4,30 +4,45 @@ namespace Morgengry
 {
     public class Controller
     {
-        public List<Book> Books;
+        AmuletRepository AmuletRep;
+        BookRepository BookRep;
+        CourseRepository CourseRep;
+        MerchandiseRepository MerchRep;
+
         public List<Amulet> Amulets;
+        public List<Book> Books;
         public List<Course> Courses;
 
         public Controller()
         {
-            Books = new List<Book>();
-            Amulets = new List<Amulet>();
-            Courses = new List<Course>();
+            AmuletRep = new AmuletRepository();
+            BookRep = new BookRepository();
+            CourseRep = new CourseRepository();
+            MerchRep = new MerchandiseRepository();
         }
 
-        public void AddToList(Book book)
+        public void AddToList(object obj)
         {
-            Books.Add(book);
+            
+            if(obj is Merchandise merch)
+            {
+                MerchRep.AddMerchandise(merch);
+            }
+            //if(obj is Amulet amulet)
+            //{
+            //    AmuletRep.AddAmulet(amulet);
+            //}
+            //else if (obj is Book book)
+            //{
+            //    BookRep.AddBook(book);
+            //}
+            else if (obj is Course course)
+            {
+                CourseRep.AddCourse(course);
+            }
+
         }
 
-        public void AddToList(Amulet amulet)
-        {
-            Amulets.Add(amulet);
-        }
 
-        public void AddToList(Course course)
-        {
-            Courses.Add(course);
-        }
     }
 }

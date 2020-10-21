@@ -1644,19 +1644,6 @@
         "runtime": {
           "bin/placeholder/Morgengry.dll": {}
         }
-      },
-      "UtilityLib/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "Morgengry": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/UtilityLib.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/UtilityLib.dll": {}
-        }
       }
     }
   },
@@ -5733,11 +5720,6 @@
       "type": "project",
       "path": "../Morgengry/Morgengry.csproj",
       "msbuildProject": "../Morgengry/Morgengry.csproj"
-    },
-    "UtilityLib/1.0.0": {
-      "type": "project",
-      "path": "../UtilityLib/UtilityLib.csproj",
-      "msbuildProject": "../UtilityLib/UtilityLib.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5746,7 +5728,6 @@
       "MSTest.TestFramework >= 2.1.0",
       "Microsoft.NET.Test.Sdk >= 16.5.0",
       "Morgengry >= 1.0.0",
-      "UtilityLib >= 1.0.0",
       "coverlet.collector >= 1.2.0"
     ]
   },
@@ -5778,9 +5759,6 @@
           "projectReferences": {
             "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\Morgengry\\Morgengry\\Morgengry.csproj": {
               "projectPath": "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\Morgengry\\Morgengry\\Morgengry.csproj"
-            },
-            "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\Morgengry\\UtilityLib\\UtilityLib.csproj": {
-              "projectPath": "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\Morgengry\\UtilityLib\\UtilityLib.csproj"
             }
           }
         }

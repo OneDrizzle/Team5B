@@ -12,7 +12,6 @@
           "MSTest.TestFramework": "2.1.0",
           "Microsoft.NET.Test.Sdk": "16.5.0",
           "Morgengry": "1.0.0",
-          "UtilityLib": "1.0.0",
           "coverlet.collector": "1.2.0"
         },
         "runtime": {
@@ -1076,14 +1075,6 @@
         "runtime": {
           "Morgengry.dll": {}
         }
-      },
-      "UtilityLib/1.0.0": {
-        "dependencies": {
-          "Morgengry": "1.0.0"
-        },
-        "runtime": {
-          "UtilityLib.dll": {}
-        }
       }
     }
   },
@@ -1703,11 +1694,6 @@
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
     "Morgengry/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "UtilityLib/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
