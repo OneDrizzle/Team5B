@@ -12,6 +12,7 @@ namespace RandomTeamGenerator
             Random rng = new Random();
             List<string> team5b = new List<string> { "Andreas", "Brian", "Daniel", "Lasse", "Maiken", "Mikkel", "Nick", "Thomas" };
             team5b.Remove("Thomas");
+            //team5b.Remove("Andreas"); //muahahha
 
             Console.WriteLine("Indtast 1-8 antal grupper: ");
             bool groupCheck = int.TryParse(Console.ReadLine(), out int teams);
@@ -24,7 +25,7 @@ namespace RandomTeamGenerator
 
             int members = team5b.Count;
 
-            while (members > 1)
+            while (members > 0)
             {
                 members--;
                 int k = rng.Next(members + 1);
