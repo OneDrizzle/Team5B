@@ -38,5 +38,10 @@ namespace Morgengry
         {
             return Math.Ceiling(((double)DurationInMinutes / 60)) * CourseHourValue;
         }
+
+        public string CreateLineToSave()
+        {
+            return $"COURSE;{Name};{DurationInMinutes};{CourseHourValue}";
+        }
     }
 }

@@ -7,5 +7,7 @@ namespace Morgengry
     public interface IValuable
     {
         public double GetValue();
+
+        public string CreateLineToSave();
     }
 }

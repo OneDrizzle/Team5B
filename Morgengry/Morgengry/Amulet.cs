@@ -54,5 +54,10 @@
             }
         }
 
+        public override string CreateLineToSave()
+        {
+            return $"AMULET;{ItemId};{Design};{Quality}";
+        }
+
     }
 }

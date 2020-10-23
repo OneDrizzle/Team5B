@@ -20,6 +20,8 @@ namespace Morgengry
         }
 
         public abstract double GetValue();
+
+        public abstract string CreateLineToSave();
        
     }
 }

@@ -35,5 +35,10 @@ namespace Morgengry
         {
             return Price;
         }
+
+        public override string CreateLineToSave()
+        {
+            return $"BOOK;{ItemId};{Title};{Price}";
+        }
     }
 }
