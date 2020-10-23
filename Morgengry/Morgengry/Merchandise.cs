@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Morgengry
 {
-    public abstract class Merchandise
+    public abstract class Merchandise : IValuable
     {
         public string ItemId
             {get;set;}
@@ -19,5 +19,7 @@ namespace Morgengry
             return $"ItemId: {ItemId}";
         }
 
+        public abstract double GetValue();
+       
     }
 }

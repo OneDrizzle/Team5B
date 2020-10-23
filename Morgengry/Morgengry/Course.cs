@@ -4,13 +4,18 @@ using System.Text;
 
 namespace Morgengry
 {
-    public class Course
+    public class Course : IValuable
     {
+        public static double CourseHourValue
+        { get; set; }
         public string Name
         { get; set; }
         public int DurationInMinutes
         { get; set; }
 
+        static Course()
+            {
+            }
         public Course(string name, int duration)
         {
             Name = name;
@@ -26,7 +31,12 @@ namespace Morgengry
         
         public override string ToString()
         {
-            return $"Name: {Name}, Duration in Minutes: {DurationInMinutes}";
+            return $"Name: {Name}, Duration in Minutes: {DurationInMinutes}, Pris pr påbegyndt time: {GetValue()}";
+        }
+
+        public double GetValue()
+        {
+            return Math.Ceiling(((double)DurationInMinutes / 60)) * CourseHourValue;
         }
     }
 }
