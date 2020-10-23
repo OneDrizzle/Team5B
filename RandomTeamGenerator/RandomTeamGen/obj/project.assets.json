@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\brian\\Dropbox\\Datamatiker\\Csharp saved files\\RandomTeamGen\\RandomTeamGen\\RandomTeamGenerator.csproj",
+      "projectUniqueName": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\RandomTeamGenerator\\RandomTeamGen\\RandomTeamGenerator.csproj",
       "projectName": "RandomTeamGenerator",
-      "projectPath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\Csharp saved files\\RandomTeamGen\\RandomTeamGen\\RandomTeamGenerator.csproj",
+      "projectPath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\RandomTeamGenerator\\RandomTeamGen\\RandomTeamGenerator.csproj",
       "packagesPath": "C:\\Users\\brian\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\Csharp saved files\\RandomTeamGen\\RandomTeamGen\\obj\\",
+      "outputPath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\RandomTeamGenerator\\RandomTeamGen\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\brian\\AppData\\Roaming\\NuGet\\NuGet.Config",
