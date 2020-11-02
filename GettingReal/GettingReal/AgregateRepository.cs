@@ -4,7 +4,19 @@ using System.Text;
 
 namespace GettingReal
 {
-    class AgregateRepository
+    public class AgregateRepository
     {
+        List<Agregate> agregates;
+
+        public AgregateRepository()
+        {
+            agregates = new List<Agregate>();
+        }
+
+        public void AddAgregate()
+        {
+
+        }
+
     }
 }

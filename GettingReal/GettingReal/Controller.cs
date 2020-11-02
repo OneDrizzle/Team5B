@@ -4,7 +4,15 @@ using System.Text;
 
 namespace GettingReal
 {
-    class Controller
+    public class Controller
     {
+        
+        private Agregate selectedAgregate;
+        private Technician selectedTechnician;
+
+        public Controller()
+        {
+
+        }
     }
 }

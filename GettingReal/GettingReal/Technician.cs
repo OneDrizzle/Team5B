@@ -4,7 +4,13 @@ using System.Text;
 
 namespace GettingReal
 {
-    class Technician
+    public class Technician
     {
+        public string Name { get; set; }
+
+        public Technician(string name)
+        {
+            Name = name;
+        }
     }
 }
