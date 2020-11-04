@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -46,8 +47,26 @@ namespace TusindfrydWPF
 
         private void Tbx_Img_TextChanged(object sender, TextChangedEventArgs e)
         {
-            arr[1] = Tbx_Name.Text;
+            arr[1] = Tbx_Img.Text;
             int fin = 0;
+            BitmapImage bitmap = new BitmapImage();
+            bitmap.BeginInit();
+
+            try
+            {
+                Img_Flower.Source = new BitmapImage(new Uri(Tbx_Img.Text, UriKind.Relative));
+                bitmap.UriSource = new Uri(@Tbx_Img.Text);
+            }
+            catch (Exception)
+            {
+                Img_Flower.Source = new BitmapImage(new Uri("/Images/Default.jpg", UriKind.Relative));
+                bitmap.UriSource = new Uri(@Tbx_Img.Text);
+            }
+            finally
+            {
+            bitmap.EndInit();
+            }
+
             foreach (var item in arr)
             {
                 if (!string.IsNullOrEmpty(item))
@@ -63,7 +82,7 @@ namespace TusindfrydWPF
 
         private void Tbx_HalfTime_TextChanged(object sender, TextChangedEventArgs e)
         {
-            arr[2] = Tbx_Name.Text;
+            arr[2] = Tbx_HalfTime.Text;
             int fin = 0;
             foreach (var item in arr)
             {
@@ -80,7 +99,7 @@ namespace TusindfrydWPF
 
         private void Tbx_ProductionTime_TextChanged(object sender, TextChangedEventArgs e)
         {
-            arr[3] = Tbx_Name.Text;
+            arr[3] = Tbx_ProductionTime.Text;
             int fin = 0;
             foreach (var item in arr)
             {
@@ -97,7 +116,7 @@ namespace TusindfrydWPF
 
         private void Tbx_Size_TextChanged(object sender, TextChangedEventArgs e)
         {
-            arr[4] = Tbx_Name.Text;
+            arr[4] = Tbx_Size.Text;
             int fin = 0;
             foreach (var item in arr)
             {

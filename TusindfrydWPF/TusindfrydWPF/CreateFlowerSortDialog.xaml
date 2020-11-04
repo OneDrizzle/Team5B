@@ -17,7 +17,7 @@
         <TextBox Name ="Tbx_ProductionTime" HorizontalAlignment="Left" Margin="250,315,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="400" Height="25" TextChanged="Tbx_ProductionTime_TextChanged"/>
         <TextBlock Name ="Tb_Size" HorizontalAlignment="Left" Margin="80,355,0,0" Text="Størrelse" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="84"/>
         <TextBox Name ="Tbx_Size" HorizontalAlignment="Left" Margin="250,355,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="400" Height="25" TextChanged="Tbx_Size_TextChanged"/>
-        <Image Name ="Img_Flower" Stretch="Uniform" HorizontalAlignment="Left" Height="100" Margin="253,159,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image Name ="Img_Flower" Source="Images\Default.jpg" Stretch="Uniform" HorizontalAlignment="Left" Height="100" Margin="250,167,0,0" VerticalAlignment="Top" Width="100"/>
         <Button Name ="Btn_Cancel" IsCancel="True" Content="Fortryd" HorizontalAlignment="Left" Margin="700,400,0,0" VerticalAlignment="Top" Width="42.177" Height="19.96"/>
         <Button Name ="Btn_Accept" IsDefault="True" Content="Ok" HorizontalAlignment="Left" Margin="650,400,0,0" VerticalAlignment="Top" Width="42.177" Height="19.96" Click="Btn_Accept_Click"/>
     </Grid>
