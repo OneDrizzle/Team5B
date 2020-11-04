@@ -29,6 +29,38 @@ namespace TusindfrydWPF
         }
 
         private void Btn_Add_flowersort_Click(object sender, RoutedEventArgs e)
+        {          
+            CreateFlowerSortDialog flowerSortDialog = new CreateFlowerSortDialog();
+            
+            if ((bool)flowerSortDialog.ShowDialog())
+            {
+                flowerSorts.Add(flowerSortDialog.flower);
+                StringBuilder sb = new StringBuilder();
+                foreach (FlowerSort fs in flowerSorts)
+                {
+                    sb.AppendLine($"Navn: {fs.name}, Produktionstid: {fs.ProductionTime}, Halveringstid: {fs.HalfLifeTime}, Størrelse: {fs.size}");
+                }
+                Tb_Flowersort.Text = sb.ToString();
+            }
+
+            //switch (flowerSortDialog.DialogResult)
+            //{
+            //    case true:
+            //        FlowerSort flower = new FlowerSort();
+            //        flowerSorts.Add(flower);
+            //        flower.name = flowerSortDialog.Tbx_Name.Text;
+            //        flower.PicturePath = flowerSortDialog.Tbx_Img.Text;
+            //        flower.HalfLifeTime = int.Parse(flowerSortDialog.Tbx_HalfTime.Text);
+            //        flower.ProductionTime = int.Parse(flowerSortDialog.Tbx_ProductionTime.Text);
+            //        flower.size = int.Parse(flowerSortDialog.Tbx_Size.Text);
+            //        ; break;
+
+            //    default:
+            //        break;
+            //}
+        }
+
+        private void Tb_Flowersort_TextChanged(object sender, TextChangedEventArgs e)
         {
             
         }

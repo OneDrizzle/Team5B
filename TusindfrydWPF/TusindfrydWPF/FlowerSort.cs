@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TusindfrydWPF
 {
-    class FlowerSort
+    public class FlowerSort
     {
         public string name;
         public string PicturePath;

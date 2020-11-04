@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bruger\\source\\repos\\TusindfrydWPF\\TusindfrydWPF\\TusindfrydWPF.csproj": {}
+    "C:\\Users\\Danie\\Documents\\GitHub\\Team5B\\TusindfrydWPF\\TusindfrydWPF\\TusindfrydWPF.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bruger\\source\\repos\\TusindfrydWPF\\TusindfrydWPF\\TusindfrydWPF.csproj": {
+    "C:\\Users\\Danie\\Documents\\GitHub\\Team5B\\TusindfrydWPF\\TusindfrydWPF\\TusindfrydWPF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bruger\\source\\repos\\TusindfrydWPF\\TusindfrydWPF\\TusindfrydWPF.csproj",
+        "projectUniqueName": "C:\\Users\\Danie\\Documents\\GitHub\\Team5B\\TusindfrydWPF\\TusindfrydWPF\\TusindfrydWPF.csproj",
         "projectName": "TusindfrydWPF",
-        "projectPath": "C:\\Users\\Bruger\\source\\repos\\TusindfrydWPF\\TusindfrydWPF\\TusindfrydWPF.csproj",
-        "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bruger\\source\\repos\\TusindfrydWPF\\TusindfrydWPF\\obj\\",
+        "projectPath": "C:\\Users\\Danie\\Documents\\GitHub\\Team5B\\TusindfrydWPF\\TusindfrydWPF\\TusindfrydWPF.csproj",
+        "packagesPath": "C:\\Users\\Danie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Danie\\Documents\\GitHub\\Team5B\\TusindfrydWPF\\TusindfrydWPF\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
