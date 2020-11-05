@@ -1,0 +1,21 @@
+﻿<Window x:Class="MenuWindow.ProjectChefWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MenuWindow"
+        WindowStartupLocation="CenterScreen"
+        Icon="C:\Users\lopo\OneDrive\Skrivebord\logo_idk.png"
+        ResizeMode="CanMinimize"
+        mc:Ignorable="d"
+        Title="Project Chef" Height="450" Width="500">
+    <Grid Margin="0,0,0,-6">
+        <Image Source="https://airteam.dk/wp-content/themes/airteam/gfx/logo.png" HorizontalAlignment="Center" Height="130" Margin="0,24,0,0" VerticalAlignment="Top" Width="320"/>
+        <Button Name="btn_Room" Content="Opret med rum" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Top" Height="30" Width="120"/>
+        <Button Name="btn_access" Content="Tilgå aggrigat" HorizontalAlignment="Center" Margin="0,250,0,0" VerticalAlignment="Top" Height="25" Width="120"/>
+        <Button Name="ben_access_sr" Content="Tilgå SR" HorizontalAlignment="Center" Margin="0,300,0,0" VerticalAlignment="Top" Height="25" Width="120"/>
+        <Button Name="btn_create_sr" Content="Opret SR" HorizontalAlignment="Center" Margin="0,350,0,0" VerticalAlignment="Top" Height="25" Width="120"/>
+        <Button Name="btn_back" Content="Tilbage" HorizontalAlignment="Left" Margin="35,312,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="Button_back_Click"/>
+
+    </Grid>
+</Window>
