@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Lasse H Hansen\\.nuget\\packages\\": {}
+    "C:\\Users\\Bruger\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lasse H Hansen\\Documents\\GitHub\\Team5B\\Lommeregn Classes\\Lommeregn\\Lommeregn.csproj",
+      "projectUniqueName": "C:\\Users\\Bruger\\Dropbox\\Datamatiker\\GitHub\\Team5B\\Lommeregn Classes\\Lommeregn\\Lommeregn.csproj",
       "projectName": "Lommeregn",
-      "projectPath": "C:\\Users\\Lasse H Hansen\\Documents\\GitHub\\Team5B\\Lommeregn Classes\\Lommeregn\\Lommeregn.csproj",
-      "packagesPath": "C:\\Users\\Lasse H Hansen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lasse H Hansen\\Documents\\GitHub\\Team5B\\Lommeregn Classes\\Lommeregn\\obj\\",
+      "projectPath": "C:\\Users\\Bruger\\Dropbox\\Datamatiker\\GitHub\\Team5B\\Lommeregn Classes\\Lommeregn\\Lommeregn.csproj",
+      "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Bruger\\Dropbox\\Datamatiker\\GitHub\\Team5B\\Lommeregn Classes\\Lommeregn\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Lasse H Hansen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

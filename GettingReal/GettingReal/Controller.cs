@@ -7,7 +7,7 @@ namespace GettingReal
     public class Controller
     {
         
-        private Agregate selectedAgregate;
+        private Aggregate selectedAggregate;
         private Technician selectedTechnician;
 
         public Controller()
