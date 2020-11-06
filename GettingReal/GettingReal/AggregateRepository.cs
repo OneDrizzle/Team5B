@@ -19,11 +19,11 @@ namespace GettingReal
         }
 
         
-        public void AddAggregate(string modelNumber, string orderNumber, Customer customer)
+        public void AddAggregate(string modelNumber, string orderNumber)
         {
             string fileName = customer.Company + "_" + building + "_" + orderNumber + ".pdf";
 
-            aggregates.Add(new Aggregate(modelNumber, orderNumber, fileName, company));
+            aggregates.Add(new Aggregate(modelNumber, orderNumber));
         }
 
 
@@ -49,7 +49,7 @@ namespace GettingReal
 
         public void AddFilter(Filter filter)
         {
-            selectedAggregate.filters.Add(filter);
+            selectedAggregate.AddFilter(filter);
         }
 
         public string GetFilterInfo()
@@ -59,7 +59,7 @@ namespace GettingReal
 
         public void AddServiceReport(ServiceReport serviceReport)
         {
-            selectedAggregate.serviceReports.Add(serviceReport);
+            selectedAggregate.AddServicereport(serviceReport);
             selectedServiceReport = serviceReport;
         }
         public string GetServiceReport()

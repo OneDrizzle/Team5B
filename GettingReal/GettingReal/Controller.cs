@@ -31,6 +31,18 @@ namespace GettingReal
             aggregateRepository.AddAggregate(modelNumber, orderNumber, customer);
         }
 
+
+        // ************** ikke slet ****************
+        //public void AddAggregate(string modelNumber, string orderNumber,
+        //    string customerName, string companyName, string building, string floor, string room)
+        //{
+        //    Customer cust = new Customer(customerName, companyName, modelNumber,orderNumber,building,floor,room);
+        //    selectedCustomer = cust;
+        //    customerRepository.AddCustomer(cust);
+        //}
+
+
+
         public void selectAggregate(string orderNumber)
         {
             selectedAggregate = aggregateRepository.GetAggregate(orderNumber);           
@@ -38,7 +50,9 @@ namespace GettingReal
 
         public void AddCustomer(string name, string company)
         {
-            customerRepository.AddCustomer(name, company);
+            Customer customer = new Customer();
+            selectedCustomer = customer;
+            customerRepository.AddCustomer(customer);
         }
 
 
