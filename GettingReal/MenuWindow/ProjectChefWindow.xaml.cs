@@ -29,5 +29,14 @@ namespace MenuWindow
 
             this.Close();
         }
+
+        private void btn_CreateAgregat_Click(object sender, RoutedEventArgs e)
+        {
+            CreateAgregatWindow agregatWindow = new CreateAgregatWindow();
+
+            agregatWindow.Show();
+
+            this.Close();
+        }
     }
 }
