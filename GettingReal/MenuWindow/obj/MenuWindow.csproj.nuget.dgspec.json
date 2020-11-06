@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Fucking GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj": {}
+    "D:\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj": {}
   },
   "projects": {
-    "D:\\Fucking GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj": {
+    "D:\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Fucking GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
+        "projectUniqueName": "D:\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
         "projectName": "MenuWindow",
-        "projectPath": "D:\\Fucking GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
+        "projectPath": "D:\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
         "packagesPath": "C:\\Users\\lopo\\.nuget\\packages\\",
-        "outputPath": "D:\\Fucking GitHub\\Team5B\\GettingReal\\MenuWindow\\obj\\",
+        "outputPath": "D:\\GitHub\\Team5B\\GettingReal\\MenuWindow\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
