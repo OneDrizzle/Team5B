@@ -11,3 +11,16 @@ C:\Users\brian\Dropbox\Datamatiker\GitHub\Team5B\GettingReal\GettingReal\bin\Deb
 C:\Users\brian\Dropbox\Datamatiker\GitHub\Team5B\GettingReal\GettingReal\obj\Debug\netcoreapp3.1\GettingReal.dll
 C:\Users\brian\Dropbox\Datamatiker\GitHub\Team5B\GettingReal\GettingReal\obj\Debug\netcoreapp3.1\GettingReal.pdb
 C:\Users\brian\Dropbox\Datamatiker\GitHub\Team5B\GettingReal\GettingReal\obj\Debug\netcoreapp3.1\GettingReal.genruntimeconfig.cache
+C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\GettingReal\bin\Debug\netcoreapp3.1\GettingReal.exe
+C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\GettingReal\bin\Debug\netcoreapp3.1\GettingReal.deps.json
+C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\GettingReal\bin\Debug\netcoreapp3.1\GettingReal.runtimeconfig.json
+C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\GettingReal\bin\Debug\netcoreapp3.1\GettingReal.runtimeconfig.dev.json
+C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\GettingReal\bin\Debug\netcoreapp3.1\GettingReal.dll
+C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\GettingReal\bin\Debug\netcoreapp3.1\GettingReal.pdb
+C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\GettingReal\obj\Debug\netcoreapp3.1\GettingReal.csprojAssemblyReference.cache
+C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\GettingReal\obj\Debug\netcoreapp3.1\GettingReal.AssemblyInfoInputs.cache
+C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\GettingReal\obj\Debug\netcoreapp3.1\GettingReal.AssemblyInfo.cs
+C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\GettingReal\obj\Debug\netcoreapp3.1\GettingReal.csproj.CoreCompileInputs.cache
+C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\GettingReal\obj\Debug\netcoreapp3.1\GettingReal.dll
+C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\GettingReal\obj\Debug\netcoreapp3.1\GettingReal.pdb
+C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\GettingReal\obj\Debug\netcoreapp3.1\GettingReal.genruntimeconfig.cache
