@@ -13,28 +13,20 @@ using System.Windows.Shapes;
 namespace MenuWindow
 {
     /// <summary>
-    /// Interaction logic for ProjectChefWindow.xaml
+    /// Interaction logic for CreateAgregatWindow.xaml
     /// </summary>
-    public partial class ProjectChefWindow : Window
+    public partial class CreateAgregatWindow : Window
     {
-        public ProjectChefWindow()
+        public CreateAgregatWindow()
         {
             InitializeComponent();
         }
 
         private void Button_back_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow main = new MainWindow();
-            main.Show();
+            ProjectChefWindow window = new ProjectChefWindow();
 
-            this.Close();
-        }
-
-        private void btn_CreateAgregat_Click(object sender, RoutedEventArgs e)
-        {
-            CreateAgregatWindow agregatWindow = new CreateAgregatWindow();
-
-            agregatWindow.Show();
+            window.Show();
 
             this.Close();
         }

@@ -15,20 +15,18 @@ namespace UnitTests
         [TestInitialize]
         public void Init()
         {
-            f1 = new Filter("manu1", "model2", "type3", 2);
+            f1 = new Filter("manufacturer1", "filterClass2", "model3", 10);
             ag = new Aggregate("model1", "1234");
             ct = new Controller();
         }
 
         [TestMethod]
-        public void FilterCanBeCreatedAndIsAssociatedWithAggregate()
+        public void FilterInfoCanBeRetrievedFromController()
         {
-            selectedAg = ag;
-            selectedAg.selectedFilter = f1;
+            ag.AddFilter(f1);
+            string filterStringFromController = ct.GetFilterInfo("1234");
 
-            string getfilterFromController = ct.GetFilterInfo("1234");
-
-            Assert.AreEqual("Producent: manu1\nModel: model2\nType: type3\nLevetid i måneder: 2", getfilterFromController);
+            Assert.AreEqual("Producent: manufacturer1\nFilterklasse: filterClass2\nModel: model3\nLevetid i måneder: 10", filterStringFromController);
         }
 
     }
