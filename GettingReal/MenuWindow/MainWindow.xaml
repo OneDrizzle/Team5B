@@ -5,7 +5,6 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MenuWindow"
         WindowStartupLocation="CenterScreen"
-        Icon="D:\GitHub\Team5B\GettingReal\MenuWindow\bin\Debug\netcoreapp3.1\logo.png"
         mc:Ignorable="d"
         ResizeMode="CanMinimize"
         Title="Airteam og Team 5B" Height="450" Width="500">
@@ -13,6 +12,5 @@
         <Image Source="https://airteam.dk/wp-content/themes/airteam/gfx/logo.png" HorizontalAlignment="Center" Height="130" Margin="0,29,0,0" VerticalAlignment="Top" Width="320"/>
         <Button x:Name ="btn_boss" Content="Project Chef" HorizontalAlignment="Center" Margin="0,204,0,0" VerticalAlignment="Top" Height="60" Width="320" FontSize="30" Click="btn_boss_Click"/>
         <Button x:Name="btn_tech" Content="Teknikker" HorizontalAlignment="Center" Margin="0,304,0,0" VerticalAlignment="Top" Height="60" Width="320" FontSize="30" Click="btn_tech_Click"/>
-
     </Grid>
 </Window>

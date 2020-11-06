@@ -5,7 +5,6 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MenuWindow"
         ResizeMode="CanMinimize"
-        Icon="C:\Users\lopo\OneDrive\Skrivebord\logo_idk.png"
         WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
         Title="Teknikker" Height="450" Width="500">
