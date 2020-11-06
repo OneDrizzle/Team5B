@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GettingReal", "GettingReal\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "UnitTests\UnitTests.csproj", "{5976F8F7-C75D-481A-9783-E8989A0C5C54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuWindow", "MenuWindow\MenuWindow.csproj", "{071AD3DF-28B2-4BA7-AFCC-AA14DD139909}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MenuWindow", "MenuWindow\MenuWindow.csproj", "{071AD3DF-28B2-4BA7-AFCC-AA14DD139909}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -95,3 +95,7 @@ C:\Users\brian\Dropbox\Datamatiker\GitHub\Team5B\GettingReal\UnitTests\obj\Debug
 C:\Users\brian\Dropbox\Datamatiker\GitHub\Team5B\GettingReal\UnitTests\obj\Debug\netcoreapp3.1\UnitTests.dll
 C:\Users\brian\Dropbox\Datamatiker\GitHub\Team5B\GettingReal\UnitTests\obj\Debug\netcoreapp3.1\UnitTests.pdb
 C:\Users\brian\Dropbox\Datamatiker\GitHub\Team5B\GettingReal\UnitTests\obj\Debug\netcoreapp3.1\UnitTests.genruntimeconfig.cache
+C:\Users\Danie\OneDrive\Dokumenter\GitHub\Team5B\GettingReal\UnitTests\obj\Debug\netcoreapp3.1\UnitTests.csprojAssemblyReference.cache
+C:\Users\Danie\OneDrive\Dokumenter\GitHub\Team5B\GettingReal\UnitTests\obj\Debug\netcoreapp3.1\UnitTests.AssemblyInfoInputs.cache
+C:\Users\Danie\OneDrive\Dokumenter\GitHub\Team5B\GettingReal\UnitTests\obj\Debug\netcoreapp3.1\UnitTests.AssemblyInfo.cs
+C:\Users\Danie\OneDrive\Dokumenter\GitHub\Team5B\GettingReal\UnitTests\obj\Debug\netcoreapp3.1\UnitTests.csproj.CoreCompileInputs.cache
