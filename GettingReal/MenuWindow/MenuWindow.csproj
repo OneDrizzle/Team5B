@@ -7,4 +7,14 @@
     <Win32Resource></Win32Resource>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="logo_idk.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="logo_idk.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>

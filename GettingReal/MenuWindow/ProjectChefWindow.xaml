@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MenuWindow"
         WindowStartupLocation="CenterScreen"
-        Icon="C:\Users\lopo\OneDrive\Skrivebord\logo_idk.png"
+        Icon="logo_idk.png"
         ResizeMode="CanMinimize"
         mc:Ignorable="d"
         Title="Project Chef" Height="450" Width="500">
