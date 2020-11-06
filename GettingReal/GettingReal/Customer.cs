@@ -9,7 +9,7 @@ namespace GettingReal
         public string Name { get; set; }
         public string Company { get; set; }
 
-        public Customer(string name, string company)
+        public Customer(string name = "", string company = "")
         {
             Name = name;
             Company = company;

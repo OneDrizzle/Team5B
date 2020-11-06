@@ -6,15 +6,15 @@ namespace UnitTests
     [TestClass]
     public class AggregateTest
     {
-        Aggregate ag;
+        Aggregate ag; 
         Filter f1, f2;
 
 
         [TestInitialize]
         public void Init()
         {
-            ag = new Aggregate("model1","1234");
-            f1 = new Filter("manufacturer", "model", "type", 10);
+            ag = new Aggregate("1234");
+            f1 = new Filter("manufacturer1", "filterClass2", "model3", 10);
         }
 
         [TestMethod]
@@ -24,10 +24,17 @@ namespace UnitTests
         }
 
         [TestMethod]
-        public void FilterCanBeCreatedAndIsAssociatedWithAggregate()
+        public void FilterCanBeCreatedAndAssociatedWithAggregate()
         {
-            f2 = ag.GetFilter("manufacturer", "model", "type", 10);
-            Assert.AreEqual(f1,f2);
+            ag.AddFilter(f1);
+            Assert.AreEqual(f1, ag.filter);
+        }
+
+        [TestMethod]
+        public void FilterInfoCanBeRetrievedFromAggregateClass()
+        {
+            ag.AddFilter(f1);
+            Assert.AreEqual("Producent: manufacturer1\nFilterklasse: filterClass2\nModel: model3\nLevetid i måneder: 10", ag.GetFilterInfo());
         }
 
         [TestMethod]
