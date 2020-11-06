@@ -1,5 +1,5 @@
 ﻿MenuWindow
-1.0.0.0
+
 
 winexe
 C#
@@ -12,7 +12,7 @@ TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 D:\GitHub\Team5B\GettingReal\MenuWindow\App.xaml
 3-243470861
 
-7-1558652391
+5998497560
 1921654412462
 MainWindow.xaml;ProjectChefWindow.xaml;TeknikkerWindow.xaml;
 
