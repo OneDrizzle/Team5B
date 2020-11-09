@@ -7,8 +7,8 @@ namespace UnitTests
     [TestClass]
     public class AggregateTest
     {
-        AggregateRepository agRepo;
-        Aggregate ag; 
+        VentilationAggregateRepository agRepo;
+        VentilationAggregate ag; 
         Filter f1, f2;
         List<Filter> filters;
         CustomerRepository customerRepo;
@@ -16,11 +16,11 @@ namespace UnitTests
         [TestInitialize]
         public void Init()
         {
-            ag = new Aggregate("1234");
+            ag = new VentilationAggregate("1234");
             f1 = new Filter("manufacturer1", "filterClass2", "model3","type4", 10);
             f2 = new Filter("manu1", "filtClass2", "mod3","typ4", 5);
             filters = new List<Filter>();
-            agRepo = new AggregateRepository();
+            agRepo = new VentilationAggregateRepository();
             agRepo.AddAggregate("model7", "4567");
             customerRepo = new CustomerRepository();
         }

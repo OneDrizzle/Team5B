@@ -7,42 +7,61 @@ namespace GettingReal
     public class Controller
     {
         
-        public Aggregate selectedAggregate { get; private set; }
+        public VentilationAggregate selectedAggregate { get; private set; }
         public Technician selectedTechnician { get; private set; }
         public Customer selectedCustomer { get; private set; }
         public Building selectedBuilding { get; private set; }
         public Floor selectedFloor { get; private set; }
         public Room selectedRoom { get; private set; }
-        private AggregateRepository aggregateRepository;
+        private VentilationAggregateRepository aggregateRepository;
         private CustomerRepository customerRepository;
         private BuildingRepository buildingRepository;
+        private RoomRepository roomRepository;
+
+        private List<Building> allBuildings;
+        private List<Room> allRooms;
+        private List<VentilationAggregate> allVentilationAggregates;
+        private List<Customer> allCustomers;
 
         public Controller()
         {
-            aggregateRepository = new AggregateRepository();
+            aggregateRepository = new VentilationAggregateRepository();
             customerRepository = new CustomerRepository();
             buildingRepository = new BuildingRepository();
+            roomRepository = new RoomRepository();
         }
 
-        public void AddAggregate(string modelNumber, string orderNumber, Customer customer)
-        {             
-            Aggregate aggregate = new Aggregate();
-            selectedAggregate = aggregate;
-        }
+        public void CreateVentilationAggregate()
+        { }
+
+        public VentilationAggregate GetVentilationAggregate()
+        { }
+
+        public List<Filter> GetFilters(string number)
+        { }
+
+        public List<ServiceReport> GetServiceReports(string orderNumber)
+        { }
+
+        //public void AddAggregate(string modelNumber, string orderNumber, Customer customer)
+        //{             
+        //    VentilationAggregate aggregate = new VentilationAggregate();
+        //    selectedAggregate = aggregate;
+        //}
 
 
-        public void SelectAggregate(string orderNumber, string customer, string building)
-        {
-            selectedAggregate = aggregateRepository.GetAggregate(orderNumber);           
-            selectedBuilding.GetAggregate(orderNumber)
-        }
+        //public void SelectAggregate(string orderNumber, string customer, string building)
+        //{
+        //    selectedAggregate = aggregateRepository.GetAggregate(orderNumber);           
+        //    selectedBuilding.GetAggregate(orderNumber)
+        //}
 
-        public void AddCustomer(string name, string company)
-        {
-            Customer customer = new Customer();
-            selectedCustomer = customer;
-            customerRepository.AddCustomer(customer);
-        }
+        //public void AddCustomer(string name, string company)
+        //{
+        //    Customer customer = new Customer();
+        //    selectedCustomer = customer;
+        //    customerRepository.AddCustomer(customer);
+        //}
 
 
         // ************** ikke slet ****************

@@ -5,17 +5,17 @@ using System.Diagnostics;
 
 namespace GettingReal
 {
-    public class AggregateRepository
+    public class VentilationAggregateRepository
     {
-        private List<Aggregate> aggregates;
-        private Aggregate selectedAggregate { get; set; }
+        private List<VentilationAggregate> aggregates;
+        private VentilationAggregate selectedAggregate { get; set; }
         private ServiceReport selectedServiceReport { get; set; }
         private Filter selectedFilter { get; set; }
         private Room selectedRoom { get; set; }
 
-    public AggregateRepository()
+    public VentilationAggregateRepository()
         {
-            aggregates = new List<Aggregate>();
+            aggregates = new List<VentilationAggregate>();
         }
 
         
@@ -23,13 +23,13 @@ namespace GettingReal
         {
             string fileName = customer.Company + "_" + building + "_" + orderNumber + ".pdf";
 
-            aggregates.Add(new Aggregate(modelNumber, orderNumber));
+            aggregates.Add(new VentilationAggregate(modelNumber, orderNumber));
         }
 
 
-        public Aggregate GetAggregate(string orderNumber)
+        public VentilationAggregate GetAggregate(string orderNumber)
         {
-            foreach (Aggregate aggregate in aggregates)
+            foreach (VentilationAggregate aggregate in aggregates)
             {
                 if (aggregate.OrderNumber == orderNumber)
                 {

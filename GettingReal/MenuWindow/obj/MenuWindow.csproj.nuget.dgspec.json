@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj": {}
+    "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj": {}
   },
   "projects": {
-    "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj": {
+    "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
+        "projectUniqueName": "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
         "projectName": "MenuWindow",
-        "projectPath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
-        "packagesPath": "C:\\Users\\brian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\MenuWindow\\obj\\",
+        "projectPath": "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
+        "packagesPath": "C:\\Users\\Danie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\GettingReal\\MenuWindow\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\brian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

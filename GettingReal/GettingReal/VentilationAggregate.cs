@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GettingReal
 {
-    public class Aggregate
+    public class VentilationAggregate
     {
         //public ? Operationinfo { get; set; }
         public string ModelNumber { get; set; }
@@ -16,7 +16,7 @@ namespace GettingReal
         private List<ServiceReport> serviceReports;
         private List<Floor> floors;
 
-        public Aggregate(string modelNumber = "0", string orderNumber = "0")        
+        public VentilationAggregate(string modelNumber = "0", string orderNumber = "0")        
         {
             filters = new List<Filter>();
             serviceReports = new List<ServiceReport>();

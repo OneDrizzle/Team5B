@@ -30,5 +30,11 @@ namespace GettingReal
 
             return null;
         }
+
+        public void Setbuilding()
+        { }
+
+        public void DeleteBuilding()
+        { }
     }
 }

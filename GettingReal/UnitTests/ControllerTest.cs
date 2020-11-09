@@ -8,13 +8,13 @@ namespace UnitTests
     [TestClass]
     public class ControllerTest
     {
-        Aggregate  selectedAg;
+        VentilationAggregate  selectedAg;
         Filter f1, f2, f3;
         Controller ct;
         Customer cust;
         List<Filter> filters;
         CustomerRepository customerRepo;
-        AggregateRepository agRepo;
+        VentilationAggregateRepository agRepo;
         Building b1;
 
 

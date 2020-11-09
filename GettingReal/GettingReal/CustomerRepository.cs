@@ -30,5 +30,11 @@ namespace GettingReal
             }
             return null;
         }
+
+        public void SetCustomer()
+        { }
+
+        public void DeleteCustomer()
+        { }
     }
 }
