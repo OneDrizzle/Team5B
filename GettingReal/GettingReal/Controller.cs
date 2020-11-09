@@ -28,7 +28,20 @@ namespace GettingReal
         {             
             Aggregate aggregate = new Aggregate();
             selectedAggregate = aggregate;
-            aggregateRepository.AddAggregate(modelNumber, orderNumber, customer);
+        }
+
+
+        public void SelectAggregate(string orderNumber, string customer, string building)
+        {
+            selectedAggregate = aggregateRepository.GetAggregate(orderNumber);           
+            selectedBuilding.GetAggregate(orderNumber)
+        }
+
+        public void AddCustomer(string name, string company)
+        {
+            Customer customer = new Customer();
+            selectedCustomer = customer;
+            customerRepository.AddCustomer(customer);
         }
 
 
@@ -40,20 +53,15 @@ namespace GettingReal
         //    selectedCustomer = cust;
         //    customerRepository.AddCustomer(cust);
         //}
-
-
-
-        public void selectAggregate(string orderNumber)
-        {
-            selectedAggregate = aggregateRepository.GetAggregate(orderNumber);           
-        }
-
-        public void AddCustomer(string name, string company)
-        {
-            Customer customer = new Customer();
-            selectedCustomer = customer;
-            customerRepository.AddCustomer(customer);
-        }
+        // *****************************************
+        //public void getAllAggregatesForBuilding(String id)
+        //{
+        //    List<Aggregate> listOfAggregates;
+        //    List<Room> listOfRooms = building.getRooms();
+        //    foreach (Room room : listOfRooms)
+        //    listOfAggregates.addAll(room.getAllAggregates());
+        //}
+        // *****************************************
 
 
     }

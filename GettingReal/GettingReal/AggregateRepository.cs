@@ -7,7 +7,7 @@ namespace GettingReal
 {
     public class AggregateRepository
     {
-        List<Aggregate> aggregates;
+        private List<Aggregate> aggregates;
         private Aggregate selectedAggregate { get; set; }
         private ServiceReport selectedServiceReport { get; set; }
         private Filter selectedFilter { get; set; }

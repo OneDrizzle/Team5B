@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GettingReal
 {
-    class CustomerRepository
+    public class CustomerRepository
     {
 
         List<Customer> customers;

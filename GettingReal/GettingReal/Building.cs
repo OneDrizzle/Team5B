@@ -10,7 +10,7 @@ namespace GettingReal
         public double Area { get; set; }
         public List<Floor> floors;
 
-        public Building(string name, double area)
+        public Building(string name="", double area=-1)
         {
             Name = name;
             Area = area;

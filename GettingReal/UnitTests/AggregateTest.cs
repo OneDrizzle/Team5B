@@ -1,44 +1,67 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using GettingReal;
+using System.Collections.Generic;
 
 namespace UnitTests
 {
     [TestClass]
     public class AggregateTest
     {
+        AggregateRepository agRepo;
         Aggregate ag; 
         Filter f1, f2;
-
+        List<Filter> filters;
+        CustomerRepository customerRepo;
 
         [TestInitialize]
         public void Init()
         {
             ag = new Aggregate("1234");
-            f1 = new Filter("manufacturer1", "filterClass2", "model3", 10);
+            f1 = new Filter("manufacturer1", "filterClass2", "model3","type4", 10);
+            f2 = new Filter("manu1", "filtClass2", "mod3","typ4", 5);
+            filters = new List<Filter>();
+            agRepo = new AggregateRepository();
+            agRepo.AddAggregate("model7", "4567");
+            customerRepo = new CustomerRepository();
         }
 
         [TestMethod]
         public void AggregateCanBeInstantiatedWithParameters()
         {
-            Assert.AreEqual("model1",ag.ModelNumber);
+            Assert.AreEqual("1234",ag.OrderNumber);
         }
 
         [TestMethod]
-        public void FilterCanBeCreatedAndAssociatedWithAggregate()
+        public void FilterCanBeRetrievedFromAggregate()
         {
             ag.AddFilter(f1);
-            Assert.AreEqual(f1, ag.filter);
+            filters = ag.GetFilters();
+            Assert.AreEqual("type4", filters[0].Type);
+
+            ag.AddFilter(f2);
+            filters = ag.GetFilters();
+            Assert.AreEqual("filtClass2", filters[1].FilterClass);
         }
 
+
         [TestMethod]
-        public void FilterInfoCanBeRetrievedFromAggregateClass()
+        public void AggregateCanBeCreatedFromRepo()
         {
-            ag.AddFilter(f1);
-            Assert.AreEqual("Producent: manufacturer1\nFilterklasse: filterClass2\nModel: model3\nLevetid i måneder: 10", ag.GetFilterInfo());
+            agRepo.AddAggregate(modelNumber: "111");
+            Assert.AreEqual(1,agRepo.Count());
         }
 
         [TestMethod]
-        public void test()
+        public void EveryOrderNumberIsUnique()
+        {
+            agRepo.AddAggregate(orderNumber: "666", modelNumber: "A5");
+            agRepo.AddAggregate(orderNumber: "555");
+            agRepo.AddAggregate(orderNumber: "666", modelNumber: "B6");
+            Assert.AreEqual(2, agRepo.Count());
+        }
+
+        [TestMethod]
+        public void EmptyTest()
         {
             //Assert.AreEqual();
         }

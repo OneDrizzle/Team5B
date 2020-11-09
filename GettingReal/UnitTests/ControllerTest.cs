@@ -1,49 +1,60 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using GettingReal;
 using System.Collections.Generic;
+using System.Xml.Linq;
 
 namespace UnitTests
 {
     [TestClass]
     public class ControllerTest
     {
-        Aggregate ag, selectedAg;
-        Filter f1, f2;
-        AggregateRepository agRepo;
+        Aggregate  selectedAg;
+        Filter f1, f2, f3;
         Controller ct;
         Customer cust;
         List<Filter> filters;
+        CustomerRepository customerRepo;
+        AggregateRepository agRepo;
+        Building b1;
 
 
         [TestInitialize]
         public void Init()
         {
             f1 = new Filter("manufacturer1", "model2", "filterClass3", "type4", 10);
-            ag = new Aggregate("model1", "1234");
+            f2 = new Filter("manu1", "filtClass2", "mod3", "typ4", 5);
+            f3 = new Filter("f3", "f3", "f3", "f3", 3);
             ct = new Controller();
+            b1 = new Building();
             cust = new Customer();
             filters = new List<Filter>();
         }
 
         [TestMethod]
-        public void FilterInfoCanBeRetrievedFromController()
+        public void FilterInfoCanBeRetrievedWithOrderNumberFromController()
         {
-            ag.AddFilter(f1);
-            string filterStringFromController = ct.GetFilters();
+            ct.AddAggregate(orderNumber: "666");
+            selectedAg = ct.GetAggregate("666");
+            
 
-            Assert.AreEqual("Producent: manufacturer1\nFilterklasse: filterClass2\nModel: model3\nLevetid i måneder: 10", filterStringFromController);
+            selectedAg.AddFilter(f1);
+            selectedAg.AddFilter(f2);
+            selectedAg.AddFilter(f3);
+            filters = ct.GetFilters("666");
+
+            Assert.AreEqual(3,filters[2].LifespanInMonths);
         }
 
         [TestMethod]
         public void AddAggregateFromController()
         {
-            // 
-            ct.AddAggregate(modelNumber:"model1", orderNumber:"666", customer: cust);
-            Assert.AreEqual(ct.selectedAggregate, agRepo.GetAggregate("666"));
+            ct.AddAggregate(modelNumber: "model1", orderNumber: "666", customer: "customerName", building: "building1");
+            selectedAg = ct.GetAggregate("666");
 
-            ct.selectedAggregate.OrderNumber = "555";
-            Assert.AreEqual(ct.selectedAggregate, agRepo.GetAggregate("555"));
+            Assert.AreEqual("model1", selectedAg.ModelNumber);
         }
+
+
 
     }
 }

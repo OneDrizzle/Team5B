@@ -77,3 +77,5 @@ D:\GitHub\Team5B\GettingReal\MenuWindow\bin\Debug\netcoreapp3.1\logo_idk.png
 D:\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\CreateAgregate.g.cs
 D:\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\MenuWindow_Content.g.cs
 D:\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\CreateAgregate.baml
+C:\Users\brian\Dropbox\Datamatiker\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\CreateAgregate.g.cs
+C:\Users\brian\Dropbox\Datamatiker\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\CreateAgregate.baml
