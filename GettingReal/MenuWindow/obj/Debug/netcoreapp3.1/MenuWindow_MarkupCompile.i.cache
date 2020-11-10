@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\
+C:\Users\Lasse H Hansen\Documents\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\
 MenuWindow
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
-C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\App.xaml
+C:\Users\Lasse H Hansen\Documents\GitHub\Team5B\GettingReal\MenuWindow\App.xaml
 4-1509838436
 1-1368740102
 8-1097664319
 1921654412462
 CreateAgregate.xaml;MainWindow.xaml;ProjectChefWindow.xaml;TeknikkerWindow.xaml;
 
-False
+True
 
