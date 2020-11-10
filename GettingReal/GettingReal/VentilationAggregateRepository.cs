@@ -16,11 +16,22 @@ namespace GettingReal
         }
 
 
-        public void AddVentilationAggregate(string modelNumber, string orderNumber)
+        public bool AddVentilationAggregate(string orderNumber)
         {
-            string fileName = customer.Company + "_" + building + "_" + orderNumber + ".pdf";
+            foreach (VentilationAggregate aggregate in aggregates)
+            {
+                if (aggregate.OrderNumber == orderNumber)
+                {
+                    return false;
+                }
+            }
 
-            aggregates.Add(new VentilationAggregate(modelNumber, orderNumber));
+            VentilationAggregate thisAggreate = new VentilationAggregate(orderNumber);
+            aggregates.Add(thisAggreate);
+            return true;
+            //string fileName = customer.Company + "_" + building + "_" + orderNumber + ".pdf";
+
+            //aggregates.Add(new VentilationAggregate(modelNumber, orderNumber));
         }
 
 

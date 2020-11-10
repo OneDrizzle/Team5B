@@ -39,8 +39,19 @@ namespace GettingReal
             selectedAggregate = aggregateRepository.GetVentilationAggregate(orderNumber);
         }
         
-        public void AddVentilationAggregate()
-        { }
+        public bool AddVentilationAggregate(string orderNumber)
+        {
+
+            foreach (VentilationAggregate aggregate in allVentilationAggregates)
+            {
+                if (aggregate.OrderNumber == orderNumber)
+                {
+                    return false;
+                }
+            }
+            aggregateRepository.AddVentilationAggregate(orderNumber);
+            return true;
+        }
 
         public VentilationAggregate GetVentilationAggregate(string orderNumber)
         {
@@ -61,7 +72,10 @@ namespace GettingReal
         }
 
         public List<ServiceReport> GetServiceReports(string orderNumber)
-        { }
+        {
+            SelectVentilationAggregate(orderNumber);
+            return aggregateRepository.GetListOfServiceReports(selectedAggregate);
+        }
 
         //public void AddAggregate(string modelNumber, string orderNumber, Customer customer)
         //{             

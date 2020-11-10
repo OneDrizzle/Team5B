@@ -32,7 +32,16 @@ namespace GettingReal
         }
 
         public void Setbuilding()
-        { }
+        {
+            Building selectedBuilding;
+            foreach (Building building in buildings)
+            {
+                if (building.Name == name)
+                {
+                    selectedBuilding = building;
+                }
+            }
+        }
 
         public void DeleteBuilding()
         { }
