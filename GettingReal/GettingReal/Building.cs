@@ -7,13 +7,36 @@ namespace GettingReal
     public class Building
     {
         public string Name { get; set; }
-        public double Area { get; set; }
-        public List<Floor> floors;
+        private List<VentilationAggregate> ventilationAggregates;
 
-        public Building(string name="", double area=-1)
+        public Building(string name = "")
         {
+            ventilationAggregates = new List<VentilationAggregate>();
             Name = name;
-            Area = area;
         }
+
+        public List<VentilationAggregate> GetListOfVentilationAggregates()
+        {
+            return ventilationAggregates;
+        }
+
+        public void AddVentilationAggregate(VentilationAggregate ventilationAggregate)
+        {
+            ventilationAggregates.Add(ventilationAggregate);
+        }
+
+        public VentilationAggregate GetVentilationAggregate(string orderNumber)
+        {
+            foreach (VentilationAggregate aggregate in ventilationAggregates)
+            {
+                if (aggregate.OrderNumber == orderNumber)
+                {
+                    return aggregate;
+                }
+            }
+            return null;
+        }
+
+
     }
 }

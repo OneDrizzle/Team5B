@@ -7,7 +7,6 @@ namespace GettingReal
     public class ServiceReport
     {
         public DateTime Date { get; set; }
-        //public ? ServiceData { get; set; }
 
         public ServiceReport()
         {

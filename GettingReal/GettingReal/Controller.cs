@@ -8,10 +8,8 @@ namespace GettingReal
     {
         
         public VentilationAggregate selectedAggregate { get; private set; }
-        public Technician selectedTechnician { get; private set; }
         public Customer selectedCustomer { get; private set; }
         public Building selectedBuilding { get; private set; }
-        public Floor selectedFloor { get; private set; }
         public Room selectedRoom { get; private set; }
         private VentilationAggregateRepository aggregateRepository;
         private CustomerRepository customerRepository;
@@ -29,16 +27,38 @@ namespace GettingReal
             customerRepository = new CustomerRepository();
             buildingRepository = new BuildingRepository();
             roomRepository = new RoomRepository();
+
+            allBuildings = new List<Building>();
+            allRooms = new List<Room>();
+            allVentilationAggregates = new List<VentilationAggregate>();
+            allCustomers = new List<Customer>();
         }
 
-        public void CreateVentilationAggregate()
+        public void SelectVentilationAggregate(string orderNumber)
+        {
+            selectedAggregate = aggregateRepository.GetVentilationAggregate(orderNumber);
+        }
+        
+        public void AddVentilationAggregate()
         { }
 
-        public VentilationAggregate GetVentilationAggregate()
-        { }
-
-        public List<Filter> GetFilters(string number)
-        { }
+        public VentilationAggregate GetVentilationAggregate(string orderNumber)
+        {
+            foreach (VentilationAggregate ventilationAggregate in allVentilationAggregates)
+            {
+                if (ventilationAggregate.OrderNumber==orderNumber)
+                {
+                    return ventilationAggregate;
+                }
+            }
+            return null;
+        }
+        
+        public List<Filter> GetFilters(string orderNumber)
+        {
+            SelectVentilationAggregate(orderNumber);
+            return aggregateRepository.GetListOfFilters(selectedAggregate);
+        }
 
         public List<ServiceReport> GetServiceReports(string orderNumber)
         { }

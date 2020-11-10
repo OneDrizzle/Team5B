@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Diagnostics;
+﻿using System.Collections.Generic;
 
 namespace GettingReal
 {
@@ -13,13 +10,13 @@ namespace GettingReal
         private Filter selectedFilter { get; set; }
         private Room selectedRoom { get; set; }
 
-    public VentilationAggregateRepository()
+        public VentilationAggregateRepository()
         {
             aggregates = new List<VentilationAggregate>();
         }
 
-        
-        public void AddAggregate(string modelNumber, string orderNumber)
+
+        public void AddVentilationAggregate(string modelNumber, string orderNumber)
         {
             string fileName = customer.Company + "_" + building + "_" + orderNumber + ".pdf";
 
@@ -27,7 +24,7 @@ namespace GettingReal
         }
 
 
-        public VentilationAggregate GetAggregate(string orderNumber)
+        public VentilationAggregate GetVentilationAggregate(string orderNumber)
         {
             foreach (VentilationAggregate aggregate in aggregates)
             {
@@ -38,6 +35,8 @@ namespace GettingReal
             }
             return null;
         }
+
+        /*
         public void ShowAggregate(string orderNumber)
         {
             //Kig igennem mappe med aggregater og vælg fil ud fra ordrenummer
@@ -46,25 +45,31 @@ namespace GettingReal
             Process.Start(new ProcessStartInfo(@"VE01.pdf") { UseShellExecute = true });
             //Firma_Bygning_Ordernummer.pdf
         }
+        */
+
 
         public void AddFilter(Filter filter)
         {
             selectedAggregate.AddFilter(filter);
         }
 
-        public string GetFilterInfo()
+
+        public List<Filter> GetListOfFilters(VentilationAggregate selectedAggregate)
         {
-            return null;
+            return selectedAggregate.GetListOfFilters();    
         }
+
 
         public void AddServiceReport(ServiceReport serviceReport)
         {
-            selectedAggregate.AddServicereport(serviceReport);
+            selectedAggregate.AddServiceReport(serviceReport);
             selectedServiceReport = serviceReport;
         }
-        public string GetServiceReport()
+
+        public List<ServiceReport> GetListOfServiceReports(VentilationAggregate selectedAggregate)
         {
-            return null;
+            return selectedAggregate.GetListOfServiceReports();
         }
+
     }
 }

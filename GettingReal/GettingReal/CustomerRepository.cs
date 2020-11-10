@@ -31,8 +31,18 @@ namespace GettingReal
             return null;
         }
 
-        public void SetCustomer()
-        { }
+        public void SetCustomer(string name)
+        {
+            Customer selectedCustomer;
+
+            foreach (Customer customer in customers)
+            {
+                if (customer.Name == name)
+                {
+                    selectedCustomer = customer;
+                }
+            }
+        }
 
         public void DeleteCustomer()
         { }

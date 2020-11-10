@@ -18,5 +18,39 @@ namespace GettingReal
             rooms.Add(room);
         }
 
+        public Room GetRoom(string number)
+        {
+            foreach (Room room in rooms)
+            {
+                if (room.Number == number)
+                {
+                    return room;
+                }
+            }
+            return null;
+        }
+
+        public void SetRoom(string number)
+        {
+            Room SelectedRoom;
+            foreach (Room room in rooms)
+            {
+                if (room.Number == number)
+                {
+                    SelectedRoom = room;
+                }
+            }
+        }
+
+        public void DeleteRoom()
+        {
+
+        }
+
+        public List<Room> GetListOfRooms()
+        {
+            return rooms;
+        }
+
     }
 }

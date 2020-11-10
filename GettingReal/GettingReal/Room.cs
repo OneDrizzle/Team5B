@@ -9,14 +9,19 @@ namespace GettingReal
         public string Number { get; set; }
         public double EstimatedAirVolume { get; set; }
         public double Area { get; set; }
-        List<Room> rooms;
+        public double MeasuredAirVolume { get; set; }
+        public string Technician { get; set; }
 
         public Room(string number, double estimatedVolume, double area)
         {
             Number = number;
             EstimatedAirVolume = estimatedVolume;
             Area = Area;
-            rooms = new List<Room>();
+        }
+
+        public double CalculateDeviation()
+        {
+            return MeasuredAirVolume/EstimatedAirVolume *100;
         }
     }
 }
