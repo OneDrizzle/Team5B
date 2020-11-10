@@ -25,16 +25,21 @@ namespace MenuWindow
             InitializeComponent();
         }
 
+        ProjectChefWindow window = new ProjectChefWindow();
         private void Button_back_Click(object sender, RoutedEventArgs e)
         {
-            ProjectChefWindow window = new ProjectChefWindow();
+            // er en tilbage knap
 
             window.Show();
 
             this.Close();
         }
+        string JustFileName;
+        string sourcePath;
+        string OrdreNumber;
         private void btn_FindAgregateInfoFile_Click(object sender, RoutedEventArgs e)
         {
+            // Åbner en Dialogbox hvor man kan finde et dokument
             OpenFileDialog openFileDialog = new OpenFileDialog();
 
             openFileDialog.FileName = "";
@@ -44,12 +49,43 @@ namespace MenuWindow
             Nullable<bool> result = openFileDialog.ShowDialog();
 
             if (result == true)
-            {   
+            {
+                //Gemmer Fil navnet ned til JustFileName og viser den ude i Gui'en 
                 FileInfo fi = new FileInfo(openFileDialog.FileName);
-                string JustFileName = fi.Name;
+                JustFileName = fi.Name;
+                sourcePath = openFileDialog.FileName;
                 GetInfoSheet.Text = JustFileName;
+
             }
-            
+        }
+
+        private void btn_saveNewAgregat_Click_(object sender, RoutedEventArgs e)
+        {
+            string JustThisFileName = JustFileName;
+            //Cpoy file to userdefined folder
+
+            string fileName = OrdreNumber + JustThisFileName;
+            string targetPath = System.Reflection.Assembly.GetExecutingAssembly().Location;
+            string path = ("\\GettingReal\\Aggregates");
+            string filelocation = System.IO.Path.Combine(targetPath, path);
+
+            string sourceFile = sourcePath;
+            string destFile = System.IO.Path.Combine(targetPath, fileName);
+
+            if (!Directory.Exists(targetPath))
+            {
+                Directory.CreateDirectory(targetPath);
+            }
+
+            File.Copy(sourceFile, destFile);
+
+            window.Show();
+            this.Close();
+        }
+
+        private void GetOrderNumber_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            OrdreNumber = GetOrderNumber.Text + "_";
         }
     }
 }

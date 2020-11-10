@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Danie\\.nuget\\packages\\": {}
+    "C:\\Users\\Lasse H Hansen\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Danie\\Documents\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj",
+      "projectUniqueName": "C:\\Users\\Lasse H Hansen\\Documents\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj",
       "projectName": "GettingReal",
-      "projectPath": "C:\\Users\\Danie\\Documents\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj",
-      "packagesPath": "C:\\Users\\Danie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Danie\\Documents\\GitHub\\Team5B\\GettingReal\\GettingReal\\obj\\",
+      "projectPath": "C:\\Users\\Lasse H Hansen\\Documents\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj",
+      "packagesPath": "C:\\Users\\Lasse H Hansen\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lasse H Hansen\\Documents\\GitHub\\Team5B\\GettingReal\\GettingReal\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Lasse H Hansen\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -58,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
