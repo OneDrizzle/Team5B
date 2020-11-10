@@ -101,7 +101,7 @@ namespace MenuWindow {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/MenuWindow;V1.0.0.0;component/createagregate.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/MenuWindow;component/createagregate.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\CreateAgregate.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -1,6 +1,7 @@
 ﻿using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -32,22 +33,21 @@ namespace MenuWindow
 
             this.Close();
         }
-        string filepath = "";
         private void btn_FindAgregateInfoFile_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
 
             openFileDialog.FileName = "";
             openFileDialog.DefaultExt = ".pdf";
-            openFileDialog.Filter = "Pdf Documents (.pdf)|*.pdf";
+            openFileDialog.Filter = "Pdf Filer|*.pdf";
 
             Nullable<bool> result = openFileDialog.ShowDialog();
 
             if (result == true)
-            {
-                filepath = openFileDialog.FileName;
-                string showfilepath = filepath.Substring(filepath.IndexOf('\\')+1);
-                GetInfoSheet.Text = showfilepath;
+            {   
+                FileInfo fi = new FileInfo(openFileDialog.FileName);
+                string JustFileName = fi.Name;
+                GetInfoSheet.Text = JustFileName;
             }
             
         }

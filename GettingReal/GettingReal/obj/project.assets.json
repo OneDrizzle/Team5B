@@ -8,20 +8,25 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Danie\\.nuget\\packages\\": {}
+    "C:\\Users\\Bruger\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj",
+      "projectUniqueName": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\GettingReal\\GettingReal.csproj",
       "projectName": "GettingReal",
-      "projectPath": "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj",
-      "packagesPath": "C:\\Users\\Danie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\GettingReal\\GettingReal\\obj\\",
+      "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\GettingReal\\GettingReal.csproj",
+      "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\GettingReal\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
