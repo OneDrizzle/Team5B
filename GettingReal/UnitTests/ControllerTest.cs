@@ -8,7 +8,7 @@ namespace UnitTests
     [TestClass]
     public class ControllerTest
     {
-        VentilationAggregate  selectedAg;
+        VentilationAggregate ag1, ag2, selectedAg;
         Filter f1, f2, f3;
         Controller ct;
         Customer cust;
@@ -21,6 +21,8 @@ namespace UnitTests
         [TestInitialize]
         public void Init()
         {
+            ag1 = new VentilationAggregate(orderNumber: "1234");
+            ag2 = new VentilationAggregate(modelNumber: "model1", orderNumber: "666");
             f1 = new Filter("manufacturer1", "model2", "filterClass3", "type4", 10);
             f2 = new Filter("manu1", "filtClass2", "mod3", "typ4", 5);
             f3 = new Filter("f3", "f3", "f3", "f3", 3);
@@ -31,28 +33,40 @@ namespace UnitTests
         }
 
         [TestMethod]
+        public void AddVentilationAggregateFromController()
+        {
+            ct.AddVentilationAggregate(ag2);
+            selectedAg = ct.GetVentilationAggregate("666");
+
+            Assert.AreEqual("model1", selectedAg.ModelNumber);
+        }
+       
+        [TestMethod]
         public void FilterInfoCanBeRetrievedWithOrderNumberFromController()
         {
-            ct.AddAggregate(orderNumber: "666");
-            selectedAg = ct.GetAggregate("666");
-            
-
+            //ct.AddVentilationAggregate(ag1);
+            agRepo.AddAggregate(ag1);
+            selectedAg = ct.GetVentilationAggregate("1234");
+                      
             selectedAg.AddFilter(f1);
             selectedAg.AddFilter(f2);
             selectedAg.AddFilter(f3);
-            filters = ct.GetFilters("666");
+            filters = ct.GetFilters("1234");
 
             Assert.AreEqual(3,filters[2].LifespanInMonths);
         }
 
         [TestMethod]
-        public void AddAggregateFromController()
+        public void EveryOrderNumberIsUnique()
         {
-            ct.AddAggregate(modelNumber: "model1", orderNumber: "666", customer: "customerName", building: "building1");
-            selectedAg = ct.GetAggregate("666");
+            ct.AddVentilationAggregate("123");
+            ct.AddVentilationAggregate("1223233");
+            bool result = ct.AddVentilationAggregate("123");
 
-            Assert.AreEqual("model1", selectedAg.ModelNumber);
+            Assert.IsTrue(result);
+
         }
+
 
 
 
