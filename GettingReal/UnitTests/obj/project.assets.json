@@ -5732,19 +5732,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Lasse H Hansen\\.nuget\\packages\\": {}
+    "C:\\Users\\Nick\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lasse H Hansen\\Documents\\GitHub\\Team5B\\GettingReal\\UnitTests\\UnitTests.csproj",
+      "projectUniqueName": "C:\\Users\\Nick\\Documents\\GitHub\\Team5B\\GettingReal\\UnitTests\\UnitTests.csproj",
       "projectName": "UnitTests",
-      "projectPath": "C:\\Users\\Lasse H Hansen\\Documents\\GitHub\\Team5B\\GettingReal\\UnitTests\\UnitTests.csproj",
-      "packagesPath": "C:\\Users\\Lasse H Hansen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lasse H Hansen\\Documents\\GitHub\\Team5B\\GettingReal\\UnitTests\\obj\\",
+      "projectPath": "C:\\Users\\Nick\\Documents\\GitHub\\Team5B\\GettingReal\\UnitTests\\UnitTests.csproj",
+      "packagesPath": "C:\\Users\\Nick\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Nick\\Documents\\GitHub\\Team5B\\GettingReal\\UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Lasse H Hansen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Nick\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5757,8 +5757,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Lasse H Hansen\\Documents\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj": {
-              "projectPath": "C:\\Users\\Lasse H Hansen\\Documents\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj"
+            "C:\\Users\\Nick\\Documents\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj": {
+              "projectPath": "C:\\Users\\Nick\\Documents\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj"
             }
           }
         }
@@ -5804,7 +5804,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

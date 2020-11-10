@@ -17,3 +17,9 @@ C:\Users\Danie\OneDrive\Dokumenter\GitHub\Team5B\GettingReal\GettingReal\obj\Deb
 C:\Users\Danie\OneDrive\Dokumenter\GitHub\Team5B\GettingReal\GettingReal\obj\Debug\netcoreapp3.1\GettingReal.csproj.CoreCompileInputs.cache
 C:\Users\Danie\OneDrive\Dokumenter\GitHub\Team5B\GettingReal\GettingReal\obj\Debug\netcoreapp3.1\GettingReal.dll
 C:\Users\Danie\OneDrive\Dokumenter\GitHub\Team5B\GettingReal\GettingReal\obj\Debug\netcoreapp3.1\GettingReal.pdb
+C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\GettingReal\obj\Debug\netcoreapp3.1\GettingReal.csprojAssemblyReference.cache
+C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\GettingReal\obj\Debug\netcoreapp3.1\GettingReal.AssemblyInfoInputs.cache
+C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\GettingReal\obj\Debug\netcoreapp3.1\GettingReal.AssemblyInfo.cs
+C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\GettingReal\obj\Debug\netcoreapp3.1\GettingReal.csproj.CoreCompileInputs.cache
+C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\GettingReal\obj\Debug\netcoreapp3.1\GettingReal.dll
+C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\GettingReal\obj\Debug\netcoreapp3.1\GettingReal.pdb

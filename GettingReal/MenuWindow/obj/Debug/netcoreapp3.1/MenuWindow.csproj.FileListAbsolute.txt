@@ -47,7 +47,6 @@ C:\Users\brian\Dropbox\Datamatiker\GitHub\Team5B\GettingReal\MenuWindow\obj\Debu
 C:\Users\brian\Dropbox\Datamatiker\GitHub\Team5B\GettingReal\MenuWindow\bin\Debug\netcoreapp3.1\logo_idk.png
 C:\Users\brian\Dropbox\Datamatiker\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\MenuWindow_Content.g.cs
 C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\MenuWindow\bin\Debug\netcoreapp3.1\MenuWindow.exe
-C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\MenuWindow\bin\Debug\netcoreapp3.1\logo_idk.png
 C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\MenuWindow\bin\Debug\netcoreapp3.1\MenuWindow.deps.json
 C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\MenuWindow\bin\Debug\netcoreapp3.1\MenuWindow.runtimeconfig.json
 C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\MenuWindow\bin\Debug\netcoreapp3.1\MenuWindow.runtimeconfig.dev.json
@@ -58,7 +57,6 @@ C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreap
 C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\ProjectChefWindow.g.cs
 C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\TeknikkerWindow.g.cs
 C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\App.g.cs
-C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\MenuWindow_Content.g.cs
 C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\MenuWindow_MarkupCompile.cache
 C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\MenuWindow_MarkupCompile.lref
 C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\MainWindow.baml
@@ -106,3 +104,5 @@ C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\obj\Debug\netcor
 C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\MenuWindow.dll
 C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\MenuWindow.pdb
 C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\MenuWindow.genruntimeconfig.cache
+C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\App.baml
+C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\ImageDictionary.baml

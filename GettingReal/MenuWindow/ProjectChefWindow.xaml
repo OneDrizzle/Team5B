@@ -5,17 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MenuWindow"
         WindowStartupLocation="CenterScreen"
-        Icon="logo_idk.png"
+        Icon="{StaticResource Icon}"
         ResizeMode="CanMinimize"
         mc:Ignorable="d"
         Title="Project Chef" Height="450" Width="500">
     <Grid Margin="0,0,0,-6">
-        <Image Source="https://airteam.dk/wp-content/themes/airteam/gfx/logo.png" HorizontalAlignment="Center" Height="130" Margin="0,24,0,0" VerticalAlignment="Top" Width="320"/>
+        <Image Source="{StaticResource Logo}" HorizontalAlignment="Center" Height="130" Margin="0,24,0,0" VerticalAlignment="Top" Width="320"/>
         <Button Name="btn_CreateAgregat" Content="Opret Agregat" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Top" Height="30" Width="120" Click="btn_CreateAgregat_Click"/>
         <Button Name="btn_access" Content="Tilgå aggrigat" HorizontalAlignment="Center" Margin="0,250,0,0" VerticalAlignment="Top" Height="25" Width="120"/>
         <Button Name="ben_access_sr" Content="Tilgå SR" HorizontalAlignment="Center" Margin="0,300,0,0" VerticalAlignment="Top" Height="25" Width="120"/>
         <Button Name="btn_create_sr" Content="Opret SR" HorizontalAlignment="Center" Margin="0,350,0,0" VerticalAlignment="Top" Height="25" Width="120"/>
-        <Button Name="btn_back" Content="Tilbage" HorizontalAlignment="Left" Margin="35,312,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="Button_back_Click"/>
+        <Button Name="btn_back" HorizontalAlignment="Left" Margin="35,312,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="Button_back_Click">
+            <Image Source="{StaticResource Back}"/>
+        </Button>
 
     </Grid>
 </Window>

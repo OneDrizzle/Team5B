@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lasse H Hansen\\Documents\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj": {}
+    "C:\\Users\\Nick\\Documents\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lasse H Hansen\\Documents\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj": {
+    "C:\\Users\\Nick\\Documents\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lasse H Hansen\\Documents\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
+        "projectUniqueName": "C:\\Users\\Nick\\Documents\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
         "projectName": "MenuWindow",
-        "projectPath": "C:\\Users\\Lasse H Hansen\\Documents\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
-        "packagesPath": "C:\\Users\\Lasse H Hansen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lasse H Hansen\\Documents\\GitHub\\Team5B\\GettingReal\\MenuWindow\\obj\\",
+        "projectPath": "C:\\Users\\Nick\\Documents\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
+        "packagesPath": "C:\\Users\\Nick\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nick\\Documents\\GitHub\\Team5B\\GettingReal\\MenuWindow\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Lasse H Hansen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nick\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

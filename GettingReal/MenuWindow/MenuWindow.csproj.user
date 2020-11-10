@@ -21,6 +21,9 @@
     <Page Update="CreateAgregate.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="ImageDictionary.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
