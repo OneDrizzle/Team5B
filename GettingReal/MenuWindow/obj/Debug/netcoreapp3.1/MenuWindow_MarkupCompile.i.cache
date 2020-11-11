@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\App.xaml
-6707496138
+8-28488586
 
 9-966807774
 1921654412462
-CreateAgregate.xaml;FindAgregate.xaml;ImageDictionary.xaml;MainWindow.xaml;ProjectChefWindow.xaml;TeknikkerWindow.xaml;
+CreateAgregate.xaml;FindAgregate.xaml;ImageDictionaryButton.xaml;ImageDictionaryIcon.xaml;ImageDictionaryLogo.xaml;MainWindow.xaml;ProjectChefWindow.xaml;TeknikkerWindow.xaml;
 
-True
+False
 

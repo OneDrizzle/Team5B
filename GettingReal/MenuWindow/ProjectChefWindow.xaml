@@ -15,7 +15,7 @@
         <Button Name="btn_access" Content="Tilgå aggrigat" HorizontalAlignment="Center" Margin="0,250,0,0" VerticalAlignment="Top" Height="25" Width="120"/>
         <Button Name="ben_access_sr" Content="Tilgå SR" HorizontalAlignment="Center" Margin="0,300,0,0" VerticalAlignment="Top" Height="25" Width="120"/>
         <Button Name="btn_create_sr" Content="Opret SR" HorizontalAlignment="Center" Margin="0,350,0,0" VerticalAlignment="Top" Height="25" Width="120"/>
-        <Button Name="btn_back" HorizontalAlignment="Left" Margin="35,312,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="Button_back_Click">
+        <Button Name="btn_back" HorizontalAlignment="Left" Margin="35,312,0,0" VerticalAlignment="Top" Height="55" Width="55" Click="Button_back_Click">
             <Image Source="{StaticResource Back}"/>
         </Button>
 

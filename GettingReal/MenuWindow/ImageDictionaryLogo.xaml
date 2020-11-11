@@ -2,7 +2,4 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local="clr-namespace:MenuWindow">
     <BitmapImage x:Key="Logo" UriSource="Assets\Logo_Airteam.png"/>
-    <BitmapImage x:Key="Icon" UriSource="Assets\Icon_Airteam.png"/>
-    <BitmapImage x:Key="Back" UriSource="Assets\Back_Button.png"/>
-
 </ResourceDictionary>

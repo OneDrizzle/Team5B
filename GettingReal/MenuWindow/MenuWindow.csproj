@@ -8,12 +8,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\Back_Button.png" />
     <None Remove="Assets\Icon_Airteam.png" />
     <None Remove="Assets\Logo_Airteam.png" />
     <None Remove="logo_idk.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Assets\Back_Button.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Assets\Icon_Airteam.png" />
     <Resource Include="Assets\Logo_Airteam.png" />
   </ItemGroup>
