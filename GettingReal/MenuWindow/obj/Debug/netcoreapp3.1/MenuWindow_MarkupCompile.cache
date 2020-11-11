@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\
+C:\Users\Administrator\Documents\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\
 MenuWindow
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
-C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\MenuWindow\App.xaml
-5-1675611067
+C:\Users\Administrator\Documents\GitHub\Team5B\GettingReal\MenuWindow\App.xaml
+71883371505
 
 61459485632
 1921654412462
-CreateAgregate.xaml;ImageDictionary.xaml;MainWindow.xaml;ProjectChefWindow.xaml;TeknikkerWindow.xaml;
+CreateAgregate.xaml;ImageDictionaryButton.xaml;ImageDictionaryIcon.xaml;ImageDictionaryLogo.xaml;MainWindow.xaml;ProjectChefWindow.xaml;TeknikkerWindow.xaml;
 
 False
 
