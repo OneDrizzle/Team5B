@@ -78,7 +78,6 @@ D:\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\CreateAgregate.b
 C:\Users\brian\Dropbox\Datamatiker\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\CreateAgregate.g.cs
 C:\Users\brian\Dropbox\Datamatiker\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\CreateAgregate.baml
 C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\bin\Debug\netcoreapp3.1\MenuWindow.exe
-C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\bin\Debug\netcoreapp3.1\logo_idk.png
 C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\bin\Debug\netcoreapp3.1\MenuWindow.deps.json
 C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\bin\Debug\netcoreapp3.1\MenuWindow.runtimeconfig.json
 C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\bin\Debug\netcoreapp3.1\MenuWindow.runtimeconfig.dev.json
@@ -90,7 +89,6 @@ C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\obj\Debug\netcor
 C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\ProjectChefWindow.g.cs
 C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\TeknikkerWindow.g.cs
 C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\App.g.cs
-C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\MenuWindow_Content.g.cs
 C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\MenuWindow_MarkupCompile.cache
 C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\MenuWindow_MarkupCompile.lref
 C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\CreateAgregate.baml
@@ -106,3 +104,7 @@ C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\obj\Debug\netcor
 C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\MenuWindow.genruntimeconfig.cache
 C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\App.baml
 C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\ImageDictionary.baml
+C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\App.baml
+C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\ImageDictionary.baml
+C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\FindAgregate.g.cs
+C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\FindAgregate.baml

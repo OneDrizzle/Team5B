@@ -1,6 +1,7 @@
 ﻿using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Text;
 using System.Windows;
@@ -28,7 +29,7 @@ namespace MenuWindow
         ProjectChefWindow window = new ProjectChefWindow();
         private void Button_back_Click(object sender, RoutedEventArgs e)
         {
-            // er en tilbage knap
+            // Back button
 
             window.Show();
 
@@ -39,53 +40,62 @@ namespace MenuWindow
         string OrdreNumber;
         private void btn_FindAgregateInfoFile_Click(object sender, RoutedEventArgs e)
         {
-            // Åbner en Dialogbox hvor man kan finde et dokument
+            // OPens a dialog box that allows user to find and choose a file from their pc
             OpenFileDialog openFileDialog = new OpenFileDialog();
 
             openFileDialog.FileName = "";
             openFileDialog.DefaultExt = ".pdf";
-            openFileDialog.Filter = "Pdf Filer|*.pdf";
+            openFileDialog.Filter = "Word Documents|*.doc";
 
             Nullable<bool> result = openFileDialog.ShowDialog();
 
             if (result == true)
             {
                 //Gemmer Fil navnet ned til JustFileName og viser den ude i Gui'en 
+                
                 FileInfo fi = new FileInfo(openFileDialog.FileName);
                 JustFileName = fi.Name;
-                sourcePath = openFileDialog.FileName;
                 GetInfoSheet.Text = JustFileName;
+                sourcePath = openFileDialog.FileName;
 
             }
         }
 
         private void btn_saveNewAgregat_Click_(object sender, RoutedEventArgs e)
         {
-            string JustThisFileName = JustFileName;
             //Cpoy file to userdefined folder
 
-            string fileName = OrdreNumber + JustThisFileName;
             string targetPath = System.Reflection.Assembly.GetExecutingAssembly().Location;
-            string path = ("\\GettingReal\\Aggregates");
-            string filelocation = System.IO.Path.Combine(targetPath, path);
+            string path = @"GettingReal\GettingReal\Aggregates\";
+            int indexOfPath = targetPath.IndexOf("GettingReal");
+            if (indexOfPath >= 0)
+                targetPath = targetPath.Remove(indexOfPath);
+            string destFile = System.IO.Path.Combine(targetPath, path);
 
-            string sourceFile = sourcePath;
-            string destFile = System.IO.Path.Combine(targetPath, fileName);
+            string fileToCopy = sourcePath;
+            string destinationDirectory = destFile;
+
 
             if (!Directory.Exists(targetPath))
             {
                 Directory.CreateDirectory(targetPath);
             }
 
-            File.Copy(sourceFile, destFile);
+            File.Copy(fileToCopy, destinationDirectory + System.IO.Path.GetFileName(fileToCopy + OrdreNumber));
+            string input = fileToCopy + OrdreNumber;
+            int index = input.LastIndexOf(".");
+            if (index > 0)
+                input = input.Substring(0, index);
+            string PureOrdreNumber = input.Substring(input.IndexOf('_') + 1);
 
             window.Show();
             this.Close();
+
         }
 
         private void GetOrderNumber_TextChanged(object sender, TextChangedEventArgs e)
         {
-            OrdreNumber = GetOrderNumber.Text + "_";
+            OrdreNumber = "_" + GetOrderNumber.Text + ".pdf";
         }
     }
 }
