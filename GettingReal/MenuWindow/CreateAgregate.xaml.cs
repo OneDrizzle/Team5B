@@ -37,14 +37,15 @@ namespace MenuWindow
         }
         string JustFileName;
         string sourcePath;
-        string OrdreNumber;
+        string OrderNumber;
         private void btn_FindAgregateInfoFile_Click(object sender, RoutedEventArgs e)
         {
-            // OPens a dialog box that allows user to find and choose a file from their pc
+            // Opens a dialog box that allows user to find and choose a file from their pc
             OpenFileDialog openFileDialog = new OpenFileDialog();
 
             openFileDialog.FileName = "";
             openFileDialog.DefaultExt = ".pdf";
+            //sets the filter to show pdf files
             openFileDialog.Filter = "Pdf Files|*.pdf";
 
             Nullable<bool> result = openFileDialog.ShowDialog();
@@ -56,6 +57,7 @@ namespace MenuWindow
                 FileInfo fi = new FileInfo(openFileDialog.FileName);
                 JustFileName = fi.Name;
                 GetInfoSheet.Text = JustFileName;
+                //saves file path to scourcepath
                 sourcePath = openFileDialog.FileName;
 
             }
@@ -66,26 +68,34 @@ namespace MenuWindow
             //Cpoy file to userdefined folder
 
             string targetPath = System.Reflection.Assembly.GetExecutingAssembly().Location;
+
             string path = @"GettingReal\GettingReal\Aggregates\";
+            //looks for the first instance of "GettingReal" in the path.
+            //Removes "GettingReal" and inputs the path so the path is the same as "TargetPath + path"
             int indexOfPath = targetPath.IndexOf("GettingReal");
             if (indexOfPath >= 0)
                 targetPath = targetPath.Remove(indexOfPath);
+            //Combines the two paths togehter and sets \\ in Automaticly so it's a full and useable path
             string destFile = System.IO.Path.Combine(targetPath, path);
 
             string fileToCopy = sourcePath;
             string destinationDirectory = destFile;
 
-
+            // if there is no Directory named Aggregates it creates one
             if (!Directory.Exists(targetPath))
             {
                 Directory.CreateDirectory(targetPath);
             }
 
-            File.Copy(fileToCopy, destinationDirectory + System.IO.Path.GetFileName(fileToCopy + OrdreNumber));
-            string input = fileToCopy + OrdreNumber;
+            //the next code takes the file that need's to be copied and copies it into the "DestinationDirectory" folder
+            //and adds the OrderNumber at the end so we can search for it later
+            File.Copy(fileToCopy, destinationDirectory + System.IO.Path.GetFileName(fileToCopy + OrderNumber));
+            string input = fileToCopy + OrderNumber;
+            //here it filters out the .pdf part of a file
             int index = input.LastIndexOf(".");
             if (index > 0)
                 input = input.Substring(0, index);
+            //here it filters out everything before "_" so we end up with the pure order number
             string PureOrdreNumber = input.Substring(input.IndexOf('_') + 1);
 
             window.Show();
@@ -95,7 +105,7 @@ namespace MenuWindow
 
         private void GetOrderNumber_TextChanged(object sender, TextChangedEventArgs e)
         {
-            OrdreNumber = "_" + GetOrderNumber.Text + ".pdf";
+            OrderNumber = "_" + GetOrderNumber.Text + ".pdf";
         }
     }
 }
