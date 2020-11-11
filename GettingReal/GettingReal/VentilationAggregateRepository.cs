@@ -4,7 +4,9 @@ namespace GettingReal
 {
     public class VentilationAggregateRepository
     {
-        private List<VentilationAggregate> aggregates;
+        private List<VentilationAggregate> ventilationAggregates;
+        private List<Filter> filters;
+        private List<ServiceReport> serviceReports;
         private VentilationAggregate selectedAggregate { get; set; }
         private ServiceReport selectedServiceReport { get; set; }
         private Filter selectedFilter { get; set; }
@@ -12,22 +14,21 @@ namespace GettingReal
 
         public VentilationAggregateRepository()
         {
-            aggregates = new List<VentilationAggregate>();
+            ventilationAggregates = new List<VentilationAggregate>();
         }
 
 
         public bool AddVentilationAggregate(string orderNumber)
         {
-            foreach (VentilationAggregate aggregate in aggregates)
+            foreach (VentilationAggregate aggregate in ventilationAggregates)
             {
                 if (aggregate.OrderNumber == orderNumber)
                 {
                     return false;
                 }
             }
-
             VentilationAggregate thisAggreate = new VentilationAggregate(orderNumber);
-            aggregates.Add(thisAggreate);
+            ventilationAggregates.Add(thisAggreate);
             return true;
             //string fileName = customer.Company + "_" + building + "_" + orderNumber + ".pdf";
 
@@ -37,7 +38,7 @@ namespace GettingReal
 
         public VentilationAggregate GetVentilationAggregate(string orderNumber)
         {
-            foreach (VentilationAggregate aggregate in aggregates)
+            foreach (VentilationAggregate aggregate in ventilationAggregates)
             {
                 if (aggregate.OrderNumber == orderNumber)
                 {
@@ -64,23 +65,28 @@ namespace GettingReal
             selectedAggregate.AddFilter(filter);
         }
 
-
-        public List<Filter> GetListOfFilters(VentilationAggregate selectedAggregate)
-        {
-            return selectedAggregate.GetListOfFilters();    
-        }
-
-
         public void AddServiceReport(ServiceReport serviceReport)
         {
             selectedAggregate.AddServiceReport(serviceReport);
             selectedServiceReport = serviceReport;
         }
 
-        public List<ServiceReport> GetListOfServiceReports(VentilationAggregate selectedAggregate)
+        public List<VentilationAggregate> GetAllVentilationAggregates()
         {
-            return selectedAggregate.GetListOfServiceReports();
+            return ventilationAggregates;
         }
+
+        public List<Filter> GetAllFilters()
+        {
+            return filters;    
+        }
+
+        public List<ServiceReport> GetAllServiceReports()
+        {
+            return serviceReports;
+        }
+
+
 
     }
 }

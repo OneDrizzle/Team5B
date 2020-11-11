@@ -44,8 +44,6 @@ C:\Users\brian\Dropbox\Datamatiker\GitHub\Team5B\GettingReal\MenuWindow\obj\Debu
 C:\Users\brian\Dropbox\Datamatiker\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\MenuWindow.dll
 C:\Users\brian\Dropbox\Datamatiker\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\MenuWindow.pdb
 C:\Users\brian\Dropbox\Datamatiker\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\MenuWindow.genruntimeconfig.cache
-C:\Users\brian\Dropbox\Datamatiker\GitHub\Team5B\GettingReal\MenuWindow\bin\Debug\netcoreapp3.1\logo_idk.png
-C:\Users\brian\Dropbox\Datamatiker\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\MenuWindow_Content.g.cs
 C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\MenuWindow\bin\Debug\netcoreapp3.1\MenuWindow.exe
 C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\MenuWindow\bin\Debug\netcoreapp3.1\MenuWindow.deps.json
 C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\MenuWindow\bin\Debug\netcoreapp3.1\MenuWindow.runtimeconfig.json
@@ -110,3 +108,9 @@ C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\obj\Debug\netcor
 C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\ImageDictionaryButton.baml
 C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\ImageDictionaryIcon.baml
 C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\ImageDictionaryLogo.baml
+C:\Users\brian\Dropbox\Datamatiker\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\FindAgregate.g.cs
+C:\Users\brian\Dropbox\Datamatiker\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\App.baml
+C:\Users\brian\Dropbox\Datamatiker\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\FindAgregate.baml
+C:\Users\brian\Dropbox\Datamatiker\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\ImageDictionaryButton.baml
+C:\Users\brian\Dropbox\Datamatiker\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\ImageDictionaryIcon.baml
+C:\Users\brian\Dropbox\Datamatiker\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\ImageDictionaryLogo.baml

@@ -35,7 +35,7 @@ namespace UnitTests
             filters = new List<Filter>();
             ventilationAggregates = new List<VentilationAggregate>();
             agRepo = new VentilationAggregateRepository();
-            agRepo.AddAggregate("model7", "4567");
+            agRepo.AddVentilationAggregate("4567");
             customerRepo = new CustomerRepository();
         }
 
@@ -51,8 +51,10 @@ namespace UnitTests
         {
             b1.AddVentilationAggregate(ag1);
             b1.AddVentilationAggregate(ag2);
-
+            //foreach (VentilationAggregate aggregate in b1.GetListOfVentilationAggregates())
+            //    ventilationAggregates.Add(aggregate);
             ventilationAggregates = b1.GetListOfVentilationAggregates();
+
             Assert.AreEqual("1234", ventilationAggregates[0].OrderNumber);
             Assert.AreEqual("5678", ventilationAggregates[1].OrderNumber);
         }
@@ -72,21 +74,14 @@ namespace UnitTests
         public void FilterCanBeRetrievedFromAggregate()
         {
             ag1.AddFilter(f1);
-            filters = ag1.GetFilters();         
+            filters = ag1.GetListOfFilters();
             Assert.AreEqual("type4", filters[0].Type);
 
             ag1.AddFilter(f2);
-            filters = ag1.GetFilters();
-            Assert.AreEqual("filtClass2", filters[1].FilterClass);
+            filters = ag1.GetListOfFilters();
+            Assert.AreEqual("filtClass2", filters[1].Filterclass);
         }
 
-
-        [TestMethod]
-        public void AggregateCanBeCreatedFromRepoAndAddedToList()
-        {
-            agRepo.AddAggregate(modelNumber: "111");
-            Assert.AreEqual(1,agRepo.Count());
-        }
 
         [TestMethod]
         public void EmptyTest()

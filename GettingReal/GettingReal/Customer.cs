@@ -18,7 +18,7 @@ namespace GettingReal
             Company = company;
         }
 
-        public List<Building> GetListofBuildings()
+        public List<Building> GetListOfBuildings()
         {
             return buildings;
         }

@@ -6,6 +6,7 @@ namespace GettingReal
 {
     public class BuildingRepository
     {
+
         List<Building> buildings;
 
         public BuildingRepository()
@@ -31,7 +32,12 @@ namespace GettingReal
             return null;
         }
 
-        public void Setbuilding()
+        public List<Building> GetAllBuildings()
+        {
+            return buildings;
+        }
+
+        public void Setbuilding(string name)
         {
             Building selectedBuilding;
             foreach (Building building in buildings)

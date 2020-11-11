@@ -42,15 +42,16 @@ namespace GettingReal
             }
         }
 
-        public void DeleteRoom()
-        {
 
-        }
-
-        public List<Room> GetListOfRooms()
+        public List<Room> GetAllRooms()
         {
             return rooms;
         }
+
+        //public void DeleteRoom()
+        //{
+
+        //}
 
     }
 }

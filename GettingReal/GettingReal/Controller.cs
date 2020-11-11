@@ -7,11 +7,12 @@ namespace GettingReal
     public class Controller
     {
         
-        public VentilationAggregate selectedAggregate { get; private set; }
+        public VentilationAggregate selectedVentilationAggregate { get; private set; }
         public Customer selectedCustomer { get; private set; }
         public Building selectedBuilding { get; private set; }
         public Room selectedRoom { get; private set; }
-        private VentilationAggregateRepository aggregateRepository;
+
+        private VentilationAggregateRepository ventilationAggregateRepository;
         private CustomerRepository customerRepository;
         private BuildingRepository buildingRepository;
         private RoomRepository roomRepository;
@@ -23,20 +24,21 @@ namespace GettingReal
 
         public Controller()
         {
-            aggregateRepository = new VentilationAggregateRepository();
+            ventilationAggregateRepository = new VentilationAggregateRepository();
             customerRepository = new CustomerRepository();
             buildingRepository = new BuildingRepository();
             roomRepository = new RoomRepository();
 
-            allBuildings = new List<Building>();
-            allRooms = new List<Room>();
-            allVentilationAggregates = new List<VentilationAggregate>();
-            allCustomers = new List<Customer>();
+            allCustomers = customerRepository.GetAllCustomers();
+            allBuildings = buildingRepository.GetAllBuildings();
+            allVentilationAggregates = ventilationAggregateRepository.GetAllVentilationAggregates();
+            allRooms = roomRepository.GetAllRooms();
+           
         }
 
         public void SelectVentilationAggregate(string orderNumber)
         {
-            selectedAggregate = aggregateRepository.GetVentilationAggregate(orderNumber);
+            selectedVentilationAggregate = ventilationAggregateRepository.GetVentilationAggregate(orderNumber);
         }
         
         public bool AddVentilationAggregate(string orderNumber)
@@ -49,7 +51,7 @@ namespace GettingReal
                     return false;
                 }
             }
-            aggregateRepository.AddVentilationAggregate(orderNumber);
+            ventilationAggregateRepository.AddVentilationAggregate(orderNumber);
             return true;
         }
 
@@ -68,13 +70,13 @@ namespace GettingReal
         public List<Filter> GetFilters(string orderNumber)
         {
             SelectVentilationAggregate(orderNumber);
-            return aggregateRepository.GetListOfFilters(selectedAggregate);
+            return selectedVentilationAggregate.GetListOfFilters();
         }
 
         public List<ServiceReport> GetServiceReports(string orderNumber)
         {
             SelectVentilationAggregate(orderNumber);
-            return aggregateRepository.GetListOfServiceReports(selectedAggregate);
+            return selectedVentilationAggregate.GetListOfServiceReports();
         }
 
         //public void AddAggregate(string modelNumber, string orderNumber, Customer customer)

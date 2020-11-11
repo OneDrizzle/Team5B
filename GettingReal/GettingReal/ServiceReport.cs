@@ -6,12 +6,12 @@ namespace GettingReal
 {
     public class ServiceReport
     {
-        public DateTime Date { get; set; }
+        public string Date { get; private set; }
 
         public ServiceReport()
         {
-            DateTime date = new DateTime();
-            Date = date.Date;
+            var date = DateTime.Now;
+            Date = date.ToShortDateString();
         }
     }
 }

@@ -6,7 +6,7 @@ namespace GettingReal
 {
     public class VentilationAggregate
     {
-        public string Date { get; private set; }
+        public string InstallDate { get; private set; }
         public string OrderNumber { get; set; }
 
         private List<Filter> filters;
@@ -22,7 +22,8 @@ namespace GettingReal
             //DateTime date = new DateTime();
             //Date = date.Date;
             var date = DateTime.Now;        
-            string Date = date.ToShortDateString();
+            InstallDate = date.ToShortDateString();
+            OrderNumber = orderNumber;
         }
 
         public void AddServiceReport(ServiceReport serviceReport)
@@ -30,11 +31,6 @@ namespace GettingReal
             serviceReports.Add(serviceReport);
         }
 
-        public ServiceReport GetServiceReport()
-        {
-            ServiceReport serviceReport;
-            return serviceReport;
-        }
 
         public List<ServiceReport> GetListOfServiceReports()
         {
@@ -60,9 +56,6 @@ namespace GettingReal
 
         public List<Filter> GetListOfFilters()
         {
-            if (filters == null)
-                return null;
-
             return filters;
         }
 

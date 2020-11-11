@@ -31,6 +31,11 @@ namespace GettingReal
             return null;
         }
 
+        public List<Customer> GetAllCustomers()
+        {
+            return customers;
+        }
+
         public void SetCustomer(string name)
         {
             Customer selectedCustomer;
