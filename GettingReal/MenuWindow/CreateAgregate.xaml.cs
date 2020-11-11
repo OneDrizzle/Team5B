@@ -45,7 +45,7 @@ namespace MenuWindow
 
             openFileDialog.FileName = "";
             openFileDialog.DefaultExt = ".pdf";
-            openFileDialog.Filter = "Word Documents|*.doc";
+            openFileDialog.Filter = "Pdf Files|*.pdf";
 
             Nullable<bool> result = openFileDialog.ShowDialog();
 
