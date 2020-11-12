@@ -11,12 +11,12 @@
         Title="Project Chef" Height="450" Width="500">
     <Grid Margin="0,0,0,-6">
         <Image Source="{StaticResource Logo}" HorizontalAlignment="Center" Height="130" Margin="0,24,0,0" VerticalAlignment="Top" Width="320"/>
-        <Button Name="btn_CreateAgregat" Content="Opret Agregat" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Top" Height="30" Width="120" Click="btn_CreateAgregat_Click"/>
-        <Button Name="btn_access" Content="Tilgå aggrigat" HorizontalAlignment="Center" Margin="0,250,0,0" VerticalAlignment="Top" Height="25" Width="120"/>
-        <Button Name="ben_access_sr" Content="Tilgå SR" HorizontalAlignment="Center" Margin="0,300,0,0" VerticalAlignment="Top" Height="25" Width="120"/>
-        <Button Name="btn_create_sr" Content="Opret SR" HorizontalAlignment="Center" Margin="0,350,0,0" VerticalAlignment="Top" Height="25" Width="120"/>
-        <Button Name="btn_back" HorizontalAlignment="Left" Margin="35,312,0,0" VerticalAlignment="Top" Height="55" Width="55" Click="Button_back_Click">
-            <Image Source="{StaticResource Back}"/>
+        <Button Name="btn_CreateAgregat" Content="Opret Aggregat" HorizontalAlignment="Left" Margin="90,248,0,0" VerticalAlignment="Top" Height="40" Width="120" Click="btn_CreateAgregat_Click"/>
+        <Button Name="btn_access" Content="Tilgå Aggrigat" HorizontalAlignment="Left" Margin="90,319,0,0" VerticalAlignment="Top" Height="40" Width="120"/>
+        <Button Name="ben_access_sr" Content="Tilgå Servicerapport" HorizontalAlignment="Left" Margin="290,319,0,0" VerticalAlignment="Top" Height="40" Width="120"/>
+        <Button Name="btn_create_sr" Content="Opret Servicerapport" HorizontalAlignment="Left" Margin="290,248,0,0" VerticalAlignment="Top" Height="40" Width="120"/>
+        <Button Name="btn_back" HorizontalAlignment="Left" Margin="28,25,0,0" VerticalAlignment="Top" Height="30" Width="30" Click="Button_back_Click">
+            <Image Source="{StaticResource Back}" Width="30"/>
         </Button>
 
     </Grid>
