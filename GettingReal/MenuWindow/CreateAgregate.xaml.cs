@@ -1,18 +1,9 @@
 ﻿using Microsoft.Win32;
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
-using System.Text;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Media.Media3D;
-using System.Windows.Shapes;
 
 namespace MenuWindow
 {
@@ -52,8 +43,8 @@ namespace MenuWindow
 
             if (result == true)
             {
-                //Gemmer Fil navnet ned til JustFileName og viser den ude i Gui'en 
-                
+                // saves selected file to "JustFileName" and shows it in the GUI
+
                 FileInfo fi = new FileInfo(openFileDialog.FileName);
                 JustFileName = fi.Name;
                 GetInfoSheet.Text = JustFileName;
@@ -78,9 +69,6 @@ namespace MenuWindow
             //Combines the two paths togehter and sets \\ in Automaticly so it's a full and useable path
             string destFile = System.IO.Path.Combine(targetPath, path);
 
-            string fileToCopy = sourcePath;
-            string destinationDirectory = destFile;
-
             // if there is no Directory named Aggregates it creates one
             if (!Directory.Exists(targetPath))
             {
@@ -89,15 +77,24 @@ namespace MenuWindow
 
             //the next code takes the file that need's to be copied and copies it into the "DestinationDirectory" folder
             //and adds the OrderNumber at the end so we can search for it later
-            File.Copy(fileToCopy, destinationDirectory + System.IO.Path.GetFileName(fileToCopy + OrderNumber));
-            string input = fileToCopy + OrderNumber;
-            //here it filters out the .pdf part of a file
-            int index = input.LastIndexOf(".");
-            if (index > 0)
-                input = input.Substring(0, index);
-            //here it filters out everything before "_" so we end up with the pure order number
-            string PureOrdreNumber = input.Substring(input.IndexOf('_') + 1);
+            File.Copy(sourcePath, destFile + System.IO.Path.GetFileName(sourcePath));
+            string Rename = OrderNumber + JustFileName;
+            
 
+            string ScourceFile = Path.Combine(sourcePath, destFile + System.IO.Path.GetFileName(sourcePath));
+            System.IO.FileInfo fi = new System.IO.FileInfo(ScourceFile);
+            string NewPath = "";
+            if (fi.Exists)
+            {
+                NewPath = Path.Combine(Rename, destFile + System.IO.Path.GetFileName(Rename));
+                fi.MoveTo(NewPath);
+            }
+
+            Process.Start(new ProcessStartInfo(NewPath) { UseShellExecute = true });
+
+            //here it filters out everything after the first 6 Char's
+            string PureOrdreNumber = Rename.Substring(0, 6);
+            
             window.Show();
             this.Close();
 
@@ -105,7 +102,7 @@ namespace MenuWindow
 
         private void GetOrderNumber_TextChanged(object sender, TextChangedEventArgs e)
         {
-            OrderNumber = "_" + GetOrderNumber.Text + ".pdf";
+            OrderNumber = GetOrderNumber.Text + "_";
         }
     }
 }
