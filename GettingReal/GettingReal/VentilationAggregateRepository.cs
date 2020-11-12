@@ -1,7 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace GettingReal
 {
+    [Serializable]
     public class VentilationAggregateRepository
     {
         private List<VentilationAggregate> ventilationAggregates;
@@ -29,6 +31,21 @@ namespace GettingReal
             }
             VentilationAggregate thisAggreate = new VentilationAggregate(orderNumber);
             ventilationAggregates.Add(thisAggreate);
+            return true;
+            //string fileName = customer.Company + "_" + building + "_" + orderNumber + ".pdf";
+
+            //aggregates.Add(new VentilationAggregate(modelNumber, orderNumber));
+        }
+        public bool AddVentilationAggregate(VentilationAggregate ag)
+        {
+            foreach (VentilationAggregate aggregate in ventilationAggregates)
+            {
+                if (aggregate.OrderNumber == ag.OrderNumber)
+                {
+                    return false;
+                }
+            }
+            ventilationAggregates.Add(ag);
             return true;
             //string fileName = customer.Company + "_" + building + "_" + orderNumber + ".pdf";
 

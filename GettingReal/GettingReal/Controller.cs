@@ -4,13 +4,14 @@ using System.Text;
 
 namespace GettingReal
 {
+    [Serializable]
     public class Controller
     {
         
-        public VentilationAggregate selectedVentilationAggregate { get; private set; }
-        public Customer selectedCustomer { get; private set; }
-        public Building selectedBuilding { get; private set; }
-        public Room selectedRoom { get; private set; }
+        public VentilationAggregate selectedVentilationAggregate { get; set; }
+        public Customer selectedCustomer { get; set; }
+        public Building selectedBuilding { get; set; }
+        //public Room selectedRoom { get; private set; }
 
         private VentilationAggregateRepository ventilationAggregateRepository;
         private CustomerRepository customerRepository;
@@ -40,10 +41,36 @@ namespace GettingReal
         {
             selectedVentilationAggregate = ventilationAggregateRepository.GetVentilationAggregate(orderNumber);
         }
+
+        public void AddTest(string customer, string building, string aggregate)
+        {
+            var c = new Customer(name:customer);
+            selectedCustomer = c;
+            customerRepository.AddCustomer(c);
+            var b = new Building(name: building);
+            selectedBuilding = b;
+            selectedCustomer.AddBuilding(b);
+            buildingRepository.AddBuilding(b);
+            var ag = new VentilationAggregate(orderNumber: aggregate);
+            selectedVentilationAggregate = ag;
+            selectedBuilding.AddVentilationAggregate(ag);
+            ventilationAggregateRepository.AddVentilationAggregate(ag);
+        }
+
+        public void Show()
+        {
+            allCustomers = customerRepository.GetAllCustomers();
+            selectedCustomer = allCustomers[0];
+            allBuildings = selectedCustomer.GetListOfBuildings();
+            selectedBuilding = allBuildings[0];
+            allVentilationAggregates = selectedBuilding.GetListOfVentilationAggregates();
+            selectedVentilationAggregate = allVentilationAggregates[0];
+            string gg = selectedVentilationAggregate.ToString() + " " + selectedBuilding.ToString() + " " + selectedCustomer.ToString();
+            Console.WriteLine(gg);
+        }
         
         public bool AddVentilationAggregate(string orderNumber)
         {
-
             foreach (VentilationAggregate aggregate in allVentilationAggregates)
             {
                 if (aggregate.OrderNumber == orderNumber)

@@ -8,8 +8,6 @@ namespace UnitTests
     [TestClass]
     public class AggregateTest
     {
-
-
         VentilationAggregateRepository agRepo;
         VentilationAggregate ag1, ag2, selectedAg; 
         Filter f1, f2;

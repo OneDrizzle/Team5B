@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Xml.Serialization;
 
 namespace GettingReal
 {
@@ -6,7 +9,37 @@ namespace GettingReal
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Controller ct = new Controller();
+            string building = "Scandic";
+            string customer = "Jens";
+            string aggregate = "1234";
+            ct.AddTest(customer, building, aggregate);
+            ct.Show();
+
+
+            string filePath = "testSerialize.save";
+            DataSerializer dataSerializer = new DataSerializer();
+            Controller testCT = null;
+
+            dataSerializer.BinarySerialize(ct, filePath);
+            testCT = dataSerializer.BinaryDeserialize(filePath) as Controller;
+
+
+            testCT.Show();
+            //// Serialize 
+            //XmlSerializer serializer = new XmlSerializer(typeof(Controller));
+            //FileStream fs = new FileStream("TestSerialize.xml", FileMode.Create);
+            //serializer.Serialize(fs, ct);
+            //fs.Close();
+            //ct = null;
+
+            // Deserialize 
+            //serializer = new XmlSerializer(typeof(Customer));
+            //fs = new FileStream("TestSerialize.xml", FileMode.Open);
+            //ct = (Controller)serializer.Deserialize(fs);
+            //serializer.Serialize(Console.Out, cust);
+
+
         }
     }
 }

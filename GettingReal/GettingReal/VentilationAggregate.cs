@@ -4,27 +4,33 @@ using System.Text;
 
 namespace GettingReal
 {
+    [Serializable]
     public class VentilationAggregate
     {
-        public string InstallDate { get; private set; }
+        public string InstallDate { get; set; }
         public string OrderNumber { get; set; }
 
         private List<Filter> filters;
         private List<ServiceReport> serviceReports;
-        private List<Floor> floors;
+        //private List<Floor> floors;
 
-        public VentilationAggregate(string orderNumber = "0")        
+
+        public VentilationAggregate(string orderNumber = "0", string date = "EmptyDate")        
         {
             filters = new List<Filter>();
             serviceReports = new List<ServiceReport>();
-            floors = new List<Floor>();
+            //floors = new List<Floor>();
 
-            //DateTime date = new DateTime();
-            //Date = date.Date;
-            var date = DateTime.Now;        
-            InstallDate = date.ToShortDateString();
+            if (date == "EmptyDate")
+            {
+                var dateToday = DateTime.Now;
+                date = dateToday.ToShortDateString();
+            }
+            InstallDate = date;
             OrderNumber = orderNumber;
         }
+        public VentilationAggregate() : this("0", "EmptyDate")
+        { }
 
         public void AddServiceReport(ServiceReport serviceReport)
         {
@@ -59,7 +65,10 @@ namespace GettingReal
             return filters;
         }
 
-        //Maybe add floor methods if we decide they're needed
+        public override string ToString()
+        {
+            return $"{OrderNumber}";
+        }
 
     }
 }

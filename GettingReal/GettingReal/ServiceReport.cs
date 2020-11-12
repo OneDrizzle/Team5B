@@ -4,14 +4,23 @@ using System.Text;
 
 namespace GettingReal
 {
+    [Serializable]
     public class ServiceReport
     {
         public string Date { get; private set; }
 
-        public ServiceReport()
+        public ServiceReport(string date = "EmptyDate")
         {
-            var date = DateTime.Now;
-            Date = date.ToShortDateString();
+            if (date == "EmptyDate")
+            {
+                var dateToday = DateTime.Now;
+                date = dateToday.ToShortDateString();
+            }
+            Date = date;
+        }
+        public ServiceReport() : this("EmptyDate")
+        {
+
         }
     }
 }

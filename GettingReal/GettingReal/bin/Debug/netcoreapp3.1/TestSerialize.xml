@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Controller xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <selectedVentilationAggregate>
+    <InstallDate>12-11-2020</InstallDate>
+    <OrderNumber>1234</OrderNumber>
+  </selectedVentilationAggregate>
+  <selectedCustomer>
+    <Name>Jens</Name>
+    <Company />
+  </selectedCustomer>
+  <selectedBuilding>
+    <Name>Scandic</Name>
+  </selectedBuilding>
+</Controller>

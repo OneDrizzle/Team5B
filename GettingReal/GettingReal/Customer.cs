@@ -4,6 +4,7 @@ using System.Text;
 
 namespace GettingReal
 {
+    [Serializable]
     public class Customer
     {
         public string Name { get; set; }
@@ -11,12 +12,16 @@ namespace GettingReal
 
         private List<Building> buildings;
 
+
         public Customer(string name = "", string company = "")
         {
             buildings = new List<Building>();
             Name = name;
             Company = company;
         }
+
+        public Customer() : this("","")
+        { }
 
         public List<Building> GetListOfBuildings()
         {
@@ -38,6 +43,12 @@ namespace GettingReal
                 }
             }
             return null;
+        }
+
+
+        public override string ToString()
+        {
+            return $"{Name}";
         }
     }
 }

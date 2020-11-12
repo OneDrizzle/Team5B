@@ -35,7 +35,6 @@ namespace UnitTests
         {
             ct.AddVentilationAggregate("666");
             selectedAg = ct.GetVentilationAggregate("666");
-
             Assert.AreEqual("666", selectedAg.OrderNumber);
         }
 
@@ -48,7 +47,6 @@ namespace UnitTests
             Assert.IsTrue(result);
             result = ct.AddVentilationAggregate("123");
             Assert.IsFalse(result);
-
 
         }
 
@@ -63,7 +61,7 @@ namespace UnitTests
             selectedAg.AddFilter(f3);
             filters = ct.GetFilters("1234");
 
-            Assert.AreEqual(3,filters[2].LifespanInMonths);
+            Assert.AreEqual(3, filters[2].LifespanInMonths);
         }
 
 

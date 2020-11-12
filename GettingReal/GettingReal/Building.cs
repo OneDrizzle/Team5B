@@ -4,16 +4,20 @@ using System.Text;
 
 namespace GettingReal
 {
+    [Serializable]
     public class Building
     {
         public string Name { get; set; }
         private List<VentilationAggregate> ventilationAggregates;
+
 
         public Building(string name = "")
         {
             ventilationAggregates = new List<VentilationAggregate>();
             Name = name;
         }
+        public Building() : this("")
+        { }
 
         public List<VentilationAggregate> GetListOfVentilationAggregates()
         {
@@ -35,6 +39,11 @@ namespace GettingReal
                 }
             }
             return null;
+        }
+
+        public override string ToString()
+        {
+            return $"{Name}";
         }
 
 

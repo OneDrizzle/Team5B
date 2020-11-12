@@ -4,6 +4,7 @@ using System.Text;
 
 namespace GettingReal
 {
+    [Serializable]
     public class BuildingRepository
     {
 

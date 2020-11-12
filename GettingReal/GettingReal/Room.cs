@@ -4,6 +4,7 @@ using System.Text;
 
 namespace GettingReal
 {
+    [Serializable]
     public class Room
     {
         public string Number { get; set; }
@@ -17,6 +18,11 @@ namespace GettingReal
             Number = number;
             EstimatedAirVolume = estimatedVolume;
             Area = Area;
+        }
+
+        public Room() : this("0",0,0)
+        {
+
         }
 
         public double CalculateDeviation()

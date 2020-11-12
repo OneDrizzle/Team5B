@@ -4,6 +4,7 @@ using System.Text;
 
 namespace GettingReal
 {
+    [Serializable]
     public class Filter
     {
         public string Manufacturer { get; set; }
@@ -19,6 +20,10 @@ namespace GettingReal
             Model = model;
             Type = type;
             LifespanInMonths = lifespan;
+        }
+        public Filter() : this("","","","",-1)
+        {
+
         }
     }
 }
