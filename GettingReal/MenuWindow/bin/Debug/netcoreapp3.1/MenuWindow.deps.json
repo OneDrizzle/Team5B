@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v3.1": {
       "MenuWindow/1.0.0": {
+        "dependencies": {
+          "GettingReal": "1.0.0"
+        },
         "runtime": {
           "MenuWindow.dll": {}
+        }
+      },
+      "GettingReal/1.0.0": {
+        "runtime": {
+          "GettingReal.dll": {}
         }
       }
     }
   },
   "libraries": {
     "MenuWindow/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GettingReal/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

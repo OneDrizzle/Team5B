@@ -8,16 +8,21 @@
         ResizeMode="CanMinimize"
         WindowStartupLocation="CenterScreen"
         Icon="{StaticResource Icon}"
-        Title="CreateAgregate" Height="450" Width="500">
+        Title="FindAggregate" Height="450" Width="500">
 
 
 
     <Grid>
-        <TextBox x:Name="FindOrderNumber" HorizontalAlignment="Center" Margin="0,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="272" Text="{Binding Path=OrdreNumber, UpdateSourceTrigger=PropertyChanged}" TextChanged="GetOrderNumber_TextChanged"/>
-        <TextBlock HorizontalAlignment="Left" FontWeight="Bold" Margin="114,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"><Run Language="da-dk" Text="Odrenummer"/></TextBlock>
-        <Button IsEnabled="True" x:Name="btn_saveNewAgregat" Content="Gem" HorizontalAlignment="Left" Margin="396,337,0,0" VerticalAlignment="Top" Width="46" Click="btn_saveNewAgregat_Click_"  />
-        <Button Name="btn_back" Content="Tilbage" HorizontalAlignment="Left" Margin="35,312,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="Button_back_Click"/>
-        <Button x:Name="btn_SearchForAgregate" Content="Hent" HorizontalAlignment="Left" Margin="404,216,0,0" VerticalAlignment="Top" Click="btn_SearchorAgregate_Click"/>
-        <Image Source="{StaticResource Logo}" HorizontalAlignment="Center" Height="130" Margin="0,29,0,0" VerticalAlignment="Top" Width="320"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="16*"/>
+            <ColumnDefinition Width="109*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="FindOrderNumber" HorizontalAlignment="Left" Margin="50,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="272" Text="{Binding Path=OrdreNumber, UpdateSourceTrigger=PropertyChanged}" TextChanged="GetOrderNumber_TextChanged" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" FontWeight="Bold" Margin="50,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86" Grid.Column="1"><Run Language="da-dk" Text="Odrenummer"/></TextBlock>
+        <Button x:Name="btn_OpenAggregateFile" IsEnabled="false" Content="Åben" HorizontalAlignment="Left" Margin="332,337,0,0" VerticalAlignment="Top" Width="46" Click="btn_OpenAggregateFile_Click" Grid.Column="1"  />
+        <Button Name="btn_back" HorizontalAlignment="Left" Margin="28,25,0,0" VerticalAlignment="Top" Height="30" Width="30" Click="Button_back_Click">
+            <Image Source="{StaticResource Back}" Width="30"/>
+        </Button>
+        <Image Source="{StaticResource Logo}" HorizontalAlignment="Left" Height="130" Margin="26,29,0,0" VerticalAlignment="Top" Width="320" Grid.Column="1"/>
     </Grid>
 </Window>

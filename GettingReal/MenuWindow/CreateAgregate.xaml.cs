@@ -1,4 +1,5 @@
-﻿using Microsoft.Win32;
+﻿using GettingReal;
+using Microsoft.Win32;
 using System;
 using System.Diagnostics;
 using System.IO;
@@ -7,11 +8,10 @@ using System.Windows.Controls;
 
 namespace MenuWindow
 {
-    /// <summary>
-    /// Interaction logic for CreateAgregatWindow.xaml
-    /// </summary>
+
     public partial class CreateAgregatWindow : Window
     {
+
         public CreateAgregatWindow()
         {
             InitializeComponent();
@@ -90,10 +90,12 @@ namespace MenuWindow
                 fi.MoveTo(NewPath);
             }
 
-            Process.Start(new ProcessStartInfo(NewPath) { UseShellExecute = true });
+            //Process.Start(new ProcessStartInfo(NewPath) { UseShellExecute = true });
 
             //here it filters out everything after the first 6 Char's
-            string PureOrdreNumber = Rename.Substring(0, 6);
+            string PureOrdereNumber = Rename.Substring(0, 6);
+            VentilationAggregateRepository aggregateRepo = new VentilationAggregateRepository();
+            aggregateRepo.AddVentilationAggregate(PureOrdereNumber);
             
             window.Show();
             this.Close();
@@ -102,7 +104,18 @@ namespace MenuWindow
 
         private void GetOrderNumber_TextChanged(object sender, TextChangedEventArgs e)
         {
-            OrderNumber = GetOrderNumber.Text + "_";
+            if (GetOrderNumber.Text.Length != 6)
+            {
+                btn_saveNewAgregat.IsEnabled = false;
+            }
+
+            else if (GetOrderNumber.Text.Length == 6)
+            {
+                btn_saveNewAgregat.IsEnabled = true;
+                OrderNumber = GetOrderNumber.Text + "_";
+            }
+
+
         }
     }
 }

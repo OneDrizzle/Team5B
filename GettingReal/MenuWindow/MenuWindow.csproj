@@ -15,6 +15,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\GettingReal\GettingReal.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Assets\Back_Button.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>

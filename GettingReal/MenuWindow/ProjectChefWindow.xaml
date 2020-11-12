@@ -11,8 +11,8 @@
         Title="Project Chef" Height="450" Width="500">
     <Grid Margin="0,0,0,-6">
         <Image Source="{StaticResource Logo}" HorizontalAlignment="Center" Height="130" Margin="0,24,0,0" VerticalAlignment="Top" Width="320"/>
-        <Button Name="btn_CreateAgregat" Content="Opret Aggregat" HorizontalAlignment="Left" Margin="90,248,0,0" VerticalAlignment="Top" Height="40" Width="120" Click="btn_CreateAgregat_Click"/>
-        <Button Name="btn_access" Content="Tilgå Aggrigat" HorizontalAlignment="Left" Margin="90,319,0,0" VerticalAlignment="Top" Height="40" Width="120"/>
+        <Button Name="btn_CreateAggregate" Content="Opret Aggregat" HorizontalAlignment="Left" Margin="90,248,0,0" VerticalAlignment="Top" Height="40" Width="120" Click="btn_CreateAggregate_Click"/>
+        <Button Name="btn_FindAggregate" Content="Tilgå Aggrigat" HorizontalAlignment="Left" Margin="90,319,0,0" VerticalAlignment="Top" Height="40" Width="120" Click="btn_FindAggregate_Click"/>
         <Button Name="ben_access_sr" Content="Tilgå Servicerapport" HorizontalAlignment="Left" Margin="290,319,0,0" VerticalAlignment="Top" Height="40" Width="120"/>
         <Button Name="btn_create_sr" Content="Opret Servicerapport" HorizontalAlignment="Left" Margin="290,248,0,0" VerticalAlignment="Top" Height="40" Width="120"/>
         <Button Name="btn_back" HorizontalAlignment="Left" Margin="28,25,0,0" VerticalAlignment="Top" Height="30" Width="30" Click="Button_back_Click">

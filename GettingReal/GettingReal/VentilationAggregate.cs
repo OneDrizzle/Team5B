@@ -10,6 +10,7 @@ namespace GettingReal
         public string InstallDate { get; set; }
         public string OrderNumber { get; set; }
 
+
         private List<Filter> filters;
         private List<ServiceReport> serviceReports;
         //private List<Floor> floors;

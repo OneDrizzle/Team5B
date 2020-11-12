@@ -30,12 +30,19 @@ namespace MenuWindow
             this.Close();
         }
 
-        private void btn_CreateAgregat_Click(object sender, RoutedEventArgs e)
+        private void btn_CreateAggregate_Click(object sender, RoutedEventArgs e)
         {
-            CreateAgregatWindow agregatWindow = new CreateAgregatWindow();
+            CreateAgregatWindow aggregateWindow = new CreateAgregatWindow();
 
-            agregatWindow.Show();
+            aggregateWindow.Show();
 
+            this.Close();
+        }
+
+        private void btn_FindAggregate_Click(object sender, RoutedEventArgs e)
+        {
+            FindAgregate AggregateWindow = new FindAgregate();
+            AggregateWindow.Show();
             this.Close();
         }
     }
