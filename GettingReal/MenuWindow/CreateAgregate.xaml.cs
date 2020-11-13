@@ -11,12 +11,13 @@ namespace MenuWindow
     public partial class CreateAgregatWindow : Window
     {
 
+        Controller ctr = new Controller();
+        ProjectChefWindow window = new ProjectChefWindow();
         public CreateAgregatWindow()
         {
             InitializeComponent();
         }
 
-        ProjectChefWindow window = new ProjectChefWindow();
         private void Button_back_Click(object sender, RoutedEventArgs e)
         {
             // Back button
@@ -49,7 +50,6 @@ namespace MenuWindow
                 GetInfoSheet.Text = JustFileName;
                 //saves file path to scourcepath
                 sourcePath = openFileDialog.FileName;
-
             }
         }
 
@@ -92,12 +92,10 @@ namespace MenuWindow
 
             //here it filters out everything after the first 6 Char's
             string PureOrdereNumber = Rename.Substring(0, 6);
-            VentilationAggregateRepository aggregateRepo = new VentilationAggregateRepository();
-            aggregateRepo.AddVentilationAggregate(PureOrdereNumber);
+            ctr.AddVentilationAggregate(PureOrdereNumber);
 
             window.Show();
             this.Close();
-
         }
 
         private void GetOrderNumber_TextChanged(object sender, TextChangedEventArgs e)
@@ -136,6 +134,9 @@ namespace MenuWindow
                 {
                     btn_saveNewAgregat.IsEnabled = true;
                     OrderNumber = GetOrderNumber.Text + "_";
+
+
+
                 }
             }
         }
