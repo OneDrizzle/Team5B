@@ -2,6 +2,7 @@
   "format": 1,
   "restore": {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj": {}
   },
   "projects": {
@@ -26,14 +27,33 @@
         "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\GettingReal\\obj\\",
 >>>>>>> Stashed changes
+=======
+    "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\GettingReal\\GettingReal.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\GettingReal\\GettingReal.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\GettingReal\\GettingReal.csproj",
+        "projectName": "GettingReal",
+        "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\GettingReal\\GettingReal.csproj",
+        "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\GettingReal\\obj\\",
+>>>>>>> Stashed changes
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
           "C:\\Users\\brian\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+=======
+          "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+>>>>>>> Stashed changes
 =======
           "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",

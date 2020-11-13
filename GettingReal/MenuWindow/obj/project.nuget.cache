@@ -1,9 +1,15 @@
 {
   "version": 2,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "dgSpecHash": "cjWmp/NxkgMheciFNlRlvH+NoOz/rwfWMG2hpymN/j9xFcTHJJdtFEDFtUJz12RrnFLYfW5uY3GaCVEzq1zrxQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
+=======
+  "dgSpecHash": "e44YXb19yfBP4QX4hn15M+YG5kZ3vriJ9VsZCxpAnMI1p1PSaDwyCHev1+/3PGS6cfFeiFDdlVUx1ZuXvnc1Gw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
+>>>>>>> Stashed changes
 =======
   "dgSpecHash": "e44YXb19yfBP4QX4hn15M+YG5kZ3vriJ9VsZCxpAnMI1p1PSaDwyCHev1+/3PGS6cfFeiFDdlVUx1ZuXvnc1Gw==",
   "success": true,

@@ -28,7 +28,12 @@
   },
   "packageFolders": {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "C:\\Users\\brian\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\Bruger\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+>>>>>>> Stashed changes
 =======
     "C:\\Users\\Bruger\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
@@ -37,6 +42,7 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
       "projectUniqueName": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
       "projectName": "MenuWindow",
@@ -50,14 +56,27 @@
       "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\MenuWindow\\obj\\",
 >>>>>>> Stashed changes
+=======
+      "projectUniqueName": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
+      "projectName": "MenuWindow",
+      "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
+      "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\MenuWindow\\obj\\",
+>>>>>>> Stashed changes
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         "C:\\Users\\brian\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+=======
+        "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+>>>>>>> Stashed changes
 =======
         "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
@@ -75,8 +94,13 @@
         "netcoreapp3.1": {
           "projectReferences": {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj": {
               "projectPath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj"
+=======
+            "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\GettingReal\\GettingReal.csproj": {
+              "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\GettingReal\\GettingReal.csproj"
+>>>>>>> Stashed changes
 =======
             "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\GettingReal\\GettingReal.csproj": {
               "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\GettingReal\\GettingReal.csproj"

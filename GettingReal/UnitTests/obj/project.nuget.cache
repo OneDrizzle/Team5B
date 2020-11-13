@@ -1,6 +1,7 @@
 {
   "version": 2,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "dgSpecHash": "gIV6iqxz1bS5nC85/hdPFOt8OLWZKpNgTRW94KcZIR2XTsHIei5iyE+9i2RXt5nUgeJU7bLcvFU+Zkk6738o4A==",
   "success": true,
   "projectFilePath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\UnitTests\\UnitTests.csproj",
@@ -97,6 +98,12 @@
   "success": true,
   "projectFilePath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\UnitTests\\UnitTests.csproj",
   "expectedPackageFiles": [
+=======
+  "dgSpecHash": "WIC6JQafcYa/JE/X3Efe5YIu74GXkkkxY4ll2TvQvRyWhkKYgeu3dszvyzzFrs/Q9FzMUXV1B0DSmmKabDqUYw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\UnitTests\\UnitTests.csproj",
+  "expectedPackageFiles": [
+>>>>>>> Stashed changes
     "C:\\Users\\Bruger\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
     "C:\\Users\\Bruger\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",
     "C:\\Users\\Bruger\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
@@ -184,6 +191,9 @@
     "C:\\Users\\Bruger\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\Bruger\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Bruger\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   ],
   "logs": []
