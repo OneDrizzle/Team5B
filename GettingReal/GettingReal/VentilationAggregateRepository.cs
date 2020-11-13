@@ -38,13 +38,13 @@ namespace GettingReal
         }
         public bool AddVentilationAggregate(VentilationAggregate ag)
         {
-            foreach (VentilationAggregate aggregate in ventilationAggregates)
-            {
-                if (aggregate.OrderNumber == ag.OrderNumber)
-                {
-                    return false;
-                }
-            }
+            //foreach (VentilationAggregate aggregate in ventilationAggregates)
+            //{
+            //    if (aggregate.OrderNumber == ag.OrderNumber)
+            //    {
+            //        return false;
+            //    }
+            //}
             ventilationAggregates.Add(ag);
             return true;
             //string fileName = customer.Company + "_" + building + "_" + orderNumber + ".pdf";

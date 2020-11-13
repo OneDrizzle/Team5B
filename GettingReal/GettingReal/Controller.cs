@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Text;
 
 namespace GettingReal
@@ -47,28 +48,50 @@ namespace GettingReal
             var c = new Customer(name:customer);
             selectedCustomer = c;
             customerRepository.AddCustomer(c);
-            var b = new Building(name: building);
+            var b = new Building(name:building);
             selectedBuilding = b;
             selectedCustomer.AddBuilding(b);
             buildingRepository.AddBuilding(b);
-            var ag = new VentilationAggregate(orderNumber: aggregate);
-            selectedVentilationAggregate = ag;
-            selectedBuilding.AddVentilationAggregate(ag);
-            ventilationAggregateRepository.AddVentilationAggregate(ag);
+            var ag1 = new VentilationAggregate(orderNumber: aggregate);
+            var ag2 = new VentilationAggregate("666");
+            selectedBuilding.AddVentilationAggregate(ag1);
+            selectedBuilding.AddVentilationAggregate(ag2);
+            ventilationAggregateRepository.AddVentilationAggregate(ag1);
+            ventilationAggregateRepository.AddVentilationAggregate(ag2);
         }
 
         public void Show()
         {
             allCustomers = customerRepository.GetAllCustomers();
-            selectedCustomer = allCustomers[0];
-            allBuildings = selectedCustomer.GetListOfBuildings();
-            selectedBuilding = allBuildings[0];
-            allVentilationAggregates = selectedBuilding.GetListOfVentilationAggregates();
-            selectedVentilationAggregate = allVentilationAggregates[0];
-            string gg = selectedVentilationAggregate.ToString() + " " + selectedBuilding.ToString() + " " + selectedCustomer.ToString();
-            Console.WriteLine(gg);
+
+            foreach (Customer customer in allCustomers)
+            {
+                Console.WriteLine(customer.ToString());
+                foreach (Building building in customer.GetListOfBuildings())
+                {
+                    Console.WriteLine(building.ToString());
+                    foreach (VentilationAggregate aggregate in building.GetListOfVentilationAggregates())
+                    {
+                        Console.WriteLine(aggregate.ToString());
+                    }
+                }
+            }
+            Console.WriteLine();
         }
-        
+        public void Show2()
+        {
+            foreach (Customer customer in customerRepository.GetAllCustomers())          
+                Console.WriteLine(customer.ToString());
+
+            foreach (Building building in buildingRepository.GetAllBuildings())
+                    Console.WriteLine(building.ToString());
+
+            foreach (VentilationAggregate aggregate in ventilationAggregateRepository.GetAllVentilationAggregates())                   
+                        Console.WriteLine(aggregate.ToString());
+            
+            Console.WriteLine();
+        }
+
         public bool AddVentilationAggregate(string orderNumber)
         {
             foreach (VentilationAggregate aggregate in allVentilationAggregates)
