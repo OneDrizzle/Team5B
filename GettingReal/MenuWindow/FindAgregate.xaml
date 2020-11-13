@@ -24,5 +24,6 @@
             <Image Source="{StaticResource Back}" Width="30"/>
         </Button>
         <Image Source="{StaticResource Logo}" HorizontalAlignment="Left" Height="130" Margin="26,29,0,0" VerticalAlignment="Top" Width="320" Grid.Column="1"/>
+        <Label x:Name="lbl_Error" Content="{Binding UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="50,274,0,0" VerticalAlignment="Top" Height="33" Width="272" Grid.Column="1"/>
     </Grid>
 </Window>

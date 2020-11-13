@@ -24,5 +24,6 @@
 
         <Button x:Name="btn_FindAgregateInfoFile" Content="Hent" HorizontalAlignment="Left" Margin="404,230,0,0" VerticalAlignment="Top" Click="btn_FindAgregateInfoFile_Click" />
         <Image Source="{StaticResource Logo}" HorizontalAlignment="Center" Height="130" Margin="0,29,0,0" VerticalAlignment="Top" Width="320"/>
+        <Label x:Name="lbl_Error" Content="{Binding UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" Margin="0,324,0,0" VerticalAlignment="Top" Height="33" Width="272"/>
     </Grid>
 </Window>

@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< Updated upstream
     "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj": {}
   },
   "projects": {
@@ -12,10 +13,32 @@
         "projectPath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj",
         "packagesPath": "C:\\Users\\brian\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\GettingReal\\obj\\",
+=======
+    "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\MenuWindow\\MenuWindow.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\GettingReal\\GettingReal.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\GettingReal\\GettingReal.csproj",
+        "projectName": "GettingReal",
+        "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\GettingReal\\GettingReal.csproj",
+        "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\GettingReal\\obj\\",
+>>>>>>> Stashed changes
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
+<<<<<<< Updated upstream
           "C:\\Users\\brian\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+=======
+          "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+>>>>>>> Stashed changes
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -52,10 +75,11 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
+<<<<<<< Updated upstream
     "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -64,10 +88,29 @@
         "projectPath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
         "packagesPath": "C:\\Users\\brian\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\MenuWindow\\obj\\",
+=======
+    "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\MenuWindow\\MenuWindow.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
+        "projectName": "MenuWindow",
+        "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
+        "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\MenuWindow\\obj\\",
+>>>>>>> Stashed changes
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
+<<<<<<< Updated upstream
           "C:\\Users\\brian\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+=======
+          "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+>>>>>>> Stashed changes
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -79,8 +122,13 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
+<<<<<<< Updated upstream
               "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj": {
                 "projectPath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj"
+=======
+              "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\GettingReal\\GettingReal.csproj": {
+                "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\GettingReal\\GettingReal.csproj"
+>>>>>>> Stashed changes
               }
             }
           }
@@ -111,7 +159,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -153,7 +153,14 @@ C:\Users\msche\Documents\GitHub\Team5B\GettingReal\MenuWindow\bin\Debug\netcorea
 C:\Users\msche\Documents\GitHub\Team5B\GettingReal\MenuWindow\bin\Debug\netcoreapp3.1\GettingReal.dll
 C:\Users\msche\Documents\GitHub\Team5B\GettingReal\MenuWindow\bin\Debug\netcoreapp3.1\GettingReal.pdb
 C:\Users\msche\Documents\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\MenuWindow.csproj.CopyComplete
+<<<<<<< Updated upstream
 C:\Users\brian\Dropbox\Datamatiker\GitHub\Team5B\GettingReal\MenuWindow\bin\Debug\netcoreapp3.1\GettingReal.exe
 C:\Users\brian\Dropbox\Datamatiker\GitHub\Team5B\GettingReal\MenuWindow\bin\Debug\netcoreapp3.1\GettingReal.dll
 C:\Users\brian\Dropbox\Datamatiker\GitHub\Team5B\GettingReal\MenuWindow\bin\Debug\netcoreapp3.1\GettingReal.pdb
 C:\Users\brian\Dropbox\Datamatiker\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\MenuWindow.csproj.CopyComplete
+=======
+C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\bin\Debug\netcoreapp3.1\GettingReal.exe
+C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\bin\Debug\netcoreapp3.1\GettingReal.dll
+C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\bin\Debug\netcoreapp3.1\GettingReal.pdb
+C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\MenuWindow.csproj.CopyComplete
+>>>>>>> Stashed changes
