@@ -5,6 +5,7 @@
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\brian\.nuget\packages\</NuGetPackageFolders>
@@ -14,6 +15,9 @@
 =======
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Bruger\.nuget\packages\;C:\Microsoft\Xamarin\NuGet\</NuGetPackageFolders>
 >>>>>>> Stashed changes
+=======
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\brian\.nuget\packages\</NuGetPackageFolders>
+>>>>>>> parent of 0fff9b5... Validering af Ordrenummer
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.7.0</NuGetToolVersion>
   </PropertyGroup>

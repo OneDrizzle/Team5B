@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
   "dgSpecHash": "cjWmp/NxkgMheciFNlRlvH+NoOz/rwfWMG2hpymN/j9xFcTHJJdtFEDFtUJz12RrnFLYfW5uY3GaCVEzq1zrxQ==",
@@ -15,6 +16,11 @@
   "success": true,
   "projectFilePath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
 >>>>>>> Stashed changes
+=======
+  "dgSpecHash": "cjWmp/NxkgMheciFNlRlvH+NoOz/rwfWMG2hpymN/j9xFcTHJJdtFEDFtUJz12RrnFLYfW5uY3GaCVEzq1zrxQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
+>>>>>>> parent of 0fff9b5... Validering af Ordrenummer
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,7 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+=======
+>>>>>>> parent of 0fff9b5... Validering af Ordrenummer
   "dgSpecHash": "gIV6iqxz1bS5nC85/hdPFOt8OLWZKpNgTRW94KcZIR2XTsHIei5iyE+9i2RXt5nUgeJU7bLcvFU+Zkk6738o4A==",
   "success": true,
   "projectFilePath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\UnitTests\\UnitTests.csproj",
@@ -93,6 +96,7 @@
     "C:\\Users\\brian\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\brian\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\brian\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+<<<<<<< HEAD
 =======
   "dgSpecHash": "WIC6JQafcYa/JE/X3Efe5YIu74GXkkkxY4ll2TvQvRyWhkKYgeu3dszvyzzFrs/Q9FzMUXV1B0DSmmKabDqUYw==",
   "success": true,
@@ -195,6 +199,8 @@
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 0fff9b5... Validering af Ordrenummer
   ],
   "logs": []
 }

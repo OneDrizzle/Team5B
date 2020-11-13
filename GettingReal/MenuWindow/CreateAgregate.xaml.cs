@@ -1,6 +1,7 @@
 ﻿using GettingReal;
 using Microsoft.Win32;
 using System;
+using System.Diagnostics;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
@@ -78,7 +79,7 @@ namespace MenuWindow
             //and adds the OrderNumber at the end so we can search for it later
             File.Copy(sourcePath, destFile + System.IO.Path.GetFileName(sourcePath));
             string Rename = OrderNumber + JustFileName;
-
+            
 
             string ScourceFile = Path.Combine(sourcePath, destFile + System.IO.Path.GetFileName(sourcePath));
             System.IO.FileInfo fi = new System.IO.FileInfo(ScourceFile);
@@ -89,12 +90,13 @@ namespace MenuWindow
                 fi.MoveTo(NewPath);
             }
 
+            //Process.Start(new ProcessStartInfo(NewPath) { UseShellExecute = true });
 
             //here it filters out everything after the first 6 Char's
             string PureOrdereNumber = Rename.Substring(0, 6);
             VentilationAggregateRepository aggregateRepo = new VentilationAggregateRepository();
             aggregateRepo.AddVentilationAggregate(PureOrdereNumber);
-
+            
             window.Show();
             this.Close();
 
@@ -105,39 +107,15 @@ namespace MenuWindow
             if (GetOrderNumber.Text.Length != 6)
             {
                 btn_saveNewAgregat.IsEnabled = false;
-                lbl_Error.Content = ("");
             }
 
             else if (GetOrderNumber.Text.Length == 6)
             {
-                OrderNumber = GetOrderNumber.Text;
-
-                string targetPath = System.Reflection.Assembly.GetExecutingAssembly().Location;
-                string path = @"GettingReal\GettingReal\Aggregates\";
-
-                int indexOfPath = targetPath.IndexOf("GettingReal");
-                int count = 0;
-                if (indexOfPath >= 0)
-                {
-
-                    targetPath = targetPath.Remove(indexOfPath);
-                    string destFile = System.IO.Path.Combine(targetPath, path);
-
-                    DirectoryInfo dir = new DirectoryInfo(destFile);
-                    FileInfo[] files = dir.GetFiles(OrderNumber + "*", SearchOption.TopDirectoryOnly);
-                    foreach (FileInfo fileFound in files)
-                    {
-                        count++;
-                        btn_saveNewAgregat.IsEnabled = false;
-                        lbl_Error.Content = ("Dette ordrenummer eksisterer allerede");
-                    }
-                }
-                if (count == 0)
-                {
-                    btn_saveNewAgregat.IsEnabled = true;
-                    OrderNumber = GetOrderNumber.Text + "_";
-                }
+                btn_saveNewAgregat.IsEnabled = true;
+                OrderNumber = GetOrderNumber.Text + "_";
             }
+
+
         }
     }
 }

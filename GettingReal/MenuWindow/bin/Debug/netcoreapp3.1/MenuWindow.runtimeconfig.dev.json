@@ -1,6 +1,7 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
       "C:\\Users\\brian\\.dotnet\\store\\|arch|\\|tfm|",
@@ -15,6 +16,10 @@
       "C:\\Users\\Bruger\\.nuget\\packages",
       "C:\\Microsoft\\Xamarin\\NuGet"
 >>>>>>> Stashed changes
+=======
+      "C:\\Users\\brian\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\brian\\.nuget\\packages"
+>>>>>>> parent of 0fff9b5... Validering af Ordrenummer
     ]
   }
 }
