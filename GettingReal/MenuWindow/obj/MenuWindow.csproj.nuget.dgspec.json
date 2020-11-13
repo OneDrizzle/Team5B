@@ -1,24 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
->>>>>>> parent of 0fff9b5... Validering af Ordrenummer
-    "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj",
-        "projectName": "GettingReal",
-        "projectPath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj",
-        "packagesPath": "C:\\Users\\brian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\GettingReal\\obj\\",
-<<<<<<< HEAD
-=======
     "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\MenuWindow\\MenuWindow.csproj": {}
   },
   "projects": {
@@ -30,43 +12,14 @@
         "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\GettingReal\\GettingReal.csproj",
         "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\GettingReal\\obj\\",
->>>>>>> Stashed changes
-=======
-    "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\MenuWindow\\MenuWindow.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\GettingReal\\GettingReal.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\GettingReal\\GettingReal.csproj",
-        "projectName": "GettingReal",
-        "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\GettingReal\\GettingReal.csproj",
-        "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\GettingReal\\obj\\",
->>>>>>> Stashed changes
-=======
->>>>>>> parent of 0fff9b5... Validering af Ordrenummer
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-          "C:\\Users\\brian\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-=======
           "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
->>>>>>> Stashed changes
-=======
-          "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
->>>>>>> Stashed changes
-=======
-          "C:\\Users\\brian\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
->>>>>>> parent of 0fff9b5... Validering af Ordrenummer
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -103,25 +56,10 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
->>>>>>> parent of 0fff9b5... Validering af Ordrenummer
-    "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
-        "projectName": "MenuWindow",
-        "projectPath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
-        "packagesPath": "C:\\Users\\brian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\MenuWindow\\obj\\",
-<<<<<<< HEAD
-=======
     "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\MenuWindow\\MenuWindow.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -130,40 +68,14 @@
         "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
         "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\MenuWindow\\obj\\",
->>>>>>> Stashed changes
-=======
-    "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\MenuWindow\\MenuWindow.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
-        "projectName": "MenuWindow",
-        "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
-        "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\MenuWindow\\obj\\",
->>>>>>> Stashed changes
-=======
->>>>>>> parent of 0fff9b5... Validering af Ordrenummer
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-          "C:\\Users\\brian\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-=======
           "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
->>>>>>> Stashed changes
-=======
-          "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
->>>>>>> Stashed changes
-=======
-          "C:\\Users\\brian\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
->>>>>>> parent of 0fff9b5... Validering af Ordrenummer
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -175,23 +87,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-              "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj": {
-                "projectPath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj"
-=======
               "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\GettingReal\\GettingReal.csproj": {
                 "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\GettingReal\\GettingReal.csproj"
->>>>>>> Stashed changes
-=======
-              "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\GettingReal\\GettingReal.csproj": {
-                "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\GettingReal\\GettingReal\\GettingReal.csproj"
->>>>>>> Stashed changes
-=======
-              "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj": {
-                "projectPath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj"
->>>>>>> parent of 0fff9b5... Validering af Ordrenummer
               }
             }
           }
@@ -222,7 +119,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -4,50 +4,16 @@
 winexe
 C#
 .cs
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-C:\Users\brian\Dropbox\Datamatiker\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\
-=======
 C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\
->>>>>>> Stashed changes
-=======
-C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\
->>>>>>> Stashed changes
-=======
-C:\Users\brian\Dropbox\Datamatiker\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\
->>>>>>> parent of 0fff9b5... Validering af Ordrenummer
 MenuWindow
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
->>>>>>> parent of 0fff9b5... Validering af Ordrenummer
-C:\Users\brian\Dropbox\Datamatiker\GitHub\Team5B\GettingReal\MenuWindow\App.xaml
-8-28488586
-
-71590342177
-193-195016345
-<<<<<<< HEAD
-=======
 C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\App.xaml
 8-28488586
 
 71590342177
 1931117476375
->>>>>>> Stashed changes
-=======
-C:\Users\Bruger\Documents\GitHub\Team-5B\GettingReal\MenuWindow\App.xaml
-8-28488586
-
-71590342177
-1931117476375
->>>>>>> Stashed changes
-=======
->>>>>>> parent of 0fff9b5... Validering af Ordrenummer
 CreateAgregate.xaml;FindAgregate.xaml;ImageDictionaryButton.xaml;ImageDictionaryIcon.xaml;ImageDictionaryLogo.xaml;MainWindow.xaml;ProjectChefWindow.xaml;TeknikkerWindow.xaml;
 
 False
