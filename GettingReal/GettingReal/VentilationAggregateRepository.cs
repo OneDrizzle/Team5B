@@ -6,9 +6,9 @@ namespace GettingReal
     [Serializable]
     public class VentilationAggregateRepository
     {
-        private List<VentilationAggregate> ventilationAggregates;
-        private List<Filter> filters;
-        private List<ServiceReport> serviceReports;
+        private List<VentilationAggregate> _ventilationAggregates;
+        private List<Filter> _filters;
+        private List<ServiceReport> _serviceReports;
         private VentilationAggregate selectedAggregate { get; set; }
         private ServiceReport selectedServiceReport { get; set; }
         private Filter selectedFilter { get; set; }
@@ -16,13 +16,13 @@ namespace GettingReal
 
         public VentilationAggregateRepository()
         {
-            ventilationAggregates = new List<VentilationAggregate>();
+            _ventilationAggregates = new List<VentilationAggregate>();
         }
 
 
         public bool AddVentilationAggregate(string orderNumber)
         {
-            foreach (VentilationAggregate aggregate in ventilationAggregates)
+            foreach (VentilationAggregate aggregate in _ventilationAggregates)
             {
                 if (aggregate.OrderNumber == orderNumber)
                 {
@@ -30,7 +30,7 @@ namespace GettingReal
                 }
             }
             VentilationAggregate thisAggreate = new VentilationAggregate(orderNumber);
-            ventilationAggregates.Add(thisAggreate);
+            _ventilationAggregates.Add(thisAggreate);
             return true;
             //string fileName = customer.Company + "_" + building + "_" + orderNumber + ".pdf";
 
@@ -45,7 +45,7 @@ namespace GettingReal
             //        return false;
             //    }
             //}
-            ventilationAggregates.Add(ag);
+            _ventilationAggregates.Add(ag);
             return true;
             //string fileName = customer.Company + "_" + building + "_" + orderNumber + ".pdf";
 
@@ -55,7 +55,7 @@ namespace GettingReal
 
         public VentilationAggregate GetVentilationAggregate(string orderNumber)
         {
-            foreach (VentilationAggregate aggregate in ventilationAggregates)
+            foreach (VentilationAggregate aggregate in _ventilationAggregates)
             {
                 if (aggregate.OrderNumber == orderNumber)
                 {
@@ -90,17 +90,17 @@ namespace GettingReal
 
         public List<VentilationAggregate> GetAllVentilationAggregates()
         {
-            return ventilationAggregates;
+            return _ventilationAggregates;
         }
 
         public List<Filter> GetAllFilters()
         {
-            return filters;    
+            return _filters;    
         }
 
         public List<ServiceReport> GetAllServiceReports()
         {
-            return serviceReports;
+            return _serviceReports;
         }
 
 

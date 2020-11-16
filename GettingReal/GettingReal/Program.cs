@@ -14,9 +14,8 @@ namespace GettingReal
             string customer = "Jens";
             string aggregate = "1234";
             ct.AddTest(customer, building, aggregate);
-            ct.AddTest("per", "bygnign2", "4567");
+            ct.AddTest("per", "bygning2", "4567");
             ct.Show();
-
 
             string filePath = "testSerialize.save";
             DataSerializer dataSerializer = new DataSerializer();
@@ -25,11 +24,11 @@ namespace GettingReal
             dataSerializer.BinarySerialize(ct, filePath);
             testCT = dataSerializer.BinaryDeserialize(filePath) as Controller;
 
-
             testCT.Show();
             Console.WriteLine();
 
             testCT.Show2();
+
             //// Serialize 
             //XmlSerializer serializer = new XmlSerializer(typeof(Controller));
             //FileStream fs = new FileStream("TestSerialize.xml", FileMode.Create);

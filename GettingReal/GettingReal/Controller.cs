@@ -8,63 +8,61 @@ namespace GettingReal
     [Serializable]
     public class Controller
     {
-        
-        public VentilationAggregate selectedVentilationAggregate { get; set; }
-        public Customer selectedCustomer { get; set; }
-        public Building selectedBuilding { get; set; }
-        //public Room selectedRoom { get; private set; }
+        private VentilationAggregate _selectedVentilationAggregate;
+        private Customer _selectedCustomer;
+        private Building _selectedBuilding;
+        private Room _selectedRoom;
 
-        private VentilationAggregateRepository ventilationAggregateRepository;
-        private CustomerRepository customerRepository;
-        private BuildingRepository buildingRepository;
-        private RoomRepository roomRepository;
+        private VentilationAggregateRepository _ventilationAggregateRepository;
+        private CustomerRepository _customerRepository;
+        private BuildingRepository _buildingRepository;
+        private RoomRepository _roomRepository;
 
-        private List<Building> allBuildings;
-        private List<Room> allRooms;
-        private List<VentilationAggregate> allVentilationAggregates;
-        private List<Customer> allCustomers;
+        private List<Building> _allBuildings;
+        private List<Room> _allRooms;
+        private List<VentilationAggregate> _allVentilationAggregates;
+        private List<Customer> _allCustomers;
 
         public Controller()
         {
-            ventilationAggregateRepository = new VentilationAggregateRepository();
-            customerRepository = new CustomerRepository();
-            buildingRepository = new BuildingRepository();
-            roomRepository = new RoomRepository();
+            _ventilationAggregateRepository = new VentilationAggregateRepository();
+            _customerRepository = new CustomerRepository();
+            _buildingRepository = new BuildingRepository();
+            _roomRepository = new RoomRepository();
 
-            allCustomers = customerRepository.GetAllCustomers();
-            allBuildings = buildingRepository.GetAllBuildings();
-            allVentilationAggregates = ventilationAggregateRepository.GetAllVentilationAggregates();
-            allRooms = roomRepository.GetAllRooms();
-           
+            _allCustomers = _customerRepository.GetAllCustomers();
+            _allBuildings = _buildingRepository.GetAllBuildings();
+            _allVentilationAggregates = _ventilationAggregateRepository.GetAllVentilationAggregates();
+            _allRooms = _roomRepository.GetAllRooms();           
         }
 
         public void SelectVentilationAggregate(string orderNumber)
         {
-            selectedVentilationAggregate = ventilationAggregateRepository.GetVentilationAggregate(orderNumber);
+            _selectedVentilationAggregate = _ventilationAggregateRepository.GetVentilationAggregate(orderNumber);
         }
 
         public void AddTest(string customer, string building, string aggregate)
         {
             var c = new Customer(name:customer);
-            selectedCustomer = c;
-            customerRepository.AddCustomer(c);
+            _selectedCustomer = c;
+            _customerRepository.AddCustomer(c);
             var b = new Building(name:building);
-            selectedBuilding = b;
-            selectedCustomer.AddBuilding(b);
-            buildingRepository.AddBuilding(b);
+            _selectedBuilding = b;
+            _selectedCustomer.AddBuilding(b);
+            _buildingRepository.AddBuilding(b);
             var ag1 = new VentilationAggregate(orderNumber: aggregate);
-            var ag2 = new VentilationAggregate("666");
-            selectedBuilding.AddVentilationAggregate(ag1);
-            selectedBuilding.AddVentilationAggregate(ag2);
-            ventilationAggregateRepository.AddVentilationAggregate(ag1);
-            ventilationAggregateRepository.AddVentilationAggregate(ag2);
+            //var ag2 = new VentilationAggregate("666");
+            _selectedBuilding.AddVentilationAggregate(ag1);
+            //selectedBuilding.AddVentilationAggregate(ag2);
+            _ventilationAggregateRepository.AddVentilationAggregate(ag1);
+            //ventilationAggregateRepository.AddVentilationAggregate(ag2);
         }
 
         public void Show()
         {
-            allCustomers = customerRepository.GetAllCustomers();
+            _allCustomers = _customerRepository.GetAllCustomers();
 
-            foreach (Customer customer in allCustomers)
+            foreach (Customer customer in _allCustomers)
             {
                 Console.WriteLine(customer.ToString());
                 foreach (Building building in customer.GetListOfBuildings())
@@ -80,13 +78,13 @@ namespace GettingReal
         }
         public void Show2()
         {
-            foreach (Customer customer in customerRepository.GetAllCustomers())          
+            foreach (Customer customer in _customerRepository.GetAllCustomers())          
                 Console.WriteLine(customer.ToString());
 
-            foreach (Building building in buildingRepository.GetAllBuildings())
+            foreach (Building building in _buildingRepository.GetAllBuildings())
                     Console.WriteLine(building.ToString());
 
-            foreach (VentilationAggregate aggregate in ventilationAggregateRepository.GetAllVentilationAggregates())                   
+            foreach (VentilationAggregate aggregate in _ventilationAggregateRepository.GetAllVentilationAggregates())                   
                         Console.WriteLine(aggregate.ToString());
             
             Console.WriteLine();
@@ -94,20 +92,20 @@ namespace GettingReal
 
         public bool AddVentilationAggregate(string orderNumber)
         {
-            foreach (VentilationAggregate aggregate in allVentilationAggregates)
+            foreach (VentilationAggregate aggregate in _allVentilationAggregates)
             {
                 if (aggregate.OrderNumber == orderNumber)
                 {
                     return false;
                 }
             }
-            ventilationAggregateRepository.AddVentilationAggregate(orderNumber);
+            _ventilationAggregateRepository.AddVentilationAggregate(orderNumber);
             return true;
         }
 
         public VentilationAggregate GetVentilationAggregate(string orderNumber)
         {
-            foreach (VentilationAggregate ventilationAggregate in allVentilationAggregates)
+            foreach (VentilationAggregate ventilationAggregate in _allVentilationAggregates)
             {
                 if (ventilationAggregate.OrderNumber==orderNumber)
                 {
@@ -120,13 +118,13 @@ namespace GettingReal
         public List<Filter> GetFilters(string orderNumber)
         {
             SelectVentilationAggregate(orderNumber);
-            return selectedVentilationAggregate.GetListOfFilters();
+            return _selectedVentilationAggregate.GetListOfFilters();
         }
 
         public List<ServiceReport> GetServiceReports(string orderNumber)
         {
             SelectVentilationAggregate(orderNumber);
-            return selectedVentilationAggregate.GetListOfServiceReports();
+            return _selectedVentilationAggregate.GetListOfServiceReports();
         }
 
         //public void AddAggregate(string modelNumber, string orderNumber, Customer customer)

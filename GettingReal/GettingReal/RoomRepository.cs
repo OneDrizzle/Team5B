@@ -7,21 +7,21 @@ namespace GettingReal
     [Serializable]
     public class RoomRepository
     {
-        private List<Room> rooms;
+        private List<Room> _rooms;
 
         public RoomRepository()
         {
-            rooms = new List<Room>();
+            _rooms = new List<Room>();
         }
 
         public void AddRoom(Room room)
         {
-            rooms.Add(room);
+            _rooms.Add(room);
         }
 
         public Room GetRoom(string number)
         {
-            foreach (Room room in rooms)
+            foreach (Room room in _rooms)
             {
                 if (room.Number == number)
                 {
@@ -34,7 +34,7 @@ namespace GettingReal
         public void SetRoom(string number)
         {
             Room SelectedRoom;
-            foreach (Room room in rooms)
+            foreach (Room room in _rooms)
             {
                 if (room.Number == number)
                 {
@@ -46,7 +46,7 @@ namespace GettingReal
 
         public List<Room> GetAllRooms()
         {
-            return rooms;
+            return _rooms;
         }
 
         //public void DeleteRoom()

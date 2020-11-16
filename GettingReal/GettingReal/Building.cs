@@ -8,12 +8,12 @@ namespace GettingReal
     public class Building
     {
         public string Name { get; set; }
-        private List<VentilationAggregate> ventilationAggregates;
+        private List<VentilationAggregate> _ventilationAggregates;
 
 
         public Building(string name = "")
         {
-            ventilationAggregates = new List<VentilationAggregate>();
+            _ventilationAggregates = new List<VentilationAggregate>();
             Name = name;
         }
         public Building() : this("")
@@ -21,17 +21,17 @@ namespace GettingReal
 
         public List<VentilationAggregate> GetListOfVentilationAggregates()
         {
-            return ventilationAggregates;
+            return _ventilationAggregates;
         }
 
         public void AddVentilationAggregate(VentilationAggregate ventilationAggregate)
         {
-            ventilationAggregates.Add(ventilationAggregate);
+            _ventilationAggregates.Add(ventilationAggregate);
         }
 
         public VentilationAggregate GetVentilationAggregate(string orderNumber)
         {
-            foreach (VentilationAggregate aggregate in ventilationAggregates)
+            foreach (VentilationAggregate aggregate in _ventilationAggregates)
             {
                 if (aggregate.OrderNumber == orderNumber)
                 {

@@ -8,21 +8,21 @@ namespace GettingReal
     public class CustomerRepository
     {
 
-        List<Customer> customers;
+        List<Customer> _customers;
 
         public CustomerRepository()
         {
-            customers = new List<Customer>();
+            _customers = new List<Customer>();
         }
 
         public void AddCustomer(Customer customer)
         {
-            customers.Add(customer);
+            _customers.Add(customer);
         }
 
         public Customer GetCustomer(string name)
         {
-            foreach (Customer customer in customers)
+            foreach (Customer customer in _customers)
             {
                 if (customer.Name == name)
                 {
@@ -34,14 +34,14 @@ namespace GettingReal
 
         public List<Customer> GetAllCustomers()
         {
-            return customers;
+            return _customers;
         }
 
         public void SetCustomer(string name)
         {
             Customer selectedCustomer;
 
-            foreach (Customer customer in customers)
+            foreach (Customer customer in _customers)
             {
                 if (customer.Name == name)
                 {

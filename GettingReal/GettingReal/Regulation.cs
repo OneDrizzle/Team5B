@@ -6,14 +6,16 @@ namespace GettingReal
 {
     public class Regulation
     {
-        public double ActualAirVolume { get; set; }
-        public double Deviation { get; set; }
-        public Technician technician { get; set; }
 
-        public Regulation(Technician technician, double actualAirVolume)
+        public double MeasuredAirVolume { get; set; }
+        public double Deviation { get; private set; }
+
+        public Regulation(double measuredAirvolume)
         {
-            ActualAirVolume = actualAirVolume;
-            this.technician = technician;
+             MeasuredAirVolume = measuredAirvolume;
+        }
+        public Regulation() : this(-1)
+        {
         }
 
     }

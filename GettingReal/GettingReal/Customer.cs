@@ -10,12 +10,12 @@ namespace GettingReal
         public string Name { get; set; }
         public string Company { get; set; }
 
-        private List<Building> buildings;
+        private List<Building> _buildings;
 
 
         public Customer(string name = "", string company = "")
         {
-            buildings = new List<Building>();
+            _buildings = new List<Building>();
             Name = name;
             Company = company;
         }
@@ -25,17 +25,17 @@ namespace GettingReal
 
         public List<Building> GetListOfBuildings()
         {
-            return buildings;
+            return _buildings;
         }
 
         public void AddBuilding(Building building)
         {
-            buildings.Add(building);
+            _buildings.Add(building);
         }
 
         public Building GetBuilding(string name)
         {
-            foreach (Building building in buildings)
+            foreach (Building building in _buildings)
             {
                 if (building.Name == name)
                 {
