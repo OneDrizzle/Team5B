@@ -11,19 +11,22 @@ namespace MenuWindow
     public partial class CreateAgregatWindow : Window
     {
 
-        Controller ctr = new Controller();
+        //Controller ctr = new Controller();
+        Utility utility = new Utility();
         ProjectChefWindow window = new ProjectChefWindow();
+
         public CreateAgregatWindow()
         {
             InitializeComponent();
+            
         }
 
         private void Button_back_Click(object sender, RoutedEventArgs e)
         {
             // Back button
-
+            
             window.Show();
-
+            
             this.Close();
         }
         string JustFileName;
@@ -40,6 +43,7 @@ namespace MenuWindow
             openFileDialog.Filter = "Pdf Files|*.pdf";
 
             Nullable<bool> result = openFileDialog.ShowDialog();
+
 
             if (result == true)
             {
@@ -91,8 +95,8 @@ namespace MenuWindow
 
 
             //here it filters out everything after the first 6 Char's
-            string PureOrdereNumber = Rename.Substring(0, 6);
-            ctr.AddVentilationAggregate(PureOrdereNumber);
+            //string PureOrdereNumber = Rename.Substring(0, 6);
+            //ctr.AddVentilationAggregate(PureOrdereNumber);
 
             window.Show();
             this.Close();
@@ -110,34 +114,41 @@ namespace MenuWindow
             {
                 OrderNumber = GetOrderNumber.Text;
 
-                string targetPath = System.Reflection.Assembly.GetExecutingAssembly().Location;
-                string path = @"GettingReal\GettingReal\Aggregates\";
+                (int c, string fn) = utility.NumberOfFiles(OrderNumber);
+                int count = c;
+                //string targetPath = System.Reflection.Assembly.GetExecutingAssembly().Location;
+                //string path = @"GettingReal\GettingReal\Aggregates\";
 
-                int indexOfPath = targetPath.IndexOf("GettingReal");
-                int count = 0;
-                if (indexOfPath >= 0)
+                //int indexOfPath = targetPath.IndexOf("GettingReal");
+                //int count = 0;
+                //if (indexOfPath >= 0)
+                //{
+
+                //    targetPath = targetPath.Remove(indexOfPath);
+                //    string destFile = System.IO.Path.Combine(targetPath, path);
+
+                //    DirectoryInfo dir = new DirectoryInfo(destFile);
+                //    FileInfo[] files = dir.GetFiles(OrderNumber + "*", SearchOption.TopDirectoryOnly);
+                //    foreach (FileInfo fileFound in files)
+                //    {
+                //        count++;
+                //    }
+                //}
+
+                if (count > 0)
                 {
-
-                    targetPath = targetPath.Remove(indexOfPath);
-                    string destFile = System.IO.Path.Combine(targetPath, path);
-
-                    DirectoryInfo dir = new DirectoryInfo(destFile);
-                    FileInfo[] files = dir.GetFiles(OrderNumber + "*", SearchOption.TopDirectoryOnly);
-                    foreach (FileInfo fileFound in files)
-                    {
-                        count++;
-                        btn_saveNewAgregat.IsEnabled = false;
-                        lbl_Error.Content = ("Dette ordrenummer eksisterer allerede");
-                    }
+                    btn_saveNewAgregat.IsEnabled = false;
+                    lbl_Error.Content = ("Dette ordrenummer eksisterer allerede");
                 }
+                
                 if (count == 0)
                 {
                     btn_saveNewAgregat.IsEnabled = true;
                     OrderNumber = GetOrderNumber.Text + "_";
-
-
-
                 }
+
+
+
             }
         }
     }
