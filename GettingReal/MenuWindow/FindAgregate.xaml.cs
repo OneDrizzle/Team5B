@@ -57,15 +57,8 @@ namespace MenuWindow
 
             //VentilationAggregate aggregate = aggregateRepo.GetVentilationAggregate(SelectedOrderNumber);
 
-            string destFile = utility.FindFile(SelectedOrderNumber);
-
-            DirectoryInfo dir = new DirectoryInfo(destFile);
-            FileInfo[] files = dir.GetFiles(SelectedOrderNumber + "*", SearchOption.TopDirectoryOnly);
-
-
-
-
-
+            (string df, string tp) = utility.FindFile();
+            string destFile = df;
             string NewPath = Path.Combine(filename, destFile + System.IO.Path.GetFileName(filename));
             Process.Start(new ProcessStartInfo(NewPath) { UseShellExecute = true });
 

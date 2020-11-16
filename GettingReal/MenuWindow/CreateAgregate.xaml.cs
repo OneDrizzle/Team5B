@@ -9,8 +9,6 @@ namespace MenuWindow
 
     public partial class CreateAgregatWindow : Window
     {
-
-        //Controller ctr = new Controller();
         Utility utility = new Utility();
         ProjectChefWindow window = new ProjectChefWindow();
 
@@ -25,12 +23,13 @@ namespace MenuWindow
             // Back button
             
             window.Show();
-            
             this.Close();
         }
-        string JustFileName;
+
+
+        string justFileName;
         string sourcePath;
-        string OrderNumber;
+        string orderNumber;
         private void btn_FindAgregateInfoFile_Click(object sender, RoutedEventArgs e)
         {
             // Opens a dialog box that allows user to find and choose a file from their pc
@@ -49,8 +48,8 @@ namespace MenuWindow
                 // saves selected file to "JustFileName" and shows it in the GUI
 
                 FileInfo fi = new FileInfo(openFileDialog.FileName);
-                JustFileName = fi.Name;
-                GetInfoSheet.Text = JustFileName;
+                justFileName = fi.Name;
+                GetInfoSheet.Text = justFileName;
                 //saves file path to scourcepath
                 sourcePath = openFileDialog.FileName;
             }
@@ -58,45 +57,7 @@ namespace MenuWindow
 
         private void btn_saveNewAgregat_Click_(object sender, RoutedEventArgs e)
         {
-            //Cpoy file to userdefined folder
-
-            string targetPath = System.Reflection.Assembly.GetExecutingAssembly().Location;
-
-            string path = @"GettingReal\GettingReal\Aggregates\";
-            //looks for the first instance of "GettingReal" in the path.
-            //Removes "GettingReal" and inputs the path so the path is the same as "TargetPath + path"
-            int indexOfPath = targetPath.IndexOf("GettingReal");
-            if (indexOfPath >= 0)
-                targetPath = targetPath.Remove(indexOfPath);
-            //Combines the two paths togehter and sets \\ in Automaticly so it's a full and useable path
-            string destFile = System.IO.Path.Combine(targetPath, path);
-
-            // if there is no Directory named Aggregates it creates one
-            if (!Directory.Exists(targetPath))
-            {
-                Directory.CreateDirectory(targetPath);
-            }
-
-            //the next code takes the file that need's to be copied and copies it into the "DestinationDirectory" folder
-            //and adds the OrderNumber at the end so we can search for it later
-            File.Copy(sourcePath, destFile + System.IO.Path.GetFileName(sourcePath));
-            string Rename = OrderNumber + JustFileName;
-
-
-            string ScourceFile = Path.Combine(sourcePath, destFile + System.IO.Path.GetFileName(sourcePath));
-            System.IO.FileInfo fi = new System.IO.FileInfo(ScourceFile);
-            string NewPath = "";
-            if (fi.Exists)
-            {
-                NewPath = Path.Combine(Rename, destFile + System.IO.Path.GetFileName(Rename));
-                fi.MoveTo(NewPath);
-            }
-
-
-            //here it filters out everything after the first 6 Char's
-            //string PureOrdereNumber = Rename.Substring(0, 6);
-            //ctr.AddVentilationAggregate(PureOrdereNumber);
-
+            utility.SaveFile(sourcePath, orderNumber, justFileName);
             window.Show();
             this.Close();
         }
@@ -111,9 +72,9 @@ namespace MenuWindow
 
             else if (GetOrderNumber.Text.Length == 6)
             {
-                OrderNumber = GetOrderNumber.Text;
+                orderNumber = GetOrderNumber.Text;
 
-                (int c, string fn) = utility.NumberOfFiles(OrderNumber);
+                (int c, string fn) = utility.NumberOfFiles(orderNumber);
                 int count = c;
 
                 if (count > 0)
@@ -125,7 +86,7 @@ namespace MenuWindow
                 if (count == 0)
                 {
                     btn_saveNewAgregat.IsEnabled = true;
-                    OrderNumber = GetOrderNumber.Text + "_";
+                    orderNumber = GetOrderNumber.Text + "_";
                 }
 
 
