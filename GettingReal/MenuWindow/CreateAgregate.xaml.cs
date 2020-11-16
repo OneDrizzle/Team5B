@@ -1,5 +1,4 @@
-﻿using GettingReal;
-using Microsoft.Win32;
+﻿using Microsoft.Win32;
 using System;
 using System.IO;
 using System.Windows;
@@ -116,24 +115,6 @@ namespace MenuWindow
 
                 (int c, string fn) = utility.NumberOfFiles(OrderNumber);
                 int count = c;
-                //string targetPath = System.Reflection.Assembly.GetExecutingAssembly().Location;
-                //string path = @"GettingReal\GettingReal\Aggregates\";
-
-                //int indexOfPath = targetPath.IndexOf("GettingReal");
-                //int count = 0;
-                //if (indexOfPath >= 0)
-                //{
-
-                //    targetPath = targetPath.Remove(indexOfPath);
-                //    string destFile = System.IO.Path.Combine(targetPath, path);
-
-                //    DirectoryInfo dir = new DirectoryInfo(destFile);
-                //    FileInfo[] files = dir.GetFiles(OrderNumber + "*", SearchOption.TopDirectoryOnly);
-                //    foreach (FileInfo fileFound in files)
-                //    {
-                //        count++;
-                //    }
-                //}
 
                 if (count > 0)
                 {

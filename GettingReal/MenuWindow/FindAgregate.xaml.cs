@@ -35,24 +35,7 @@ namespace MenuWindow
                 (int c, string fn) = utility.NumberOfFiles(SelectedOrderNumber);
                 count = c;
                 filename = fn;
-                //
-                //string targetPath = System.Reflection.Assembly.GetExecutingAssembly().Location;
-                //string path = @"GettingReal\GettingReal\Aggregates\";
 
-                //int indexOfPath = targetPath.IndexOf("GettingReal");
-                //if (indexOfPath >= 0)
-                //    targetPath = targetPath.Remove(indexOfPath);
-                //string destFile = System.IO.Path.Combine(targetPath, path);
-
-                //DirectoryInfo dir = new DirectoryInfo(destFile);
-                //FileInfo[] files = dir.GetFiles(SelectedOrderNumber + "*", SearchOption.TopDirectoryOnly);
-
-                //foreach (FileInfo fileFound in files)
-                //{
-                //    filename = fileFound.Name;
-                //    count++;
-                //}
-                ////
                 if (count > 0)
                 {
                     btn_OpenAggregateFile.IsEnabled = true;
@@ -75,13 +58,6 @@ namespace MenuWindow
             //VentilationAggregate aggregate = aggregateRepo.GetVentilationAggregate(SelectedOrderNumber);
 
             string destFile = utility.FindFile(SelectedOrderNumber);
-            //string targetPath = System.Reflection.Assembly.GetExecutingAssembly().Location;
-            //string path = @"GettingReal\GettingReal\Aggregates\";
-
-            //int indexOfPath = targetPath.IndexOf("GettingReal");
-            //if (indexOfPath >= 0)
-            //    targetPath = targetPath.Remove(indexOfPath);
-            //string destFile = System.IO.Path.Combine(targetPath, path);
 
             DirectoryInfo dir = new DirectoryInfo(destFile);
             FileInfo[] files = dir.GetFiles(SelectedOrderNumber + "*", SearchOption.TopDirectoryOnly);

@@ -27,16 +27,11 @@
     ]
   },
   "packageFolders": {
-<<<<<<< Updated upstream
     "C:\\Users\\msche\\.nuget\\packages\\": {}
-=======
-    "C:\\Users\\brian\\.nuget\\packages\\": {}
->>>>>>> Stashed changes
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< Updated upstream
       "projectUniqueName": "C:\\Users\\msche\\Documents\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
       "projectName": "MenuWindow",
       "projectPath": "C:\\Users\\msche\\Documents\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
@@ -45,16 +40,6 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\msche\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-      "projectUniqueName": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
-      "projectName": "MenuWindow",
-      "projectPath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
-      "packagesPath": "C:\\Users\\brian\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\MenuWindow\\obj\\",
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\brian\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> Stashed changes
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -67,13 +52,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-<<<<<<< Updated upstream
             "C:\\Users\\msche\\Documents\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj": {
               "projectPath": "C:\\Users\\msche\\Documents\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj"
-=======
-            "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj": {
-              "projectPath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj"
->>>>>>> Stashed changes
             }
           }
         }
