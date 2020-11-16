@@ -8,21 +8,21 @@ namespace GettingReal
     public class BuildingRepository
     {
 
-        List<Building> buildings;
+        private List<Building> _buildings;
 
         public BuildingRepository()
         {
-            buildings = new List<Building>();
+            _buildings = new List<Building>();
         }
 
         public void AddBuilding(Building building)
         {
-            buildings.Add(building);
+            _buildings.Add(building);
         }
 
         public Building GetBuilding(string name)
         {
-            foreach (Building building in buildings)
+            foreach (Building building in _buildings)
             {
                 if (building.Name == name)
                 {
@@ -35,13 +35,13 @@ namespace GettingReal
 
         public List<Building> GetAllBuildings()
         {
-            return buildings;
+            return _buildings;
         }
 
         public void Setbuilding(string name)
         {
             Building selectedBuilding;
-            foreach (Building building in buildings)
+            foreach (Building building in _buildings)
             {
                 if (building.Name == name)
                 {

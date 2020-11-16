@@ -11,16 +11,16 @@ namespace GettingReal
         public string OrderNumber { get; set; }
 
 
-        private List<Filter> filters;
-        private List<ServiceReport> serviceReports;
-        //private List<Floor> floors;
+        private List<Filter> _filters;
+        private List<ServiceReport> _serviceReports;
+        private List<Floor> _floors;
 
 
         public VentilationAggregate(string orderNumber = "0", string date = "EmptyDate")        
         {
-            filters = new List<Filter>();
-            serviceReports = new List<ServiceReport>();
-            //floors = new List<Floor>();
+            _filters = new List<Filter>();
+            _serviceReports = new List<ServiceReport>();
+            _floors = new List<Floor>();
 
             if (date == "EmptyDate")
             {
@@ -35,23 +35,23 @@ namespace GettingReal
 
         public void AddServiceReport(ServiceReport serviceReport)
         {
-            serviceReports.Add(serviceReport);
+            _serviceReports.Add(serviceReport);
         }
 
 
         public List<ServiceReport> GetListOfServiceReports()
         {
-            return serviceReports;
+            return _serviceReports;
         }
 
         public void AddFilter(Filter filter)
         {
-            filters.Add(filter);
+            _filters.Add(filter);
         }
 
         public Filter GetFilter(string model)
         {
-            foreach (Filter filter in filters)
+            foreach (Filter filter in _filters)
             {
                 if (filter.Model == model)
                 {
@@ -63,7 +63,7 @@ namespace GettingReal
 
         public List<Filter> GetListOfFilters()
         {
-            return filters;
+            return _filters;
         }
 
         public override string ToString()

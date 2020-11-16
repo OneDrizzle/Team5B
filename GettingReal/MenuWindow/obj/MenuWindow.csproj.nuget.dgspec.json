@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< Updated upstream
     "C:\\Users\\msche\\Documents\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj": {}
   },
   "projects": {
@@ -15,6 +16,22 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\msche\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj",
+        "projectName": "GettingReal",
+        "projectPath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj",
+        "packagesPath": "C:\\Users\\brian\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\GettingReal\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\brian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> Stashed changes
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -56,6 +73,7 @@
         }
       }
     },
+<<<<<<< Updated upstream
     "C:\\Users\\msche\\Documents\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -67,6 +85,19 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\msche\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
+        "projectName": "MenuWindow",
+        "projectPath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
+        "packagesPath": "C:\\Users\\brian\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\MenuWindow\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\brian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> Stashed changes
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -79,8 +110,13 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
+<<<<<<< Updated upstream
               "C:\\Users\\msche\\Documents\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj": {
                 "projectPath": "C:\\Users\\msche\\Documents\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj"
+=======
+              "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj": {
+                "projectPath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj"
+>>>>>>> Stashed changes
               }
             }
           }

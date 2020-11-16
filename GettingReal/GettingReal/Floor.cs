@@ -4,15 +4,20 @@ using System.Text;
 
 namespace GettingReal
 {   
+    [Serializable]
     public class Floor
     {
         public string Number { get; set; }
-        List<Room> rooms;
+        List<Room> _rooms;
 
         public Floor(string number)
         {
             Number = number;
-            rooms = new List<Room>();
+            _rooms = new List<Room>();
+        }
+
+        public Floor() : this("0")
+        {
         }
 
     }
