@@ -29,8 +29,6 @@ namespace MenuWindow
 
             else if (FindOrderNumber.Text.Length == 6)
             {
-                btn_OpenAggregateFile.IsEnabled = true;
-
                 string SelectedOrderNumber = FindOrderNumber.Text;
 
                 (int c, string fn) = utility.NumberOfFiles(SelectedOrderNumber);
@@ -43,7 +41,6 @@ namespace MenuWindow
                 }
                 else
                 {
-                    btn_OpenAggregateFile.IsEnabled = false;
                     lbl_Error.Content = ("Dette ordrenummer eksisterer ikke");
                 }
 
