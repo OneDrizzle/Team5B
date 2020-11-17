@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using GettingReal;
+using GettingReal.Models;
 using System.Collections.Generic;
 using System.Runtime.Intrinsics.X86;
 

@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
-namespace GettingReal
+namespace GettingReal.Models
 {
+
     [Serializable]
     public class VentilationAggregateRepository
     {
@@ -95,7 +97,7 @@ namespace GettingReal
 
         public List<Filter> GetAllFilters()
         {
-            return _filters;    
+            return _filters;
         }
 
         public List<ServiceReport> GetAllServiceReports()

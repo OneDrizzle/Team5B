@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GettingReal
+namespace GettingReal.Models
 {
     [Serializable]
     public class VentilationAggregate
@@ -16,7 +16,7 @@ namespace GettingReal
         private List<Floor> _floors;
 
 
-        public VentilationAggregate(string orderNumber = "0", string date = "EmptyDate")        
+        public VentilationAggregate(string orderNumber = "0", string date = "EmptyDate")
         {
             _filters = new List<Filter>();
             _serviceReports = new List<ServiceReport>();

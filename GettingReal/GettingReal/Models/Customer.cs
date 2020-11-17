@@ -2,17 +2,30 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GettingReal
+namespace GettingReal.Models
 {
     [Serializable]
-    public class BuildingRepository
+    public class Customer
     {
+        public string Name { get; set; }
+        public string Company { get; set; }
 
         private List<Building> _buildings;
 
-        public BuildingRepository()
+
+        public Customer(string name = "", string company = "")
         {
             _buildings = new List<Building>();
+            Name = name;
+            Company = company;
+        }
+
+        public Customer() : this("", "")
+        { }
+
+        public List<Building> GetListOfBuildings()
+        {
+            return _buildings;
         }
 
         public void AddBuilding(Building building)
@@ -29,28 +42,13 @@ namespace GettingReal
                     return building;
                 }
             }
-
             return null;
         }
 
-        public List<Building> GetAllBuildings()
-        {
-            return _buildings;
-        }
 
-        public void Setbuilding(string name)
+        public override string ToString()
         {
-            Building selectedBuilding;
-            foreach (Building building in _buildings)
-            {
-                if (building.Name == name)
-                {
-                    selectedBuilding = building;
-                }
-            }
+            return $"{Name}";
         }
-
-        public void DeleteBuilding()
-        { }
     }
 }

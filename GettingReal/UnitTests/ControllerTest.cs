@@ -1,5 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using GettingReal;
+using GettingReal.Models;
+using GettingReal.ViewModels;
 using System.Collections.Generic;
 using System.Xml.Linq;
 
@@ -10,7 +11,7 @@ namespace UnitTests
     {
         VentilationAggregate ag1, ag2, selectedAg;
         Filter f1, f2, f3;
-        Controller ct;
+        MainViewModel ct;
         Customer cust;
         List<Filter> filters;
         Building b1;
@@ -24,7 +25,7 @@ namespace UnitTests
             f1 = new Filter("manufacturer1", "model2", "filterClass3", "type4", 10);
             f2 = new Filter("manu1", "filtClass2", "mod3", "typ4", 5);
             f3 = new Filter("f3", "f3", "f3", "f3", 3);
-            ct = new Controller();
+            ct = new MainViewModel();
             b1 = new Building();
             cust = new Customer();
             filters = new List<Filter>();

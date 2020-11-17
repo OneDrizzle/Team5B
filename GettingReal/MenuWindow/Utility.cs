@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
-using GettingReal;
+using GettingReal.ViewModels;
 
 namespace MenuWindow
 {
     class Utility
     {
-        Controller ctr = new Controller();
+        MainViewModel ctr = new MainViewModel();
 
         public Utility()
         {

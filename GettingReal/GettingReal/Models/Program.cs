@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Xml.Serialization;
+using System.Text;
+using GettingReal.ViewModels;
 
-namespace GettingReal
+namespace GettingReal.Models
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Controller ct = new Controller();
+            MainViewModel ct = new MainViewModel();
             string building = "Scandic";
             string customer = "Jens";
             string aggregate = "1234";
@@ -19,10 +19,10 @@ namespace GettingReal
 
             string filePath = "testSerialize.save";
             DataSerializer dataSerializer = new DataSerializer();
-            Controller testCT = null;
+            MainViewModel testCT = null;
 
             dataSerializer.BinarySerialize(ct, filePath);
-            testCT = dataSerializer.BinaryDeserialize(filePath) as Controller;
+            testCT = dataSerializer.BinaryDeserialize(filePath) as MainViewModel;
 
             testCT.Show();
             Console.WriteLine();

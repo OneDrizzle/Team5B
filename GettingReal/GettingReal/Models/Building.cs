@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GettingReal
+namespace GettingReal.Models
 {
     [Serializable]
     public class Building

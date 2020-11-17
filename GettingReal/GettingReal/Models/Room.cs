@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GettingReal
+namespace GettingReal.Models
 {
     [Serializable]
     public class Room
@@ -34,7 +34,7 @@ namespace GettingReal
             Area = Area;
         }
 
-        public Room() : this("0",0,0)
+        public Room() : this("0", 0, 0)
         {
         }
 

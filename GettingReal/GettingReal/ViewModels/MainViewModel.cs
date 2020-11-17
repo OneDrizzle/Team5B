@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Text;
+using GettingReal.Models;
 
-namespace GettingReal
+namespace GettingReal.ViewModels
 {
     [Serializable]
-    public class Controller
+    public class MainViewModel
     {
         private VentilationAggregate _selectedVentilationAggregate;
         private Customer _selectedCustomer;
@@ -23,7 +23,7 @@ namespace GettingReal
         private List<VentilationAggregate> _allVentilationAggregates;
         private List<Customer> _allCustomers;
 
-        public Controller()
+        public MainViewModel()
         {
             _ventilationAggregateRepository = new VentilationAggregateRepository();
             _customerRepository = new CustomerRepository();
@@ -33,7 +33,7 @@ namespace GettingReal
             _allCustomers = _customerRepository.GetAllCustomers();
             _allBuildings = _buildingRepository.GetAllBuildings();
             _allVentilationAggregates = _ventilationAggregateRepository.GetAllVentilationAggregates();
-            _allRooms = _roomRepository.GetAllRooms();           
+            _allRooms = _roomRepository.GetAllRooms();
         }
 
         public void SelectVentilationAggregate(string orderNumber)
@@ -43,10 +43,10 @@ namespace GettingReal
 
         public void AddTest(string customer, string building, string aggregate)
         {
-            var c = new Customer(name:customer);
+            var c = new Customer(name: customer);
             _selectedCustomer = c;
             _customerRepository.AddCustomer(c);
-            var b = new Building(name:building);
+            var b = new Building(name: building);
             _selectedBuilding = b;
             _selectedCustomer.AddBuilding(b);
             _buildingRepository.AddBuilding(b);
@@ -78,15 +78,15 @@ namespace GettingReal
         }
         public void Show2()
         {
-            foreach (Customer customer in _customerRepository.GetAllCustomers())          
+            foreach (Customer customer in _customerRepository.GetAllCustomers())
                 Console.WriteLine(customer.ToString());
 
             foreach (Building building in _buildingRepository.GetAllBuildings())
-                    Console.WriteLine(building.ToString());
+                Console.WriteLine(building.ToString());
 
-            foreach (VentilationAggregate aggregate in _ventilationAggregateRepository.GetAllVentilationAggregates())                   
-                        Console.WriteLine(aggregate.ToString());
-            
+            foreach (VentilationAggregate aggregate in _ventilationAggregateRepository.GetAllVentilationAggregates())
+                Console.WriteLine(aggregate.ToString());
+
             Console.WriteLine();
         }
 
@@ -107,14 +107,14 @@ namespace GettingReal
         {
             foreach (VentilationAggregate ventilationAggregate in _allVentilationAggregates)
             {
-                if (ventilationAggregate.OrderNumber==orderNumber)
+                if (ventilationAggregate.OrderNumber == orderNumber)
                 {
                     return ventilationAggregate;
                 }
             }
             return null;
         }
-        
+
         public List<Filter> GetFilters(string orderNumber)
         {
             SelectVentilationAggregate(orderNumber);

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GettingReal
+namespace GettingReal.Models
 {
     public class Regulation
     {
@@ -12,7 +12,7 @@ namespace GettingReal
 
         public Regulation(double measuredAirvolume)
         {
-             MeasuredAirVolume = measuredAirvolume;
+            MeasuredAirVolume = measuredAirvolume;
         }
         public Regulation() : this(-1)
         {
