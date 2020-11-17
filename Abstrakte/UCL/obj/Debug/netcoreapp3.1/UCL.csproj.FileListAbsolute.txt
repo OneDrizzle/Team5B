@@ -1,0 +1,17 @@
+C:\Users\lopo\source\repos\Abstrakte\UCL\bin\Debug\netcoreapp3.1\Abstrakte.exe
+C:\Users\lopo\source\repos\Abstrakte\UCL\bin\Debug\netcoreapp3.1\UCL.exe
+C:\Users\lopo\source\repos\Abstrakte\UCL\bin\Debug\netcoreapp3.1\UCL.deps.json
+C:\Users\lopo\source\repos\Abstrakte\UCL\bin\Debug\netcoreapp3.1\UCL.runtimeconfig.json
+C:\Users\lopo\source\repos\Abstrakte\UCL\bin\Debug\netcoreapp3.1\UCL.runtimeconfig.dev.json
+C:\Users\lopo\source\repos\Abstrakte\UCL\bin\Debug\netcoreapp3.1\UCL.dll
+C:\Users\lopo\source\repos\Abstrakte\UCL\bin\Debug\netcoreapp3.1\UCL.pdb
+C:\Users\lopo\source\repos\Abstrakte\UCL\bin\Debug\netcoreapp3.1\Abstrakte.dll
+C:\Users\lopo\source\repos\Abstrakte\UCL\bin\Debug\netcoreapp3.1\Abstrakte.pdb
+C:\Users\lopo\source\repos\Abstrakte\UCL\obj\Debug\netcoreapp3.1\UCL.csprojAssemblyReference.cache
+C:\Users\lopo\source\repos\Abstrakte\UCL\obj\Debug\netcoreapp3.1\UCL.AssemblyInfoInputs.cache
+C:\Users\lopo\source\repos\Abstrakte\UCL\obj\Debug\netcoreapp3.1\UCL.AssemblyInfo.cs
+C:\Users\lopo\source\repos\Abstrakte\UCL\obj\Debug\netcoreapp3.1\UCL.csproj.CoreCompileInputs.cache
+C:\Users\lopo\source\repos\Abstrakte\UCL\obj\Debug\netcoreapp3.1\UCL.csproj.CopyComplete
+C:\Users\lopo\source\repos\Abstrakte\UCL\obj\Debug\netcoreapp3.1\UCL.dll
+C:\Users\lopo\source\repos\Abstrakte\UCL\obj\Debug\netcoreapp3.1\UCL.pdb
+C:\Users\lopo\source\repos\Abstrakte\UCL\obj\Debug\netcoreapp3.1\UCL.genruntimeconfig.cache

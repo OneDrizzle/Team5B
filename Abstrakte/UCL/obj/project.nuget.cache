@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "CUvRnfQPAzmupvaF+KguxGbkfHYb1iP7VjxOshpYud0TZJHOueyvaqDynkBmaaA/dcaNX6uVAI0t1D0x9rbEiQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lopo\\source\\repos\\Abstrakte\\UCL\\UCL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lopo\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\lopo\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\lopo\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
+    "C:\\Users\\lopo\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}
