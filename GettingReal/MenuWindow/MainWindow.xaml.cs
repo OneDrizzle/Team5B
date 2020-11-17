@@ -12,15 +12,18 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using GettingReal.ViewModels;
 
 namespace MenuWindow
 {
     public partial class MainWindow : Window
     {
+        MainViewModel mvm;
 
         public MainWindow()
         {
             InitializeComponent();
+            mvm = new MainViewModel();
         }
 
         private void btn_boss_Click(object sender, RoutedEventArgs e)
