@@ -29,15 +29,14 @@ namespace MenuWindow
         private void btn_boss_Click(object sender, RoutedEventArgs e)
         {
 
-            ProjectChefWindow chefWindow = new ProjectChefWindow();
+            ProjectChefWindow chefWindow = new ProjectChefWindow(mvm);
             chefWindow.Show();
-
             this.Close();
         }
 
         private void btn_tech_Click(object sender, RoutedEventArgs e)
         {
-            TeknikkerWindow tech = new TeknikkerWindow();
+            TeknikkerWindow tech = new TeknikkerWindow(mvm);
             tech.Show();
 
             this.Close();

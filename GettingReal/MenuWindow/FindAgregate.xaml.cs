@@ -3,6 +3,7 @@ using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using GettingReal.Models;
+using GettingReal.ViewModels;
 
 namespace MenuWindow
 {
@@ -11,10 +12,11 @@ namespace MenuWindow
     /// </summary>
     public partial class FindAgregate : Window
     {
-        Utility utility = new Utility();
-        public FindAgregate()
+        MainViewModel mvm;
+        public FindAgregate(MainViewModel mvm)
         {
             InitializeComponent();
+            this.mvm = mvm;
         }
 
         int count = 0;
@@ -31,7 +33,7 @@ namespace MenuWindow
             {
                 string SelectedOrderNumber = FindOrderNumber.Text;
 
-                (int c, string fn) = utility.NumberOfFiles(SelectedOrderNumber);
+                (int c, string fn) = Utility.NumberOfFiles(SelectedOrderNumber);
                 count = c;
                 filename = fn;
 
@@ -55,19 +57,19 @@ namespace MenuWindow
 
             //VentilationAggregate aggregate = aggregateRepo.GetVentilationAggregate(SelectedOrderNumber);
 
-            (string df, string tp) = utility.FindFile();
+            (string df, string tp) = Utility.FindFile();
             string destFile = df;
             string NewPath = Path.Combine(filename, destFile + System.IO.Path.GetFileName(filename));
             Process.Start(new ProcessStartInfo(NewPath) { UseShellExecute = true });
 
-            ProjectChefWindow main = new ProjectChefWindow();
+            ProjectChefWindow main = new ProjectChefWindow(mvm);
             main.Show();
             this.Close();
         }
 
         private void Button_back_Click(object sender, RoutedEventArgs e)
         {
-            ProjectChefWindow main = new ProjectChefWindow();
+            ProjectChefWindow main = new ProjectChefWindow(mvm);
             main.Show();
             this.Close();
         }

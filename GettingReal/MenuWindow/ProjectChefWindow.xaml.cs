@@ -9,6 +9,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using GettingReal.ViewModels;
 
 namespace MenuWindow
 {
@@ -17,9 +18,11 @@ namespace MenuWindow
     /// </summary>
     public partial class ProjectChefWindow : Window
     {
-        public ProjectChefWindow()
+        MainViewModel mvm;
+        public ProjectChefWindow(MainViewModel mvm)
         {
             InitializeComponent();
+            this.mvm = mvm;
         }
 
         private void Button_back_Click(object sender, RoutedEventArgs e)
@@ -32,7 +35,7 @@ namespace MenuWindow
 
         private void btn_CreateAggregate_Click(object sender, RoutedEventArgs e)
         {
-            CreateAgregatWindow aggregateWindow = new CreateAgregatWindow();
+            CreateAgregatWindow aggregateWindow = new CreateAgregatWindow(mvm);
 
             aggregateWindow.Show();
 
@@ -41,7 +44,7 @@ namespace MenuWindow
 
         private void btn_FindAggregate_Click(object sender, RoutedEventArgs e)
         {
-            FindAgregate AggregateWindow = new FindAgregate();
+            FindAgregate AggregateWindow = new FindAgregate(mvm);
             AggregateWindow.Show();
             this.Close();
         }

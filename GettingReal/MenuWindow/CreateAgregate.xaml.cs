@@ -4,19 +4,21 @@ using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using GettingReal.Models;
+using GettingReal.ViewModels;
 
 namespace MenuWindow
 {
 
     public partial class CreateAgregatWindow : Window
     {
-        Utility utility = new Utility();
-        ProjectChefWindow window = new ProjectChefWindow();
+        MainViewModel mvm;
+        ProjectChefWindow window;
 
-        public CreateAgregatWindow()
+        public CreateAgregatWindow(MainViewModel mvm)
         {
             InitializeComponent();
-            
+            window = new ProjectChefWindow(mvm);
+            this.mvm = mvm;
         }
 
         private void Button_back_Click(object sender, RoutedEventArgs e)
@@ -58,7 +60,7 @@ namespace MenuWindow
 
         private void btn_saveNewAgregat_Click_(object sender, RoutedEventArgs e)
         {
-            utility.SaveFile(sourcePath, orderNumber, justFileName);
+            Utility.SaveFile(sourcePath, orderNumber, justFileName);
             window.Show();
             this.Close();
         }
@@ -75,7 +77,7 @@ namespace MenuWindow
             {
                 orderNumber = GetOrderNumber.Text;
 
-                (int c, string fn) = utility.NumberOfFiles(orderNumber);
+                (int c, string fn) = Utility.NumberOfFiles(orderNumber);
                 int count = c;
 
                 if (count > 0)

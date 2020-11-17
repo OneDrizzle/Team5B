@@ -7,16 +7,9 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 namespace GettingReal.Models
 {
-   public class Utility
+   public static class Utility
     {
-        MainViewModel ctr = new MainViewModel();
-
-        public Utility()
-        {
-
-        }
-
-        public (string destFile, string targetPath) FindFile()
+        public static (string destFile, string targetPath) FindFile()
         {
             //Cpoy file to userdefined folder
             string targetPath = System.Reflection.Assembly.GetExecutingAssembly().Location;
@@ -33,7 +26,7 @@ namespace GettingReal.Models
             return (destFile, targetPath);
         }
 
-        public (int count, string filetype) NumberOfFiles(string orderNumber)
+        public static (int count, string filetype) NumberOfFiles(string orderNumber)
         {
             int count = 0;
             string filename = "";
@@ -51,7 +44,7 @@ namespace GettingReal.Models
             return (count, filename);
         }
 
-        public void SaveFile(string sourcePath, string orderNumber, string justFileName)
+        public static void SaveFile(string sourcePath, string orderNumber, string justFileName)
         {
             (string df, string tp) = FindFile();
             string destFile = df;
@@ -78,7 +71,7 @@ namespace GettingReal.Models
             }
         }
 
-        public void BinarySerialize(object data, string filePath)
+        public static void BinarySerialize(object data, string filePath)
         {
             FileStream fileStream;
             BinaryFormatter bf = new BinaryFormatter();
@@ -88,7 +81,7 @@ namespace GettingReal.Models
             fileStream.Close();
         }
 
-        public object BinaryDeserialize(string filePath)
+        public static object BinaryDeserialize(string filePath)
         {
             object obj = null;
             FileStream fileStream;

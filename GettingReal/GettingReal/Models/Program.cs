@@ -18,11 +18,10 @@ namespace GettingReal.Models
             ct.Show();
 
             string filePath = "testSerialize.save";
-            DataSerializer dataSerializer = new DataSerializer();
             MainViewModel testCT = null;
 
-            dataSerializer.BinarySerialize(ct, filePath);
-            testCT = dataSerializer.BinaryDeserialize(filePath) as MainViewModel;
+            Utility.BinarySerialize(ct, filePath);
+            testCT = Utility.BinaryDeserialize(filePath) as MainViewModel;
 
             testCT.Show();
             Console.WriteLine();

@@ -9,6 +9,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using GettingReal.ViewModels;
 
 namespace MenuWindow
 {
@@ -17,9 +18,11 @@ namespace MenuWindow
     /// </summary>
     public partial class TeknikkerWindow : Window
     {
-        public TeknikkerWindow()
+        MainViewModel mvm;
+        public TeknikkerWindow(MainViewModel mvm)
         {
             InitializeComponent();
+            this.mvm = mvm;
         }
 
         private void Button_back_Click(object sender, RoutedEventArgs e)
