@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using GettingReal.ViewModels;
+using System.Runtime.Serialization.Formatters.Binary;
 
-namespace MenuWindow
+namespace GettingReal.Models
 {
-    class Utility
+   public class Utility
     {
         MainViewModel ctr = new MainViewModel();
 
@@ -77,11 +78,28 @@ namespace MenuWindow
             }
         }
 
+        public void BinarySerialize(object data, string filePath)
+        {
+            FileStream fileStream;
+            BinaryFormatter bf = new BinaryFormatter();
+            if (File.Exists(filePath)) File.Delete(filePath);
+            fileStream = File.Create(filePath);
+            bf.Serialize(fileStream, data);
+            fileStream.Close();
+        }
 
-
-
-
-
-
+        public object BinaryDeserialize(string filePath)
+        {
+            object obj = null;
+            FileStream fileStream;
+            BinaryFormatter bf = new BinaryFormatter();
+            if (File.Exists(filePath))
+            {
+                fileStream = File.OpenRead(filePath);
+                obj = bf.Deserialize(fileStream);
+                fileStream.Close();
+            }
+            return obj;
+        }
     }
 }
