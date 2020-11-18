@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Danie\\Documents\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj": {}
+    "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Danie\\Documents\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj": {
+    "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Danie\\Documents\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj",
+        "projectUniqueName": "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj",
         "projectName": "GettingReal",
-        "projectPath": "C:\\Users\\Danie\\Documents\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj",
+        "projectPath": "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj",
         "packagesPath": "C:\\Users\\Danie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Danie\\Documents\\GitHub\\Team5B\\GettingReal\\GettingReal\\obj\\",
+        "outputPath": "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\GettingReal\\GettingReal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -56,14 +56,14 @@
         }
       }
     },
-    "C:\\Users\\Danie\\Documents\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj": {
+    "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Danie\\Documents\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
+        "projectUniqueName": "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
         "projectName": "MenuWindow",
-        "projectPath": "C:\\Users\\Danie\\Documents\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
+        "projectPath": "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
         "packagesPath": "C:\\Users\\Danie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Danie\\Documents\\GitHub\\Team5B\\GettingReal\\MenuWindow\\obj\\",
+        "outputPath": "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\GettingReal\\MenuWindow\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -79,8 +79,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Danie\\Documents\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj": {
-                "projectPath": "C:\\Users\\Danie\\Documents\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj"
+              "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj": {
+                "projectPath": "C:\\Users\\Danie\\OneDrive\\Dokumenter\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj"
               }
             }
           }
