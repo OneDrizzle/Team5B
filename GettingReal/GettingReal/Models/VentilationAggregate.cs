@@ -9,18 +9,20 @@ namespace GettingReal.Models
     {
         public string InstallDate { get; set; }
         public string OrderNumber { get; set; }
-
+        private string fileName;
 
         private List<Filter> _filters;
         private List<ServiceReport> _serviceReports;
         private List<Floor> _floors;
+        
 
 
-        public VentilationAggregate(string orderNumber = "0", string date = "EmptyDate")
+        public VentilationAggregate(string orderNumber = "0", string fileName = "", string date = "EmptyDate")
         {
             _filters = new List<Filter>();
             _serviceReports = new List<ServiceReport>();
             _floors = new List<Floor>();
+            this.fileName = fileName;
 
             // Stes date to the current date if no date is given
             if (date == "EmptyDate")

@@ -22,7 +22,7 @@ namespace GettingReal.Models
         }
 
 
-        public bool AddVentilationAggregate(string orderNumber)
+        public bool AddVentilationAggregate(string orderNumber, string fileName)
         {
             foreach (VentilationAggregate aggregate in _ventilationAggregates)
             {
@@ -31,7 +31,7 @@ namespace GettingReal.Models
                     return false;
                 }
             }
-            VentilationAggregate thisAggreate = new VentilationAggregate(orderNumber);
+            VentilationAggregate thisAggreate = new VentilationAggregate(orderNumber, fileName);
             _ventilationAggregates.Add(thisAggreate);
             return true;
             //string fileName = customer.Company + "_" + building + "_" + orderNumber + ".pdf";

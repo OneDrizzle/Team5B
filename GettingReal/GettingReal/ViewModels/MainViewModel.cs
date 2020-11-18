@@ -99,7 +99,7 @@ namespace GettingReal.ViewModels
                     return false;
                 }
             }
-            _ventilationAggregateRepository.AddVentilationAggregate(orderNumber);
+            _ventilationAggregateRepository.AddVentilationAggregate(orderNumber, FileName);
             return true;
         }
 
