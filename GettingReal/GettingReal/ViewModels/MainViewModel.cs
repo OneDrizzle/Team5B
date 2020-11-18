@@ -90,7 +90,7 @@ namespace GettingReal.ViewModels
             Console.WriteLine();
         }
 
-        public bool AddVentilationAggregate(string orderNumber)
+        public bool AddVentilationAggregate(string orderNumber, string FileName)
         {
             foreach (VentilationAggregate aggregate in _allVentilationAggregates)
             {
@@ -103,7 +103,7 @@ namespace GettingReal.ViewModels
             return true;
         }
 
-        public VentilationAggregate GetVentilationAggregate(string orderNumber)
+        public VentilationAggregate GetVentilationAggregateList(string orderNumber)         //****Ændret til list, den skal nu returnerer listen af aggregater der tilhører dette ordrenummer****DELETE THIS COMMENT WHEN DONE
         {
             foreach (VentilationAggregate ventilationAggregate in _allVentilationAggregates)
             {

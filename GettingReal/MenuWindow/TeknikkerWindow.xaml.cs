@@ -27,7 +27,7 @@ namespace MenuWindow
 
         private void Button_back_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow main = new MainWindow();
+            MainWindow main = new MainWindow(mvm);
             main.Show();
 
             this.Close();
