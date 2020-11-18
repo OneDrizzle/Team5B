@@ -259,23 +259,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lopo\\.nuget\\packages\\": {},
+    "C:\\Users\\Bruger\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lopo\\source\\repos\\Abstrakte\\Raketten\\Raketten.csproj",
+      "projectUniqueName": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\Abstrakte\\Raketten\\Raketten.csproj",
       "projectName": "Raketten",
-      "projectPath": "C:\\Users\\lopo\\source\\repos\\Abstrakte\\Raketten\\Raketten.csproj",
-      "packagesPath": "C:\\Users\\lopo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lopo\\source\\repos\\Abstrakte\\Raketten\\obj\\",
+      "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\Abstrakte\\Raketten\\Raketten.csproj",
+      "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\Abstrakte\\Raketten\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\lopo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -284,14 +284,13 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://github.com/DSharpPlus/DSharpPlus": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\lopo\\source\\repos\\Abstrakte\\Abstrakte\\Abstrakte.csproj": {
-              "projectPath": "C:\\Users\\lopo\\source\\repos\\Abstrakte\\Abstrakte\\Abstrakte.csproj"
+            "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\Abstrakte\\Abstrakte\\Abstrakte.csproj": {
+              "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\Abstrakte\\Abstrakte\\Abstrakte.csproj"
             }
           }
         }

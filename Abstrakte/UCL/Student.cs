@@ -5,37 +5,29 @@ using System.Text;
 
 namespace UCL
 {
-    public class Student : Observer
+    public class Student : Person , IObserver
     {
-        private Academy subject;
         private string message;
         private string name;
+        private ISubject academy;
 
         public string Message
         {
             get { return message; }
             set { message = value; }
         }
-
-        public string Name
-        { 
-            get { return name; } 
-        }
-
-        public Academy Academy
+        public Student(ISubject academy, string name) : base(name)
         {
-            get { return subject; }
-        }
-
-        public Student(Academy subject, string name)
-        {
-            this.subject = subject;
             this.name = name;
+            this.academy = academy;
         }
 
-        public override void Update()
+        public void Update()
         {
-            message = subject.Message;
+            Academy MyAcademy = academy as Academy;
+            message = MyAcademy.Message;
+            Console.WriteLine("Studerende {0} modtog nyheden {1} fra akademiet {2}",
+                                          Name,             Message, MyAcademy.Name);
         }
     }
 }

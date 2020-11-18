@@ -1,40 +1,41 @@
-﻿using Abstrakte;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace UCL
 {
-    public class Academy : Subject
+    public class Academy : Organization, ISubject
     {
-        private string message;
         private string name;
+        private List<IObserver> students;
 
+        private string message;
 
         public string Message
         {
-            get { return message;}
+            get { return message; }
             set { message = value; Notify(); }
         }
-        public string Name
+
+
+        public Academy(string name, string address) : base(name)
         {
-            get { return name; }
+            students = new List<IObserver>();
+            this.name = name;
+            Address = address;
         }
 
-        public Academy(string name)
+        public void Attach(IObserver o)
+        { students.Add(o); }
+        public void Detach(IObserver o)
+        { students.Remove(o); }
+        public void Notify()
         {
-            this.name = name;
-        }
-        public override void Notify()
-        {
-            foreach (Observer o in Observers)
+            foreach (var student in students)
             {
-                o.Update();
-                Student student = o as Student;
-                Console.WriteLine("Studerende {0} modtog nyheden {1} fra akademiet {2}", 
-                                        student.Name, student.Message, student.Academy);
+                student.Update();
             }
         }
 
+            
     }
 }
