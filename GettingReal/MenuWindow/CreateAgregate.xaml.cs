@@ -3,7 +3,7 @@ using System;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
-using GettingReal.Models;
+using GettingReal;
 using GettingReal.ViewModels;
 
 namespace MenuWindow
@@ -63,7 +63,7 @@ namespace MenuWindow
             Utility.SaveFile(sourcePath, orderNumber, justFileName);
             mvm.AddVentilationAggregate(orderNumber, justFileName.Substring(0, justFileName.IndexOf(".")-1));
             window.Show();
-            this.Close();
+            this.Close(); 
         }
 
         private void GetOrderNumber_TextChanged(object sender, TextChangedEventArgs e)
