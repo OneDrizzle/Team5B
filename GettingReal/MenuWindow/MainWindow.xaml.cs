@@ -1,4 +1,5 @@
 ﻿using GettingReal.ViewModels;
+using GettingReal;
 using System.Windows;
 
 namespace MenuWindow
@@ -13,6 +14,7 @@ namespace MenuWindow
             if (mvm == null)
             {
                 mvm = new MainViewModel();
+                mvm = Utility.BinaryDeserialize("Database\\Data.txt") as MainViewModel;
             }
             else
             {
@@ -23,7 +25,6 @@ namespace MenuWindow
 
         private void btn_boss_Click(object sender, RoutedEventArgs e)
         {
-
             ProjectChefWindow chefWindow = new ProjectChefWindow(mvm);
             chefWindow.Show();
             this.Close();

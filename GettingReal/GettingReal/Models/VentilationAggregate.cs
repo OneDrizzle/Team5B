@@ -9,7 +9,7 @@ namespace GettingReal.Models
     {
         public string InstallDate { get; set; }
         public string OrderNumber { get; set; }
-        private string fileName;
+        public string fileName { get; set; }
 
         private List<Filter> _filters;
         private List<ServiceReport> _serviceReports;
@@ -22,7 +22,7 @@ namespace GettingReal.Models
             _filters = new List<Filter>();
             _serviceReports = new List<ServiceReport>();
             _floors = new List<Floor>();
-            this.fileName = fileName;
+            FileName = fileName;
 
             // Stes date to the current date if no date is given
             if (date == "EmptyDate")

@@ -68,3 +68,14 @@ C:\Users\Danie\Documents\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcorea
 C:\Users\Danie\Documents\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\MenuWindow.csproj.CoreCompileInputs.cache
 C:\Users\Danie\Documents\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\MenuWindow.csproj.CopyComplete
 C:\Users\Danie\Documents\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\MenuWindow.genruntimeconfig.cache
+C:\Users\Danie\OneDrive\Dokumenter\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\MenuWindow.csprojAssemblyReference.cache
+C:\Users\Danie\OneDrive\Dokumenter\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\CreateAgregate.g.cs
+C:\Users\Danie\OneDrive\Dokumenter\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\FindAgregate.g.cs
+C:\Users\Danie\OneDrive\Dokumenter\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Danie\OneDrive\Dokumenter\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\ProjectChefWindow.g.cs
+C:\Users\Danie\OneDrive\Dokumenter\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\TeknikkerWindow.g.cs
+C:\Users\Danie\OneDrive\Dokumenter\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Danie\OneDrive\Dokumenter\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\MenuWindow_MarkupCompile.cache
+C:\Users\Danie\OneDrive\Dokumenter\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\MenuWindow_MarkupCompile.lref
+C:\Users\Danie\OneDrive\Dokumenter\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\MenuWindow.dll
+C:\Users\Danie\OneDrive\Dokumenter\GitHub\Team5B\GettingReal\MenuWindow\obj\Debug\netcoreapp3.1\MenuWindow.pdb
