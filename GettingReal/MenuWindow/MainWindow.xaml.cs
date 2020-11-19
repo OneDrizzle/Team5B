@@ -7,17 +7,16 @@ namespace MenuWindow
     {
         MainViewModel mvm;
 
-        public MainWindow(MainViewModel mvm = null)
+        public MainWindow()
         {
+            this.mvm = new MainViewModel();
             InitializeComponent();
-            if (mvm == null)
-            {
-                mvm = new MainViewModel();
-            }
-            else
-            {
-                this.mvm = mvm;
-            }
+        }
+
+        public MainWindow(MainViewModel mvm)
+        {
+            this.mvm = mvm;
+            InitializeComponent();
         }
 
 
