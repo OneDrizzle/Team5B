@@ -3,10 +3,11 @@ using System.Collections.Generic;
 
 namespace UCL
 {
+    public delegate void NotifyHandler();
     public class Academy : Organization, ISubject
     {
         private string name;
-        private List<IObserver> students;
+        //private List<IObserver> students;
 
         private string message;
 
@@ -19,23 +20,21 @@ namespace UCL
 
         public Academy(string name, string address) : base(name)
         {
-            students = new List<IObserver>();
+            //students = new List<IObserver>();
             this.name = name;
             Address = address;
         }
 
         public void Attach(IObserver o)
-        { students.Add(o); }
+        { students += o.Update; }
         public void Detach(IObserver o)
-        { students.Remove(o); }
+        { students -= o.Update; }
         public void Notify()
         {
-            foreach (var student in students)
-            {
-                student.Update();
-            }
+            students();
         }
 
-            
+        private NotifyHandler students;    
+
     }
 }

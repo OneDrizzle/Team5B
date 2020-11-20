@@ -24,3 +24,16 @@ C:\Users\Bruger\Documents\GitHub\Team-5B\Abstrakte\Abstrakte\obj\Debug\netcoreap
 C:\Users\Bruger\Documents\GitHub\Team-5B\Abstrakte\Abstrakte\obj\Debug\netcoreapp3.1\Abstrakte.dll
 C:\Users\Bruger\Documents\GitHub\Team-5B\Abstrakte\Abstrakte\obj\Debug\netcoreapp3.1\Abstrakte.pdb
 C:\Users\Bruger\Documents\GitHub\Team-5B\Abstrakte\Abstrakte\obj\Debug\netcoreapp3.1\Abstrakte.genruntimeconfig.cache
+D:\GitHub\Team5B\Abstrakte\Abstrakte\bin\Debug\netcoreapp3.1\Abstrakte.exe
+D:\GitHub\Team5B\Abstrakte\Abstrakte\bin\Debug\netcoreapp3.1\Abstrakte.deps.json
+D:\GitHub\Team5B\Abstrakte\Abstrakte\bin\Debug\netcoreapp3.1\Abstrakte.runtimeconfig.json
+D:\GitHub\Team5B\Abstrakte\Abstrakte\bin\Debug\netcoreapp3.1\Abstrakte.runtimeconfig.dev.json
+D:\GitHub\Team5B\Abstrakte\Abstrakte\bin\Debug\netcoreapp3.1\Abstrakte.dll
+D:\GitHub\Team5B\Abstrakte\Abstrakte\bin\Debug\netcoreapp3.1\Abstrakte.pdb
+D:\GitHub\Team5B\Abstrakte\Abstrakte\obj\Debug\netcoreapp3.1\Abstrakte.csprojAssemblyReference.cache
+D:\GitHub\Team5B\Abstrakte\Abstrakte\obj\Debug\netcoreapp3.1\Abstrakte.AssemblyInfoInputs.cache
+D:\GitHub\Team5B\Abstrakte\Abstrakte\obj\Debug\netcoreapp3.1\Abstrakte.AssemblyInfo.cs
+D:\GitHub\Team5B\Abstrakte\Abstrakte\obj\Debug\netcoreapp3.1\Abstrakte.csproj.CoreCompileInputs.cache
+D:\GitHub\Team5B\Abstrakte\Abstrakte\obj\Debug\netcoreapp3.1\Abstrakte.dll
+D:\GitHub\Team5B\Abstrakte\Abstrakte\obj\Debug\netcoreapp3.1\Abstrakte.pdb
+D:\GitHub\Team5B\Abstrakte\Abstrakte\obj\Debug\netcoreapp3.1\Abstrakte.genruntimeconfig.cache

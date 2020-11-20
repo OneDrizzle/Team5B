@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "QeYfUPm1lANtGHGxYwLpK7nFx7XHk8njBVQwWB9yNc8IXkRVoGzwAnr/mMO9yuMzXrv2cPbHnfYBgCbMdOslpw==",
+  "dgSpecHash": "ev0tYB50qTJjDUk8AoVK0oReqCL1y09ZZwH0CebLY3vgDhscgxGd18Kx1o9ryEjL2exuA6yT0wI8/KA+A560IA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\Abstrakte\\Abstrakte\\Abstrakte.csproj",
+  "projectFilePath": "D:\\GitHub\\Team5B\\Abstrakte\\Abstrakte\\Abstrakte.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Bruger\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Bruger\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
-    "C:\\Users\\Bruger\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
-    "C:\\Users\\Bruger\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512"
+    "C:\\Users\\lopo\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\lopo\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\lopo\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
+    "C:\\Users\\lopo\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -5735,23 +5735,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bruger\\.nuget\\packages\\": {},
+    "C:\\Users\\lopo\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\Abstrakte\\UnitTestProject1\\UnitTestProject1.csproj",
+      "projectUniqueName": "D:\\GitHub\\Team5B\\Abstrakte\\UnitTestProject1\\UnitTestProject1.csproj",
       "projectName": "UnitTestProject1",
-      "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\Abstrakte\\UnitTestProject1\\UnitTestProject1.csproj",
-      "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\Abstrakte\\UnitTestProject1\\obj\\",
+      "projectPath": "D:\\GitHub\\Team5B\\Abstrakte\\UnitTestProject1\\UnitTestProject1.csproj",
+      "packagesPath": "C:\\Users\\lopo\\.nuget\\packages\\",
+      "outputPath": "D:\\GitHub\\Team5B\\Abstrakte\\UnitTestProject1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lopo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -5760,13 +5760,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://github.com/DSharpPlus/DSharpPlus": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\Abstrakte\\Abstrakte\\Abstrakte.csproj": {
-              "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\Abstrakte\\Abstrakte\\Abstrakte.csproj"
+            "D:\\GitHub\\Team5B\\Abstrakte\\Abstrakte\\Abstrakte.csproj": {
+              "projectPath": "D:\\GitHub\\Team5B\\Abstrakte\\Abstrakte\\Abstrakte.csproj"
             }
           }
         }

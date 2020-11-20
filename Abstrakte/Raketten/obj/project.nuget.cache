@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "/hSThYu9rNkETp4U0JDkSeooTZMRM6/9mvFjEb6UfMkz3RnfDLWxY94mC0hgPaTGQ0Xq7VUnr+GQPuDLn+YjPQ==",
+  "dgSpecHash": "QF/w7nV7tfWwHw89PHlV6idnIRyrVbUfhy5A8VmgSN655NcZ2Lt4hJAPyzyiwFJ/+zld7q4FVCY5no/+q1DlVg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bruger\\Documents\\GitHub\\Team-5B\\Abstrakte\\Raketten\\Raketten.csproj",
+  "projectFilePath": "D:\\GitHub\\Team5B\\Abstrakte\\Raketten\\Raketten.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Bruger\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Bruger\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
-    "C:\\Users\\Bruger\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
-    "C:\\Users\\Bruger\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512"
+    "C:\\Users\\lopo\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\lopo\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\lopo\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
+    "C:\\Users\\lopo\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }
