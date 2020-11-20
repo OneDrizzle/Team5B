@@ -3,7 +3,7 @@ using System;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
-using GettingReal.Models;
+using GettingReal;
 using GettingReal.ViewModels;
 
 namespace MenuWindow
@@ -17,8 +17,8 @@ namespace MenuWindow
         public CreateAgregatWindow(MainViewModel mvm)
         {
             InitializeComponent();
-            window = new ProjectChefWindow(mvm);
             this.mvm = mvm;
+            window = new ProjectChefWindow(mvm);
         }
 
         private void Button_back_Click(object sender, RoutedEventArgs e)
@@ -61,8 +61,9 @@ namespace MenuWindow
         private void btn_saveNewAgregat_Click_(object sender, RoutedEventArgs e)
         {
             Utility.SaveFile(sourcePath, orderNumber, justFileName);
+            mvm.AddVentilationAggregate(orderNumber, justFileName.Substring(0, justFileName.IndexOf(".")-1));
             window.Show();
-            this.Close();
+            this.Close(); 
         }
 
         private void GetOrderNumber_TextChanged(object sender, TextChangedEventArgs e)

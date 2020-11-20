@@ -13,18 +13,27 @@
 
 
     <Grid>
-        <TextBox x:Name="GetOrderNumber" HorizontalAlignment="Center" Margin="0,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="272" Text="{Binding Path=OrdreNumber, UpdateSourceTrigger=PropertyChanged}" TextChanged="GetOrderNumber_TextChanged"/>
-        <TextBlock HorizontalAlignment="Left" FontWeight="Bold" Margin="114,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"><Run Language="da-dk" Text="Odrenummer"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" FontWeight="Bold" Margin="114,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" Height="23"><Run Language="da-dk" Text="Leverandør information"/><LineBreak/><Run Language="da-dk"/></TextBlock>
-        <TextBox x:Name="GetInfoSheet" HorizontalAlignment="Center" Margin="0,231,0,0" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" Width="272" Height="18"/>
-        <Button IsEnabled="false" x:Name="btn_saveNewAgregat" Content="Gem" HorizontalAlignment="Left" Margin="396,337,0,0" VerticalAlignment="Top" Width="46" Click="btn_saveNewAgregat_Click_"  />
-        <Button Name="btn_back" HorizontalAlignment="Left" Margin="28,31,0,0" VerticalAlignment="Top" Height="30" Width="30" Click="Button_back_Click">
-            <Image Source="{StaticResource Back}"/>
-        </Button>
+        <TextBlock HorizontalAlignment="Left" FontSize="32" Margin="90,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246"><Run Language="da-dk" Text="Opret Aggregat"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" FontWeight="Bold" Margin="90,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"><Run Language="da-dk" Text="Kunde"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" FontWeight="Bold" Margin="90,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"><Run Language="da-dk" Text="Bygning"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" FontWeight="Bold" Margin="90,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"><Run Language="da-dk" Text="Odrenummer"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" FontWeight="Bold" Margin="90,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" Height="23"><Run Language="da-dk" Text="Datablad"/><LineBreak/><Run Language="da-dk"/></TextBlock>
+        <ComboBox x:Name="GetCustomer" HorizontalAlignment="Left" Margin="90,150,0,0" VerticalAlignment="Top" Width="272" Text=""/>
+        <ComboBox x:Name="GetBuilding" HorizontalAlignment="Left" Margin="90,200,0,0" VerticalAlignment="Top" Width="272" Text=""/>
+        <TextBox x:Name="GetOrderNumber" HorizontalAlignment="Left" Margin="90,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="272" Text="{Binding Path=OrdreNumber, UpdateSourceTrigger=PropertyChanged}" TextChanged="GetOrderNumber_TextChanged"/>
+        <TextBox x:Name="GetInfoSheet" HorizontalAlignment="Left" Margin="90,300,0,0" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" Width="272" Height="18"/>
+        <Button x:Name="btn_AddCustomer" Content="Opret ny" HorizontalAlignment="Left" Margin="380,150,0,0" VerticalAlignment="Top" />
+        <Button x:Name="btn_AddBuilding" Content="Opret ny" HorizontalAlignment="Left" Margin="380,200,0,0" VerticalAlignment="Top" />
+        <Button x:Name="btn_FindAgregateInfoFile" Content="Hent" HorizontalAlignment="Left" Margin="380,300,0,0" VerticalAlignment="Top" Click="btn_FindAgregateInfoFile_Click" />
 
-        <Button x:Name="btn_FindAgregateInfoFile" Content="Hent" HorizontalAlignment="Left" Margin="404,230,0,0" VerticalAlignment="Top" Click="btn_FindAgregateInfoFile_Click" />
-        <Image Source="{StaticResource Logo}" HorizontalAlignment="Center" Height="130" Margin="0,29,0,0" VerticalAlignment="Top" Width="320"/>
-        <Label x:Name="lbl_Error" Content="{Binding UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" Margin="0,324,0,0" VerticalAlignment="Top" Height="33" Width="272"/>
-        
+
+        <Button Name="btn_back" HorizontalAlignment="Left" Margin="30,30,0,0" VerticalAlignment="Top" Height="30" Width="30" Click="Button_back_Click">
+            <Image Source="{StaticResource Back}"/> 
+        </Button>
+        <Button IsEnabled="false" x:Name="btn_saveNewAgregat" Content="Gem" HorizontalAlignment="Left" Margin="424,383,0,0" VerticalAlignment="Top" Width="46" Click="btn_saveNewAgregat_Click_"  />
+
+        <Image Source="{StaticResource Logo}" HorizontalAlignment="Left"  Margin="350,30,0,0" VerticalAlignment="Top" Height="40" Width="120"/>
+        <Label x:Name="lbl_Error" Content="{Binding UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="90,340,0,0" VerticalAlignment="Top" Height="33" Width="272"/>
+
     </Grid>
 </Window>

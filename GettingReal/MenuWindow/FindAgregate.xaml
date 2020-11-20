@@ -13,17 +13,14 @@
 
 
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="16*"/>
-            <ColumnDefinition Width="109*"/>
-        </Grid.ColumnDefinitions>
-        <TextBox x:Name="FindOrderNumber" HorizontalAlignment="Left" Margin="50,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="272" Text="{Binding Path=OrdreNumber, UpdateSourceTrigger=PropertyChanged}" TextChanged="GetOrderNumber_TextChanged" Grid.Column="1"/>
-        <TextBlock HorizontalAlignment="Left" FontWeight="Bold" Margin="50,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86" Grid.Column="1"><Run Language="da-dk" Text="Ordrenummer"/></TextBlock>
-        <Button x:Name="btn_OpenAggregateFile" IsEnabled="false" Content="Åben" HorizontalAlignment="Left" Margin="332,337,0,0" VerticalAlignment="Top" Width="46" Click="btn_OpenAggregateFile_Click" Grid.Column="1"  />
+        <TextBlock HorizontalAlignment="Left" FontSize="32" Margin="90,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="227"><Run Language="da-dk" Text="Tilgå Aggregat"/></TextBlock>
+        <TextBox x:Name="FindOrderNumber" HorizontalAlignment="Left" Margin="90,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="272" Text="{Binding Path=OrdreNumber, UpdateSourceTrigger=PropertyChanged}" TextChanged="GetOrderNumber_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" FontWeight="Bold" Margin="90,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"><Run Language="da-dk" Text="Ordrenummer"/></TextBlock>
+        <Button x:Name="btn_OpenAggregateFile" IsEnabled="false" Content="Åben" HorizontalAlignment="Left" Margin="332,337,0,0" VerticalAlignment="Top" Width="46" Click="btn_OpenAggregateFile_Click"/>
         <Button Name="btn_back" HorizontalAlignment="Left" Margin="28,25,0,0" VerticalAlignment="Top" Height="30" Width="30" Click="Button_back_Click">
             <Image Source="{StaticResource Back}" Width="30"/>
         </Button>
-        <Image Source="{StaticResource Logo}" HorizontalAlignment="Left" Height="130" Margin="26,29,0,0" VerticalAlignment="Top" Width="320" Grid.Column="1"/>
-        <Label x:Name="lbl_Error" Content="{Binding UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="50,274,0,0" VerticalAlignment="Top" Height="33" Width="272" Grid.Column="1"/>
+        <Image Source="{StaticResource Logo}" HorizontalAlignment="Left" Margin="350,30,0,0" VerticalAlignment="Top" Height="40" Width="120"/>
+        <Label x:Name="lbl_Error" Content="{Binding UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="90,230,0,0" VerticalAlignment="Top" Height="33" Width="272"/>
     </Grid>
 </Window>

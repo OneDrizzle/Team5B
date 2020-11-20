@@ -15,11 +15,13 @@ namespace GettingReal.Models
             _customers = new List<Customer>();
         }
 
+        // Adds a customer to the customer list
         public void AddCustomer(Customer customer)
         {
             _customers.Add(customer);
         }
 
+        // Retrieves a specific customer by name
         public Customer GetCustomer(string name)
         {
             foreach (Customer customer in _customers)
@@ -32,11 +34,13 @@ namespace GettingReal.Models
             return null;
         }
 
+        // Gets a list of all customers
         public List<Customer> GetAllCustomers()
         {
             return _customers;
         }
 
+        // Sets the selected customer
         public void SetCustomer(string name)
         {
             Customer selectedCustomer;

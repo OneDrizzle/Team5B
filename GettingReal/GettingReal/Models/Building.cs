@@ -19,16 +19,19 @@ namespace GettingReal.Models
         public Building() : this("")
         { }
 
+        // Gets a list of all ventilation aggregates associated with the building
         public List<VentilationAggregate> GetListOfVentilationAggregates()
         {
             return _ventilationAggregates;
         }
 
+        // Add a ventilation aggregate to the building
         public void AddVentilationAggregate(VentilationAggregate ventilationAggregate)
         {
             _ventilationAggregates.Add(ventilationAggregate);
         }
 
+        // Retrieve a spcific entilation aggregate by ordernumber
         public VentilationAggregate GetVentilationAggregate(string orderNumber)
         {
             foreach (VentilationAggregate aggregate in _ventilationAggregates)

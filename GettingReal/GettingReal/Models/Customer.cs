@@ -23,16 +23,19 @@ namespace GettingReal.Models
         public Customer() : this("", "")
         { }
 
+        // Gets list of all buildings the customer is associated with
         public List<Building> GetListOfBuildings()
         {
             return _buildings;
         }
 
+        // Associates a building to the customer
         public void AddBuilding(Building building)
         {
             _buildings.Add(building);
         }
 
+        // Retrieves a by name
         public Building GetBuilding(string name)
         {
             foreach (Building building in _buildings)

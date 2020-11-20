@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Text;
-using GettingReal.ViewModels;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Text;
 
-namespace GettingReal.Models
+namespace GettingReal
 {
-   public static class Utility
+    public static class Utility
     {
         public static (string destFile, string targetPath) FindFile()
         {

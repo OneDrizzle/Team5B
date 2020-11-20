@@ -2,108 +2,85 @@
 using System.Collections.Generic;
 using System.Text;
 using GettingReal.Models;
+using System.Collections.ObjectModel;
 
 namespace GettingReal.ViewModels
 {
     [Serializable]
     public class MainViewModel
     {
-        private VentilationAggregate _selectedVentilationAggregate;
-        private Customer _selectedCustomer;
-        private Building _selectedBuilding;
-        private Room _selectedRoom;
 
-        private VentilationAggregateRepository _ventilationAggregateRepository;
-        private CustomerRepository _customerRepository;
-        private BuildingRepository _buildingRepository;
-        private RoomRepository _roomRepository;
+        private VMCustomer _selectedVMCustomer;
+        public VMCustomer SelectedVMCustomer
+        {
+            get { return _selectedVMCustomer; }
+            set { _selectedVMCustomer = value; ct.SelectedCustomer = _selectedVMCustomer.GetCustomer(); }
+        }
 
-        private List<Building> _allBuildings;
-        private List<Room> _allRooms;
-        private List<VentilationAggregate> _allVentilationAggregates;
-        private List<Customer> _allCustomers;
+        private VMBuilding _selectedVMBuilding;
+        public VMBuilding SelectedVMBuilding
+        {
+            get { return _selectedVMBuilding; }
+            set { _selectedVMBuilding = value; ct.SelectedBuilding = _selectedVMBuilding.GetBuilding(); }
+        }
 
+        private VMVentilationAggregate _selectedVMVentilationAggregate;
+        public VMVentilationAggregate SelectedVMVentilationAggregate
+        {
+            get { return _selectedVMVentilationAggregate; }
+            set { _selectedVMVentilationAggregate = value; ct.SelectedVentilationAggregate = _selectedVMVentilationAggregate.GetVentilationAggregate(); }
+        }
+
+        private VMVentilationAggregate _selectedVMRoom;
+        public VMVentilationAggregate SelectedVMRoom
+        {
+            get { return _selectedVMRoom; }
+            set { _selectedVMRoom = value; ct.SelectedRoom = _selectedVMRoom.GetRoom(); }
+        }
+
+
+        public ObservableCollection<VMBuilding> BuildingsVM { get; set; }
+        public ObservableCollection<VMRoom> RoomsVM { get; set; }
+        public ObservableCollection<VMVentilationAggregate> VentilationAggregatesVM { get; set; }
+        public ObservableCollection<VMCustomer> CustomersVM { get; set; }
+        public ObservableCollection<VMFloor> FloorsVM { get; set; }
+
+        Controller ct;
         public MainViewModel()
         {
-            _ventilationAggregateRepository = new VentilationAggregateRepository();
-            _customerRepository = new CustomerRepository();
-            _buildingRepository = new BuildingRepository();
-            _roomRepository = new RoomRepository();
+            ct = Utility.BinaryDeserialize("Database\\Data.txt") as Controller;
 
-            _allCustomers = _customerRepository.GetAllCustomers();
-            _allBuildings = _buildingRepository.GetAllBuildings();
-            _allVentilationAggregates = _ventilationAggregateRepository.GetAllVentilationAggregates();
-            _allRooms = _roomRepository.GetAllRooms();
+            foreach (Customer customer in ct.AllCustomers)
+                CustomersVM.Add(new VMCustomer(customer));
         }
 
         public void SelectVentilationAggregate(string orderNumber)
         {
-            _selectedVentilationAggregate = _ventilationAggregateRepository.GetVentilationAggregate(orderNumber);
+            _selectedVMVentilationAggregate = _selectedVMBuilding.GetVentilationAggregateVM(orderNumber);
         }
 
-        public void AddTest(string customer, string building, string aggregate)
+        public void AddBuilding()
         {
-            var c = new Customer(name: customer);
-            _selectedCustomer = c;
-            _customerRepository.AddCustomer(c);
-            var b = new Building(name: building);
-            _selectedBuilding = b;
-            _selectedCustomer.AddBuilding(b);
-            _buildingRepository.AddBuilding(b);
-            var ag1 = new VentilationAggregate(orderNumber: aggregate);
-            //var ag2 = new VentilationAggregate("666");
-            _selectedBuilding.AddVentilationAggregate(ag1);
-            //selectedBuilding.AddVentilationAggregate(ag2);
-            _ventilationAggregateRepository.AddVentilationAggregate(ag1);
-            //ventilationAggregateRepository.AddVentilationAggregate(ag2);
+            _selectedVMBuilding = new VMBuilding(ct.AddBuilding());
+            _selectedVMCustomer.AddBuilding(_selectedVMBuilding);
         }
 
-        public void Show()
+        public void AddCustomer()
         {
-            _allCustomers = _customerRepository.GetAllCustomers();
-
-            foreach (Customer customer in _allCustomers)
-            {
-                Console.WriteLine(customer.ToString());
-                foreach (Building building in customer.GetListOfBuildings())
-                {
-                    Console.WriteLine(building.ToString());
-                    foreach (VentilationAggregate aggregate in building.GetListOfVentilationAggregates())
-                    {
-                        Console.WriteLine(aggregate.ToString());
-                    }
-                }
-            }
-            Console.WriteLine();
+            //VMCustomer c = new VMCustomer(ct.AddCustomer());
+            //_selectedVMCustomer = c;
+            _selectedVMCustomer = new VMCustomer(ct.AddCustomer());            
         }
-        public void Show2()
+
+        public void AddVentilationAggregate()
         {
-            foreach (Customer customer in _customerRepository.GetAllCustomers())
-                Console.WriteLine(customer.ToString());
-
-            foreach (Building building in _buildingRepository.GetAllBuildings())
-                Console.WriteLine(building.ToString());
-
-            foreach (VentilationAggregate aggregate in _ventilationAggregateRepository.GetAllVentilationAggregates())
-                Console.WriteLine(aggregate.ToString());
-
-            Console.WriteLine();
+            //filename = vodoo;
+            ct.NewAgrete;
+            _selectedVMVentilationAggregate = new VMVentilationAggregate(ct.AddVentilationAggregate());
+            _ventilationAggregatesVM.Add(_selectedVMVentilationAggregate);
         }
 
-        public bool AddVentilationAggregate(string orderNumber)
-        {
-            foreach (VentilationAggregate aggregate in _allVentilationAggregates)
-            {
-                if (aggregate.OrderNumber == orderNumber)
-                {
-                    return false;
-                }
-            }
-            _ventilationAggregateRepository.AddVentilationAggregate(orderNumber);
-            return true;
-        }
-
-        public VentilationAggregate GetVentilationAggregate(string orderNumber)
+        public VentilationAggregate GetVentilationAggregateList(string orderNumber)         //****Ændret til list, den skal nu returnerer listen af aggregater der tilhører dette ordrenummer****DELETE THIS COMMENT WHEN DONE
         {
             foreach (VentilationAggregate ventilationAggregate in _allVentilationAggregates)
             {

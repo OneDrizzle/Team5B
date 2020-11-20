@@ -9,12 +9,14 @@
         WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
         Title="Teknikker" Height="450" Width="500">
-    <Grid Margin="0,0,0,-6">
-        <Image Source="https://airteam.dk/wp-content/themes/airteam/gfx/logo.png" HorizontalAlignment="Center" Height="130" Margin="0,24,0,0" VerticalAlignment="Top" Width="320"/>
+    <Grid Margin="0,0,0,0">
+        <TextBlock HorizontalAlignment="Left" FontSize="32" Margin="90,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246"><Run Language="da-dk" Text="Opret Aggregat"/></TextBlock>
+
+        <Image Source="{StaticResource Logo}" HorizontalAlignment="Left"  Margin="350,30,0,0" VerticalAlignment="Top" Height="40" Width="120"/>
         <Button Name="btn_access" Content="Tilgå aggrigat" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Top" Height="25" Width="120"/>
         <Button Name="ben_access_sr" Content="Tilgå SR" HorizontalAlignment="Center" Margin="0,250,0,0" VerticalAlignment="Top" Height="25" Width="120"/>
         <Button x:Name="btn_fill_sr" Content="Udfyld SR" HorizontalAlignment="Center" Margin="0,300,0,0" VerticalAlignment="Top" Height="25" Width="120"/>
-        <Button Name="btn_back" HorizontalAlignment="Left" Margin="28,25,0,0" VerticalAlignment="Top" Height="30" Width="30" Click="Button_back_Click">
+        <Button Name="btn_back" HorizontalAlignment="Left" Margin="30,30,0,0" VerticalAlignment="Top" Height="30" Width="30" Click="Button_back_Click">
             <Image Source="{StaticResource Back}"/>
         </Button>
 

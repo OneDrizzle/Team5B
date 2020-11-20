@@ -20,6 +20,7 @@ namespace GettingReal.Models
             _buildings.Add(building);
         }
 
+        // Gets specific building by name
         public Building GetBuilding(string name)
         {
             foreach (Building building in _buildings)
@@ -33,11 +34,13 @@ namespace GettingReal.Models
             return null;
         }
 
+        // Gets the list of all buildings
         public List<Building> GetAllBuildings()
         {
             return _buildings;
         }
 
+        // Sets a building, chosen by name, to the selected building
         public void Setbuilding(string name)
         {
             Building selectedBuilding;
