@@ -41,7 +41,7 @@ namespace MenuWindow
             openFileDialog.FileName = "";
             openFileDialog.DefaultExt = ".pdf";
             //sets the filter to show pdf files
-            openFileDialog.Filter = "Pdf Files|*.pdf";
+            openFileDialog.Filter = "";
 
             Nullable<bool> result = openFileDialog.ShowDialog();
 
