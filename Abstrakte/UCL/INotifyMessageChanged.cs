@@ -4,8 +4,8 @@ using System.Text;
 
 namespace UCL
 {
-    public interface IObserver
+    public interface INotifyMessageChanged
     {
-        public abstract void Update(object sender , EventArgs e);
+        public event EventHandler MessageChanged;
     }
 }

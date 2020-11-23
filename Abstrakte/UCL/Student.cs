@@ -9,24 +9,24 @@ namespace UCL
     {
         private string message;
         private string name;
-        private Academy academy;
+        
 
         public string Message
         {
             get { return message; }
             set { message = value; }
         }
-        public Student(Academy academy, string name) : base(name)
+        public Student(string name) : base(name)
         {
             this.name = name;
-            this.academy = academy;
         }
 
-        public void Update()
+        public void Update(object sender , EventArgs e)
         {
-            message = academy.Message;
+            Academy ac = sender as Academy;
+            message = ac.Message;
             Console.WriteLine("Studerende {0} modtog nyheden {1} fra akademiet {2}",
-                                          Name,             Message,        academy.Name);
+                                          Name,             Message,        ac.Name);
         }
     }
 }

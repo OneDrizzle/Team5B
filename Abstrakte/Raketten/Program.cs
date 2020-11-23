@@ -7,7 +7,7 @@ namespace Raketten
         static void Main(string[] args)
         {
             
-            Console.WriteLine(hydro);
+            //Console.WriteLine(hydro);
         }
     }
 }

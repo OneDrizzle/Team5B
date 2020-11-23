@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace UCL
 {
-    public delegate void NotifyHandler();
-    public class Academy : Organization
+
+    public class Academy : Organization, INotifyPropertyChanged
     {
-        public NotifyHandler MessageChanged;    
+        public event PropertyChangedEventHandler PropertyChanged;
         private string name;
         //private List<IObserver> students;
 
@@ -15,7 +16,7 @@ namespace UCL
         public string Message
         {
             get { return message; }
-            set { message = value; MessageChanged(); }
+            set { message = value; OnMessageChanged(); }
         }
 
 
@@ -26,15 +27,15 @@ namespace UCL
             Address = address;
         }
 
+        
+
         //public void Attach(IObserver o)
         //{ students += o.Update; }
         //public void Detach(IObserver o)
         //{ students -= o.Update; }
         public void OnMessageChanged()
         {
-            
+            PropertyChanged(this, null);
         }
-
-
     }
 }
