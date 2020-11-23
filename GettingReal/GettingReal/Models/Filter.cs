@@ -23,7 +23,7 @@ namespace GettingReal.Models
         }
         public Filter() : this("", "", "", "", -1)
         {
-
         }
+
     }
 }

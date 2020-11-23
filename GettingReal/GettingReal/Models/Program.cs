@@ -9,24 +9,24 @@ namespace GettingReal.Models
     {
         static void Main(string[] args)
         {
-            MainViewModel ct = new MainViewModel();
-            string building = "Scandic";
-            string customer = "Jens";
-            string aggregate = "1234";
-            ct.AddTest(customer, building, aggregate);
-            ct.AddTest("per", "bygning2", "4567");
-            ct.Show();
+            //MainViewModel ct = new MainViewModel();
+            //string building = "Scandic";
+            //string customer = "Jens";
+            //string aggregate = "1234";
+            //ct.AddTest(customer, building, aggregate);
+            //ct.AddTest("per", "bygning2", "4567");
+            //ct.Show();
 
-            string filePath = "testSerialize.save";
-            MainViewModel testCT = null;
+            //string filePath = "testSerialize.save";
+            //MainViewModel testCT = null;
 
-            Utility.BinarySerialize(ct, filePath);
-            testCT = Utility.BinaryDeserialize(filePath) as MainViewModel;
+            //Utility.BinarySerialize(ct, filePath);
+            //testCT = Utility.BinaryDeserialize(filePath) as MainViewModel;
 
-            testCT.Show();
-            Console.WriteLine();
+            //testCT.Show();
+            //Console.WriteLine();
 
-            testCT.Show2();
+            //testCT.Show2();
 
             //// Serialize 
             //XmlSerializer serializer = new XmlSerializer(typeof(Controller));
