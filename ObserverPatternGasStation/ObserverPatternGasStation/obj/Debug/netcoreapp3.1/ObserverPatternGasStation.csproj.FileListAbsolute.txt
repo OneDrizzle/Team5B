@@ -1,0 +1,13 @@
+C:\Users\brian\Dropbox\Datamatiker\Csharp saved files\ObserverPatternGasStation\ObserverPatternGasStation\bin\Debug\netcoreapp3.1\ObserverPatternGasStation.exe
+C:\Users\brian\Dropbox\Datamatiker\Csharp saved files\ObserverPatternGasStation\ObserverPatternGasStation\bin\Debug\netcoreapp3.1\ObserverPatternGasStation.deps.json
+C:\Users\brian\Dropbox\Datamatiker\Csharp saved files\ObserverPatternGasStation\ObserverPatternGasStation\bin\Debug\netcoreapp3.1\ObserverPatternGasStation.runtimeconfig.json
+C:\Users\brian\Dropbox\Datamatiker\Csharp saved files\ObserverPatternGasStation\ObserverPatternGasStation\bin\Debug\netcoreapp3.1\ObserverPatternGasStation.runtimeconfig.dev.json
+C:\Users\brian\Dropbox\Datamatiker\Csharp saved files\ObserverPatternGasStation\ObserverPatternGasStation\bin\Debug\netcoreapp3.1\ObserverPatternGasStation.dll
+C:\Users\brian\Dropbox\Datamatiker\Csharp saved files\ObserverPatternGasStation\ObserverPatternGasStation\bin\Debug\netcoreapp3.1\ObserverPatternGasStation.pdb
+C:\Users\brian\Dropbox\Datamatiker\Csharp saved files\ObserverPatternGasStation\ObserverPatternGasStation\obj\Debug\netcoreapp3.1\ObserverPatternGasStation.csprojAssemblyReference.cache
+C:\Users\brian\Dropbox\Datamatiker\Csharp saved files\ObserverPatternGasStation\ObserverPatternGasStation\obj\Debug\netcoreapp3.1\ObserverPatternGasStation.AssemblyInfoInputs.cache
+C:\Users\brian\Dropbox\Datamatiker\Csharp saved files\ObserverPatternGasStation\ObserverPatternGasStation\obj\Debug\netcoreapp3.1\ObserverPatternGasStation.AssemblyInfo.cs
+C:\Users\brian\Dropbox\Datamatiker\Csharp saved files\ObserverPatternGasStation\ObserverPatternGasStation\obj\Debug\netcoreapp3.1\ObserverPatternGasStation.csproj.CoreCompileInputs.cache
+C:\Users\brian\Dropbox\Datamatiker\Csharp saved files\ObserverPatternGasStation\ObserverPatternGasStation\obj\Debug\netcoreapp3.1\ObserverPatternGasStation.dll
+C:\Users\brian\Dropbox\Datamatiker\Csharp saved files\ObserverPatternGasStation\ObserverPatternGasStation\obj\Debug\netcoreapp3.1\ObserverPatternGasStation.pdb
+C:\Users\brian\Dropbox\Datamatiker\Csharp saved files\ObserverPatternGasStation\ObserverPatternGasStation\obj\Debug\netcoreapp3.1\ObserverPatternGasStation.genruntimeconfig.cache
