@@ -9,14 +9,14 @@ namespace UCL
     {
         private string message;
         private string name;
-        private ISubject academy;
+        private Academy academy;
 
         public string Message
         {
             get { return message; }
             set { message = value; }
         }
-        public Student(ISubject academy, string name) : base(name)
+        public Student(Academy academy, string name) : base(name)
         {
             this.name = name;
             this.academy = academy;
@@ -24,10 +24,9 @@ namespace UCL
 
         public void Update()
         {
-            Academy MyAcademy = academy as Academy;
-            message = MyAcademy.Message;
+            message = academy.Message;
             Console.WriteLine("Studerende {0} modtog nyheden {1} fra akademiet {2}",
-                                          Name,             Message, MyAcademy.Name);
+                                          Name,             Message,        academy.Name);
         }
     }
 }

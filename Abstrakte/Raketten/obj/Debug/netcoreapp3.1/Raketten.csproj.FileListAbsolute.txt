@@ -1,0 +1,17 @@
+D:\GitHub\Team5B\Abstrakte\Raketten\bin\Debug\netcoreapp3.1\Abstrakte.exe
+D:\GitHub\Team5B\Abstrakte\Raketten\bin\Debug\netcoreapp3.1\Raketten.exe
+D:\GitHub\Team5B\Abstrakte\Raketten\bin\Debug\netcoreapp3.1\Raketten.deps.json
+D:\GitHub\Team5B\Abstrakte\Raketten\bin\Debug\netcoreapp3.1\Raketten.runtimeconfig.json
+D:\GitHub\Team5B\Abstrakte\Raketten\bin\Debug\netcoreapp3.1\Raketten.runtimeconfig.dev.json
+D:\GitHub\Team5B\Abstrakte\Raketten\bin\Debug\netcoreapp3.1\Raketten.dll
+D:\GitHub\Team5B\Abstrakte\Raketten\bin\Debug\netcoreapp3.1\Raketten.pdb
+D:\GitHub\Team5B\Abstrakte\Raketten\bin\Debug\netcoreapp3.1\Abstrakte.dll
+D:\GitHub\Team5B\Abstrakte\Raketten\bin\Debug\netcoreapp3.1\Abstrakte.pdb
+D:\GitHub\Team5B\Abstrakte\Raketten\obj\Debug\netcoreapp3.1\Raketten.csprojAssemblyReference.cache
+D:\GitHub\Team5B\Abstrakte\Raketten\obj\Debug\netcoreapp3.1\Raketten.AssemblyInfoInputs.cache
+D:\GitHub\Team5B\Abstrakte\Raketten\obj\Debug\netcoreapp3.1\Raketten.AssemblyInfo.cs
+D:\GitHub\Team5B\Abstrakte\Raketten\obj\Debug\netcoreapp3.1\Raketten.csproj.CoreCompileInputs.cache
+D:\GitHub\Team5B\Abstrakte\Raketten\obj\Debug\netcoreapp3.1\Raketten.csproj.CopyComplete
+D:\GitHub\Team5B\Abstrakte\Raketten\obj\Debug\netcoreapp3.1\Raketten.dll
+D:\GitHub\Team5B\Abstrakte\Raketten\obj\Debug\netcoreapp3.1\Raketten.pdb
+D:\GitHub\Team5B\Abstrakte\Raketten\obj\Debug\netcoreapp3.1\Raketten.genruntimeconfig.cache

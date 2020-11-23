@@ -4,8 +4,9 @@ using System.Collections.Generic;
 namespace UCL
 {
     public delegate void NotifyHandler();
-    public class Academy : Organization, ISubject
+    public class Academy : Organization
     {
+        public NotifyHandler MessageChanged;    
         private string name;
         //private List<IObserver> students;
 
@@ -14,7 +15,7 @@ namespace UCL
         public string Message
         {
             get { return message; }
-            set { message = value; Notify(); }
+            set { message = value; MessageChanged(); }
         }
 
 
@@ -25,16 +26,15 @@ namespace UCL
             Address = address;
         }
 
-        public void Attach(IObserver o)
-        { students += o.Update; }
-        public void Detach(IObserver o)
-        { students -= o.Update; }
-        public void Notify()
+        //public void Attach(IObserver o)
+        //{ students += o.Update; }
+        //public void Detach(IObserver o)
+        //{ students -= o.Update; }
+        public void OnMessageChanged()
         {
-            students();
+            
         }
 
-        private NotifyHandler students;    
 
     }
 }
