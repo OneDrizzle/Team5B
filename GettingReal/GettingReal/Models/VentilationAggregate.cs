@@ -9,13 +9,12 @@ namespace GettingReal.Models
     {
         public string InstallDate { get; set; }
         public string OrderNumber { get; set; }
-        public string fileName { get; set; }
+        public string FileName { get; set; }
 
         private List<Filter> _filters;
         private List<ServiceReport> _serviceReports;
         private List<Floor> _floors;
         
-
 
         public VentilationAggregate(string orderNumber = "0", string fileName = "", string date = "EmptyDate")
         {
@@ -71,6 +70,16 @@ namespace GettingReal.Models
         public List<Filter> GetListOfFilters()
         {
             return _filters;
+        }
+
+        public void AddFloor(Floor floor)
+        {
+            _floors.Add(floor);
+        }
+
+        public List<Floor> GetListOfFloors()
+        {
+            return _floors;
         }
 
         public override string ToString()
