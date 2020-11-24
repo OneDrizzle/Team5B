@@ -49,10 +49,5 @@ namespace GettingReal.Models
             return _rooms;
         }
 
-        //public void DeleteRoom()
-        //{
-
-        //}
-
     }
 }

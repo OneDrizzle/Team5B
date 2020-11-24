@@ -20,5 +20,17 @@ namespace GettingReal.Models
         {
         }
 
+        public List<Room> GetListOfRooms()
+        {
+            return _rooms;
+        }
+
+        public void AddRoom(Room room)
+        {
+            _rooms.Add(room);
+        }
+
+
+
     }
 }

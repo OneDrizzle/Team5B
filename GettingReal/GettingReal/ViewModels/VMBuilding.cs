@@ -8,26 +8,26 @@ namespace GettingReal.ViewModels
 {
     public class VMBuilding
     {
-        private Building building;
+        private Building _building;
 
         private string _name;
 
         public string Name
         {
-            get { return _name; } 
-            set { _name = value; building.Name = _name; }
+            get { return _name; }
+            set { _name = value; _building.Name = _name; }
         }
 
-        public ObservableCollection<VMVentilationAggregate> _ventilationAggregatesVM { get; set; }
+        public List<VMVentilationAggregate> _ventilationAggregatesVM { get; set; }
 
 
         public VMBuilding(Building building)
         {
-            this.building = building;
-            _ventilationAggregatesVM = new ObservableCollection<VMVentilationAggregate>();
-            foreach (VentilationAggregate aggregateVM in building.GetListOfVentilationAggregates())
+            this._building = building;
+            _ventilationAggregatesVM = new List<VMVentilationAggregate>();
+            foreach (VentilationAggregate aggregate in building.GetListOfVentilationAggregates())
             {
-                _ventilationAggregatesVM.Add(new VMVentilationAggregate(aggregateVM));
+                _ventilationAggregatesVM.Add(new VMVentilationAggregate(aggregate));
             }
 
             Name = building.Name;
@@ -37,11 +37,11 @@ namespace GettingReal.ViewModels
         public void AddVentilationAggregate(VMVentilationAggregate aggregateVM)
         {
             _ventilationAggregatesVM.Add(aggregateVM);
-            building.AddVentilationAggregate(aggregateVM.GetAggregate());
-            VentilationAggregate agg new VentilationAggregate();
-            agg.OrderNumber = aggregateVM.OrderNumber;
-            agg.FileName = vmagg.FileName;
-            building.AddVentilationAggregate(agg);
+        }
+
+        public Building GetBuilding()
+        {
+            return this._building;
         }
 
     }
