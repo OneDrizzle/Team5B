@@ -18,11 +18,11 @@
         <TextBlock HorizontalAlignment="Left" FontWeight="Bold" Margin="90,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"><Run Language="da-dk" Text="Bygning"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" FontWeight="Bold" Margin="90,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"><Run Language="da-dk" Text="Odrenummer"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" FontWeight="Bold" Margin="90,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" Height="23"><Run Language="da-dk" Text="Datablad"/><LineBreak/><Run Language="da-dk"/></TextBlock>
-        <ComboBox ItemsSource="{Binding Path=CustomersVM}" SelectedItem="{Binding SelectedVMCustomer}" x:Name="GetCustomer" HorizontalAlignment="Left" Margin="90,150,0,0" VerticalAlignment="Top" Width="272" Text="">
+        <ComboBox Padding="0" ItemsSource="{Binding Path=CustomersVM}" SelectedItem="{Binding SelectedVMCustomer}" x:Name="GetCustomer" SelectedIndex="0" HorizontalAlignment="Left" Margin="90,150,0,0" VerticalAlignment="Top" Width="272">
             <ComboBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
-                        <Label Content="{Binding Path=Name}"></Label>
+                        <Label Content="{Binding Path=Name}"/>
                     </StackPanel>
                 </DataTemplate>
             </ComboBox.ItemTemplate>

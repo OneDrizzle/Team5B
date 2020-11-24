@@ -16,6 +16,7 @@ namespace MenuWindow
         {
             InitializeComponent();
             this.mvm = mvm;
+            DataContext = mvm;
         }
 
 

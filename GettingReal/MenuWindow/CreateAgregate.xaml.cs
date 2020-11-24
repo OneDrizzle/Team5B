@@ -18,8 +18,8 @@ namespace MenuWindow
         public CreateAgregatWindow(MainViewModel mvm)
         {
             InitializeComponent();
-            this.mvm = mvm;
-            projectBossWindow = new ProjectChefWindow(mvm);
+            this.mvm = mvm;          
+            DataContext = mvm;
         }
 
         private void btn_AddCustomer_Click(object sender, RoutedEventArgs e)
@@ -27,12 +27,12 @@ namespace MenuWindow
             createCustomerWindow = new CreateCustomer(mvm);
             mvm.AddCustomer();
             createCustomerWindow.Show();
+            
         }
 
         private void Button_back_Click(object sender, RoutedEventArgs e)
         {
-            // Back button
-            
+            projectBossWindow = new ProjectChefWindow(mvm);
             projectBossWindow.Show();
             this.Close();
         }

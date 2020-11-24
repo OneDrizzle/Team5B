@@ -17,7 +17,7 @@
             <Image Source="{StaticResource Back}"/>
         </Button>
         <Image Source="{StaticResource Logo}" HorizontalAlignment="Left"  Margin="270,30,0,0" VerticalAlignment="Top" Height="40" Width="120"/>
-        <TextBox Text="{Binding Path=SelectedCustomer.Name, UpdateSourceTrigger=PropertyChanged}" x:Name="GetCustomerName" HorizontalAlignment="Left" Margin="90,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+        <TextBox Text="{Binding Path=SelectedVMCustomer.Name, UpdateSourceTrigger=PropertyChanged}" x:Name="GetCustomerName" HorizontalAlignment="Left" Margin="90,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
         <TextBlock HorizontalAlignment="Left" Margin="90,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="da-dk" Text="Firma Navn"/></TextBlock>
     </Grid>
 </Window>

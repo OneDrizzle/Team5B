@@ -9,14 +9,15 @@ namespace MenuWindow
 
         public MainWindow()
         {
-            this.mvm = new MainViewModel();
             InitializeComponent();
+            this.mvm = new MainViewModel();
+            DataContext = mvm;
         }
 
         public MainWindow(MainViewModel mvm)
         {
-            this.mvm = mvm;
             InitializeComponent();
+            this.mvm = mvm;
         }
 
 
