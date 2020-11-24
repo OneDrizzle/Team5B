@@ -5,6 +5,7 @@ using System.Text;
 
 namespace GettingReal.ViewModels
 {
+    //VMRoom
     public class VMRoom
     {
         private Room _room;
