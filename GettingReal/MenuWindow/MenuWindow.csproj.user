@@ -10,6 +10,9 @@
     <Compile Update="CreateAgregate.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="CreateCustomer.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="FindAgregate.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -22,6 +25,9 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="CreateAgregate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CreateCustomer.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="FindAgregate.xaml">

@@ -16,6 +16,15 @@ namespace GettingReal.ViewModels
             set { _orderNumber = value; _ventilationAggregate.OrderNumber = _orderNumber; }
         }
 
+        private string fileName;
+
+        public string FileName
+        {
+            get { return fileName; }
+            set { fileName = value; _ventilationAggregate.FileName = fileName; }
+        }
+
+
         public List<VMFloor> _floorsVM { get; set; }
         public List<VMFilter> _filtersVM { get; set; }
         public List<VMServiceReport> _serviceReports { get; set; }
@@ -43,6 +52,7 @@ namespace GettingReal.ViewModels
             }
 
             OrderNumber = ventilationAggregate.OrderNumber;
+            FileName = ventilationAggregate.FileName;
         }
 
         public void AddFloor(VMFloor floorVM)

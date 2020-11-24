@@ -93,7 +93,7 @@ namespace MenuWindow {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/MenuWindow;V1.0.0.0;component/projectchefwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/MenuWindow;component/projectchefwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\ProjectChefWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

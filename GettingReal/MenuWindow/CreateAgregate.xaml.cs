@@ -12,20 +12,28 @@ namespace MenuWindow
     public partial class CreateAgregatWindow : Window
     {
         MainViewModel mvm;
-        ProjectChefWindow window;
+        ProjectChefWindow projectBossWindow;
+        CreateCustomer createCustomerWindow;
 
         public CreateAgregatWindow(MainViewModel mvm)
         {
             InitializeComponent();
             this.mvm = mvm;
-            window = new ProjectChefWindow(mvm);
+            projectBossWindow = new ProjectChefWindow(mvm);
+        }
+
+        private void btn_AddCustomer_Click(object sender, RoutedEventArgs e)
+        {
+            createCustomerWindow = new CreateCustomer(mvm);
+            mvm.AddCustomer();
+            createCustomerWindow.Show();
         }
 
         private void Button_back_Click(object sender, RoutedEventArgs e)
         {
             // Back button
             
-            window.Show();
+            projectBossWindow.Show();
             this.Close();
         }
 
@@ -61,8 +69,8 @@ namespace MenuWindow
         private void btn_saveNewAgregat_Click_(object sender, RoutedEventArgs e)
         {
             Utility.SaveFile(sourcePath, orderNumber, justFileName);
-            mvm.AddVentilationAggregate(orderNumber, justFileName.Substring(0, justFileName.IndexOf(".")-1));
-            window.Show();
+            mvm.AddVentilationAggregate(justFileName.Substring(0, justFileName.IndexOf(".")-1));
+            projectBossWindow.Show();
             this.Close(); 
         }
 

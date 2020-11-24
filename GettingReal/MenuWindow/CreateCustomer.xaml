@@ -1,0 +1,23 @@
+﻿<Window x:Class="MenuWindow.CreateCustomer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MenuWindow"
+        mc:Ignorable="d"
+        ResizeMode="CanMinimize"
+        WindowStartupLocation="CenterScreen"
+        Icon="{StaticResource Icon}"
+        Title="CreateAgregate" Height="200" Width="400">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" FontSize="20" Margin="95,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136"><Run Language="da-dk" Text="Opret Kunde"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" FontWeight="Bold" Margin="90,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"><Run Language="da-dk" Text="Odrenummer"/></TextBlock>
+        <Button x:Name="btn_AddCustomer" Content="Opret" HorizontalAlignment="Left" Margin="270,117,0,0" VerticalAlignment="Top" Click="btn_AddCustomer_Click" />
+        <Button x:Name="btn_back" HorizontalAlignment="Left" Margin="30,30,0,0" VerticalAlignment="Top" Height="30" Width="30" Click="btn_back_click">
+            <Image Source="{StaticResource Back}"/>
+        </Button>
+        <Image Source="{StaticResource Logo}" HorizontalAlignment="Left"  Margin="270,30,0,0" VerticalAlignment="Top" Height="40" Width="120"/>
+        <TextBox Text="{Binding Path=SelectedCustomer.Name, UpdateSourceTrigger=PropertyChanged}" x:Name="GetCustomerName" HorizontalAlignment="Left" Margin="90,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+        <TextBlock HorizontalAlignment="Left" Margin="90,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="da-dk" Text="Firma Navn"/></TextBlock>
+    </Grid>
+</Window>

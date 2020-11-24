@@ -1,19 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using GettingReal.Models;
+﻿using GettingReal.Models;
+using System;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 
 namespace GettingReal.ViewModels
 {
     [Serializable]
-    public class MainViewModel
+    public class MainViewModel : INotifyPropertyChanged
     {
         private VMCustomer _selectedVMCustomer;
         public VMCustomer SelectedVMCustomer
         {
             get { return _selectedVMCustomer; }
-            set { _selectedVMCustomer = value; ct.SelectedCustomer = _selectedVMCustomer.GetCustomer(); }
+            set 
+            {
+                _selectedVMCustomer = value; 
+                ct.SelectedCustomer = _selectedVMCustomer.GetCustomer();
+                OnPropertyChanged("SelectedVMCustomer");
+            }
         }
 
         private VMBuilding _selectedVMBuilding;
@@ -51,12 +55,29 @@ namespace GettingReal.ViewModels
         public ObservableCollection<VMFloor> FloorsVM { get; set; }
 
         Controller ct;
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
         public MainViewModel()
         {
+            BuildingsVM = new ObservableCollection<VMBuilding>();
+            RoomsVM = new ObservableCollection<VMRoom>();
+            VentilationAggregatesVM = new ObservableCollection<VMVentilationAggregate>();
+            CustomersVM = new ObservableCollection<VMCustomer>();
+            FloorsVM = new ObservableCollection<VMFloor>();
+
             ct = Utility.BinaryDeserialize("Database\\Data.txt") as Controller;
 
-            foreach (Customer customer in ct.AllCustomers)
-                CustomersVM.Add(new VMCustomer(customer));
+            if (ct == null)
+            {
+                ct = new Controller();
+            }
+            if (ct.AllCustomers != null)
+            {
+                foreach (Customer customer in ct.AllCustomers)
+                    CustomersVM.Add(new VMCustomer(customer));
+            }
+
         }
 
         //public void SelectVentilationAggregate(string orderNumber)
@@ -67,18 +88,21 @@ namespace GettingReal.ViewModels
 
         public void AddCustomer()
         {
-            //VMCustomer c = new VMCustomer(ct.AddCustomer());
-            //_selectedVMCustomer = c;
-            _selectedVMCustomer = new VMCustomer(ct.AddCustomer());
+            VMCustomer c = new VMCustomer(ct.AddCustomer());
+            _selectedVMCustomer = c;
+            CustomersVM.Add(_selectedVMCustomer);
         }
         public void AddBuilding()
         {
             _selectedVMBuilding = new VMBuilding(ct.AddBuilding());
             _selectedVMCustomer.AddBuilding(_selectedVMBuilding);
         }
-        public void AddVentilationAggregate()
+        public void AddVentilationAggregate(string fileName)
         {
-            _selectedVMVentilationAggregate = new VMVentilationAggregate(ct.AddVentilationAggregate());
+            var agg = new VMVentilationAggregate(ct.AddVentilationAggregate());
+
+            _selectedVMVentilationAggregate = agg;
+            _selectedVMVentilationAggregate.FileName = fileName;
             _selectedVMBuilding.AddVentilationAggregate(_selectedVMVentilationAggregate);
         }
         public void AddFloor()
@@ -92,6 +116,15 @@ namespace GettingReal.ViewModels
             _selectedVMRoom = new VMRoom(ct.AddRoom());
             _selectedVMFloor.AddRoom(_selectedVMRoom);
         }
+
+        private void OnPropertyChanged(string propName)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(propName));
+            }
+        }
+
 
 
         //public void AddVentilationAggregate()

@@ -18,11 +18,20 @@
         <TextBlock HorizontalAlignment="Left" FontWeight="Bold" Margin="90,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"><Run Language="da-dk" Text="Bygning"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" FontWeight="Bold" Margin="90,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"><Run Language="da-dk" Text="Odrenummer"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" FontWeight="Bold" Margin="90,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" Height="23"><Run Language="da-dk" Text="Datablad"/><LineBreak/><Run Language="da-dk"/></TextBlock>
-        <ComboBox x:Name="GetCustomer" HorizontalAlignment="Left" Margin="90,150,0,0" VerticalAlignment="Top" Width="272" Text=""/>
+        <ComboBox ItemsSource="{Binding Path=CustomersVM}" SelectedItem="{Binding SelectedVMCustomer}" x:Name="GetCustomer" HorizontalAlignment="Left" Margin="90,150,0,0" VerticalAlignment="Top" Width="272" Text="">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <Label Content="{Binding Path=Name}"></Label>
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        
         <ComboBox x:Name="GetBuilding" HorizontalAlignment="Left" Margin="90,200,0,0" VerticalAlignment="Top" Width="272" Text=""/>
         <TextBox x:Name="GetOrderNumber" HorizontalAlignment="Left" Margin="90,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="272" Text="{Binding Path=OrdreNumber, UpdateSourceTrigger=PropertyChanged}" TextChanged="GetOrderNumber_TextChanged"/>
         <TextBox x:Name="GetInfoSheet" HorizontalAlignment="Left" Margin="90,300,0,0" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" Width="272" Height="18"/>
-        <Button x:Name="btn_AddCustomer" Content="Opret ny" HorizontalAlignment="Left" Margin="380,150,0,0" VerticalAlignment="Top" />
+        <Button x:Name="btn_AddCustomer" Content="Opret ny" HorizontalAlignment="Left" Margin="380,150,0,0" VerticalAlignment="Top" Click="btn_AddCustomer_Click" />
         <Button x:Name="btn_AddBuilding" Content="Opret ny" HorizontalAlignment="Left" Margin="380,200,0,0" VerticalAlignment="Top" />
         <Button x:Name="btn_FindAgregateInfoFile" Content="Hent" HorizontalAlignment="Left" Margin="380,300,0,0" VerticalAlignment="Top" Click="btn_FindAgregateInfoFile_Click" />
 
