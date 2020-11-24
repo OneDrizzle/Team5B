@@ -4,6 +4,7 @@ using System.Text;
 
 namespace GettingReal.ViewModels
 {
+    //VMRoom
     public class VMRoom
     {
     }
