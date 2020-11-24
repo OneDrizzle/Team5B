@@ -9,7 +9,6 @@ namespace GettingReal.ViewModels
     [Serializable]
     public class MainViewModel
     {
-
         private VMCustomer _selectedVMCustomer;
         public VMCustomer SelectedVMCustomer
         {
@@ -31,13 +30,19 @@ namespace GettingReal.ViewModels
             set { _selectedVMVentilationAggregate = value; ct.SelectedVentilationAggregate = _selectedVMVentilationAggregate.GetVentilationAggregate(); }
         }
 
-        private VMVentilationAggregate _selectedVMRoom;
-        public VMVentilationAggregate SelectedVMRoom
+        private VMRoom _selectedVMRoom;
+        public VMRoom SelectedVMRoom
         {
             get { return _selectedVMRoom; }
             set { _selectedVMRoom = value; ct.SelectedRoom = _selectedVMRoom.GetRoom(); }
         }
 
+        private VMFloor _selectedVMFloor;
+        public VMFloor SelectedVMFloor
+        {
+            get { return _selectedVMFloor; }
+            set { _selectedVMFloor = value; ct.SelectedFloor = _selectedVMFloor.GetFloor(); }
+        }
 
         public ObservableCollection<VMBuilding> BuildingsVM { get; set; }
         public ObservableCollection<VMRoom> RoomsVM { get; set; }
@@ -54,55 +59,72 @@ namespace GettingReal.ViewModels
                 CustomersVM.Add(new VMCustomer(customer));
         }
 
-        public void SelectVentilationAggregate(string orderNumber)
-        {
-            _selectedVMVentilationAggregate = _selectedVMBuilding.GetVentilationAggregateVM(orderNumber);
-        }
+        //public void SelectVentilationAggregate(string orderNumber)
+        //{
+        //    _selectedVMVentilationAggregate = _selectedVMBuilding.GetVentilationAggregateVM(orderNumber);
+        //}
 
-        public void AddBuilding()
-        {
-            _selectedVMBuilding = new VMBuilding(ct.AddBuilding());
-            _selectedVMCustomer.AddBuilding(_selectedVMBuilding);
-        }
 
         public void AddCustomer()
         {
             //VMCustomer c = new VMCustomer(ct.AddCustomer());
             //_selectedVMCustomer = c;
-            _selectedVMCustomer = new VMCustomer(ct.AddCustomer());            
+            _selectedVMCustomer = new VMCustomer(ct.AddCustomer());
         }
-
+        public void AddBuilding()
+        {
+            _selectedVMBuilding = new VMBuilding(ct.AddBuilding());
+            _selectedVMCustomer.AddBuilding(_selectedVMBuilding);
+        }
         public void AddVentilationAggregate()
         {
-            //filename = vodoo;
-            ct.NewAgrete;
             _selectedVMVentilationAggregate = new VMVentilationAggregate(ct.AddVentilationAggregate());
-            _ventilationAggregatesVM.Add(_selectedVMVentilationAggregate);
+            _selectedVMBuilding.AddVentilationAggregate(_selectedVMVentilationAggregate);
+        }
+        public void AddFloor()
+        {
+            _selectedVMFloor = new VMFloor(ct.AddFloor());
+            _selectedVMVentilationAggregate.AddFloor(_selectedVMFloor);
         }
 
-        public VentilationAggregate GetVentilationAggregateList(string orderNumber)         //****Ændret til list, den skal nu returnerer listen af aggregater der tilhører dette ordrenummer****DELETE THIS COMMENT WHEN DONE
+        public void AddRoom()
         {
-            foreach (VentilationAggregate ventilationAggregate in _allVentilationAggregates)
-            {
-                if (ventilationAggregate.OrderNumber == orderNumber)
-                {
-                    return ventilationAggregate;
-                }
-            }
-            return null;
+            _selectedVMRoom = new VMRoom(ct.AddRoom());
+            _selectedVMFloor.AddRoom(_selectedVMRoom);
         }
 
-        public List<Filter> GetFilters(string orderNumber)
-        {
-            SelectVentilationAggregate(orderNumber);
-            return _selectedVentilationAggregate.GetListOfFilters();
-        }
 
-        public List<ServiceReport> GetServiceReports(string orderNumber)
-        {
-            SelectVentilationAggregate(orderNumber);
-            return _selectedVentilationAggregate.GetListOfServiceReports();
-        }
+        //public void AddVentilationAggregate()
+        //{
+        //    //filename = vodoo;
+        //    ct.NewAgrete;
+        //    _selectedVMVentilationAggregate = new VMVentilationAggregate(ct.AddVentilationAggregate());
+        //    _ventilationAggregatesVM.Add(_selectedVMVentilationAggregate);
+        //}
+
+        //public VentilationAggregate GetVentilationAggregateList(string orderNumber)         //****Ændret til list, den skal nu returnerer listen af aggregater der tilhører dette ordrenummer****DELETE THIS COMMENT WHEN DONE
+        //{
+        //    foreach (VentilationAggregate ventilationAggregate in _allVentilationAggregates)
+        //    {
+        //        if (ventilationAggregate.OrderNumber == orderNumber)
+        //        {
+        //            return ventilationAggregate;
+        //        }
+        //    }
+        //    return null;
+        //}
+
+        //public List<Filter> GetFilters(string orderNumber)
+        //{
+        //    SelectVentilationAggregate(orderNumber);
+        //    return _selectedVentilationAggregate.GetListOfFilters();
+        //}
+
+        //public List<ServiceReport> GetServiceReports(string orderNumber)
+        //{
+        //    SelectVentilationAggregate(orderNumber);
+        //    return _selectedVentilationAggregate.GetListOfServiceReports();
+        //}
 
         //public void AddAggregate(string modelNumber, string orderNumber, Customer customer)
         //{             

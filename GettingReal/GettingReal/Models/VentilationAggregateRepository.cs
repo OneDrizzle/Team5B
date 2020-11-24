@@ -14,7 +14,7 @@ namespace GettingReal.Models
         private VentilationAggregate selectedAggregate { get; set; }
         private ServiceReport selectedServiceReport { get; set; }
         private Filter selectedFilter { get; set; }
-        private Room selectedRoom { get; set; }
+        private Floor selectedRoom { get; set; }
 
         public VentilationAggregateRepository()
         {
