@@ -8,7 +8,7 @@ namespace GettingReal.Models
     public class Room
     {
         public string Number { get; set; }
-        public double EstimatedAirVolume { get; set; }
+        public double ProjectedAirVolume { get; set; }
         public double Area { get; set; }
         public double Deviation { get; private set; }
 
@@ -23,14 +23,14 @@ namespace GettingReal.Models
 
         public void CalculateDeviation()
         {
-            Deviation = MeasuredAirVolume / EstimatedAirVolume; // ****** rigtigt regnestykke ??? ******
+            Deviation = MeasuredAirVolume / ProjectedAirVolume; // ****** rigtigt regnestykke ??? ******
         }
 
 
         public Room(string number, double estimatedVolume, double area)
         {
             Number = number;
-            EstimatedAirVolume = estimatedVolume;
+            ProjectedAirVolume = estimatedVolume;
             Area = Area;
         }
 
