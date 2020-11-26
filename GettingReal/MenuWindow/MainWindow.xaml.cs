@@ -24,8 +24,8 @@ namespace MenuWindow
         private void btn_boss_Click(object sender, RoutedEventArgs e)
         {
 
-            ProjectChefWindow chefWindow = new ProjectChefWindow(mvm);
-            chefWindow.Show();
+            ProjectChefWindow ManagerWindow = new ProjectChefWindow(mvm);
+            ManagerWindow.Show();
             this.Close();
         }
 

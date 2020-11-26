@@ -63,16 +63,17 @@ namespace MenuWindow
             string NewPath = Path.Combine(filename, destFile + System.IO.Path.GetFileName(filename));
             Process.Start(new ProcessStartInfo(NewPath) { UseShellExecute = true });
 
-            ProjectChefWindow main = new ProjectChefWindow(mvm);
-            main.Show();
+            ProjectChefWindow ManagerWindow = new ProjectChefWindow(mvm);
+            ManagerWindow.Show();
             this.Close();
         }
 
         private void Button_back_Click(object sender, RoutedEventArgs e)
         {
-            ProjectChefWindow main = new ProjectChefWindow(mvm);
-            main.Show();
+            ProjectChefWindow ManagerWindow = new ProjectChefWindow(mvm);
+            ManagerWindow.Show();
             this.Close();
+            
         }
     }
 }

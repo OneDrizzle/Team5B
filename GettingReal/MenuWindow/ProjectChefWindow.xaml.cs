@@ -28,18 +28,15 @@ namespace MenuWindow
 
         private void Button_back_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow main = new MainWindow(mvm);
-            main.Show();
-
+            MainWindow Main = new MainWindow(mvm);
+            Main.Show();
             this.Close();
         }
 
         private void btn_CreateAggregate_Click(object sender, RoutedEventArgs e)
         {
-            CreateAgregatWindow aggregateWindow = new CreateAgregatWindow(mvm);
-
-            aggregateWindow.Show();
-
+            CreateAgregatWindow AggregateWindow = new CreateAgregatWindow(mvm);
+            AggregateWindow.Show();
             this.Close();
         }
 

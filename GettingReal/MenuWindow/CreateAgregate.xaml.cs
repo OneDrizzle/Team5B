@@ -25,7 +25,7 @@ namespace MenuWindow
         private void btn_AddCustomer_Click(object sender, RoutedEventArgs e)
         {
             createCustomerWindow = new CreateCustomer(mvm);
-            mvm.AddCustomer();
+            //mvm.AddCustomer();
             createCustomerWindow.Show();
             
         }

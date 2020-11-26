@@ -22,6 +22,7 @@ namespace MenuWindow
 
         private void btn_AddCustomer_Click(object sender, RoutedEventArgs e)
         {
+            mvm.AddCustomer();
             this.Close();
 
         }
