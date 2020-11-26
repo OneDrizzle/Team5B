@@ -40,6 +40,7 @@ namespace GettingReal.ViewModels
             }
 
             Name = customer.Name;
+            Company = customer.Company;
         }
 
         public void AddBuilding(VMBuilding buildingVM)

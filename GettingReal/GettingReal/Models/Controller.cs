@@ -45,9 +45,15 @@ namespace GettingReal.Models
         //    SelectedVentilationAggregate = _ventilationAggregateRepository.GetVentilationAggregate(orderNumber);
         //}
 
-        public Customer AddCustomer()
+        //public Customer AddCustomer()
+        //{
+        //    SelectedCustomer = new Customer();
+        //    _customerRepository.AddCustomer(SelectedCustomer);
+        //    return SelectedCustomer;
+        //}
+        public Customer AddCustomer(string name, string company)
         {
-            SelectedCustomer = new Customer();
+            SelectedCustomer = new Customer(name, company);
             _customerRepository.AddCustomer(SelectedCustomer);
             return SelectedCustomer;
         }

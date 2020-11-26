@@ -13,21 +13,35 @@ namespace MenuWindow
     {
         MainViewModel mvm;
         ProjectChefWindow projectBossWindow;
-        CreateCustomer createCustomerWindow;
+        
 
         public CreateAgregatWindow(MainViewModel mvm)
         {
             InitializeComponent();
             this.mvm = mvm;          
             DataContext = mvm;
+            mvm.NewCustomerRequested += NewCustomerRequestedHandler;
+            mvm.ItemsChanged += ItemsChangedHandler;
         }
 
-        private void btn_AddCustomer_Click(object sender, RoutedEventArgs e)
+        private void ItemsChangedHandler(object sender, ItemSelectionEventArgs e)
         {
-            createCustomerWindow = new CreateCustomer(mvm);
-            //mvm.AddCustomer();
-            createCustomerWindow.Show();
+            GetCustomer.SelectedItem = e.SelectedItem;
+        }
+
+        private CustomerEventArgs NewCustomerRequestedHandler(object sender, CustomerEventArgs args)
+        {
+            args = new CustomerEventArgs();
+            CreateCustomer createCustomerWindow = new CreateCustomer();
+
+            if ((bool)createCustomerWindow.ShowDialog())
+            {
+                args.Name = createCustomerWindow.tb_CustomerName.Text;
+                args.Company= createCustomerWindow.tb_CompanyName.Text;
+                return args;
+            }
             
+            return null;
         }
 
         private void Button_back_Click(object sender, RoutedEventArgs e)

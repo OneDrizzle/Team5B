@@ -1,20 +1,30 @@
-﻿using GettingReal.Models;
+﻿using GettingReal.Commands;
+using GettingReal.Models;
 using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Windows.Input;
 
 namespace GettingReal.ViewModels
 {
     [Serializable]
+    public delegate CustomerEventArgs CustomerEventHandler(object sender, CustomerEventArgs args);
+    public delegate void ItemSelectionEventHandler(object sender, ItemSelectionEventArgs args);
     public class MainViewModel : INotifyPropertyChanged
     {
+        public ICommand NewCustomerCmd { get; } = new NewCustomerCmd();
+
+        public event ItemSelectionEventHandler ItemsChanged;
+        public event CustomerEventHandler NewCustomerRequested;
+        public event PropertyChangedEventHandler PropertyChanged;
+
         private VMCustomer _selectedVMCustomer;
         public VMCustomer SelectedVMCustomer
         {
             get { return _selectedVMCustomer; }
-            set 
+            set
             {
-                _selectedVMCustomer = value; 
+                _selectedVMCustomer = value;
                 ct.SelectedCustomer = _selectedVMCustomer.GetCustomer();
                 OnPropertyChanged("SelectedVMCustomer");
             }
@@ -56,7 +66,6 @@ namespace GettingReal.ViewModels
 
         Controller ct;
 
-        public event PropertyChangedEventHandler PropertyChanged;
 
         public MainViewModel()
         {
@@ -77,21 +86,20 @@ namespace GettingReal.ViewModels
                 foreach (Customer customer in ct.AllCustomers)
                     CustomersVM.Add(new VMCustomer(customer));
             }
-
         }
-
-        //public void SelectVentilationAggregate(string orderNumber)
-        //{
-        //    _selectedVMVentilationAggregate = _selectedVMBuilding.GetVentilationAggregateVM(orderNumber);
-        //}
-
 
         public void AddCustomer()
         {
-            VMCustomer c = new VMCustomer(ct.AddCustomer());
-            _selectedVMCustomer = c;
-            CustomersVM.Add(_selectedVMCustomer);
+            CustomerEventArgs e = OnNewCustomerRequested();
+            if (e != null)
+            {
+                VMCustomer c = new VMCustomer(ct.AddCustomer(e.Name, e.Company));
+                _selectedVMCustomer = c;
+                CustomersVM.Add(_selectedVMCustomer);
+                OnItemsChanged(SelectedVMCustomer);
+            }
         }
+
         public void AddBuilding()
         {
             _selectedVMBuilding = new VMBuilding(ct.AddBuilding());
@@ -124,80 +132,27 @@ namespace GettingReal.ViewModels
                 PropertyChanged(this, new PropertyChangedEventArgs(propName));
             }
         }
+        
+        protected CustomerEventArgs OnNewCustomerRequested()
+        {
+            CustomerEventArgs result = null;
+            CustomerEventHandler newCustomerRequested = NewCustomerRequested;
 
+            if (newCustomerRequested != null)
+            {
+                CustomerEventArgs args = null;
+                result = newCustomerRequested(this, args);
+            }
+            return result;
+        }
 
-
-        //public void AddVentilationAggregate()
-        //{
-        //    //filename = vodoo;
-        //    ct.NewAgrete;
-        //    _selectedVMVentilationAggregate = new VMVentilationAggregate(ct.AddVentilationAggregate());
-        //    _ventilationAggregatesVM.Add(_selectedVMVentilationAggregate);
-        //}
-
-        //public VentilationAggregate GetVentilationAggregateList(string orderNumber)         //****Ændret til list, den skal nu returnerer listen af aggregater der tilhører dette ordrenummer****DELETE THIS COMMENT WHEN DONE
-        //{
-        //    foreach (VentilationAggregate ventilationAggregate in _allVentilationAggregates)
-        //    {
-        //        if (ventilationAggregate.OrderNumber == orderNumber)
-        //        {
-        //            return ventilationAggregate;
-        //        }
-        //    }
-        //    return null;
-        //}
-
-        //public List<Filter> GetFilters(string orderNumber)
-        //{
-        //    SelectVentilationAggregate(orderNumber);
-        //    return _selectedVentilationAggregate.GetListOfFilters();
-        //}
-
-        //public List<ServiceReport> GetServiceReports(string orderNumber)
-        //{
-        //    SelectVentilationAggregate(orderNumber);
-        //    return _selectedVentilationAggregate.GetListOfServiceReports();
-        //}
-
-        //public void AddAggregate(string modelNumber, string orderNumber, Customer customer)
-        //{             
-        //    VentilationAggregate aggregate = new VentilationAggregate();
-        //    selectedAggregate = aggregate;
-        //}
-
-
-        //public void SelectAggregate(string orderNumber, string customer, string building)
-        //{
-        //    selectedAggregate = aggregateRepository.GetAggregate(orderNumber);           
-        //    selectedBuilding.GetAggregate(orderNumber)
-        //}
-
-        //public void AddCustomer(string name, string company)
-        //{
-        //    Customer customer = new Customer();
-        //    selectedCustomer = customer;
-        //    customerRepository.AddCustomer(customer);
-        //}
-
-
-        // ************** ikke slet ****************
-        //public void AddAggregate(string modelNumber, string orderNumber,
-        //    string customerName, string companyName, string building, string floor, string room)
-        //{
-        //    Customer cust = new Customer(customerName, companyName, modelNumber,orderNumber,building,floor,room);
-        //    selectedCustomer = cust;
-        //    customerRepository.AddCustomer(cust);
-        //}
-        // *****************************************
-        //public void getAllAggregatesForBuilding(String id)
-        //{
-        //    List<Aggregate> listOfAggregates;
-        //    List<Room> listOfRooms = building.getRooms();
-        //    foreach (Room room : listOfRooms)
-        //    listOfAggregates.addAll(room.getAllAggregates());
-        //}
-        // *****************************************
-
+        protected void OnItemsChanged(object selectedItem)
+        {
+            if (ItemsChanged != null)
+            {
+                ItemsChanged(this, new ItemSelectionEventArgs(selectedItem));
+            }
+        }
 
     }
 }

@@ -11,24 +11,20 @@ namespace MenuWindow
     /// </summary>
     public partial class CreateCustomer : Window
     {
-        MainViewModel mvm;
-        public CreateCustomer(MainViewModel mvm)
+        public CreateCustomer()
         {
             InitializeComponent();
-            this.mvm = mvm;
-            DataContext = mvm;
+            DataContext = this;
         }
-
 
         private void btn_AddCustomer_Click(object sender, RoutedEventArgs e)
         {
-            mvm.AddCustomer();
-            this.Close();
+            this.DialogResult = true;
 
         }
         private void btn_back_click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            this.DialogResult = false;
         }
     }
 }
