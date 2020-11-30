@@ -85,7 +85,7 @@ namespace MenuWindow {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/MenuWindow;component/createcustomer.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/MenuWindow;V1.0.0.0;component/createcustomer.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\CreateCustomer.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
