@@ -9,22 +9,23 @@ namespace MenuWindow
 
         public MainWindow()
         {
-            this.mvm = new MainViewModel();
             InitializeComponent();
+            this.mvm = new MainViewModel();
+            DataContext = mvm;
         }
 
         public MainWindow(MainViewModel mvm)
         {
-            this.mvm = mvm;
             InitializeComponent();
+            this.mvm = mvm;
         }
 
 
         private void btn_boss_Click(object sender, RoutedEventArgs e)
         {
 
-            ProjectChefWindow chefWindow = new ProjectChefWindow(mvm);
-            chefWindow.Show();
+            ProjectChefWindow ManagerWindow = new ProjectChefWindow(mvm);
+            ManagerWindow.Show();
             this.Close();
         }
 

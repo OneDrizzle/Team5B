@@ -12,20 +12,42 @@ namespace MenuWindow
     public partial class CreateAgregatWindow : Window
     {
         MainViewModel mvm;
-        ProjectChefWindow window;
+        ProjectChefWindow projectBossWindow;
+        
 
         public CreateAgregatWindow(MainViewModel mvm)
         {
             InitializeComponent();
-            this.mvm = mvm;
-            window = new ProjectChefWindow(mvm);
+            this.mvm = mvm;          
+            DataContext = mvm;
+            mvm.NewCustomerRequested += NewCustomerRequestedHandler;
+            mvm.ItemsChanged += ItemsChangedHandler;
+        }
+
+        private void ItemsChangedHandler(object sender, ItemSelectionEventArgs e)
+        {
+            GetCustomer.SelectedItem = e.SelectedItem;
+        }
+
+        private CustomerEventArgs NewCustomerRequestedHandler(object sender, CustomerEventArgs args)
+        {
+            args = new CustomerEventArgs();
+            CreateCustomer createCustomerWindow = new CreateCustomer();
+
+            if ((bool)createCustomerWindow.ShowDialog())
+            {
+                args.Name = createCustomerWindow.tb_CustomerName.Text;
+                args.Company= createCustomerWindow.tb_CompanyName.Text;
+                return args;
+            }
+            
+            return null;
         }
 
         private void Button_back_Click(object sender, RoutedEventArgs e)
         {
-            // Back button
-            
-            window.Show();
+            projectBossWindow = new ProjectChefWindow(mvm);
+            projectBossWindow.Show();
             this.Close();
         }
 
@@ -41,7 +63,7 @@ namespace MenuWindow
             openFileDialog.FileName = "";
             openFileDialog.DefaultExt = ".pdf";
             //sets the filter to show pdf files
-            openFileDialog.Filter = "Pdf Files|*.pdf";
+            openFileDialog.Filter = "";
 
             Nullable<bool> result = openFileDialog.ShowDialog();
 
@@ -61,8 +83,8 @@ namespace MenuWindow
         private void btn_saveNewAgregat_Click_(object sender, RoutedEventArgs e)
         {
             Utility.SaveFile(sourcePath, orderNumber, justFileName);
-            mvm.AddVentilationAggregate(orderNumber, justFileName.Substring(0, justFileName.IndexOf(".")-1));
-            window.Show();
+            mvm.AddVentilationAggregate(justFileName.Substring(0, justFileName.IndexOf(".")-1));
+            projectBossWindow.Show();
             this.Close(); 
         }
 

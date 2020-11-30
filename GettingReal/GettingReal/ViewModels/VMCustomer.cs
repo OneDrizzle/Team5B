@@ -9,13 +9,13 @@ namespace GettingReal.ViewModels
     public class VMCustomer
     {
 
-        private Customer customer;
+        private Customer _customer;
         private string _name;
 
         public string Name
         {
             get { return _name; }
-            set { _name = value; customer.Name = _name; }
+            set { _name = value; _customer.Name = _name; }
         }
 
         private string _company;
@@ -23,7 +23,7 @@ namespace GettingReal.ViewModels
         public string Company
         {
             get { return _company; }
-            set { _company = value; customer.Company = _company; }
+            set { _company = value; _customer.Company = _company; }
         }
 
 
@@ -32,7 +32,7 @@ namespace GettingReal.ViewModels
 
         public VMCustomer(Customer customer)
         {
-            this.customer = customer;
+            this._customer = customer;
             _buildingsVM = new List<VMBuilding>();
             foreach (Building building in customer.GetListOfBuildings())
             {
@@ -40,6 +40,7 @@ namespace GettingReal.ViewModels
             }
 
             Name = customer.Name;
+            Company = customer.Company;
         }
 
         public void AddBuilding(VMBuilding buildingVM)
@@ -49,7 +50,7 @@ namespace GettingReal.ViewModels
 
         public Customer GetCustomer()
         {
-            return this.customer;
+            return this._customer;
         }
 
     }
