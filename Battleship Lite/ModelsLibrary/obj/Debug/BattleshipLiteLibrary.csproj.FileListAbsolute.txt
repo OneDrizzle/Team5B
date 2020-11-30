@@ -1,0 +1,6 @@
+C:\Users\Nick\Documents\GitHub\CSharp\Battleship Lite\ModelsLibrary\bin\Debug\ModelsLibrary.dll
+C:\Users\Nick\Documents\GitHub\CSharp\Battleship Lite\ModelsLibrary\bin\Debug\ModelsLibrary.pdb
+C:\Users\Nick\Documents\GitHub\CSharp\Battleship Lite\ModelsLibrary\obj\Debug\BattleshipLiteLibrary.csprojAssemblyReference.cache
+C:\Users\Nick\Documents\GitHub\CSharp\Battleship Lite\ModelsLibrary\obj\Debug\BattleshipLiteLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Nick\Documents\GitHub\CSharp\Battleship Lite\ModelsLibrary\obj\Debug\ModelsLibrary.dll
+C:\Users\Nick\Documents\GitHub\CSharp\Battleship Lite\ModelsLibrary\obj\Debug\ModelsLibrary.pdb

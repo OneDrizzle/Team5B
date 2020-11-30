@@ -1,0 +1,10 @@
+C:\Users\Nick\Documents\GitHub\CSharp\Battleship Lite\BattleshipLiteUI\bin\Debug\BattleshipLiteUI.exe.config
+C:\Users\Nick\Documents\GitHub\CSharp\Battleship Lite\BattleshipLiteUI\bin\Debug\BattleshipLiteUI.exe
+C:\Users\Nick\Documents\GitHub\CSharp\Battleship Lite\BattleshipLiteUI\bin\Debug\BattleshipLiteUI.pdb
+C:\Users\Nick\Documents\GitHub\CSharp\Battleship Lite\BattleshipLiteUI\bin\Debug\ModelsLibrary.dll
+C:\Users\Nick\Documents\GitHub\CSharp\Battleship Lite\BattleshipLiteUI\bin\Debug\ModelsLibrary.pdb
+C:\Users\Nick\Documents\GitHub\CSharp\Battleship Lite\BattleshipLiteUI\obj\Debug\BattleshipLiteUI.csprojAssemblyReference.cache
+C:\Users\Nick\Documents\GitHub\CSharp\Battleship Lite\BattleshipLiteUI\obj\Debug\BattleshipLiteUI.csproj.CoreCompileInputs.cache
+C:\Users\Nick\Documents\GitHub\CSharp\Battleship Lite\BattleshipLiteUI\obj\Debug\BattleshipLiteUI.csproj.CopyComplete
+C:\Users\Nick\Documents\GitHub\CSharp\Battleship Lite\BattleshipLiteUI\obj\Debug\BattleshipLiteUI.exe
+C:\Users\Nick\Documents\GitHub\CSharp\Battleship Lite\BattleshipLiteUI\obj\Debug\BattleshipLiteUI.pdb

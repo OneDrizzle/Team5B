@@ -26,8 +26,7 @@ namespace UCL
         {
             Academy MyAcademy = academy as Academy;
             message = MyAcademy.Message;
-            Console.WriteLine("Studerende {0} modtog nyheden {1} fra akademiet {2}",
-                                          Name,             Message, MyAcademy.Name);
+            Console.WriteLine("Studerende {0} modtog nyheden {1} fra akademiet {2}", Name, Message, MyAcademy.Name);
         }
     }
 }
