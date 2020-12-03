@@ -1,0 +1,35 @@
+﻿Margherita;99
+Cotto & Funghi;109
+Patate & Pancetta;119
+Salame & Olive;109
+Vegetariana;109
+Bresaola & Grana;139
+Mortadella & Burrata;129
+Nduja & Bufala;129
+Pinsa Vegana;99
+Nutella;109
+Pere & Noci;109
+Pinsino Cotto & Funghi;59
+Pinsino Salame & Olive;59
+Pinsino Mortadella & Burrata;69
+Vand med Eller U/brus;25
+Pepsi & Pepsi Max;20
+Italiensk Sodavand;25
+Nastro Azzurro;29
+Menabrea Bionda;35
+Menabrea Ambrata;35
+Chardonnay Piemonte DOC;189
+Gavi DOCG;219
+Moscato;229
+Bonarda DOC;189
+Dolcetto d'Ovada DOC;189
+Barbera d'Asti DOCG 14%;219
+Barbera d'Asti DOCG Rubis 15%;329
+Dolcetto d'Ovada DOC Narcys;329
+Espresso;19
+Espresso Doppio;25
+Cappuccino;29
+Cappuccino Latte;29
+Espresso Macchiato;22
+Espresso Americano;22
+Tea Selection;19

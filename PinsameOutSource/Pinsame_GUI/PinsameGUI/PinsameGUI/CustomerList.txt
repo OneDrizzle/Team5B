@@ -1,0 +1,8 @@
+﻿Marco;12345678;Marco@hotmail.com;60;50
+Stein;87654321;Miroslav@polish.com;50;100
+Simon;22474951;shbauns@gmail.com;100;900
+Egon;83838383;Egon@gmail.com;0;0
+Susanne;55554444;sus@ofir.dk;55;550
+Poznan;34579234;God@mail.dk;0;0
+Frederik;42308527;frederik_joost@hotmail.com;0;0
+GILBERTO;50267767;gilberto@pinsame.dk;0;0

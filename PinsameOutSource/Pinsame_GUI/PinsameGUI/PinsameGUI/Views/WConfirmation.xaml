@@ -1,0 +1,15 @@
+﻿<Window x:Class="PinsameGUI.WConfirmation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PinsameGUI"
+        mc:Ignorable="d"
+        Title="WConfirmation" Height="250" Width="200">
+    <Grid>
+        <TextBox x:Name="ConfirmationTextBox" HorizontalAlignment="Center" Margin="0,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Height="50" IsEnabled="False"/>
+        <Button x:Name="YesButton" Content="Yes" HorizontalAlignment="Center" Margin="0,134,0,0" VerticalAlignment="Top" Width="80" Click="YesButton_Click"/>
+        <Button x:Name="NoButton" Content="No" HorizontalAlignment="Center" Margin="0,174,0,0" VerticalAlignment="Top" Width="80" Click="NoButton_Click"/>
+
+    </Grid>
+</Window>
