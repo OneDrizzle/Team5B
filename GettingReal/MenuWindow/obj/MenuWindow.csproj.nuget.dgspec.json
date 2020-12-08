@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nick\\Documents\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj": {}
+    "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nick\\Documents\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj": {
+    "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nick\\Documents\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj",
+        "projectUniqueName": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj",
         "projectName": "GettingReal",
-        "projectPath": "C:\\Users\\Nick\\Documents\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj",
-        "packagesPath": "C:\\Users\\Nick\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nick\\Documents\\GitHub\\Team5B\\GettingReal\\GettingReal\\obj\\",
+        "projectPath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj",
+        "packagesPath": "C:\\Users\\brian\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\GettingReal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Nick\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\brian\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +26,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -37,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -52,21 +54,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Nick\\Documents\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj": {
+    "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nick\\Documents\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
+        "projectUniqueName": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
         "projectName": "MenuWindow",
-        "projectPath": "C:\\Users\\Nick\\Documents\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
-        "packagesPath": "C:\\Users\\Nick\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nick\\Documents\\GitHub\\Team5B\\GettingReal\\MenuWindow\\obj\\",
+        "projectPath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\MenuWindow\\MenuWindow.csproj",
+        "packagesPath": "C:\\Users\\brian\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\MenuWindow\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Nick\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\brian\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -78,9 +80,10 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Nick\\Documents\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj": {
-                "projectPath": "C:\\Users\\Nick\\Documents\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj"
+              "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj": {
+                "projectPath": "C:\\Users\\brian\\Dropbox\\Datamatiker\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj"
               }
             }
           }
@@ -93,6 +96,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -111,7 +115,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

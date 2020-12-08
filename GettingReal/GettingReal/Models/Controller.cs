@@ -57,9 +57,9 @@ namespace GettingReal.Models
             _customerRepository.AddCustomer(SelectedCustomer);
             return SelectedCustomer;
         }
-        public Building AddBuilding()
+        public Building AddBuilding(string name)
         {
-            SelectedBuilding = new Building();
+            SelectedBuilding = new Building(name);
             _buildingRepository.AddBuilding(SelectedBuilding);
             SelectedCustomer.AddBuilding(SelectedBuilding);
             return SelectedBuilding;

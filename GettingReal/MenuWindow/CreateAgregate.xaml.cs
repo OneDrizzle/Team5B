@@ -26,7 +26,14 @@ namespace MenuWindow
 
         private void ItemsChangedHandler(object sender, ItemSelectionEventArgs e)
         {
-            GetCustomer.SelectedItem = e.SelectedItem;
+            if (sender is VMCustomer)
+            {
+                GetCustomer.SelectedItem = e.SelectedItem;
+            }
+            else if (sender is VMBuilding)
+            {
+                GetBuilding.SelectedItem = e.SelectedItem;
+            }
         }
 
         private CustomerEventArgs NewCustomerRequestedHandler(object sender, CustomerEventArgs args)

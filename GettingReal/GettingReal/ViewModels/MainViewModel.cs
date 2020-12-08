@@ -9,6 +9,7 @@ namespace GettingReal.ViewModels
 {
     [Serializable]
     public delegate CustomerEventArgs CustomerEventHandler(object sender, CustomerEventArgs args);
+    public delegate BuildingEventArgs BuildingEventHandler(object sender, BuildingEventArgs args);
     public delegate void ItemSelectionEventHandler(object sender, ItemSelectionEventArgs args);
     public class MainViewModel : INotifyPropertyChanged
     {
@@ -16,6 +17,7 @@ namespace GettingReal.ViewModels
 
         public event ItemSelectionEventHandler ItemsChanged;
         public event CustomerEventHandler NewCustomerRequested;
+        public event BuildingEventHandler NewBuildingRequested;
         public event PropertyChangedEventHandler PropertyChanged;
 
         private VMCustomer _selectedVMCustomer;
@@ -34,7 +36,12 @@ namespace GettingReal.ViewModels
         public VMBuilding SelectedVMBuilding
         {
             get { return _selectedVMBuilding; }
-            set { _selectedVMBuilding = value; ct.SelectedBuilding = _selectedVMBuilding.GetBuilding(); }
+            set
+            { 
+                _selectedVMBuilding = value;
+                ct.SelectedBuilding = _selectedVMBuilding.GetBuilding();
+                OnPropertyChanged("SelectedVMBuilding");
+            }
         }
 
         private VMVentilationAggregate _selectedVMVentilationAggregate;
@@ -93,16 +100,22 @@ namespace GettingReal.ViewModels
             CustomerEventArgs e = OnNewCustomerRequested();
             if (e != null)
             {
-                VMCustomer c = new VMCustomer(ct.AddCustomer(e.Name, e.Company));
-                _selectedVMCustomer = c;
-                CustomersVM.Add(_selectedVMCustomer);
+                SelectedVMCustomer = new VMCustomer(ct.AddCustomer(e.Name, e.Company));
+                CustomersVM.Add(SelectedVMCustomer);
                 OnItemsChanged(SelectedVMCustomer);
             }
         }
 
         public void AddBuilding()
         {
-            _selectedVMBuilding = new VMBuilding(ct.AddBuilding());
+            BuildingEventArgs e = OnNewBuildingRequested();
+            if (e!=null)
+            {
+                VMBuilding b = new VMBuilding(ct.AddBuilding(e.Name));
+                _selectedVMBuilding = b;
+                BuildingsVM.Add(_selectedVMBuilding);
+                OnItemsChanged(SelectedVMBuilding);
+            }
             _selectedVMCustomer.AddBuilding(_selectedVMBuilding);
         }
         public void AddVentilationAggregate(string fileName)
@@ -142,6 +155,19 @@ namespace GettingReal.ViewModels
             {
                 CustomerEventArgs args = null;
                 result = newCustomerRequested(this, args);
+            }
+            return result;
+        }
+
+        protected BuildingEventArgs OnNewBuildingRequested()
+        {
+            BuildingEventArgs result = null;
+            BuildingEventHandler newBuildingRequested = NewBuildingRequested;
+
+            if (newBuildingRequested != null)
+            {
+                BuildingEventArgs args = null;
+                result = newBuildingRequested(this, args);
             }
             return result;
         }
