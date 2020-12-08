@@ -109,19 +109,19 @@ namespace GettingReal.Models
 
         public void Show()
         {
-            AllCustomers = _customerRepository.GetAllCustomers();
+            //AllCustomers = _customerRepository.GetAllCustomers();
 
             foreach (Customer customer in AllCustomers)
             {
                 Console.WriteLine(customer.ToString());
-                foreach (Building building in customer.GetListOfBuildings())
-                {
-                    Console.WriteLine(building.ToString());
-                    foreach (VentilationAggregate aggregate in building.GetListOfVentilationAggregates())
-                    {
-                        Console.WriteLine(aggregate.ToString());
-                    }
-                }
+                //foreach (Building building in customer.GetListOfBuildings())
+                //{
+                //    Console.WriteLine(building.ToString());
+                //    foreach (VentilationAggregate aggregate in building.GetListOfVentilationAggregates())
+                //    {
+                //        Console.WriteLine(aggregate.ToString());
+                //    }
+                //}
             }
             Console.WriteLine();
         }

@@ -20,6 +20,7 @@ namespace GettingReal.Commands
             if (parameter is MainViewModel mvm)
             {
                 mvm.AddCustomer();
+                mvm.Save();
             }
             else
                 throw new ArgumentException("Illegal parameter type");

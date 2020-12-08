@@ -53,3 +53,10 @@ dkms.conf
 GettingReal/.vs/GettingReal/v16/TestStore/0/007.testlog
 GettingReal/UnitTests/obj/UnitTests.csproj.nuget.g.props
 GettingReal/UnitTests/obj/UnitTests.csproj.nuget.g.props
+*.json
+GettingReal/.vs/GettingReal/v16/.suo
+*.v2
+*.cache
+*.cache
+*.lref
+*.props

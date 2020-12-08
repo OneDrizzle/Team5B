@@ -7,7 +7,7 @@ using System.Windows.Input;
 
 namespace GettingReal.ViewModels
 {
-    [Serializable]
+    //[Serializable]
     public delegate CustomerEventArgs CustomerEventHandler(object sender, CustomerEventArgs args);
     public delegate BuildingEventArgs BuildingEventHandler(object sender, BuildingEventArgs args);
     public delegate void ItemSelectionEventHandler(object sender, ItemSelectionEventArgs args);
@@ -71,23 +71,22 @@ namespace GettingReal.ViewModels
         public ObservableCollection<VMCustomer> CustomersVM { get; set; }
         public ObservableCollection<VMFloor> FloorsVM { get; set; }
 
+
         Controller ct;
-
-
         public MainViewModel()
         {
+            ct = Utility.BinaryDeserialize("Data123.txt") as Controller;
+            if (ct == null)
+            {
+                ct = new Controller();
+            }
+
             BuildingsVM = new ObservableCollection<VMBuilding>();
             RoomsVM = new ObservableCollection<VMRoom>();
             VentilationAggregatesVM = new ObservableCollection<VMVentilationAggregate>();
             CustomersVM = new ObservableCollection<VMCustomer>();
             FloorsVM = new ObservableCollection<VMFloor>();
 
-            ct = Utility.BinaryDeserialize("Database\\Data.txt") as Controller;
-
-            if (ct == null)
-            {
-                ct = new Controller();
-            }
             if (ct.AllCustomers != null)
             {
                 foreach (Customer customer in ct.AllCustomers)
@@ -178,6 +177,11 @@ namespace GettingReal.ViewModels
             {
                 ItemsChanged(this, new ItemSelectionEventArgs(selectedItem));
             }
+        }
+
+        public void Save()
+        {
+            Utility.BinarySerialize(ct, "Data123.txt");
         }
 
     }
