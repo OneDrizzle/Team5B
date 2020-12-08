@@ -8,7 +8,7 @@
         Icon="{StaticResource Icon}"
         mc:Ignorable="d"
         ResizeMode="CanMinimize"
-        Title="Bauer er GUD" Height="450" Width="500">
+        Title="Bauer Ventilation" Height="450" Width="500">
     <Grid Margin="0,0,0,0">
         <Image Source="{StaticResource Logo}" HorizontalAlignment="Center" Height="130" Margin="0,40,0,0" VerticalAlignment="Top" Width="320"/>
         <Button x:Name ="btn_boss" Content="Project Chef" HorizontalAlignment="Center" Margin="0,204,0,0" VerticalAlignment="Top" Height="60" Width="320" FontSize="30" Click="btn_boss_Click"/>

@@ -8,7 +8,7 @@
         Icon="{StaticResource Icon}"
         WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
-        Title="Teknikker" Height="450" Width="500">
+        Title="Bauer Ventilation" Height="450" Width="500">
     <Grid Margin="0,0,0,0">
         <TextBlock HorizontalAlignment="Left" FontSize="32" Margin="130,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="240" Height="44"><Run Language="da-dk" Text="Teknikker Menu"/></TextBlock>
 
