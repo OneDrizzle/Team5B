@@ -13,12 +13,12 @@
 
 
     <Grid>
-        <TextBlock HorizontalAlignment="Left" FontSize="32" Margin="90,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="227"><Run Language="da-dk" Text="Tilgå Aggregat"/></TextBlock>
-        <TextBox x:Name="FindOrderNumber" HorizontalAlignment="Left" Margin="90,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="272" Text="{Binding Path=OrdreNumber, UpdateSourceTrigger=PropertyChanged}" TextChanged="GetOrderNumber_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" FontSize="32" Margin="90,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230" Height="44"><Run Language="da-dk" Text="Tilgå Aggregat"/></TextBlock>
+        <TextBox x:Name="FindOrderNumber" HorizontalAlignment="Left" Margin="90,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="272" Text="{Binding Path=OrdreNumber, UpdateSourceTrigger=PropertyChanged}" TextChanged="GetOrderNumber_TextChanged" Height="20"/>
         <TextBlock HorizontalAlignment="Left" FontWeight="Bold" Margin="90,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"><Run Language="da-dk" Text="Ordrenummer"/></TextBlock>
-        <Button x:Name="btn_OpenAggregateFile" IsEnabled="false" Content="Åben" HorizontalAlignment="Left" Margin="332,337,0,0" VerticalAlignment="Top" Width="46" Click="btn_OpenAggregateFile_Click"/>
+        <Button x:Name="btn_OpenAggregateFile" IsEnabled="false" Content="Åbn" HorizontalAlignment="Left" Margin="365,350,0,0" VerticalAlignment="Top" Width="55" Click="btn_OpenAggregateFile_Click" Height="20"/>
         <Button Name="btn_back" HorizontalAlignment="Left" Margin="28,25,0,0" VerticalAlignment="Top" Height="30" Width="30" Click="Button_back_Click">
-            <Image Source="{StaticResource Back}" Width="30"/>
+            <Image Source="{StaticResource Back}" Width="26" Height="26"/>
         </Button>
         <Image Source="{StaticResource Logo}" HorizontalAlignment="Left" Margin="350,30,0,0" VerticalAlignment="Top" Height="40" Width="120"/>
         <Label x:Name="lbl_Error" Content="{Binding UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="90,230,0,0" VerticalAlignment="Top" Height="33" Width="272"/>
