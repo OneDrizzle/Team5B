@@ -53,11 +53,6 @@ namespace MenuWindow
 
         private void btn_OpenAggregateFile_Click(object sender, RoutedEventArgs e)
         {
-            string SelectedOrderNumber = FindOrderNumber.Text;
-            //VentilationAggregateRepository aggregateRepo = new VentilationAggregateRepository();
-
-            //VentilationAggregate aggregate = aggregateRepo.GetVentilationAggregate(SelectedOrderNumber);
-
             (string df, string tp) = Utility.FindFile();
             string destFile = df;
             string NewPath = Path.Combine(filename, destFile + System.IO.Path.GetFileName(filename));
