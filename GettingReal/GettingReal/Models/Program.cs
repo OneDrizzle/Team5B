@@ -9,19 +9,15 @@ namespace GettingReal.Models
     {
         static void Main(string[] args)
         {
-            //MainViewModel ct = new MainViewModel();
-            //string building = "Scandic";
-            //string customer = "Jens";
-            //string aggregate = "1234";
-            //ct.AddTest(customer, building, aggregate);
-            //ct.AddTest("per", "bygning2", "4567");
-            //ct.Show();
+            //Controller ct = new Controller();
 
-            //string filePath = "testSerialize.save";
-            //MainViewModel testCT = null;
 
-            //Utility.BinarySerialize(ct, filePath);
-            //testCT = Utility.BinaryDeserialize(filePath) as MainViewModel;
+            //ct.AddCustomer("Per", "Scandic Hotel");
+            //Utility.BinarySerialize(ct, "Data.txt");
+
+
+            //Controller testCT = null;
+            //testCT = Utility.BinaryDeserialize("Data.txt") as Controller;
 
             //testCT.Show();
             //Console.WriteLine();

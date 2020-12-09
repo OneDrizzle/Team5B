@@ -20,7 +20,6 @@ namespace MenuWindow
         private void btn_AddCustomer_Click(object sender, RoutedEventArgs e)
         {
             this.DialogResult = true;
-
         }
         private void btn_back_click(object sender, RoutedEventArgs e)
         {

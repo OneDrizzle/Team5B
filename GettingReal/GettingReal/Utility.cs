@@ -84,7 +84,7 @@ namespace GettingReal
             if (File.Exists(filePath))
             {
                 fileStream = File.OpenRead(filePath);
-                obj = bf.Deserialize(fileStream);
+                if (fileStream.Length != 0) obj = bf.Deserialize(fileStream);               
                 fileStream.Close();
             }
             return obj;
