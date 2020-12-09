@@ -10,7 +10,7 @@ namespace GettingReal
     {
         public static (string destFile, string targetPath) FindFile()
         {
-            //Cpoy file to userdefined folder
+            //Copy file to userdefined folder
             string targetPath = System.Reflection.Assembly.GetExecutingAssembly().Location;
 
             string path = @"GettingReal\GettingReal\Aggregates\";
@@ -29,8 +29,7 @@ namespace GettingReal
         {
             int count = 0;
             string filename = "";
-            (string df, string tp) = FindFile();
-            string destFile = df;
+            (string destFile, string targetPath) = FindFile();
 
             DirectoryInfo dir = new DirectoryInfo(destFile);
             FileInfo[] files = dir.GetFiles(orderNumber + "*", SearchOption.TopDirectoryOnly);
@@ -45,9 +44,7 @@ namespace GettingReal
 
         public static void SaveFile(string sourcePath, string orderNumber, string justFileName)
         {
-            (string df, string tp) = FindFile();
-            string destFile = df;
-            string targetPath = tp;
+            (string destFile, string targetPath) = FindFile();
 
             // if there is no Directory named Aggregates it creates one
             if (!Directory.Exists(targetPath))
@@ -60,12 +57,11 @@ namespace GettingReal
             File.Copy(sourcePath, destFile + Path.GetFileName(sourcePath));
             string Rename = orderNumber + justFileName;
 
-
             string ScourceFile = Path.Combine(sourcePath, destFile + Path.GetFileName(sourcePath));
             FileInfo fi = new FileInfo(ScourceFile);
             if (fi.Exists)
             {
-                string NewPath = Path.Combine(Rename, destFile + Path.GetFileName(Rename));
+                string NewPath = Path.Combine(Rename, destFile);
                 fi.MoveTo(NewPath);
             }
         }
