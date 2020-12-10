@@ -8,16 +8,20 @@
         ResizeMode="CanMinimize"
         WindowStartupLocation="CenterScreen"
         Icon="{StaticResource Icon}"
-        Title="CreateAgregate" Height="300" Width="400">
+        Title="Bauer Ventilation" Height="300" Width="400">
     <Grid>
-        <Button x:Name="btn_AddCustomer" Padding="3" Content="Opret" HorizontalAlignment="Left" Margin="146,213,0,0" VerticalAlignment="Top" Click="btn_AddCustomer_Click" Width="55" Height="25" />
-        <Button x:Name="btn_back" HorizontalAlignment="Left" Margin="30,30,0,0" VerticalAlignment="Top" Height="30" Width="30" Click="btn_back_click">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="49*"/>
+            <ColumnDefinition Width="351*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btn_AddCustomer" Padding="3" Content="Opret" HorizontalAlignment="Left" Margin="97,213,0,0" VerticalAlignment="Top" Click="btn_AddCustomer_Click" Width="55" Height="25" Grid.Column="1" />
+        <Button x:Name="btn_back" HorizontalAlignment="Left" Margin="30,30,0,0" VerticalAlignment="Top" Height="30" Width="30" Click="btn_back_click" Grid.ColumnSpan="2">
             <Image Source="{StaticResource Back}" Width="26" Height="26"/>
         </Button>
-        <Image Source="{StaticResource Logo}" HorizontalAlignment="Left"  Margin="270,30,0,0" VerticalAlignment="Top" Height="40" Width="120"/>
-        <TextBox x:Name="tb_CustomerName" HorizontalAlignment="Left" Margin="91,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="20"/>
-        <TextBox x:Name="tb_CompanyName" HorizontalAlignment="Left" Margin="91,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="20"/>
-        <Label Content="Kundens navn" HorizontalAlignment="Left" Margin="86,139,0,0" VerticalAlignment="Top"/>
-        <Label Content="Firma" HorizontalAlignment="Left" Margin="86,86,0,0" VerticalAlignment="Top"/>
+        <Image Source="{StaticResource Logo}" HorizontalAlignment="Left"  Margin="221,30,0,0" VerticalAlignment="Top" Height="40" Width="120" Grid.Column="1"/>
+        <TextBox x:Name="tb_CustomerName" HorizontalAlignment="Left" Margin="42,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="20" Grid.Column="1"/>
+        <TextBox x:Name="tb_CompanyName" HorizontalAlignment="Left" Margin="42,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="20" Grid.Column="1"/>
+        <Label Content="Kundens navn" HorizontalAlignment="Left" Margin="37,139,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label Content="Firma" HorizontalAlignment="Left" Margin="37,86,0,0" VerticalAlignment="Top" Grid.Column="1"/>
     </Grid>
 </Window>
