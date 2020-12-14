@@ -61,7 +61,7 @@ namespace GettingReal
             FileInfo fi = new FileInfo(ScourceFile);
             if (fi.Exists)
             {
-                string NewPath = Path.Combine(Rename, destFile);
+                string NewPath = Path.Combine(Rename, destFile + Path.GetFileName(Rename));
                 fi.MoveTo(NewPath);
             }
         }

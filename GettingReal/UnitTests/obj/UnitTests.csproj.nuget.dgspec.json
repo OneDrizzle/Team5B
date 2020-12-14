@@ -1,28 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\msche\\Documents\\GitHub\\Team5B\\GettingReal\\UnitTests\\UnitTests.csproj": {}
+    "D:\\GitHub\\Team5B\\GettingReal\\UnitTests\\UnitTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\msche\\Documents\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj": {
+    "D:\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\msche\\Documents\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj",
+        "projectUniqueName": "D:\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj",
         "projectName": "GettingReal",
-        "projectPath": "C:\\Users\\msche\\Documents\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj",
-        "packagesPath": "C:\\Users\\msche\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\msche\\Documents\\GitHub\\Team5B\\GettingReal\\GettingReal\\obj\\",
+        "projectPath": "D:\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj",
+        "packagesPath": "C:\\Users\\lopo\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\Team5B\\GettingReal\\GettingReal\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\msche\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\lopo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://github.com/DSharpPlus/DSharpPlus": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -52,35 +57,40 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\msche\\Documents\\GitHub\\Team5B\\GettingReal\\UnitTests\\UnitTests.csproj": {
+    "D:\\GitHub\\Team5B\\GettingReal\\UnitTests\\UnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\msche\\Documents\\GitHub\\Team5B\\GettingReal\\UnitTests\\UnitTests.csproj",
+        "projectUniqueName": "D:\\GitHub\\Team5B\\GettingReal\\UnitTests\\UnitTests.csproj",
         "projectName": "UnitTests",
-        "projectPath": "C:\\Users\\msche\\Documents\\GitHub\\Team5B\\GettingReal\\UnitTests\\UnitTests.csproj",
-        "packagesPath": "C:\\Users\\msche\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\msche\\Documents\\GitHub\\Team5B\\GettingReal\\UnitTests\\obj\\",
+        "projectPath": "D:\\GitHub\\Team5B\\GettingReal\\UnitTests\\UnitTests.csproj",
+        "packagesPath": "C:\\Users\\lopo\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\Team5B\\GettingReal\\UnitTests\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\msche\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\lopo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://github.com/DSharpPlus/DSharpPlus": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\msche\\Documents\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj": {
-                "projectPath": "C:\\Users\\msche\\Documents\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj"
+              "D:\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj": {
+                "projectPath": "D:\\GitHub\\Team5B\\GettingReal\\GettingReal\\GettingReal.csproj"
               }
             }
           }
@@ -126,7 +136,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
