@@ -92,6 +92,7 @@ namespace GettingReal.ViewModels
                 foreach (Customer customer in ct.AllCustomers)
                     CustomersVM.Add(new VMCustomer(customer));
             }
+            
         }
 
         public void AddCustomer()
@@ -123,7 +124,7 @@ namespace GettingReal.ViewModels
 
             _selectedVMVentilationAggregate = agg;
             _selectedVMVentilationAggregate.FileName = fileName;
-            _selectedVMBuilding.AddVentilationAggregate(_selectedVMVentilationAggregate);
+            //_selectedVMBuilding.AddVentilationAggregate(_selectedVMVentilationAggregate);
         }
         public void AddFloor()
         {

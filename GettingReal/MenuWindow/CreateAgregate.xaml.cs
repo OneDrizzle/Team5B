@@ -89,8 +89,10 @@ namespace MenuWindow
 
         private void btn_saveNewAgregat_Click_(object sender, RoutedEventArgs e)
         {
+            
             Utility.SaveFile(sourcePath, orderNumber, justFileName);
             mvm.AddVentilationAggregate(justFileName.Substring(0, justFileName.IndexOf(".")-1));
+            projectBossWindow = new ProjectChefWindow(mvm);
             projectBossWindow.Show();
             this.Close(); 
         }

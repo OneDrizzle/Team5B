@@ -69,7 +69,7 @@ namespace GettingReal.Models
             var agg = new VentilationAggregate();
             SelectedVentilationAggregate = agg;
             _ventilationAggregateRepository.AddVentilationAggregate(agg);
-            SelectedBuilding.AddVentilationAggregate(agg);
+           // SelectedBuilding.AddVentilationAggregate(agg);
             return SelectedVentilationAggregate;
         }
         public Floor AddFloor()

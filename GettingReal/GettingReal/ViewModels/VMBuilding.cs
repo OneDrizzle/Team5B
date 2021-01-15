@@ -20,7 +20,7 @@ namespace GettingReal.ViewModels
 
         public List<VMVentilationAggregate> _ventilationAggregatesVM { get; set; }
 
-
+    
         public VMBuilding(Building building)
         {
             this._building = building;

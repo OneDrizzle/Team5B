@@ -82,3 +82,10 @@ D:\GitHub\Team5B\GettingReal\GettingReal\obj\Debug\netcoreapp3.1\GettingReal.csp
 D:\GitHub\Team5B\GettingReal\GettingReal\obj\Debug\netcoreapp3.1\GettingReal.dll
 D:\GitHub\Team5B\GettingReal\GettingReal\obj\Debug\netcoreapp3.1\GettingReal.pdb
 D:\GitHub\Team5B\GettingReal\GettingReal\obj\Debug\netcoreapp3.1\GettingReal.genruntimeconfig.cache
+C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\GettingReal\bin\Debug\netcoreapp3.1\GettingReal.exe
+C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\GettingReal\bin\Debug\netcoreapp3.1\GettingReal.deps.json
+C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\GettingReal\bin\Debug\netcoreapp3.1\GettingReal.runtimeconfig.json
+C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\GettingReal\bin\Debug\netcoreapp3.1\GettingReal.runtimeconfig.dev.json
+C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\GettingReal\bin\Debug\netcoreapp3.1\GettingReal.dll
+C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\GettingReal\bin\Debug\netcoreapp3.1\GettingReal.pdb
+C:\Users\Nick\Documents\GitHub\Team5B\GettingReal\GettingReal\obj\Debug\netcoreapp3.1\GettingReal.genruntimeconfig.cache
