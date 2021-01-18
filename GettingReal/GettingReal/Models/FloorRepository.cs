@@ -14,11 +14,13 @@ namespace GettingReal.Models
             _floors = new List<Floor>();
         }
 
+        // Adds a floor to the list of floors
         public void AddFloor(Floor floor)
         {
             _floors.Add(floor);
         }
 
+        // returns a floor based on number/name of the floor
         public Floor GetFloor(string number)
         {
             foreach (Floor floor in _floors)
@@ -31,6 +33,7 @@ namespace GettingReal.Models
             return null;
         }
 
+        // Sets specific floor, selected by "number", as selected floor
         public void SetFloor(string number)
         {
             Floor SelectedFloor;
@@ -43,7 +46,7 @@ namespace GettingReal.Models
             }
         }
 
-
+        // returns a list of all floors
         public List<Floor> GetAllFloors()
         {
             return _floors;

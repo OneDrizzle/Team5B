@@ -39,6 +39,7 @@ namespace GettingReal.ViewModels
             _ventilationAggregatesVM.Add(aggregateVM);
         }
 
+        // Returns the building used to construct the ViewModel
         public Building GetBuilding()
         {
             return this._building;

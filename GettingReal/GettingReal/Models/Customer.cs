@@ -35,7 +35,7 @@ namespace GettingReal.Models
             _buildings.Add(building);
         }
 
-        // Retrieves a by name
+        // Retrieves a building associated to the customer, by name
         public Building GetBuilding(string name)
         {
             foreach (Building building in _buildings)

@@ -23,7 +23,7 @@ namespace GettingReal.Models
             _floors = new List<Floor>();
             FileName = fileName;
 
-            // Stes date to the current date if no date is given
+            // Sets date to the current date if no date is given
             if (date == "EmptyDate")
             {
                 var dateToday = DateTime.Now;

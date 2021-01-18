@@ -8,6 +8,7 @@ namespace GettingReal
 {
     public static class Utility
     {
+        // Finds file destination and path
         public static (string destFile, string targetPath) FindFile()
         {
             //Copy file to userdefined folder
@@ -25,6 +26,7 @@ namespace GettingReal
             return (destFile, targetPath);
         }
 
+        // Counts the number of files in folder based on a path found by FindFile()
         public static (int count, string filetype) NumberOfFiles(string orderNumber)
         {
             int count = 0;
@@ -42,6 +44,7 @@ namespace GettingReal
             return (count, filename);
         }
 
+        // Saves file in specific folder, with file being renamed by ordernumber and filename (orderNumber_justFileName)
         public static void SaveFile(string sourcePath, string orderNumber, string justFileName)
         {
             (string destFile, string targetPath) = FindFile();
@@ -66,6 +69,7 @@ namespace GettingReal
             }
         }
 
+        // Serializer to save data
         public static void BinarySerialize(object data, string filePath)
         {
             FileStream fileStream;
@@ -76,6 +80,7 @@ namespace GettingReal
             fileStream.Close();
         }
 
+        // method to load serialized data
         public static object BinaryDeserialize(string filePath)
         {
             object obj = null;

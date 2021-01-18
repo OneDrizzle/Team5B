@@ -20,11 +20,13 @@ namespace GettingReal.Models
         {
         }
 
+        // Gets the list of all Rooms on the floor
         public List<Room> GetListOfRooms()
         {
             return _rooms;
         }
 
+        // Adds a room to the floor
         public void AddRoom(Room room)
         {
             _rooms.Add(room);

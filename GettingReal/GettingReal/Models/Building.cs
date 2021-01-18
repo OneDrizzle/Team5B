@@ -31,7 +31,7 @@ namespace GettingReal.Models
             _ventilationAggregates.Add(ventilationAggregate);
         }
 
-        // Retrieve a spcific entilation aggregate by ordernumber
+        // Retrieve a spcific ventilation aggregate by ordernumber
         public VentilationAggregate GetVentilationAggregate(string orderNumber)
         {
             foreach (VentilationAggregate aggregate in _ventilationAggregates)

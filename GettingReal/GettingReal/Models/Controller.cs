@@ -51,12 +51,17 @@ namespace GettingReal.Models
         //    _customerRepository.AddCustomer(SelectedCustomer);
         //    return SelectedCustomer;
         //}
+
+        // Creates new customer and adds them to the customer repository
+        // Setes and returns selected customer to use in the MainViewModel
         public Customer AddCustomer(string name, string company)
         {
             SelectedCustomer = new Customer(name, company);
             _customerRepository.AddCustomer(SelectedCustomer);
             return SelectedCustomer;
         }
+        // Creates new building and adds it to the building repository
+        // Sets and return selected building to use in the MainViewModel
         public Building AddBuilding(string name)
         {
             SelectedBuilding = new Building(name);
@@ -64,6 +69,8 @@ namespace GettingReal.Models
             SelectedCustomer.AddBuilding(SelectedBuilding);
             return SelectedBuilding;
         }
+        // Creates new ventilationaggregate and adds it to the ventilationaggregate repository
+        // Sets and return selected ventilationaggregate to use in the MainViewModel
         public VentilationAggregate AddVentilationAggregate()
         {
             var agg = new VentilationAggregate();
@@ -72,6 +79,8 @@ namespace GettingReal.Models
            // SelectedBuilding.AddVentilationAggregate(agg);
             return SelectedVentilationAggregate;
         }
+        // Creates new floor and adds it to the floor repository
+        // Sets and return selected floor to use in the MainViewModel
         public Floor AddFloor()
         {
             var f = new Floor();
@@ -80,6 +89,8 @@ namespace GettingReal.Models
             SelectedVentilationAggregate.AddFloor(f);
             return SelectedFloor;
         }
+        // Creates new room and adds it to the room repository
+        // Sets and return selected room to use in the MainViewModel
         public Room AddRoom()
         {
             var r = new Room();

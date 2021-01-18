@@ -75,6 +75,8 @@ namespace GettingReal.ViewModels
         Controller ct;
         public MainViewModel()
         {
+            // Loads saved data from text file
+
             ct = Utility.BinaryDeserialize("Data123.txt") as Controller;
             if (ct == null)
             {
@@ -87,6 +89,8 @@ namespace GettingReal.ViewModels
             CustomersVM = new ObservableCollection<VMCustomer>();
             FloorsVM = new ObservableCollection<VMFloor>();
 
+            // If data was loaded and customers exist, VM moedls are made for each object
+
             if (ct.AllCustomers != null)
             {
                 foreach (Customer customer in ct.AllCustomers)
@@ -95,6 +99,7 @@ namespace GettingReal.ViewModels
             
         }
 
+        // Adds a new customer and calls to make a VM model for it, then adds it to list of customers and updates UI
         public void AddCustomer()
         {
             CustomerEventArgs e = OnNewCustomerRequested();
@@ -106,6 +111,7 @@ namespace GettingReal.ViewModels
             }
         }
 
+        // Adds a new building and calls to make a VM model for it, then adds it to list of buildings and updates UI
         public void AddBuilding()
         {
             BuildingEventArgs e = OnNewBuildingRequested();
@@ -118,6 +124,8 @@ namespace GettingReal.ViewModels
             }
             _selectedVMCustomer.AddBuilding(_selectedVMBuilding);
         }
+
+        // Adds a new ventilationaggregate and calls to make a VM model for it, then adds it to list of ventilationaggregates
         public void AddVentilationAggregate(string fileName)
         {
             var agg = new VMVentilationAggregate(ct.AddVentilationAggregate());
@@ -180,6 +188,7 @@ namespace GettingReal.ViewModels
             }
         }
 
+        // Saves data to text file, using serialization
         public void Save()
         {
             Utility.BinarySerialize(ct, "Data123.txt");

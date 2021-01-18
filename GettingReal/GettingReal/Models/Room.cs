@@ -20,7 +20,7 @@ namespace GettingReal.Models
             set { measuredAirVolume = value; CalculateDeviation(); }
         }
 
-
+        // Calculates deviation between airvolumes
         public void CalculateDeviation()
         {
             Deviation = ProjectedAirVolume / MeasuredAirVolume;
