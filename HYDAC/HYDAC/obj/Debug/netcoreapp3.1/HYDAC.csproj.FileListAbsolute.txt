@@ -96,19 +96,3 @@ D:\Fucking GitHub\Team5B\HYDAC\HYDAC\obj\Debug\netcoreapp3.1\HYDAC.csproj.CoreCo
 D:\Fucking GitHub\Team5B\HYDAC\HYDAC\obj\Debug\netcoreapp3.1\HYDAC.dll
 D:\Fucking GitHub\Team5B\HYDAC\HYDAC\obj\Debug\netcoreapp3.1\HYDAC.pdb
 D:\Fucking GitHub\Team5B\HYDAC\HYDAC\obj\Debug\netcoreapp3.1\HYDAC.genruntimeconfig.cache
-C:\Users\Danie\Documents\GitHub\Team5B\HYDAC\HYDAC\bin\Debug\netcoreapp3.1\Data_Employees.txt
-C:\Users\Danie\Documents\GitHub\Team5B\HYDAC\HYDAC\bin\Debug\netcoreapp3.1\Data_Guests.txt
-C:\Users\Danie\Documents\GitHub\Team5B\HYDAC\HYDAC\bin\Debug\netcoreapp3.1\HYDAC.exe
-C:\Users\Danie\Documents\GitHub\Team5B\HYDAC\HYDAC\bin\Debug\netcoreapp3.1\HYDAC.deps.json
-C:\Users\Danie\Documents\GitHub\Team5B\HYDAC\HYDAC\bin\Debug\netcoreapp3.1\HYDAC.runtimeconfig.json
-C:\Users\Danie\Documents\GitHub\Team5B\HYDAC\HYDAC\bin\Debug\netcoreapp3.1\HYDAC.runtimeconfig.dev.json
-C:\Users\Danie\Documents\GitHub\Team5B\HYDAC\HYDAC\bin\Debug\netcoreapp3.1\HYDAC.dll
-C:\Users\Danie\Documents\GitHub\Team5B\HYDAC\HYDAC\bin\Debug\netcoreapp3.1\HYDAC.pdb
-C:\Users\Danie\Documents\GitHub\Team5B\HYDAC\HYDAC\obj\Debug\netcoreapp3.1\HYDAC.csproj.AssemblyReference.cache
-C:\Users\Danie\Documents\GitHub\Team5B\HYDAC\HYDAC\obj\Debug\netcoreapp3.1\HYDAC.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Danie\Documents\GitHub\Team5B\HYDAC\HYDAC\obj\Debug\netcoreapp3.1\HYDAC.AssemblyInfoInputs.cache
-C:\Users\Danie\Documents\GitHub\Team5B\HYDAC\HYDAC\obj\Debug\netcoreapp3.1\HYDAC.AssemblyInfo.cs
-C:\Users\Danie\Documents\GitHub\Team5B\HYDAC\HYDAC\obj\Debug\netcoreapp3.1\HYDAC.csproj.CoreCompileInputs.cache
-C:\Users\Danie\Documents\GitHub\Team5B\HYDAC\HYDAC\obj\Debug\netcoreapp3.1\HYDAC.dll
-C:\Users\Danie\Documents\GitHub\Team5B\HYDAC\HYDAC\obj\Debug\netcoreapp3.1\HYDAC.pdb
-C:\Users\Danie\Documents\GitHub\Team5B\HYDAC\HYDAC\obj\Debug\netcoreapp3.1\HYDAC.genruntimeconfig.cache
